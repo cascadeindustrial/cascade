@@ -1,0 +1,57 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+?>
+<?php $_item = $block->getItem() ?>
+<?php $_order = $block->getItem()->getOrder(); 
+$id = $_item->getProductid();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$product = $objectManager->get('Magento\Catalog\Model\Product')->load($id);
+$resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
+$request = $objectManager->get('Magento\Framework\App\Request\Http');
+$connection = $resource->getConnection();
+$orderId = $request->getParam('order_id');
+$productRepository = $objectManager->get('\Magento\Catalog\Model\ProductRepository');
+$productObj = $productRepository->get($block->getSku($_item));
+$deliveryOption = $connection->fetchCol("SELECT shipping_option FROM sales_order_item WHERE item_id = ".(int) $_item->getOrderItemId()." and order_id = " .$orderId);
+?>
+<tr>
+    <td class="item-info<?= ($block->getItemOptions() ? ' has-extra' : '') ?>">
+        <p class="product-name"><?= $block->escapeHtml($_item->getName()) ?></p>
+        <p class="sku"><?= $block->escapeHtml(__('SKU')) ?>: <?= $block->escapeHtml($block->getSku($_item)) ?></p>
+        <p class="model"><?php echo "Model: ".$productObj->getData('model_no'); ?>/p>
+         <p class="creditmemo-delivery-option"> 
+            <?php 
+             if (in_array(1, $deliveryOption)) {
+                  //  echo "Standard Delivery :".$product->getAttributeText('standard_delivery_time');
+                    echo "Standard Delivery: ".$productObj->getAttributeText('standard_delivery_time');
+                 } elseif (in_array(2, $deliveryOption)){
+                  // echo "Expedited Delivery :".$product->getAttributeText('expedited_delivery_time');
+                   echo "Expedited Delivery: ".$productObj->getAttributeText('expedited_delivery_time');
+                 }   ?>
+
+        </p>
+        <?php if ($block->getItemOptions()) : ?>
+            <dl>
+                <?php foreach ($block->getItemOptions() as $option) : ?>
+                    <dt><strong><em><?= $block->escapeHtml($option['label']) ?></em></strong></dt>
+                    <dd>
+                        <?= /* @noEscape */  nl2br($block->escapeHtml($option['value'])) ?>
+                    </dd>
+                <?php endforeach; ?>
+            </dl>
+        <?php endif; ?>
+        <?php $addInfoBlock = $block->getProductAdditionalInformationBlock(); ?>
+        <?php if ($addInfoBlock) :?>
+            <?= $addInfoBlock->setItem($_item->getOrderItem())->toHtml() ?>
+        <?php endif; ?>
+        <?= $block->escapeHtml($_item->getDescription()) ?>
+    </td>
+    <td class="item-qty"><?= (float) $_item->getQty() ?></td>
+    <td class="item-price">
+        <?= /* @noEscape */  $block->getItemPrice($_item) ?>
+    </td>
+</tr>

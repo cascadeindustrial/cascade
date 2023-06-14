@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+				<title>Credit Application Form</title>
+	</head>
+<body>        
+   <referenceContainer name="content">
+    <block class="Magento\Framework\View\Element\Template"
+                   name="applicatin_form.image"
+                   template="Dcw_CreditForm::formimage.phtml"
+                   before="-">
+            </block>
+      <block class="Dcw\CreditForm\Block\Index" name="index_index" as="info" template="Dcw_CreditForm::index.phtml" cacheable="false"/>
+      <container name="form.additional.info" label="Form Additional Info"/>
+   </referenceContainer>
+  <referenceBlock name="page.main.title" remove="true"/>
+
+   <move element="applicatin_form.image" destination="page.wrapper" before="-" />
+   <move element="breadcrumbs" destination="main.content" before="-"/>
+
+</body>
+</page>

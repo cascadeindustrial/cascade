@@ -1,0 +1,32 @@
+.myshipping-container {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    margin: 10px 0 30px;
+    border: 1px solid #e3e3e3;
+    clear: both;
+}
+.myshipping-container .myshipping-field {
+    margin: 10px 0;
+}
+.myshipping-container .myshipping-field label {
+    display: inline-block !important;
+    font-weight: 600;
+    min-width: 25%;
+    margin-bottom: 5px;
+}
+.myshipping-container .myshipping-field label.mage-error { display: block !important; }
+.myshipping-container .myshipping-actions {
+    margin: 25px 0;
+}
+
+.myshipping-container .myshipping-save-wrapper {
+    display: block;
+    margin-top: 15px;
+}
+
+
+
+.myshipping-accounts .myshipping-courier select { width: 100%; }
+.myshipping-accounts .myshipping-position input { display: none; }
+.myshipping-courier-edit .myshipping-position input { display: none; }

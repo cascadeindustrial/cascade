@@ -1,0 +1,21 @@
+<?php
+/**
+ * Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+ * See COPYING.txt for license details.
+ * @codingStandardsIgnoreFile
+ */
+?>
+<?php
+/**
+ * @var $block \Cart2Quote\Quotation\Block\Widget\Button
+ */
+?>
+<?= $block->getBeforeHtml() ?>
+<button <?= /* @noEscape */ $block->getAttributesHtml(), $block->getUiId() ?>>
+    <?php if($block->getLabelInSpan()) : ?>
+        <span><?= $block->escapeHtml($block->getLabel()) ?></span>
+    <?php else : ?>
+        <?= $block->escapeHtml($block->getLabel()) ?>
+    <?php endif; ?>
+</button>
+<?= $block->getAfterHtml() ?>

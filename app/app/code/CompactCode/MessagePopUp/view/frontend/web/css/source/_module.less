@@ -1,0 +1,53 @@
+/*
+ * Copyright (c) 2019.
+ * Copyright Holder : CompactCode - CompactCode BvBa - Belgium
+ * Copyright : Unless granted permission from CompactCode BvBa.
+ * You can not distribute, reuse, edit, resell or sell this.
+ */
+
+@import '_animate.less';
+
+.cc-message-default{
+  position: fixed;
+  z-index: 1000;
+}
+
+.cc-message-left-bottom-corner{
+  left: 2%;
+  top: 90%;
+}
+
+.cc-message-left-top-corner{
+  left: 2%;
+  top: 12%;
+}
+
+.cc-message-right-bottom-corner{
+  right: 2%;
+  top: 90%;
+}
+
+.cc-message-right-top-corner{
+  right: 2%;
+  top: 12%;
+}
+
+.cc-delete-message{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  &:before{
+    content: '\e616';
+    font-size: 20px;
+    font-family: @icons__font-name;
+  }
+}
+
+.cc-message-fixed-top{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

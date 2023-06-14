@@ -1,0 +1,36 @@
+<?php
+/** @var \Cminds\Creditline\Block\Customer\Account $block */
+$balance = $block->getBalance();
+
+$balanceAmount = $block->formatPrice($balance->getAmount(), $block->getStoreCurrencyCode(), $balance->getCurrencyCode());
+$limitAmount = $block->formatPrice($balance->getLimitAmount(), $block->getStoreCurrencyCode(), $balance->getCurrencyCode());
+
+$transactions = $block->getLastTransaction();
+?>
+<div class="block creditline__account-balance">
+    <div class="block-title">
+        <strong><?= __('Balance') ?></strong>
+    </div>
+    <div class="block-content">
+        <?= __('Your Credit Limit is: <b>%1</b>',  $limitAmount) ?>
+        &nbsp;
+        <?= __('Current available: <b>%1</b>', $balanceAmount) ?>
+        &nbsp;
+        <?php if($this->isEnableShareCredit()):?>
+        <a href="#" id="share-credit" class="action primary"><?= __('Share Credits') ?></a>
+        <?php endif;?>
+        <div class="creditline__account-subscription">
+            <?php if(is_array($transactions) && count($transactions) > 0){
+                $lastbalance = $block->formatPrice($transactions->getBalanceDelta(), $block->getStoreCurrencyCode(), $balance->getCurrencyCode());
+                $lastdate = $lastbalance == '$0.00' ? '0000-00-00 00:00:00': $transactions->getCreatedAt();
+                echo __('Your last payment: <b>%1</b> at <b>%2</b>', $lastbalance, $lastdate);
+            } ?>
+            <br/><br/>
+        </div>
+        <?php if ($block->hasSeveralBalances()): ?>
+            <p>
+                <?= __('* Also you have credits in another currency') ?>
+            </p>
+        <?php endif; ?>
+    </div>
+</div>

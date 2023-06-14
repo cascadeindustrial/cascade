@@ -1,0 +1,126 @@
+<?php
+/**
+ * Copyright © 2018 Porto. All rights reserved.
+ */
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see \Dcw\MegaMenu\Block\Topmenu
+ */
+?>
+<?php
+$_objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+$headerHelper = $this->helper('Dcw\HeaderDesign\Helper\Data');
+$navigationAnchorColor = $headerHelper->getNavigationAnchorTagColor();
+
+$blockObj= $block->getLayout()->createBlock('Amasty\ShopbyBrand\Block\BrandsPopup');
+$categoryId = $this->helper('Dcw\MegaMenu\Helper\Data')->getConfig('generalconfiguration/settings/category_id');
+$category = $_objectManager->create('Magento\Catalog\Model\Category')->load($categoryId);
+$featuredCategoryurl = $category->getUrl();
+$parentClass = $blockObj->isShowPopup() ? 'parent' : '';
+$ultimoClasses = $blockObj->isUltimoTheme() ? ' nav-item level0 level-top nav-item--parent' : '';
+$liClass = $parentClass . $ultimoClasses;
+
+$blogTitle = $block->getBlogTitle();
+$routeToBlog = $block->getRouteToBlog();
+$blogPath = $this->getBaseUrl().$routeToBlog;
+ //echo $blogPath;
+// echo $blogTitle;
+// echo "b";
+// echo $routeToBlog;
+
+
+?>
+<?php $_menu = $block->getMegamenuHtml(); ?>
+
+<nav class="navigation" role="navigation">
+    <ul>
+        <?php echo $_menu; ?>
+    <?php if ($blockObj->isShouldWrap()) :?>
+    <li class="level0 <?= /** @noEscape */ $liClass ?> ambrands-menu-item"
+        data-ambrands-js="brands-menu-link">
+    <?php endif;?>
+
+ <?php if ($blockObj->isShowPopup()) : ?>
+        <?php
+        $items = $blockObj->getIndex();
+        $brandLetters = $blockObj->getAllLetters();
+        $isShowCount = $blockObj->getData('show_count');
+        $isShowImages = $blockObj->getData('show_images');
+        $imgWidth = $blockObj->getImageWidth();
+        $imgHeight = $blockObj->getImageHeight();
+        $isShowFilter = $blockObj->getData('show_filter');
+        $filterDisplayAll = $blockObj->getData('filter_display_all');
+        ?>
+        <a style="color:<?php echo $navigationAnchorColor; ?>" href="<?= $blockObj->escapeUrl($blockObj->getAllBrandsUrl()) ?>" class="level-top ambrands-link">
+
+            <?= $blockObj->escapeHtml($blockObj->getLabel()) ?>
+        </a>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <div class="ambrands-list-popup" data-ambrands-js="brands-popup">
+
+            <div class="ambrands-list-container">
+                <?php if ($items) : ?>
+
+                   <div class="ambrands-popup-items<?= $isShowFilter ? '' : ' am-brands-fullwidth' ?>">
+                        <?php foreach ($items as $letters) : ?>
+
+                                <?php foreach ($letters as $letter => $options) : ?>
+
+
+                                              <?php $url = $this->getBaseUrl()."brandsclp"; ?>
+                                                <?php foreach ($options as $option) : ?>
+                                                    <div class="brand-item">
+                                                        <a href="<?php echo $url."?brandid="; ?><?= $block->escapeUrl($option['brandId']) ?>"
+                                                           class="item"
+                                                           title="<?= $blockObj->escapeHtml($option['label']) ?>">
+                                                            <p class="label">
+                                                                <?= $blockObj->escapeHtml($option['label']) ?>
+                                                            </p>
+                                                            <?php if ($isShowCount) : ?>
+                                                                <p class="count">
+                                                                    <?= $blockObj->escapeHtml($option['cnt']) ?>
+                                                                </p>
+                                                            <?php endif; ?>
+                                                        </a>
+                                                    </div>
+                                                <?php endforeach ?>
+
+                                <?php endforeach ?>
+
+                        <?php endforeach ?>
+<a href="<?php echo $blockObj->escapeUrl($blockObj->getAllBrandsUrl()) ?>"
+ title="view all brands" class="action tab all brands">
+                                          <span>VIEW ALL BRANDS</span>
+                        </a>
+                    </div>
+
+                <?php else : ?>
+                <?php endif ?>
+            </div>
+
+        </div>
+    <?php else : ?>
+        <a style="color:<?php echo $navigationAnchorColor; ?>" href="<?= $blockObj->escapeUrl($blockObj->getAllBrandsUrl()) ?>" class="level-top ambrands-link">
+            <?= $blockObj->escapeHtml($blockObj->getLabel()) ?>
+        </a>
+    <?php endif; ?>
+<?php if ($blockObj->isShouldWrap()) :?>
+</li>
+<?php endif; ?>
+    <li class="featured level-top"><a class="level-top" style="color:<?php echo $navigationAnchorColor; ?>" href="<?php echo $featuredCategoryurl; ?>">Featured</a>
+        </li>
+        <li class="requestaquote level-top"><a class="level-top" style="color:<?php echo $navigationAnchorColor; ?>" href="<?php echo $this->getBaseUrl() . 'customquoteform' ?>">Request a Quote</a>
+        </li>
+        <li class="services"><a class="level-top" style="color:<?php echo $navigationAnchorColor; ?>" href="<?php echo $this->getBaseUrl() . 'services' ?>">Services</a></li>
+    <!-- <li class="resourcecenter"><a class="level-top" style="color:<?php //echo $navigationAnchorColor; ?>" href="<?php //echo $this->getBaseUrl() . 'blog/' ?>">Resource Center</a>
+        </li> -->
+        <li class="resourcecenter"><a class="level-top" style="color:<?php echo $navigationAnchorColor; ?>" href="<?php echo $blogPath ?>"><?php echo $blogTitle; ?></a>
+        </li>
+
+</ul>
+</nav>

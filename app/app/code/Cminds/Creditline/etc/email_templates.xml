@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Cminds Creditline.
+ *
+ * @category Cminds
+ * @package  Cminds_Creditline
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+
+    <template id="creditline_email_balance_update_template" label="Balance Update"
+              file="balance_update.html" type="html" module="Cminds_Creditline" area="frontend"/>
+    <template id="creditline_reminder_after_email_template" label="Credit Line Reminder"
+              file="invoice_creditline_after_term.html" type="html" module="Cminds_Creditline" area="frontend"/>
+    <template id="creditline_reminder_before_email_template" label="Credit Line Reminder"
+              file="invoice_creditline_before_term.html" type="html" module="Cminds_Creditline" area="frontend"/>
+    <template id="creditline_invoice_email_template" label="Credtit Line Invoice"
+              file="invoice_creditline.html" type="html" module="Cminds_Creditline" area="frontend"/>
+</config>

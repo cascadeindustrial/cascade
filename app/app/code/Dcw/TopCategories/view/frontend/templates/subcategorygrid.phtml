@@ -1,0 +1,80 @@
+ <?php
+        //$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	      $placeholderImageUrl = $block->getDefaultPlaceholderImageUrl();
+        $subcategory = $block->getSubcategory();
+        //echo $subcategory->getLevel()."<br>";
+        $subcats = $block->getChildcategories();
+        $store = $block->getStore();
+        $baseUrl = $block->getBaseUrl();
+        $placeholder_img = "pub/media/placeholder.png";
+?>
+<?php //echo '<pre>'; print_r($subcats->getData()); exit;?>
+        <?php //if($subcategory->getLevel() == '2' || $subcategory->getLevel() == '3') { ?>
+        <?php if($subcategory->getLevel() >= '2') { ?>
+            <div class="row">
+<?php
+            foreach ($subcats as $subcat) {
+                if ($subcat->getIsActive()) {
+                    //print_r($subcat->getData());exit;
+                //$_category = $objectManager->create('Magento\Catalog\Model\Category')->load($subcat->getId(), 'eq');
+                $childCategory = $subcat->getChildrenCategories();
+                //$_imgUrl = $subcat->getImageUrl();
+                $categoryId = $subcat->getId();
+                $_imgUrl = $this->getCategoryImageUrl($categoryId);
+                $subcat_url = $subcat->getUrl();
+                $subcat_img = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'catalog/category/' . $subcat->getImage();
+                     if($_imgUrl ==''){
+		                     $_imgUrl = $placeholderImageUrl;
+                    }
+              ?>
+                    <div class="col-sm-4 col-md-3 col-xs-6 item-two">
+                        <a class="category-product-image" href="<?php echo $subcat_url; ?>">
+                             <img src="<?php echo $_imgUrl; ?>" class="img-responsive"/>
+                        </a>
+                        <div class="category-details">
+                            <div class="category-name"><a href="<?php echo $subcat_url; ?>"><?php echo $subcat->getName();?></a></div>
+                         <ul class="catnames">
+            <?php //echo '<pre>'; print_r($subcats->getData()); exit; ?>
+<?php
+$loop=0;
+            foreach ($childCategory as $childcat) {
+                   //print_r($childcat->getData());exit;
+                 //$_categories = $objectManager->create('Magento\Catalog\Model\Category')->load($childcat->getId());
+                 $subcate_url = $childcat->getUrl();
+                    ?>
+                    <li>
+                        <a href="<?php echo $subcate_url; ?>">
+                           <?php echo $childcat->getName();  ?>
+                        </a>
+                    </li>
+                    <?php
+                    $loop++;
+                    if($loop==5) break;
+            }
+              ?>
+            </ul>
+           <?php //print_r($subcat->getData('children_count'));exit;
+           if(($subcat->getData('children_count')) == 0)
+            {
+              ?>
+             <div class="actons">
+                <a class="link action" href="<?php echo $subcat_url ?>"><?php /* @escapeNotVerified */ echo __('View') ?></a></div>
+           <?php } else
+           {
+            ?>
+             <div class="actons">
+                <a class="link action" href="<?php echo $subcat_url ?>"><?php /* @escapeNotVerified */ echo __('View All') ?></a></div>
+        <?php   }?>
+        <?php } ?>
+                    </div>
+                </div>
+            <?php } } ?>
+            </div>
+<div class="subcategory-content">
+	 <?php
+  //  $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category ?>
+<h2> <?php if($subcategory->getDescription() != ''){
+          echo $subcategory->getName();'<br/>';
+      } ?></h2>
+         <?php echo $subcategory->getDescription(); ?>
+</div>

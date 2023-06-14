@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceBlock name="head.components">
+            <block class="Magento\Framework\View\Element\Js\Components" name="customer_myshipping_head_components" template="Magento_Customer::js/components.phtml"/>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="MageMaclean\MyShipping\Block\Account\Index" name="myshipping_account_index" template="MageMaclean_MyShipping::account/index.phtml" cacheable="false"/>
+            <block class="MageMaclean\MyShipping\Block\Account\Grid" name="myshipping_account_grid" template="MageMaclean_MyShipping::account/grid.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>

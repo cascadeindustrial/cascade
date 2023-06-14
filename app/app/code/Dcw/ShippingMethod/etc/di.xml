@@ -1,0 +1,13 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+ <preference for="Magento\Fedex\Model\Carrier" type="Dcw\ShippingMethod\Model\Fedex\Carrier" />
+  <preference for="Magento\Usps\Model\Carrier" type="Dcw\ShippingMethod\Model\Carrier" />
+  <preference for="Magento\Ups\Model\Carrier" type="Dcw\ShippingMethod\Model\Ups\Carrier" />
+  <preference for="Magento\Sales\Controller\Adminhtml\Order\Invoice\Save" type="Dcw\ShippingMethod\Controller\Adminhtml\Order\Invoice\Save" />
+  <!-- <preference for="Amasty\Orderattr\Model\Attribute\InputType\FrontendCaster" type="Dcw\ShippingMethod\Model\Attribute\InputType\FrontendCaster" />
+  <preference for="Amasty\Orderattr\Block\Adminhtml\Order\View\Attributes" type="Dcw\ShippingMethod\Block\Adminhtml\Order\View\Attributes" />
+  <preference for="Amasty\Orderattr\Observer\ConvertQuoteToOrder" type="Dcw\ShippingMethod\Observer\ConvertQuoteToOrder" /> -->
+  <preference for="Magento\Contact\Block\ContactForm" type="Dcw\ShippingMethod\Block\ContactForm" />
+  <preference for="Amasty\Xsearch\Block\Search\Product" type="Dcw\ShippingMethod\Block\Search\Product" />
+  <!-- <preference for="Amasty\ShopbyBrand\Block\Widget\BrandSlider" type="Dcw\ShippingMethod\Block\Widget\BrandSlider" /> -->
+
+</config>

@@ -1,0 +1,31 @@
+<?php
+/**
+ * Copyright (c) 2019.
+ * Copyright Holder : CompactCode - CompactCode BvBa - Belgium
+ * Copyright : Unless granted permission from CompactCode BvBa.
+ * You can not distribute, reuse, edit, resell or sell this.
+ */
+
+/** @var $block \CompactCode\MessagePopUp\Block\MessagePopUp */
+
+$messageclass = $block->getMessageClass();
+?>
+<?php if (!empty($messageclass) && $block->getModuleEnable()) : ?>
+    <script type="text/x-magento-init">
+    {
+        ".messageContainer": {
+            "messagepopup": {
+                    "messageClass" : "<?= /* @noEscape */ $messageclass ?>",
+                    "fixed_enable" : "<?= /* @noEscape */ $block->getFixedEnabled() ?>",
+                    "fixed_below" : "<?= /* @noEscape */ $block->getFixedBelow() ?>",
+                    "fixed_additional_classes" : "<?= /* @noEscape */ $block->getFixedClasses() ?>",
+                    "positionClass": "<?= /* @noEscape */ $block->getMessagePosition() ?>",
+                    "deleteOption": "<?= /* @noEscape */ $block->getMessageDeleteOption() ?>",
+                    "animationIn": "<?= /* @noEscape */ $block->getMessageAnimationIn() ?>",
+                    "animationOut": "<?= /* @noEscape */ $block->getMessageAnimationOut() ?>",
+                    "animationTime": "<?= /* @noEscape */ $block->getMessageAnimationTime() ?>"
+            }
+        }
+    }
+    </script>
+<?php endif; ?>

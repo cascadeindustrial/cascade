@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<!-- <event name="checkout_cart_product_add_after">
+		<observer name="customprice" instance="Dcw\CustomPricing\Observer\CustomPrice" />
+	</event> -->
+	<!-- <event name="sales_quote_item_set_product">
+         <observer name="product_point_quote" instance="Dcw\CustomPricing\Observer\SalesQuoteItemSetCustomAttribute"/>
+  </event> -->
+  <event name="checkout_cart_product_update_after">
+        <observer name="dcw_checkout_cart_update_items_after" instance="Dcw\CustomPricing\Observer\UpdateItemsAfter"/>
+  </event>
+  <event name="controller_action_postdispatch">
+	<observer name="custom_Price" instance="Dcw\CustomPricing\Observer\ActionPostDispatch"/>
+ </event>
+ <event name="controller_action_predispatch_checkout_cart_add">
+        <observer name="yourcustomname" instance="Dcw\CustomPricing\Observer\RestrictAddToCart" />
+ </event>
+ <!-- <event name="controller_action_predispatch_wishlist_index_cart">
+        <observer name="yourcustomname" instance="Dcw\CustomPricing\Observer\RestrictAddToCart" />
+ </event>
+ <event name="controller_action_predispatch_sales_order_reorder">
+        <observer name="yourcustomname" instance="Dcw\CustomPricing\Observer\RestrictAddToCart" />
+ </event> -->
+</config>

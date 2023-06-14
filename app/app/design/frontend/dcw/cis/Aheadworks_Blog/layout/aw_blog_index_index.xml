@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<move element="breadcrumbs" destination="main.content" before="-"/>
+<referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="aw_blog_category.images"
+                   template="Aheadworks_Blog::blogimage.phtml"
+                   before="-">
+            </block>
+        </referenceContainer>
+        <referenceBlock name="page.main.title" remove="true"/>
+
+        <move element="aw_blog_category.images" destination="page.wrapper" before="-" />
+<block class="Aheadworks\Blog\Block\Html\Pager" name="aw_blog_author.list.pager" as="pager" template="Aheadworks_Blog::pager.phtml">
+                    <arguments>
+                        <argument name="repository" xsi:type="string">Aheadworks\Blog\Api\AuthorRepositoryInterface</argument>
+                    </arguments>
+                </block>
+</page>

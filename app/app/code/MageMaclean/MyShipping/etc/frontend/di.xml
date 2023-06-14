@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Add Checkout Shipping Method Components -->
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+       <plugin name="myshipping_checkout_layout_processor" type="MageMaclean\MyShipping\Plugin\Checkout\LayoutProcessor" />
+    </type>
+
+    <!-- Add Cart Estimate Shipping Components -->
+    <type name="Magento\Checkout\Block\Cart\LayoutProcessor">
+       <plugin name="myshipping_cart_layout_processor" type="MageMaclean\MyShipping\Plugin\Cart\LayoutProcessor" />
+    </type>
+
+    <!-- Add Multishipping Shipping Components -->
+    <preference for="Magento\Multishipping\Block\Checkout\Shipping" type="MageMaclean\MyShipping\Block\Multishipping\Checkout\Shipping" />
+
+    <type name="Magento\Multishipping\Model\Checkout\Type\Multishipping">
+        <plugin name="myshipping_multishipping_checkout_myshipping_to_quote" type="MageMaclean\MyShipping\Plugin\Multishipping\Checkout\Type\Multishipping" />
+    </type>
+</config>

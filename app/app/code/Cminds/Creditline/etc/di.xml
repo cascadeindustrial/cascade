@@ -1,0 +1,28 @@
+<!-- 
+/**
+ * Cminds Creditline.
+ *
+ * @category Cminds
+ * @package  Cminds_Creditline
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Cminds\Creditline\Api\CreditManagementInterface" type="Cminds\Creditline\Model\CreditManagement"/>
+
+    <type name="Magento\Payment\Model\Checks\ZeroTotal">
+        <plugin name="CreditChecksZeroTotal" type="Cminds\Creditline\Plugin\Checks\ZeroTotal" sortOrder="10"/>
+    </type>
+    <type name="Magento\Sales\Model\ResourceModel\Order\Handler\State">
+        <plugin name="CreditOrdserHandleState" type="Cminds\Creditline\Plugin\Order\Handler\State" sortOrder="10"/>
+    </type>
+    <type name="Magento\Customer\Controller\Adminhtml\Index\Save">
+        <plugin name="CreditLineCustomerSave" type="Cminds\Creditline\Plugin\Customer\Controller\Adminhtml\Index\Save" sortOrder="1"/>
+    </type>
+
+    <!--CONFIG-->
+    <preference for="Cminds\Creditline\Api\Config\CalculationConfigInterface"
+                type="Cminds\Creditline\Service\Config\CalculationConfig" />
+
+</config>

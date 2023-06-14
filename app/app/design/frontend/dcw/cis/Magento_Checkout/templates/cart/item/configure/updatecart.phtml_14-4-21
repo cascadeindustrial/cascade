@@ -1,0 +1,230 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Magento\Catalog\Block\Product\View */
+?>
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$requestInterface = $objectManager->get('Magento\Framework\App\RequestInterface');
+
+$routeName      = $requestInterface->getRouteName();
+$moduleName     = $requestInterface->getModuleName();
+$controllerName = $requestInterface->getControllerName();
+$actionName     = $requestInterface->getActionName();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+//var_dump($customerSession->isLoggedIn());  exit;
+
+?>
+<?php $_product = $block->getProduct(); 
+$product_id = $block->getProduct()->getData('id');
+$standarddeli = $_product->getAttributeText('standard_delivery_time');
+$expediteddeli = $_product->getAttributeText('expedited_delivery_time');?>
+<?php $buttonTitle = __('Update Cart');
+$stockItem = $_product->getExtensionAttributes()->getStockItem();
+?>
+<?php
+
+  echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::delivery.phtml")->toHtml();
+?>
+<?php if ($stockItem->getIsInStock()) { ?>
+  <div class="prices-ships">
+  <?php
+  echo $this->getLayout()
+         ->createBlock('Magento\Catalog\Pricing\Render',
+                 "product.price.final",
+                   [
+                       'data' => [
+                           'price_render' => 'product.price.render.default',
+                           'price_type_code' => 'final_price',
+                           'zone' => 'item_view'
+                       ]
+                  ]
+                 )
+         ->toHtml();
+ echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::productships.phtml")->toHtml();
+?>
+<?php //if($standarddeli)
+// { 
+//   $logFile='/var/log/leadtime.log';
+//    $writer = new \Zend\Log\Writer\Stream(BP . $logFile);
+//     $logger = new \Zend\Log\Logger();
+//     $logger->addWriter($writer);
+
+  ?>
+  <!-- <div class="ship_delivery deltime-option" id="standdel"><span><?php  //echo $standarddeli; ?> </span><img src="<?php //echo $this->getViewFileUrl('images/calaendar.png'); ?>" alt="cascade"></div> -->
+<?php     //$logger->info("std");
+     //$logger->info( $standarddeli);
+ //} ?>
+<?php //if($expediteddeli) { ?>
+<!-- <div class="ship_delivery deltime-option" id="expdel" style="display: none";><span><?php  //echo $expediteddeli; ?> </span><img src="<?php //echo $this->getViewFileUrl('images/calaendar.png'); ?>" alt="cascade"></div>
+ --><?php //$logger->info("exp");
+//$logger->info($expediteddeli); //} ?>
+</div>
+<?php //echo "ddddd"; ?>
+<?php } ?>
+<?php if ($_product->isSaleable()) :?>
+    <div class="box-tocart update">
+       <div class="fieldset">
+           <?php if ($block->shouldRenderQuantity()): ?>
+           <div class="field qty">
+               <label class="label" for="qty"><span><?php /* @escapeNotVerified */ echo __('Qty') ?></span></label>
+
+
+    <div class="control" data-bind="scope: 'qty_change'">
+       <span class="input-group__addon">
+                                        <div onclick="decreaseQty(<?= $block->escapeHtml($_product->getId()) ?>)" class="input-groupbutton input-group_button--decrease">
+                                            <span class="input-group_icon input-group_icon--decrease">-</span>
+                                        </div>
+                                    </span>
+       <input type="number" name="qty" onchange="changeQty(<?= $block->escapeHtml($_product->getId()) ?>)"id="qty-<?= $block->escapeHtml($_product->getId()) ?>" maxlength="5" class="input-group_input qty" value="1"/>
+     <span class="input-group__addon">
+                                        <div onclick="increaseQty(<?= $block->escapeHtml($_product->getId()) ?>)" class="input-groupbutton input-group_button--increase">
+                                            <span class="input-group_icon input-group_icon--increase">+</span>
+                                        </div>
+                                    </span>
+    </div>
+           </div>
+           <?php endif; ?>
+           <div class="actions">
+                    <button type="submit"
+                            title="<?= $block->escapeHtmlAttr($buttonTitle) ?>"
+                            class="action primary tocart"
+                            id="product-updatecart-button">
+                        <span><?= $block->escapeHtml($buttonTitle) ?></span>
+                    </button>
+                    <?= $block->getChildHtml('', true) ?>
+            </div>
+       </div>
+    </div>
+
+    <script type="text/x-magento-init">
+        {
+            "#product_addtocart_form": {
+                "validation": {},
+                "addToCart": {
+                    "cartButtonId": "#product-updatecart-button",
+                    "cartForm": "#product_addtocart_form"
+                }
+            }
+        }
+    </script>
+<?php endif; ?>
+<script>
+  function decreaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) -1;
+        if(qty < 1){
+            qty =1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function increaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) +1;
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function changeQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        if(qty< 1){
+            qty = 1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+</script>
+<script>
+    require([
+        'jquery'
+    ], function($){
+        $('.field.choice.related').parents('.prices-ships').addClass('active');
+    });
+</script>
+<!-- <script>
+    require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+        
+                $("input[name$='shipping_preference']").click(function() {
+                var test = $(this).val();
+                console.log(test);
+                //alert(test);
+               // $("#standdel").show();
+                $("#expdel").hide();
+                if(test == 1)
+                {
+                  //alert(steddeli);
+                      $("#standdel").show();
+                      $("#expdel").hide();
+                }
+                else{
+                          $("#expdel").show();
+                          $("#standdel").hide();
+                }
+            });
+
+        });
+    });
+</script> -->
+<?php //if($customerSession->isLoggedIn()) { ?>
+<script>
+  require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+
+//if ($('input[name=shipping_preference]:checked').val() == 1) {
+// jQuery(document).on("DOMSubtreeModified", ".standard-delivery .delivery-date", function () {
+//     var x = jQuery(this).text();
+//     console.log(x)
+//     jQuery('.prices-ships .ship_delivery span').text(x);
+  
+// });
+//}
+//else{
+//   jQuery(document).on("DOMSubtreeModified", ".radiobtndelivery .delivery-date", function () {
+//     var x = jQuery(this).text();
+//     console.log(x)
+//     jQuery('.prices-ships .ship_delivery span').text(x);
+  
+// });
+
+//}
+
+ // jQuery('.c-delivery .for-mobile input').change(function(){
+ //            jQuery(this).each(function(){
+ //                var txt = jQuery(this).parent().find('.delivery-date').text();
+ //                console.log(txt)
+ //                jQuery('.prices-ships .ship_delivery span').text(txt);
+ //            });
+ //        });
+
+      });
+    });
+  </script>
+  <?php //} ?>
+<?php
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+if($customerSession->isLoggedIn()) {
+?>
+<script type="text/javascript">
+require(['jquery'], function ($) {
+$(document).ready(function () {
+    $('body').addClass('edit_logged_in');
+  });
+});
+</script>
+
+<?php } else { ?>
+<script type="text/javascript">
+require(['jquery'], function ($) {
+$(document).ready(function () {
+    $('body').addClass('edit_guest');
+  });
+});
+</script>
+<?php } ?>

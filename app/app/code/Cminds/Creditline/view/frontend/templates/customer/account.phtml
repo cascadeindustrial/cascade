@@ -1,0 +1,11 @@
+<div class="creditline__account">
+    <?= $block->getChildHtml('balance') ?>
+    <?= $block->getChildHtml('refill') ?>
+    <?= $block->getChildHtml('transactions') ?>
+
+    <ul class="creditline__account-blocks">
+        <?php if ($block->getBalance()->getAmount() > 0): ?>
+            <li><?= $block->getChildHtml('send_to_friend') ?></li>
+        <?php endif ?>
+    </ul>
+</div>

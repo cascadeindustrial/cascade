@@ -1,0 +1,79 @@
+<div class="product attribute description desc-read-more">
+<div class="value">
+<?php
+//get product
+$_product = $block->getProduct();
+$stockItem = $_product->getExtensionAttributes()->getStockItem();
+$description = $_product->getShortDescription();
+echo $description;
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$requestInterface = $objectManager->get('Magento\Framework\App\RequestInterface');
+$moduleName     = $requestInterface->getModuleName();
+$controllerName = $requestInterface->getControllerName();
+$actionName     = $requestInterface->getActionName();
+
+$totalPath = $moduleName."_".$controllerName."_".$actionName;
+
+?>
+
+</div>
+  <span class='read-more'></span>
+</div>
+<?php if (!$stockItem->getIsInStock()) { ?>
+  <div class="prices-ships">
+  <?php
+  echo $this->getLayout()
+         ->createBlock('Magento\Catalog\Pricing\Render',
+                 "product.price.final",
+                   [
+                       'data' => [
+                           'price_render' => 'product.price.render.default',
+                           'price_type_code' => 'final_price',
+                           'zone' => 'item_view'
+                       ]
+                  ]
+                 )
+         ->toHtml();
+ echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::productships.phtml")->toHtml();
+?>
+</div>
+<?php } ?>
+<?php if ($totalPath == 'quotation_quote_configure') { ?>
+  <div class="prices-ships">
+  <?php
+   echo $this->getLayout()
+         ->createBlock('Magento\Catalog\Pricing\Render',
+                 "product.price.final",
+                   [
+                       'data' => [
+                           'price_render' => 'product.price.render.default',
+                           'price_type_code' => 'final_price',
+                           'zone' => 'item_view'
+                       ]
+                  ]
+                 )
+         ->toHtml();
+   echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::productships.phtml")->toHtml();
+?>
+</div>
+<?php } ?>
+<script>
+    require(['jquery', 'jquery/ui'], function($){
+        $(document).ready( function() {
+            /**** for description ***/
+            $(".desc-read-more .read-more").text("read more");
+            $(".desc-read-more .read-more").click(function(a) {
+                a.preventDefault();
+                $(".desc-read-more").toggleClass("active-sec");
+                if ($(".desc-read-more").hasClass("active-sec")){
+                    $(".desc-read-more .read-more").text("read less");
+                }
+                else {
+                    $(".desc-read-more .read-more").text("read more");
+                }
+            });
+
+        });
+    });
+</script>

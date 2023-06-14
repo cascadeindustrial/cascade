@@ -1,0 +1,19 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
+	<head>
+				<title>Custom Quote Form</title>
+	</head>
+    <body>
+        <referenceContainer name="content">
+        	<block class="Magento\Framework\View\Element\Template"
+                   name="requestform_image"
+                   template="Dcw_CustomRequestForm::formbanner.phtml"
+                   before="-">
+            </block>
+        <block class="Dcw\CustomRequestForm\Block\Index" name="customrequestform_index_index" template="index.phtml" />
+    </referenceContainer>
+    <referenceBlock name="page.main.title" remove="true"/>
+
+   <move element="requestform_image" destination="page.wrapper" before="-" />
+   <move element="breadcrumbs" destination="main.content" before="-"/>
+    </body>
+</page>

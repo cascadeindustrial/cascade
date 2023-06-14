@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   	<body>
+ 		<referenceContainer name="product.info.stock.sku">
+ 			      <block after="product.info.stock.sku" class="Dcw\Products\Block\Desrdata" name="extra1" template="Dcw_Products::newtab.phtml" />    
+          <!--   <block after="-" class="Dcw\Products\Block\Desrdata" name="delivery" template="Dcw_Products::delivery.phtml" />      -->   	   
+    </referenceContainer><!--
+    <referenceContainer name="product.info.addtocart">
+ 			      <block after="product.info.price" class="Dcw\Products\Block\Desrdata" name="shpis" template="Dcw_Products::productships.phtml" />    
+		      </referenceContainer>-->
+    
+    <move element="page.main.title" destination="product.info.main" before="-"/>
+    <!-- <move element="product.info.options.wrapper" destination="product.info.stock.sku" before="delivery"/> -->
+    </body>
+      
+</page>

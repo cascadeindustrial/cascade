@@ -1,0 +1,396 @@
+<?php
+/**
+* Copyright © 2013-2017 Magento, Inc. All rights reserved.
+* See COPYING.txt for license details.
+*/
+// @codingStandardsIgnoreFile
+/** @var $block \Magento\Catalog\Block\Product\View */
+?>
+<?php $_product = $block->getProduct();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+//echo $_product->getData('type_id');
+$_productSku = $block->getProduct()->getData('sku');
+$product_id = $block->getProduct()->getData('id');
+$standarddeli = $_product->getAttributeText('standard_delivery_time');
+$expediteddeli = $_product->getAttributeText('expedited_delivery_time'); //exit;
+?>
+<?php $buttonTitle = __('Add to Cart');
+$stockItem = $_product->getExtensionAttributes()->getStockItem();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+//var_dump($customerSession->isLoggedIn());  exit;
+
+
+?>
+<?php
+
+  echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::delivery.phtml")->toHtml();
+?>
+<?php if ($stockItem->getIsInStock() && $_productSku != 'custom-request-form') { ?>
+
+  <div class="prices-ships">
+  <?php
+  echo $this->getLayout()
+         ->createBlock('Magento\Catalog\Pricing\Render',
+                 "product.price.final",
+                   [
+                       'data' => [
+                           'price_render' => 'product.price.render.default',
+                           'price_type_code' => 'final_price',
+                           'zone' => 'item_view'
+                       ]
+                  ]
+                 )
+         ->toHtml();
+ echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::productships.phtml")->toHtml();
+?>
+<?php if($standarddeli)
+{ ?>
+  <div class="ship_delivery deltime-option" id="standdel"><span><?php  echo $standarddeli; ?> </span><img src="<?php echo $this->getViewFileUrl('images/calaendar.png'); ?>" alt="cascade"></div>
+<?php } ?>
+<?php if($expediteddeli) { ?>
+<div class="ship_delivery deltime-option" id="expdel" style="display: none";><span><?php  echo $expediteddeli; ?> </span><img src="<?php echo $this->getViewFileUrl('images/calaendar.png'); ?>" alt="cascade"></div>
+<?php } ?>
+</div>
+
+
+
+<?php } ?>
+<?php
+// if (!is_null($_product->getData($expediteddeliattr->getAttributeCode())) && ((string)$expediteddeliattr->getFrontend()->getValue($_product) != '')) {
+// if($_product->getTypeId()=="configurable"){
+//               $productTypeInstance = $_product->getTypeInstance();
+//                 $usedProducts = $productTypeInstance->getUsedProducts($_product);
+
+//                 $aslowPrice = array();
+                //foreach ($usedProducts  as $child) { ?>
+                 <!--  <span class="text"><?php // echo $expeditedLabel; ?></span></span><span class="delivery-date"><?php //echo $expediteddeli; ?> </span> -->
+               <?php // } }  }?>
+<?php 
+      // if($_product->getData('type_id') == 'configurable'){
+         $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+      //   $configProduct = $objectManager->create('Magento\Catalog\Model\Product')->load($$_product->getData('id'));
+      //   foreach ($_children as $child){
+      //     echo "count: ". count($_children); exit;
+      //   }
+      //   //print_r(json_encode($_product = $block->getProduct()->getData()));
+      // }
+// $configProduct = $objectManager->create('Magento\Catalog\Model\Product')->load($_product->getData('id'));
+ 
+// $_children = $configProduct->getTypeInstance()->getUsedProducts($configProduct);
+// foreach ($_children as $child){
+//     echo "Here are your child Product Ids ".$child->getID()."\n";
+// }
+// echo "count: ".count($_children);
+//          $_objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+//          $product = $_objectManager->get('\Magento\Catalog\Model\Product')->load($_product->getData('id'));
+// $productTypeInstance = $_objectManager->get('Magento\ConfigurableProduct\Model\Product\Type\Configurable');
+//          $_children = $productTypeInstance->getConfigurableAttributesAsArray($product);
+//         // print_r($productAttributeOptions); exit;
+//          foreach ($_children as $child){
+//            echo "count: ". count($_children); exit;
+//          }
+         //echo $standarddeliattr = $_product->getResource()->getAttribute('standard_delivery_time'); //exit;
+
+?>
+
+<?php if ($_product->isSaleable()): ?>
+<div class="box-tocart">
+   <div class="fieldset">
+       <?php if ($block->shouldRenderQuantity()): ?>
+       <div class="field qty">
+           <label class="label" for="qty"><span><?php /* @escapeNotVerified */ echo __('Qty') ?></span></label>
+
+
+<div class="control" data-bind="scope: 'qty_change'">
+   <span class="input-group__addon">
+                                    <div onclick="decreaseQty(<?= $block->escapeHtml($_product->getId()) ?>)" class="input-groupbutton input-group_button--decrease">
+                                        <span class="input-group_icon input-group_icon--decrease">-</span>
+                                    </div>
+                                </span>
+   <input type="number" name="qty" onchange="changeQty(<?= $block->escapeHtml($_product->getId()) ?>)"id="qty-<?= $block->escapeHtml($_product->getId()) ?>" maxlength="5" class="input-group_input qty" value="1"/>
+ <span class="input-group__addon">
+                                    <div onclick="increaseQty(<?= $block->escapeHtml($_product->getId()) ?>)" class="input-groupbutton input-group_button--increase">
+                                        <span class="input-group_icon input-group_icon--increase">+</span>
+                                    </div>
+                                </span>
+</div>
+       </div>
+       <?php endif; ?>
+       <div class="actions">
+            <button type="submit"
+                    title="<?= $block->escapeHtmlAttr($buttonTitle) ?>"
+                    class="action primary tocart"
+                    id="product-addtocart-button" disabled>
+                <span><?= $block->escapeHtml($buttonTitle) ?></span>
+            </button>
+            <?= $block->getChildHtml('', true) ?>
+        </div>
+   </div>
+</div>
+<?php endif; ?>
+<!-- <script type="text/x-magento-init">
+   {
+       "#product_addtocart_form": {
+           "Magento_Catalog/product/view/validation": {
+               "radioCheckboxClosest": ".nested"
+           }
+       }
+   }
+</script> -->
+<!-- <?php //if (!$block->isRedirectToCartEnabled()) : ?>
+<script type="text/x-magento-init">
+   {
+       "#product_addtocart_form": {
+           "catalogAddToCart": {
+               "bindSubmit": true
+           }
+       }
+   }
+</script>
+<?php //endif; ?> -->
+<?php if($customerSession->isLoggedIn()) {  ?>
+<script type="text/javascript">
+require(['jquery'], function ($) {
+$(document).ready(function () {
+    $('body').addClass('logged_in');
+  });
+});
+</script>
+<script>
+  require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+  // require(['jquery'], function($) {
+  // $(document).ready(function($) {
+//Lead Time starts
+        if(jQuery('.for-mobile input:radio').is(":checked")) {
+        jQuery('.radiobtndelivery .for-mobile').addClass("active");
+    }
+    jQuery('.for-mobile input:radio').change(function(){
+        if(jQuery(this).is(":checked")) {
+            jQuery(this).closest('.c-delivery').find('.for-mobile').addClass("active");
+             jQuery(this).closest('.c-delivery').siblings().find('.for-mobile').removeClass("active");
+             jQuery('.prices-ships .ship_delivery').addClass("active");
+        }
+    });
+        setTimeout(function(){
+        if(jQuery('.edit_logged_in.simple_Product.logged_in input:radio').is(":checked")) {
+          jQuery('.radiobtndelivery .for-mobile').addClass("active");
+          var v1 = jQuery('.for-mobile.active .delivery-date').text();
+          console.log(v1)
+          jQuery('.prices-ships .ship_delivery span').text(v1);
+           if(jQuery('#expedited_shipping_price:radio').is(":checked")) {
+            jQuery('.radiobtndelivery').find('.for-mobile').addClass("active");
+            jQuery('.standard-delivery').find('.for-mobile').removeClass("active");
+          }
+          if(jQuery('#standard_shipping_price:radio').is(":checked")) {
+              jQuery('.standard-delivery').find('.for-mobile').addClass("active");
+              jQuery('.radiobtndelivery').find('.for-mobile').removeClass("active");
+          }  
+
+          if(jQuery('.radiobtndelivery .for-mobile').hasClass('active')){
+              var ld1 = jQuery('.radiobtndelivery .for-mobile.active .delivery-date').html();
+              console.log('ld1:' +ld1);
+              jQuery('.prices-ships #expdel span').html(ld1);
+              var pc1 = jQuery('.for-mobile.active .discount-price .price').html();
+              console.log('pc1:' +pc1);
+              jQuery('.prices-ships .price-box .tax.weee .price').html(pc1);
+              //jQuery('.prices-ships .price-box .special-price .price').html(pc1);
+            } 
+            if(jQuery('.standard-delivery .for-mobile').hasClass('active')){
+              var ld11 = jQuery('.standard-delivery .for-mobile.active .delivery-date').html();
+              console.log('ld11:' +ld11);
+              jQuery('.prices-ships #standdel span').html(ld11);
+              var pc11 = jQuery('.for-mobile.active .discount-price .price').html();
+              console.log('pc11:' +pc11);
+              jQuery('.prices-ships .price-box .tax.weee .price').html(pc11);
+              //jQuery('.prices-ships .price-box .special-price .price').html(pc1);
+            } 
+      }
+      
+        
+      
+      jQuery('.config_pro_price.logged_in .for-mobile input:radio').change(function(){
+              jQuery(this).each(function(){
+                  var txt = jQuery(this).parent().find('.delivery-date').text();
+                  console.log(txt)
+                  jQuery('.prices-ships .ship_delivery span').text(txt);
+              });
+          });
+          if(jQuery('.config_pro_price.edit_logged_in.logged_in input:radio').is(":checked")) {
+          jQuery('.radiobtndelivery .for-mobile').addClass("active");
+          var v3 = jQuery('.for-mobile.active .delivery-date').text();
+          console.log(v3)
+          jQuery('.prices-ships .ship_delivery span').text(v3);
+         // jQuery('.for-mobile.active .discount-price .price').clone().appendTo('.prices-ships .price-box .normal-price .price-wrapper');
+
+          // if(jQuery('.for-mobile').hasClass('active')){
+          //   var v4 = jQuery('.for-mobile.active .discount-price .price').html();
+          //   console.log('v4:' +v4);
+          //   jQuery('.prices-ships .price-box .normal-price .price').html(v4);
+          // }
+      }
+      // if(jQuery('.config_pro_price').hasClass('edit_logged_in')){
+      //     if(jQuery('.for-mobile').hasClass('active')){
+      //       var v4 = jQuery('.for-mobile.active .discount-price .price').text();
+      //       console.log('v4::' +v4);
+      //       jQuery('.prices-ships .price-box .normal-price .price').text(v4);
+      //     }
+      // }
+      // jQuery('.config_pro_price .super-attribute-select').change(function(){
+      //  jQuery('.prices-ships .deltime-option span').text('Ships in Y - Y  Days');
+      // });
+      jQuery('.config_pro_price.logged_in .super-attribute-select').change(function(){
+        //jQuery('.prices-ships .deltime-option span').text('Ships in Y - Y  Days');
+        var v5 = jQuery('.standard-delivery .for-mobile .delivery-date').text();
+        console.log('v5:' +v5);
+        jQuery('.prices-ships .deltime-option span').text(v5);
+      });
+    }, 3000);
+        //Lead Time Ends
+  });
+});
+  </script>
+<?php } ?>
+<script>
+  function decreaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) -1;
+        if(qty < 1){
+            qty =1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function increaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) +1;
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function changeQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        if(qty< 1){
+            qty = 1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+</script>
+<script>
+    require([
+        'jquery'
+    ], function($){
+        $('.field.choice.related').parents('.prices-ships').addClass('active');
+    });
+</script>
+<script>
+    require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+        
+        var expediteddeli = "<?php $_product->getAttributeText('expedited_delivery_time'); ?>";
+                $("input[name$='shipping_preference']").click(function() {
+                var test = $(this).val();
+                console.log(test);
+                $("#expdel").hide();
+                // if ($('body').hasClass('logged_in')) {
+                if(test == 1)
+                {
+                      $("#standdel").show();
+                      $("#expdel").hide();
+                }
+                else{
+                          $("#expdel").show();
+                          $("#standdel").hide();
+                }
+               // }
+            });
+              
+
+        });
+    });
+</script>
+
+<script>
+  require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+// if ($('body').hasClass('logged_in')) {
+    // do something
+
+// if(jQuery('input:radio').is(":checked")) {
+//     jQuery('.radiobtndelivery .for-mobile').addClass("active");
+// }
+// jQuery('input:radio').change(function(){
+//     if(jQuery(this).is(":checked")) {
+//         jQuery(this).closest('.c-delivery').find('.for-mobile').addClass("active");
+//          jQuery(this).closest('.c-delivery').siblings().find('.for-mobile').removeClass("active");
+//     }
+// });
+
+
+// setTimeout(function(){
+//   jQuery('.prices-ships .deltime-option span').text('Ships in 10 - 14 weeks');
+// }, 2000);
+
+
+// jQuery(document).on("DOMSubtreeModified", ".standard-delivery .delivery-date", function () {
+//     var x = jQuery(this).text();
+//     console.log(x)
+//     jQuery('.prices-ships .ship_delivery span').text(x);
+  
+// });
+
+//         jQuery('.c-delivery .for-mobile input').change(function(){
+//             jQuery(this).each(function(){
+//                 var txt = jQuery(this).parent().find('.delivery-date').text();
+//                 console.log(txt)
+//                 jQuery('.prices-ships .ship_delivery span').text(txt);
+//             });
+//         }); 
+
+
+  
+
+        jQuery('input.product-custom-option').each(function(){
+           jQuery(this).parent().closest(".field").addClass('custom_OPtions');
+        });
+
+        jQuery('textarea.product-custom-option').each(function(){
+           jQuery(this).parent().closest(".field").addClass('custom_OPtions');
+        });
+
+        jQuery('select.product-custom-option').each(function(){
+           jQuery(this).parent().closest(".field").addClass('custom_OPtions');
+        });
+
+        jQuery('.hor_layout .product-options-wrapper .custom_OPtions').hide();
+        setTimeout(function(){
+          jQuery('.product-options-wrapper.active .custom_OPtions').closest('#product_addtocart_form').addClass('act');
+          jQuery('.product-options-wrapper.active .custom_OPtions').insertBefore('.newlayout');
+          //jQuery('#product_addtocart_form').addClass('act');
+          jQuery('#product_addtocart_form.act .custom_OPtions').show();
+        }, 3000);
+
+        // jQuery('.hor_layout .product-options-wrapper .custom_OPtions').hide();
+        // setTimeout(function(){
+        //   jQuery('.product-options-wrapper.active .custom_OPtions').closest('#product_addtocart_form').addClass('act');
+        //   jQuery('.product-options-wrapper.active .custom_OPtions').insertBefore('.newlayout');
+        //   //jQuery('#product_addtocart_form').addClass('act');
+        //   jQuery('#product_addtocart_form.act .custom_OPtions').show();
+        // }, 3000);
+
+
+    jQuery('.quotation-quote-configure .product-options-wrapper.active .custom_OPtions').insertBefore('.newlayout');
+    setTimeout(function(){
+      jQuery('.quotation-quote-configure.simple_Product .product-options-wrapper').insertBefore('.product.attribute.description');
+    }, 500);
+
+      });
+    });
+  </script>
+  <style>
+  .hor_layout form.act .field.custom_OPtions{display: block !important;}
+</style>  

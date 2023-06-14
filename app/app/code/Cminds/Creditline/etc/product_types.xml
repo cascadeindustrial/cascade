@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Cminds Creditline.
+ *
+ * @category Cminds
+ * @package  Cminds_Creditline
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog:etc/product_types.xsd">
+    <type name="creditpoints" label="Credit Product" modelInstance="Cminds\Creditline\Model\Product\Type"
+          composite="false" isQty="true" canUseQtyDecimals="false" sortOrder="200">
+        <priceModel instance="Cminds\Creditline\Model\Product\Price" />
+        <customAttributes>
+            <attribute name="refundable" value="false"/>
+            <attribute name="is_real_product" value="false"/>
+        </customAttributes>
+    </type>
+</config>

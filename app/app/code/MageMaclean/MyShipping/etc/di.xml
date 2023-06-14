@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Save and Load extension attributes from quote address -->
+    <type name="Magento\Quote\Model\QuoteRepository">
+        <plugin name="myshipping_quote_quoterepository" type="MageMaclean\MyShipping\Plugin\Quote\QuoteRepository" />
+    </type>
+
+    <!-- Save and Load extension attributes from order -->
+    <type name="Magento\Sales\Model\OrderRepository">
+        <plugin name="myshipping_sales_orderrepository" type="MageMaclean\MyShipping\Plugin\Sales\OrderRepository" />
+    </type>
+
+
+    <!-- Quote Address Total Shipping Collect Override -->
+    <type name="Magento\Quote\Model\Quote\Address\Total\Shipping">
+        <plugin name="myshipping_quote_address_total_shipping_collect" type="MageMaclean\MyShipping\Plugin\Quote\Address\Total\Shipping" />
+    </type>
+
+    <!-- Checkout Shipping Methods-->
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="myshipping_checkout_shippinginformationmanagement" type="MageMaclean\MyShipping\Plugin\Checkout\ShippingInformationManagement" />
+    </type>
+
+    <!-- Checkout Shipping Method Management -->
+    <type name="Magento\Quote\Model\ShippingMethodManagement">
+        <plugin name="myshipping_quote_shipping_method_management" type="MageMaclean\MyShipping\Plugin\Quote\ShippingMethodManagement" disabled="false" sortOrder="30"/>
+    </type>
+
+
+    <!-- Cart Totals Override -->
+    <preference for="MageMaclean\MyShipping\Api\GuestMyshippingTotalsInformationManagementInterface" type="MageMaclean\MyShipping\Model\GuestMyshippingTotalsInformationManagement" />
+    <preference for="MageMaclean\MyShipping\Api\MyshippingTotalsInformationManagementInterface" type="MageMaclean\MyShipping\Model\MyshippingTotalsInformationManagement" />
+    <preference for="MageMaclean\MyShipping\Api\Data\MyshippingInformationInterface" type="MageMaclean\MyShipping\Model\MyshippingInformation"/>
+
+    <type name="Magento\Multishipping\Block\Checkout\Overview">
+        <plugin name="myshipping_multishipping_checkout_overview" type="MageMaclean\MyShipping\Plugin\Multishipping\Checkout\Overview" />
+    </type>
+
+
+    <!-- Repositories -->
+    <preference for="MageMaclean\MyShipping\Api\CourierRepositoryInterface" type="MageMaclean\MyShipping\Model\Repository\CourierRepository"/>
+    <preference for="MageMaclean\MyShipping\Api\CourierListRepositoryInterface" type="MageMaclean\MyShipping\Model\Repository\CourierListRepository"/>
+    <preference for="MageMaclean\MyShipping\Api\Data\CourierInterface" type="MageMaclean\MyShipping\Model\Courier"/>
+    <preference for="MageMaclean\MyShipping\Api\Data\CourierSearchResultInterface" type="Magento\Framework\Api\SearchResults"/>
+
+    <type name="Magento\Framework\EntityManager\MetadataPool">
+        <arguments>
+            <argument name="metadata" xsi:type="array">
+                <item name="MageMaclean\MyShipping\Api\Data\CourierInterface" xsi:type="array">
+                    <item name="entityTableName" xsi:type="string">myshipping_courier</item>
+                    <item name="identifierField" xsi:type="string">courier_id</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- configure resource models -->
+    <type name="MageMaclean\MyShipping\Model\ResourceModel\Courier">
+        <arguments>
+            <argument name="storeTable" xsi:type="string">myshipping_courier_store</argument>
+            <argument name="interfaceClass" xsi:type="string">MageMaclean\MyShipping\Api\Data\CourierInterface</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="myshipping_courier_listing_data_source" xsi:type="string">MageMacleanMyShippingCourierGridCollection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="MageMaclean\MyShipping\Model\ResourceModel\Courier\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">myshipping_courier</argument>
+            <argument name="model" xsi:type="string">MageMaclean\MyShipping\Model\Courier</argument>
+            <argument name="resourceModel" xsi:type="string">MageMaclean\MyShipping\Model\ResourceModel\Courier</argument>
+            <argument name="idFieldName" xsi:type="string">courier_id</argument>
+            <argument name="eventPrefix" xsi:type="string">myshipping_courier_collection</argument>
+            <argument name="eventObject" xsi:type="string">courier_collection</argument>
+            <argument name="interfaceClass" xsi:type="string">MageMaclean\MyShipping\Api\Data\CourierInterface</argument>
+                <argument name="storeTable" xsi:type="string">myshipping_courier_store</argument>
+        </arguments>
+    </type>
+    <virtualType name="MageMacleanMyShippingCourierGridCollection" type="MageMaclean\MyShipping\Model\ResourceModel\Courier\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">myshipping_courier</argument>
+            <argument name="model" xsi:type="string">Magento\Framework\View\Element\UiComponent\DataProvider\Document</argument>
+            <argument name="resourceModel" xsi:type="string">MageMaclean\MyShipping\Model\ResourceModel\Courier</argument>
+            <argument name="idFieldName" xsi:type="string">courier_id</argument>
+            <argument name="eventPrefix" xsi:type="string">mage_maclean_myshipping_courier_collection</argument>
+            <argument name="eventObject" xsi:type="string">courier_collection</argument>
+            <argument name="interfaceClass" xsi:type="string">MageMaclean\MyShipping\Api\Data\CourierInterface</argument>
+                <argument name="storeTable" xsi:type="string">myshipping_courier_store</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierRelateStoreResourceReadHandler" type="MageMaclean\MyShipping\Model\ResourceModel\Relation\Store\ReadHandler">
+        <arguments>
+            <argument name="resource" xsi:type="object">MageMaclean\MyShipping\Model\ResourceModel\Courier</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierRelateStoreResourceSaveHandler" type="MageMaclean\MyShipping\Model\ResourceModel\Relation\Store\SaveHandler">
+        <arguments>
+            <argument name="resource" xsi:type="object">MageMaclean\MyShipping\Model\ResourceModel\Courier</argument>
+            <argument name="entityType" xsi:type="string">MageMaclean\MyShipping\Api\Data\CourierInterface</argument>
+            <argument name="storeTable" xsi:type="string">myshipping_courier_store</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\EntityManager\Operation\ExtensionPool">
+        <arguments>
+            <argument name="extensionActions" xsi:type="array">
+                <item name="MageMaclean\MyShipping\Api\Data\CourierInterface" xsi:type="array">
+                    <item name="read" xsi:type="array">
+                        <item name="storeReader" xsi:type="string">MyShippingCourierRelateStoreResourceReadHandler</item>
+                    </item>
+                    <item name="create" xsi:type="array">
+                        <item name="storeCreator" xsi:type="string">MyShippingCourierRelateStoreResourceSaveHandler</item>
+                    </item>
+                    <item name="update" xsi:type="array">
+                        <item name="storeUpdater" xsi:type="string">MyShippingCourierRelateStoreResourceSaveHandler</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <virtualType name="MyShippingCourierSourceSpecificcountry" type="Magento\Directory\Model\Config\Source\Country" />
+    <virtualType name="MyShippingCourierSourceMethods" type="MageMaclean\MyShipping\Source\Options">
+        <arguments>
+            <argument name="options" xsi:type="array">
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierSourceMethodsPriceType" type="Magento\OfflineShipping\Model\Config\Source\Flatrate" />
+    <virtualType name="MyShippingCourierSourceMethodsHandlingAction" type="Magento\Shipping\Model\Source\HandlingAction" />
+    <virtualType name="MyShippingCourierSourceMethodsHandlingType" type="Magento\Shipping\Model\Source\HandlingType" />
+</config>

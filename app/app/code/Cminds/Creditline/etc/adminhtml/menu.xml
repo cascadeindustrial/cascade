@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Cminds Creditline.
+ *
+ * @category Cminds
+ * @package  Cminds_Creditline
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Cminds_Creditline::parent" title="Credit Line" module="Cminds_Creditline" sortOrder="20" resource="Cminds_Creditline::parent" />
+        <add id="Cminds_Creditline::creditline_transaction" title="Transactions" module="Cminds_Creditline" sortOrder="1" action="creditline/transaction" parent="Cminds_Creditline::parent" resource="Cminds_Creditline::creditline_transaction" />
+		<add id="Cminds_Creditline::creditline_balance" title="Customers" module="Cminds_Creditline" sortOrder="2" action="creditline/balance" parent="Cminds_Creditline::parent" resource="Cminds_Creditline::creditline_balance" />
+    </menu>
+</config>

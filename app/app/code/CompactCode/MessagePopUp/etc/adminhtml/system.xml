@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2019.
+  ~ Copyright Holder : CompactCode - CompactCode BvBa - Belgium
+  ~ Copyright : Unless granted permission from CompactCode BvBa.
+  ~ You can not distribute, reuse, edit, resell or sell this.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ccmessagepopup" translate="label" type="text" sortOrder="13051919" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Message Popup</label>
+            <tab>compactcode_tab</tab>
+            <resource>CompactCode_MessagePopUp::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment cc-logo"><img src="http://compactcode.eu/pub/media/compactcode/images/default/CompactCodeIcon64.png" alt="CompactCode" height="69" width="64"></span><span class="compactcomment comment"><p>This module transforms the default messages into popups</p></span></div></div>]]></comment>
+                <label>General Settings</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="fixed_enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Fixed On Top</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>When enabled, messages will be fixed on top of the page.</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="fixed_below" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Fixed below X messages</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>Show the messages fixed on top of the page as long as you have less then X messages. Set to 0 to have them always fixed. Higher than this value it will position the message as set in the Message Animation settings</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/fixed_enable">1</field>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="fixed_classes" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Fixed additional classes</label>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>Gives the fixed message top additional classes. Example : "custom-class-1 custom-class-2".</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/fixed_enable">1</field>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="messagepopup" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment cc-logo"><img src="http://compactcode.eu/pub/media/compactcode/images/default/CompactCodeIcon64.png" alt="CompactCode" height="69" width="64"></span><span class="compactcomment comment"><p>The settings of the messages</p></span></div></div>]]></comment>
+                <label>Message Settings</label>
+                <field id="message_class" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message Class</label>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>Custom CSS classes for your message</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="message_position" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message Position</label>
+                    <source_model>CompactCode\MessagePopUp\Model\Config\Source\MessagePosition</source_model>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>The position of the messaged on the page</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="messageanimation" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment cc-logo"><img src="http://compactcode.eu/pub/media/compactcode/images/default/CompactCodeIcon64.png" alt="CompactCode" height="69" width="64"></span><span class="compactcomment comment"><p>The Animation of the message pop up</p></span></div></div>]]></comment>
+                <label>Message Animation</label>
+                <field id="message_delete_option" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message Delete Option</label>
+                    <source_model>CompactCode\MessagePopUp\Model\Config\Source\MessageDeleteOption</source_model>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>The option how the message will be deleted</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="message_animation_in" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message Animation In </label>
+                    <source_model>CompactCode\MessagePopUp\Model\Config\Source\MessageAnimationIn</source_model>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>The entrance animation of the messages</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="message_animation_out" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message Animation Out</label>
+                    <source_model>CompactCode\MessagePopUp\Model\Config\Source\MessageAnimationOut</source_model>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>The exit animation of the messages</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="message_animation_time" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message Duration</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                    <comment><![CDATA[<div class="page-main-actions"><div class="compactcontainer"><span class="compactcomment infoicon"></span><span class="compactcomment comment"><p>The duration of the messages before it's removed (in seconds)</p></span></div></div>]]></comment>
+                    <depends>
+                        <field id="ccmessagepopup/messageanimation/message_delete_option">0</field>
+                        <field id="ccmessagepopup/general/enable">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

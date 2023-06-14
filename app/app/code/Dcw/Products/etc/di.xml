@@ -1,0 +1,6 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="WeltPixel\OwlCarouselSlider\Controller\Adminhtml\Banner\MassStatus" type="Dcw\Products\Controller\Adminhtml\Banner\MassStatus" />
+    <preference for="Amasty\ShopbyBrand\Controller\Index\Index" type="Dcw\Products\Controller\Index\Index" />
+    <!-- <preference for="Cart2Quote\Quotation\Controller\Quote\Add" type="Dcw\Products\Controller\Quote\Add" />-->
+    <preference for="Cminds\Creditline\Controller\Account\Send2friend" type="Dcw\Products\Controller\Account\Send2friend" />
+</config>

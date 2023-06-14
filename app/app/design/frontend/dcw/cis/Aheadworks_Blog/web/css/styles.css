@@ -1,0 +1,18 @@
+.aw_blog-post-view .blog-post-info .blog-post-info-item .author-image-link {
+	display: inline-block !important;
+}
+.aw_blog-author-view .blog-author.author-view .author-social-handle .stButton > span {
+	width: 30px;
+	height: 30px;
+}
+.aw_blog-author-view .blog-author.author-view .author-social-handle {
+	padding-right: 10px;
+}
+.aw_blog-author-view .blog-author.author-view .author-info.short-bio ul > li {
+	list-style: disc;
+	margin-left: 40px;
+}
+.aw_blog-author-list .blog-author.author-list-view .author-info.short-bio ul > li {
+	list-style: disc;
+    margin-left: 10px;
+}

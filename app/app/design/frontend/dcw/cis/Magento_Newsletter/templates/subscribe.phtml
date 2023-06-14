@@ -1,0 +1,102 @@
+
+
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+?>
+<div class="block newsletter">
+    <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+    <div class="content">
+        <form class="form subscribe"
+            novalidate
+            action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <div class="control">
+                    <label for="newsletter">
+                        <span class="label">
+                            <?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?>
+                        </span>
+                        <input name="email" type="email" id="newsletter"
+                               placeholder="<?= $block->escapeHtmlAttr(__('your email address')) ?>"
+                               data-mage-init='{"mage/trim-input":{}}'
+                               data-validate="{required:true, 'validate-email':true}"
+                        />
+                    </label>
+                </div>
+            </div>
+            <!-- <div class="input.group">
+            </div> -->
+            <div class="actions">
+                <button class="action subscribe primary"
+                        title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>"
+                        type="submit"
+                        aria-label="Subscribe">
+                    <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                </button>
+            </div>
+            <div for="newsletter" generated="true" class="mage-error" id="ajax-newsletter-error"></div>
+                                <div id="ajax-loading-message"style="color:#eabe28"></div>
+                                <div class="scg-msg">
+                            <div class="ajaxmessages">
+                            </div>
+                        </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    require(['jquery'],function($){
+        var form = $('#newsletter-validate-detail');
+        var customurl = "<?php echo $this->getUrl().'newsletter/subscriber/new/'?>";
+        form.submit(function(e) {
+            if(form.validation('isValid')){
+                var email = $("#newsletter-validate-detail #newsletter").val();
+                var url = form.attr('action');
+                var loadingMessage = $('#ajax-loading-message');
+                if(loadingMessage.length == 0) {
+                    form.find('.input-group').append('<div id="ajax-loading-message" style="display:none;padding-top:10px;color: red;font-size: 13px;">&nbsp;</div>');
+                    var loadingMessage = $('#ajax-loading-message');
+                }
+                e.preventDefault();
+                try{
+                    // alert(customurl);
+                    // exit;
+                    loadingMessage.html('Submitting...').show();
+                    $('.scg-msg > ajaxmessages').html();
+                    $.ajax({
+                        url: customurl,
+                        dataType: 'json',
+                        type: 'POST',
+                        data: {email: email},
+                        success: function (data){
+                            if(data.status == "SUBSCRIBED"){
+                                loadingMessage.hide();
+                                $('#ajax-newsletter-error').html('This email address is already subscribed').show();
+                            }else if(data.status != "ERROR"){
+                                loadingMessage.hide();
+                                $('.scg-msg').show();
+                                $('#ajax-newsletter-error').hide();
+                                $("#newsletter-validate-detail #newsletter").val('');
+                                $('#newsletter-validate-detail .scg-msg > .ajaxmessages').html('<div class="message-success success message" ><div >' +
+                                    data.msg + '</div></div>'); 
+                            }else{
+                                $('#newsletter-validate-detail .scg-msg > .ajaxmessages').html('<div class="message-error error message" >' +
+                                    '<div>'+data.msg +'</div></div>');
+                            }
+                        },
+                    });
+                } catch (e){
+                }
+            }else{
+                $('.scg-msg').hide();
+            }
+        });
+    })
+</script>

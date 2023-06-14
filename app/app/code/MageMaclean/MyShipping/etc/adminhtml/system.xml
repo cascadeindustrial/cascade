@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="carriers" translate="label" type="text" sortOrder="610" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="myshipping" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Use My Own Shipping</label>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="sort_order" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sort Order</label>
+                </field>
+                
+                <field id="new_title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>New Account Title</label>
+                </field>
+                <field id="new_name" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>New Account Method Name</label>
+                </field>
+                
+                <field id="account_title" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Stored Account Title</label>
+                    <tooltip><![CDATA[
+                        <div class="myshipping-tooltip">
+                            <p>Use a variable mask to rewrite <strong>Stored Shipping Account</strong> carrier title.</p>
+                            <strong>Available variables are: </strong>
+                            <ul style="list-style: inside; ">
+                                <li><strong>{{courier}}</strong> for the courier title</li>
+                                <li><strong>{{account}}</strong> for the account input</li>
+                            </ul>
+
+                            <strong>Examples: </strong>
+                            <ul style="list-style: inside">
+                                <li>Use My Shipping Account}</li>
+                                <li>{{courier}}</li>
+                                <li>My {{courier}} Account {{account}}</li>
+                            </ul>
+                        </div>
+                    ]]></tooltip>
+                </field>
+                <field id="account_name" translate="label" type="text" sortOrder="31" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Stored Account Method Name</label>
+                    <tooltip><![CDATA[
+                        <div class="myshipping-tooltip">
+                            <p>Use a variable mask to rewrite <strong>Stored Shipping Account</strong> method name.</p>
+                            <strong>Available variables are: </strong>
+                            <ul style="list-style: inside; ">
+                                <li><strong>{{courier}}</strong> for the courier title</li>
+                                <li><strong>{{account}}</strong> for the account input</li>
+                            </ul>
+                            <strong>Examples: </strong>
+                            <ul style="list-style: inside">
+                                <li>{{courier}} - #{{account}}</li>
+                                <li>#{{account}}</li>
+                                <li>{{courier}} - {{account}}</li>
+                            </ul>
+                        </div>
+                    ]]></tooltip>
+                </field>
+
+                <field id="format_shipping_description" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Shipping Description Format</label>
+                    
+                    <tooltip><![CDATA[
+                        <div class="myshipping-system-tooltip">
+                            <p>Rewrite the shipping description that will be displayed in <strong>checkout, orders, transactional emails and PDF's</strong> after account information is provided.</p>
+                            <strong>Available variables are: </strong>
+                            <ul style="list-style: inside; ">
+                                <li><strong>{{courier}}</strong> for the courier title</li>
+                                <li><strong>{{account}}</strong> for the account input</li>
+                                <li><strong>{{method}}</strong> for the method name</li>
+                            </ul>
+                            <strong>Examples: </strong>
+                            <ul style="list-style: inside">
+                                <li>{{courier}} #{{account}} - {{method}}</li>
+                                <li>{{courier}} - {{method}} #{{account}}</li>
+                                <li>{{courier}} - {{method}} - {{account}}</li>
+                            </ul>
+                        </div>
+                    ]]></tooltip>
+                    <validate>required-entry validate-no-html-tags</validate>
+                </field>
+                
+                <field id="showmethod" translate="label" type="select" sortOrder="92" showInDefault="1" showInWebsite="1">
+                    <label>Show Method if Not Applicable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <frontend_class>shipping-skip-hide</frontend_class>
+                </field>
+                <field id="specificerrmsg" translate="label" type="textarea" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Displayed Error Message</label>
+                </field>
+                
+            </group>
+        </section>
+
+        <section id="myshipping" translate="label" type="text" sortOrder="610" showInDefault="1" showInWebsite="1" showInStore="0">
+            <label>My Shipping</label>
+            <tab>magemaclean</tab>
+            <resource>MageMaclean_MyShipping::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable / Disable use of this module. </comment>
+                </field>
+                
+            </group>
+
+            <group id="display" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Display</label>
+
+                
+            </group>
+
+            <group id="checkout" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Checkout</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Checkout Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable on checkout for customers.</comment>
+                </field>
+
+                <field id="new_enabled" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>New Account Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable "new account" on checkout for customers.</comment>
+                    <depends>
+                        <field id="myshipping/checkout/enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="guest_new_enabled" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Guest New Account Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable "new account" on checkout for guests.</comment>
+                    <depends>
+                        <field id="myshipping/checkout/enabled">1</field>
+                        <field id="myshipping/checkout/new_enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="show_method_prices" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show Method Prices</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Show prices in method dropdown. </comment>
+                    <depends>
+                        <field id="myshipping/checkout/enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="info_new" translate="label" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Information for new account</label>
+                    <comment>Information and instructions during checkout for new account. HTML tags are allowed.</comment>
+                    <depends>
+                        <field id="myshipping/checkout/enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="info_accounts" translate="label" type="textarea" sortOrder="31" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Information for stored accounts</label>
+                    <comment>Information and instructions during checkout for stored accounts. HTML tags are allowed.</comment>
+                    <depends>
+                        <field id="myshipping/checkout/enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+
+            <group id="sales" translate="label" type="text" sortOrder="220" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Admin Sales</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Admin Sales Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable on admin order entry page.</comment>
+                </field>
+
+                <field id="new_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>New Account Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable "new account" on admin order entry.</comment>
+                    <depends>
+                        <field id="myshipping/sales/enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="guest_new_enabled" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Guest New Account Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable "new account" on admin order entry for guests.</comment>
+                    <depends>
+                        <field id="myshipping/sales/enabled">1</field>
+                        <field id="myshipping/sales/new_enabled">1</field>
+                    </depends>
+                </field>
+
+                <field id="show_method_prices" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show Method Prices</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Show prices in method dropdown. </comment>
+                    <depends>
+                        <field id="myshipping/sales/enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+
+            <group id="account_validation" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Account Validation</label>
+                <field id="min_length" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Minimum Length</label>
+                    <comment>Minimum character amount required for account input.</comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                </field>
+                <field id="max_length" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Maximum Length</label>
+                    <comment>Maximum character amount allowed for account input. (maximum 250)</comment>
+                    <validate>validate-number validate-greater-than-zero validate-less-than-250</validate>
+                </field>
+
+                <field id="rules" translate="label" type="multiselect" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Additional Rules</label>
+                    <source_model>MageMaclean\MyShipping\Model\Config\Source\Rules</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

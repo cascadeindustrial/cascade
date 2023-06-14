@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!--
+  ~ Copyright (c) 2019.
+  ~ Copyright Holder : CompactCode - CompactCode BvBa - Belgium
+  ~ Copyright : Unless granted permission from CompactCode BvBa.
+  ~ You can not distribute, reuse, edit, resell or sell this.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="CompactCode_MessagePopUp::title" title="Message Popup" module="CompactCode_MessagePopUp" sortOrder="13051919" resource="CompactCode_MessagePopUp::title" parent="CompactCode_Base::base"/>
+        <add id="CompactCode_MessagePopUp::configuration" title="Configuration" module="CompactCode_MessagePopUp" sortOrder="13051919" action="adminhtml/system_config/edit/section/ccmessagepopup" resource="CompactCode_MessagePopUp::config" parent="CompactCode_MessagePopUp::title"/>
+    </menu>
+</config>

@@ -1,0 +1,8 @@
+<page xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+<update handle="styles"/>
+<body>
+<referenceContainer name="content">
+<uiComponent name="dcw_custompricing_custompricing_listing_newform"/>
+</referenceContainer>
+</body>
+</page>

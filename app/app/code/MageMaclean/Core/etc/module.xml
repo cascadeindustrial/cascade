@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageMaclean
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the magemaclean.com license that is
+ * available through the world-wide-web at this URL:
+ * https://magemaclean.com/LICENSE.txt
+ *
+ * @category    MageMaclean
+ * @package     MageMaclean_Core
+ * @copyright   Copyright (c) MageMaclean (https://magemaclean.com/)
+ * @license     https://magemaclean.com/LICENSE.txt
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="MageMaclean_Core" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Backend"/>
+        </sequence>
+    </module>
+</config>

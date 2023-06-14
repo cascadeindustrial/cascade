@@ -1,0 +1,33 @@
+{
+    "name": "compactcode/messagepopup",
+    "description": "",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0",
+        "compactcode/base": "*"
+    },
+    "suggest": {
+
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "CompactCode",
+            "email": "info@compactcode.eu",
+            "homepage": "https://www.compactcode.eu",
+            "role": "Leader"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "CompactCode\\MessagePopUp\\": ""
+        }
+    }
+}

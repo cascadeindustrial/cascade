@@ -1,0 +1,681 @@
+<?php
+namespace Dcw\CustomRequestForm\Controller\Quote;
+
+use Magento\Framework\App\Action\Context;
+use Magento\Checkout\Model\Cart as Quote;
+use Cart2Quote\Quotation\Model\QuotationCart;
+use Magento\Catalog\Api\ProductRepositoryInterface;
+use Magento\Catalog\Model\Product;
+use Magento\Framework\Exception\NoSuchEntityException;
+
+class Add extends \Cart2Quote\Quotation\Controller\Quote
+{
+    protected $_resultPageFactory;
+    protected $productRepository;
+    //protected $productRepository;
+
+    /**
+     * @var \Magento\Catalog\Helper\Product
+     */
+    protected $productHelper;
+
+    /**
+     * @var \Cart2Quote\Quotation\Helper\Data
+     */
+    protected $quotationDataHelper;
+
+    /**
+     * @var \Magento\Framework\Locale\ResolverInterface
+     */
+    protected $resolverInterface;
+
+    /**
+     * @var \Magento\Framework\Escaper
+     */
+    protected $escaper;
+
+    /**
+     * @var \Magento\Framework\Json\Helper\Data
+     */
+    private $jsonHelper;
+
+    /**
+     * @var \Cart2Quote\Quotation\Model\Quote\Request\Strategy\Provider
+     */
+    private $strategyProvider;
+
+    /**
+     * @var \Magento\Customer\Model\Session
+     */
+    protected $customerSession;
+
+
+    protected $_storeManager;
+    /**
+     * @var \Magento\Checkout\Model\Cart\RequestInfoFilterInterface
+     */
+    private $requestInfoFilter;
+    private $serializer;
+
+
+    public function __construct(\Magento\Framework\App\Action\Context $context,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
+        \Magento\Store\Model\StoreManagerInterface $storeManager,
+        \Magento\Framework\Data\Form\FormKey\Validator $formKeyValidator,
+        \Cart2Quote\Quotation\Model\QuotationCart $cart,
+        \Cart2Quote\Quotation\Model\Session $quotationSession,
+        \Cart2Quote\Quotation\Model\QuoteFactory $quoteFactory,
+        \Magento\Framework\View\Result\PageFactory $resultPageFactory,
+        ProductRepositoryInterface $productRepository,
+        \Magento\Catalog\Helper\Product $productHelper,
+        \Cart2Quote\Quotation\Helper\Data $quotationDataHelper,
+        \Magento\Framework\Locale\ResolverInterface $resolverInterface,
+        \Magento\Framework\Escaper $escaper,
+        \Psr\Log\LoggerInterface $logger,
+        \Magento\Framework\Serialize\SerializerInterface $serializer,
+        \Magento\Framework\Json\Helper\Data $jsonHelper,
+        \Cart2Quote\Quotation\Model\Quote\Request\Strategy\Provider $strategyProvider,
+        \Magento\Customer\Model\Session $customerSession)
+    {
+        $this->_resultPageFactory = $resultPageFactory;
+        $this->quotationDataHelper = $quotationDataHelper;
+        $this->productHelper = $productHelper;
+        $this->productRepository = $productRepository;
+        $this->resolverInterface = $resolverInterface;
+        $this->escaper = $escaper;
+        $this->jsonHelper = $jsonHelper;
+        $this->_storeManager = $storeManager;
+        $this->serializer = $serializer;
+        $this->strategyProvider = $strategyProvider;
+        $this->customerSession = $customerSession;
+        parent::__construct($context,
+            $scopeConfig,
+            $storeManager,
+            $formKeyValidator,
+            $cart,
+            $quotationSession,
+            $quoteFactory,
+            $resultPageFactory,
+            $logger);
+    }
+
+    public function execute()
+    {
+
+  $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+  $customRequestFormPostData = $this->getRequest()->getPostValue();
+  $productOptions  = $customRequestFormPostData;
+  $fileOptionId = $productOptions['file_option_id'];
+  $fileOptionParam = $productOptions['file_option_id']."_"."action";
+  $resource=$objectManager->create('\Magento\Framework\App\ResourceConnection');
+  $connection = $resource->getConnection(\Magento\Framework\App\ResourceConnection::DEFAULT_CONNECTION);
+  
+  
+ /*  echo "<pre>";
+   print_r($productOptions);
+  exit;   */
+
+
+  $dateOptionId = $stateOptionId = $countryOptionId = '';
+
+  // state&country needs to be added as addiG257Gtional options not as custom options [Done]
+  // Only US,Canada&Mexico needs to be shown
+
+  if(isset($productOptions['state-option-id']))
+    $stateOptionId = $productOptions['state-option-id'];
+
+  if(isset($productOptions['country-option-id']))
+    $countryOptionId = $productOptions['country-option-id'];
+
+  if(isset($productOptions['date-option-id']))
+  {
+      $dateOptionId = $productOptions['date-option-id'];
+      if(is_array($dateOptionId))
+      {
+        foreach($dateOptionId as $dateId)
+        {
+          if($productOptions[$dateId]=='')
+                continue;
+
+          $selectedDate = $productOptions[$dateId];//dynamic for date field
+          $selectedDateTime=strtotime($selectedDate);
+          $day=date("d",$selectedDateTime);
+          $month=date("m",$selectedDateTime);
+          $year=date("Y",$selectedDateTime);
+          $formattedDate = array("month"=>$month,"day"=>$day,"year"=>$year);
+          $productOptions[$dateId]  =  $formattedDate; // i.e for dateFormat asper magento
+        }
+      }
+      else{
+        $selectedDate = $productOptions[$dateOptionId];//dynamic for date field
+        $selectedDateTime=strtotime($selectedDate);
+        $day=date("d",$selectedDateTime);
+        $month=date("m",$selectedDateTime);
+        $year=date("Y",$selectedDateTime);
+        $formattedDate = array("month"=>$month,"day"=>$day,"year"=>$year);
+        $productOptions[$dateOptionId]  =  $formattedDate; // i.e for dateFormat asper magento
+      }
+  }
+  
+ /* echo "<pre>";
+   print_r($productOptions);
+  exit;  */
+
+  $formKey = $productOptions['form_key'];
+  if(isset($productOptions['country_id']))
+  {
+    $country =$productOptions['country_id'];
+    if(isset($productOptions['state']))
+    {
+      $regionId =$productOptions['state'];
+      $region = $objectManager->create('Magento\Directory\Model\Region')
+                            ->load($regionId);
+      $regionData = $region->getData();
+      // echo "<pre>";
+      // print_r($regionData);
+      if(count($regionData))
+      {
+        $stateName = $regionData['name'];
+
+        //printLog($stateName);
+
+        $sql = "SELECT * FROM `catalog_product_option_type_title` where title='$country'";
+        $countryOptionData = $connection->fetchRow($sql);
+
+        //$stateName = 'N/A';
+
+        $countryId = $countryOptionData['option_type_id'];
+
+        $sql1 = "SELECT * FROM `catalog_product_option_type_title` where title='$stateName'";
+        $stateOptionData = $connection->fetchRow($sql1);
+
+        $stateId = $stateOptionData['option_type_id'];
+
+        $productOptions[$countryOptionId] = $countryId;
+        $productOptions[$stateOptionId] = $stateId;
+
+      }
+      else{
+
+        $sql = "SELECT * FROM `catalog_product_option_type_title` where title='$country'";
+        $countryOptionData = $connection->fetchRow($sql);
+
+        $stateName = 'N/A';
+
+        //printLog("in else loop");
+
+        $sql1 = "SELECT * FROM `catalog_product_option_type_title` where title='$stateName'";
+        $stateOptionData = $connection->fetchRow($sql1);
+
+        $stateId = $stateOptionData['option_type_id'];
+
+        $countryId = $countryOptionData['option_type_id'];
+
+        //echo "in nested if condition";
+
+        $productOptions[$stateOptionId] = $stateId;
+        $productOptions[$countryOptionId] = $countryId;
+        //$productOptions[$stateOptionId] = $stateId;
+      }
+    }else{
+
+
+      $sql = "SELECT * FROM `catalog_product_option_type_title` where title='$country'";
+      $countryOptionData = $connection->fetchRow($sql);
+
+      $stateName = 'N/A';
+
+      $sql1 = "SELECT * FROM `catalog_product_option_type_title` where title='$stateName'";
+      $stateOptionData = $connection->fetchRow($sql1);
+
+      $stateId = $stateOptionData['option_type_id'];
+
+      $countryId = $countryOptionData['option_type_id'];
+
+      //echo "in nested if condition";
+
+      $productOptions[$stateOptionId] = $stateId;
+      $productOptions[$countryOptionId] = $countryId;
+      //$productOptions[$stateOptionId] = $stateId;
+    }
+    // $additionalOptions['country_id'] = [
+    //         'label' => 'Country',
+    //         'value' => $country
+    //     ];
+    // $additionalOptions['state'] = [
+    //         'label' => 'State',
+    //         'value' => $stateName
+    //     ];
+  }
+
+  //printLog($productOptions);
+ // echo "<pre>";
+ // print_r($productOptions);
+ // exit;
+
+ //echo "<pre>";
+ //print_r($_FILES);
+ //exit;
+
+ //$files = $_FILES['options_28_file'];
+ //$files = $_FILES['options_14_file'];
+ // if ($_FILES['options_14_file']) {
+ //    $file_ary = $this->reArrayFiles($_FILES['options_14_file']);
+ //    printLog($file_ary);
+ // }
+
+//printLog($_FILES);
+
+//  echo "<pre>";
+//  print_r($files);
+//  exit;
+ //
+
+
+
+/* if($_FILES['options_28_file']['name']!=null){
+	$image_name = $_FILES['options_28_file']['name'];
+    $image_temp_name = $_FILES['options_28_file']['tmp_name'];
+	$imgEncoded = base64_encode(file_get_contents($image_temp_name));
+        
+    move_uploaded_file($image_temp_name, "images/$image_name");
+	$imgname = "<img alt='Embedded Image' src='https://www.cascadeindustrial.com/images/$image_name'>";
+} */
+
+ // printLog("files");
+ // printLog($_FILES);
+ // printLog($files);
+ //
+ // exit;
+
+ // for($i=0;$i<$size;$i++)
+ // {
+ //       $allFiles[$i]['name'] = $files['name'][$i];
+ //       $allFiles[$i]['type'] = $files['type'][$i];
+ //       $allFiles[$i]['tmp_name'] = $files['tmp_name'][$i];
+ //       $allFiles[$i]['error'] = $files['error'][$i];
+ //       $allFiles[$i]['size'] = $files['size'][$i];
+ // }
+
+  //$img_name = $productOptions['options_28_file_action'][0];
+
+  //unset($productOptions['upload_file']);
+  unset($productOptions['submit']);
+  unset($productOptions['form_key']);
+ // unset($productOptions['country_id']);
+ // unset($productOptions['region']);
+  //unset($productOptions['state']);
+  //unset($productOptions['country-option-id']);
+  //unset($productOptions['state-option-id']);
+  unset($productOptions['date-option-id']);
+
+  //unset($productOptions['options_28_file']);
+  unset($productOptions['options_28_file_action']);
+  /* echo "<pre>";
+   print_r($productOptions);
+   exit; */
+
+  // $additionalOptions = array();
+  // foreach($customRequestFormPostData as $customRequestData => $customRequestValue)
+  // {
+  //   $additionalOptions[$customRequestData] = array("label"=>$customRequestData,"value"=>$customRequestValue);
+  // }
+
+  // $productOptions['14'] = array("type" => "application/octet-stream",'quote_path'=>"/upload/".$img_name,
+  //           'secret_key' => substr(md5(file_get_contents($_SERVER['DOCUMENT_ROOT']."/upload/".$img_name)), 0, 20));
+
+  $productId = $this->getProductId();
+  $params = array (
+	'product' => $productId,
+	'selected_configurable_option' => '',
+	'related_product' => '',
+	'item' => $productId,
+	'custom_price' => '0',
+	'form_key' => $formKey,
+	'options' =>$productOptions,
+	$fileOptionParam => 'save_new',
+	'qty' => '1',
+	);
+
+// echo "<pre>";
+// print_r();
+// '11'=> array( //11 is the id of my custom option (find it on catalog_product_options table)
+//           'type' => "application/octet-stream",
+//           'quote_path' =>"/upload/".$img_name,
+//           'secret_key' => substr(md5(file_get_contents($_SERVER['DOCUMENT_ROOT']."/upload/".img_name)), 0, 20),
+//           )
+
+// printLog("in our custom controller");
+// printLog($params);
+ 
+
+
+/*   echo "<pre>";
+ print_r($params);
+exit;  */
+
+// if(count($additionalOptions))
+// {
+//   if(isset($additionalOptions['submit']))
+//    unset($additionalOptions['submit']);
+//   if(isset($additionalOptions['form_key']))
+//     unset($additionalOptions['form_key']);
+//   if(isset($additionalOptions['upload_file']))
+//    unset($additionalOptions['upload_file']);
+// }
+ //print_r($additionalOptions);
+ // $additionalOptions['print_style'] = [
+ //         'label' => 'Print Style',
+ //         'value' => 'Test'
+ //     ];
+
+        try {
+
+            $product = $this->_initProduct();
+            /**
+             * Check product availability
+             */
+            if (!$product) {
+                return $this->goBack();
+            }
+
+            //check if product is quoteable
+            $checkProduct = $product;
+
+            //check the product for quotability
+            $quotable = $this->quotationDataHelper->isQuotable(
+                $checkProduct,
+                $this->customerSession->getCustomerGroupId()
+            );
+
+            if (!$quotable) {
+                $this->messageManager->addErrorMessage(
+                    __('This product is not quotable.')
+                );
+
+                return $this->goBack();
+            }
+
+            if (!$this->quotationDataHelper->isStockEnabledFrontend()) {
+                $this->productHelper->setSkipSaleableCheck(true);
+                $this->cart->getQuote()->setIsSuperMode(true);
+            }
+
+          //  $product->addCustomOption('additional_options', $this->serializer->serialize($additionalOptions));
+            $this->cart->addProduct($product, $params);
+            // if (!empty($related)) {
+            //     $this->cart->addProductsByIds(explode(',', $related));
+            // }
+
+            $this->cart->getQuote()->setIsQuotationQuote(true);
+            $this->cart->save();
+
+            $this->_eventManager->dispatch(
+                'checkout_cart_add_product_complete',
+                ['product' => $product, 'request' => $this->getRequest(), 'response' => $this->getResponse()]
+            );
+			//echo '<pre>'; print_r($params); echo '</pre>';die;
+            $strategy = $this->strategyProvider->getStrategy();
+            $redirectToCart = $this->_quotationSession->getNoCartRedirect(true);
+            if (!$redirectToCart || $strategy == 'quick_quote') {
+                if (!$this->cart->getQuote()->getHasError()) {
+
+                    // echo "before success msg";exit;
+                    // $message = __(
+                    //     'You added %1 to <a href="%2">your quote</a>.',
+                    //     $this->escaper->escapeHtml($product->getName()),
+                    //     $this->_url->getUrl('quotation/quote')
+                    // );
+                    //echo '<pre>'; print_r($params); echo '</pre>';die;
+			   $inquiry  = $productOptions['9'];
+				 $company_name = $productOptions['10'];
+				 $fname = $productOptions['11'];
+				 $lname = $productOptions['12'];
+				 $phone = $productOptions['13'];
+				 $email = $productOptions['14'];
+				 $project_name = $productOptions['15'];
+				 $mailing_list = $productOptions['16'];
+				 $best_way = $productOptions['17'];
+				 $address = $productOptions['18'];
+				 $city = $productOptions['19'];
+				 $country = $productOptions['country_id'];
+				/* $state = $productOptions['state']; */
+				 $postcode = $productOptions['22'];
+				 $business = $productOptions['23'];
+				 $account  = $productOptions['24'];
+				   $test= $productOptions['25']; 
+		 	$i = 0;
+				foreach($test as $value){
+					${'something'.$i} = $value;
+					$i++;
+					}
+					  $ddate= $something0 .' /'.$something1 .'/'.$something2; 
+			
+				 
+				 // $stateid = $productOptions['state'];
+				
+				 $Request  = $productOptions['26'];
+						$sender = 'shivudeveloper@gmail.com';
+						$recipient = 'shiwanisaini1995@gmail.com';
+
+						$subject = "Custom Quote Form";
+						$message = "
+							<html>
+							<head>
+							<title>Custom Quote Form</title>
+							</head>
+							<body>
+							<p>Hello Shiwani Saini,</p>
+
+                            <p>Thank you for your Quote Request from Cascade Industrial Services Corp.. Within the next 48 hours you can expect our proposal.
+                            If you have questions about your quote request, you can email us at sales@cascadeindustrial.com or call us at 877.280.7285.</p>
+							
+							<table style='width:40%;padding:30px;background-color: #f2f2f2;border:1px solid #d1d1d1;'>
+							<tr><b>Is this inquiry urgent?</b></tr>
+							<tr>".$inquiry."</tr>
+							<tr><b>Company Name</b></tr>
+							<tr>".$company_name."</tr>
+							<tr><b>First Name</b></tr>
+							<tr>".$fname."</tr>
+							<tr><b>Last Name</b></tr>
+							<tr>".$lname."</tr>
+							<tr><b>Phone Number</b></tr>
+							<tr>".$phone."</tr>
+							<tr><b>Email Address</b></tr>
+							<tr>".$email."</tr>
+							<tr><b>Project Name</b></tr>
+							<tr>".$project_name."</tr>
+							<tr><b>Would you like to join our mailing list?</b></tr>
+							<tr>".$mailing_list."</tr>
+							<tr><b>Best way to contact you?</b></tr>
+							<tr>".$best_way."</tr>
+							<tr><b>Address</b></tr>
+							<tr>".$address."</tr>
+							<tr><b>City</b></tr>
+							<tr>".$city."</tr>
+							<tr><b>Country</b></tr>
+							<tr>".$country."</tr>
+							<tr><b>State/Province</b></tr>
+							<tr>".$stateName."</tr>
+							<tr><b>Postal Code</b></tr>
+							<tr>".$postcode."</tr>
+							<tr><b>Type of Business</b></tr>
+							<tr>".$business."</tr>
+							<tr><b>Do you have an account with us?</b></tr>
+							<tr>".$account."</tr>
+							<tr><b>Quote Deadline</b></tr>
+							<tr>".$ddate."</tr>
+							<tr><b>Details of Request</b></tr>
+							<tr>".$Request."</tr>
+							<tr><b>Upload Document</b></tr>
+							<tr></tr>
+							</table>
+							</body>
+							</html>
+							";
+						//$headers = 'From:' . $sender;
+						$headers = "Content-type: text/html\r\n";
+					    if (mail($recipient, $subject, $message, $headers))
+						{
+							echo "Message accepted";
+						}
+						else
+						{
+							echo "Error: Message not accepted";
+						}
+                    $message = __(
+                        'You have successfully submitted your quote to your Quote cart.Visit your quote cart to finish submitting your quote(s).'
+                        );
+
+                    // echo "product added to quote successfully";
+                    // echo $message;
+                    //
+                    // exit;
+
+
+                    //still using the depricated addSuccess as addSuccessMessage removes the url
+                    $this->messageManager->addSuccess($message);
+                }
+
+                return $this->goBack(null, $product);
+            }
+        } catch (\Magento\Framework\Exception\LocalizedException $e) {
+            //echo $e->getMessage();//exit;
+
+            $customUrl = $this->_storeManager->getStore()->getUrl('customquoteform');
+
+            if ($this->_quotationSession->getUseNotice(true)) {
+                $this->messageManager->addNoticeMessage(
+                    $this->escaper->escapeHtml($e->getMessage())
+                );
+            } else {
+                $messages = array_unique(explode("\n", $e->getMessage()));
+                foreach ($messages as $message) {
+                    $this->messageManager->addErrorMessage(
+                        $this->escaper->escapeHtml($message)
+                    );
+                }
+            }
+            $url = $this->_quotationSession->getRedirectUrl(true);
+            // echo $url."url";
+            // exit;
+            if ($url) {
+                return $this->goBack($customUrl);
+            }
+        } catch (\Exception $e) {
+            $this->messageManager->addExceptionMessage($e, __('We can\'t add this item to your quote right now.'));
+            $this->logger->critical($e);
+        }
+
+        return $this->goBack();
+
+        // $resultPage = $this->_resultPageFactory->create();
+        // return $resultPage;
+    }
+
+//     public function reArrayFiles(&$file_post) {
+//
+//     $file_ary = array();
+//     $file_count = count($file_post['name']);
+//     $file_keys = array_keys($file_post);
+//
+//     for ($i=0; $i<$file_count; $i++) {
+//         foreach ($file_keys as $key) {
+//             $file_ary[$i][$key] = $file_post[$key][$i];
+//         }
+//     }
+//
+//     return $file_ary;
+// }
+
+    public function getProductId(){
+
+      $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+      $resource=$objectManager->create('\Magento\Framework\App\ResourceConnection');
+      $connection = $resource->getConnection(\Magento\Framework\App\ResourceConnection::DEFAULT_CONNECTION);
+      $skuQuery = "SELECT entity_id  FROM `catalog_product_entity` WHERE `sku` LIKE 'custom-request-form'";
+      $result1 = $connection->fetchRow($skuQuery);
+      return $result1['entity_id'];
+    }
+
+    protected function _initProduct()
+    {
+        $productId = $this->getProductId();
+
+        if ($productId) {
+            $storeId = $this->_storeManager->getStore()->getId();
+            try {
+                return $this->productRepository->getById($productId, false, $storeId);
+            } catch (\Magento\Framework\Exception\NoSuchEntityException $e) {
+                return false;
+            }
+        }
+
+        return false;
+    }
+
+    protected function goBack($backUrl = null, $product = null, $addedFlag = true)
+    {
+        if (!$this->getRequest()->isAjax()) {
+            return parent::_goBack($backUrl);
+        }
+
+        $result = [];
+        if ($backUrl || $backUrl = $this->getBackUrl()) {
+            $result['backUrl'] = $backUrl;
+        }
+
+        if (!$addedFlag) {
+            $result['added'] = false;
+        }
+
+        $this->getResponse()->representJson(
+            $this->jsonHelper->jsonEncode($result)
+        );
+    }
+
+    /**
+     * Get resolved back url
+     *
+     * @param null|string $defaultUrl
+     * @return string|null
+     * @throws \Magento\Framework\Exception\LocalizedException
+     * @throws \Magento\Framework\Exception\NoSuchEntityException
+     */
+    protected function getBackUrl($defaultUrl = null)
+    {
+        $returnUrl = $this->getRequest()->getParam('return_url');
+        if ($returnUrl && $this->_isInternalUrl($returnUrl)) {
+            $this->messageManager->getMessages()->clear();
+
+            return $returnUrl;
+        }
+
+        //use magento cart settings
+        $shouldRedirectToCart = $this->_scopeConfig->getValue(
+            'checkout/cart/redirect_to_cart',
+            \Magento\Store\Model\ScopeInterface::SCOPE_STORE
+        );
+
+        //get quote strategy
+        $strategy = $this->strategyProvider->getStrategy();
+
+        if (($shouldRedirectToCart && $strategy != 'quick_quote') || $this->getRequest()->getParam('in_quote')) {
+            if ($this->getRequest()->getActionName() == 'add' && !$this->getRequest()->getParam('in_quote')) {
+                $this->_quotationSession->setContinueShoppingUrl($this->_redirect->getRefererUrl());
+            }
+
+            return $this->_url->getUrl('quotation/quote');
+        }
+
+        return $defaultUrl;
+    }
+
+    // public function test(\Magento\Catalog\Model\Product $product){
+    //     $options = ['qty'=> 1];
+    //     $this->quote->addProduct($product, $options);
+    //     //OR  $this->quote->addProductsByIds([$product->getId()]);
+    //
+    //     $this->quote->save();
+    // }
+}

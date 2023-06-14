@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- Managing totals information -->
+    <route url="/V1/carts/:cartId/myshipping-totals-information" method="POST">
+        <service class="MageMaclean\MyShipping\Api\MyshippingTotalsInformationManagementInterface" method="calculate"/>
+        <resources>
+            <!-- resource ref="Magento_Cart::manage" / -->
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <!-- Managing guest totals information -->
+    <route url="/V1/guest-carts/:cartId/myshipping-totals-information" method="POST">
+        <service class="MageMaclean\MyShipping\Api\GuestMyshippingTotalsInformationManagementInterface" method="calculate"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <!-- Managing totals information -->
+    <route url="/V1/carts/mine/myshipping-totals-information" method="POST">
+        <service class="MageMaclean\MyShipping\Api\MyshippingTotalsInformationManagementInterface" method="calculate"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+        <data>
+            <parameter name="cartId" force="true">%cart_id%</parameter>
+        </data>
+    </route>
+
+    <!-- Courier -->
+    <route url="/V1/courier/:courierId" method="GET">
+        <service class="MageMaclean\MyShipping\Api\CourierRepositoryInterface" method="get"/>
+        <resources>
+            <resource ref="MageMaclean_MyShipping::myshipping_courier"/>
+        </resources>
+    </route>
+    <route url="/V1/courier/search" method="GET">
+        <service class="MageMaclean\MyShipping\Api\CourierListRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="MageMaclean_MyShipping::myshipping_courier"/>
+        </resources>
+    </route>
+    <route url="/V1/courier" method="POST">
+        <service class="MageMaclean\MyShipping\Api\CourierRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="MageMaclean_MyShipping::myshipping_courier"/>
+        </resources>
+    </route>
+    <route url="/V1/courier/:courierId" method="PUT">
+        <service class="MageMaclean\MyShipping\Api\CourierRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="MageMaclean_MyShipping::myshipping_courier"/>
+        </resources>
+    </route>
+    <route url="/V1/courier/:courierId" method="DELETE">
+        <service class="MageMaclean\MyShipping\Api\CourierRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="MageMaclean_MyShipping::myshipping_courier"/>
+        </resources>
+    </route>
+</routes>

@@ -1,0 +1,46 @@
+<div class="block block-myshipping-accounts-list">
+    <div class="block-title"><strong><?= $block->escapeHtml(__('My Shipping Accounts')) ?></strong></div>
+    <div class="block-content">
+        <?php if ($_accounts = $block->getAccountCollection()): ?>
+
+            <div class="table-wrapper myshipping-accounts">
+                <table class="data table table-myshipping-accounts-items history" id="myshipping-accounts-table">
+                    <caption class="table-caption"><?= /* @escapeNotVerified */ __('My Shipping Accounts') ?></caption>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="col myshipping-carrier"><?= /* @escapeNotVerified */ __('Courier') ?></th>
+                        <th scope="col" class="col myshipping-account"><?= /* @escapeNotVerified */ __('Account') ?></th>
+                        <th scope="col" class="col actions" width="1"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($_accounts as $account): ?>
+                        <tr>
+                            <td data-th="<?= $block->escapeHtml(__('Courier')) ?>" class="col myshipping-carrier"><?= $block->escapeHtml($account->getCourier()->getTitle()) ?></td>
+                            <td data-th="<?= $block->escapeHtml(__('Account')) ?>" class="col myshipping-account"><?= $block->escapeHtml($account->getMyshippingAccount()) ?></td>
+                            <td data-th="<?= $block->escapeHtml(__('Actions')) ?>" class="col actions" width="1">
+                                <a class="action edit" href="<?= $block->escapeUrl($block->getUrl('myshipping_account/account/edit', ['id' => $account->getId()])) ?>"><span><?= $block->escapeHtml(__('Edit')) ?></span></a>
+                                <a class="action delete" href="<?= $block->escapeUrl($block->getDeleteUrl($account->getId())) ?>"><span><?= $block->escapeHtml(__('Delete')) ?></span></a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+            <?php if ($block->getChildHtml('pager')): ?>
+                <div class="customer-accounts-toolbar toolbar bottom"><?= $block->getChildHtml('pager') ?></div>
+            <?php endif ?>
+        <?php else: ?>
+            <p class="empty"><?= $block->escapeHtml(__('You have no stored shipping account entries.')) ?></p>
+        <?php endif ?>
+    </div>
+</div>
+
+<div class="actions-toolbar">
+    <div class="primary">
+        <button type="button" onclick="window.location = '<?= $block->getAddAccountUrl(); ?>';" title="<?= $block->escapeHtmlAttr(__('Add New Account')) ?>" class="action primary add"><span><?= $block->escapeHtml(__('Add New Account')) ?></span></button>
+    </div>
+    <div class="secondary">
+        <a class="action back" href="<?= $block->escapeUrl($block->getBackUrl()) ?>"><span><?= $block->escapeHtml(__('Back')) ?></span></a>
+    </div>
+</div>

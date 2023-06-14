@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Model\AdminOrder\Create">
+        <plugin name="myshipping_sales_adminorder_create" type="MageMaclean\MyShipping\Plugin\Sales\AdminOrder\Create" />
+    </type>
+
+    <type name="Magento\Sales\Block\Adminhtml\Order\Create\Shipping\Method\Form">
+        <plugin name="myshipping_sales_adminhtml_order_create_shipping_method_form" type="MageMaclean\MyShipping\Plugin\Sales\Adminhtml\Order\Create\Shipping\Method\Form" sortOrder="10" />
+    </type>
+
+    <type name="Magento\Customer\Model\Customer\DataProviderWithDefaultAddresses">
+        <plugin sortOrder="10" name="customer_get_myshipping_accounts" type="MageMaclean\MyShipping\Plugin\Customer\DataProviderWithDefaultAddresses" />
+    </type>
+
+    <!--[+] define the ui config for "courier" entity -->
+    <virtualType name="MyShippingCourierUiConfig" type="MageMaclean\MyShipping\Ui\EntityUiConfig">
+        <arguments>
+            <argument name="interface" xsi:type="string">\MageMaclean\MyShipping\Api\Data\CourierInterface</argument>
+            <argument name="data" xsi:type="array">
+                <item name="name_attribute" xsi:type="string">title</item><!-- this is the attribute / field name that represents your entity -->
+                <item name="labels" xsi:type="array">
+                    <item name="new" xsi:type="string" translatable="true">Add New Courier</item>
+                    <item name="back" xsi:type="string" translatable="true">Back to list</item>
+                    <item name="save" xsi:type="string" translatable="true">Save Courier</item>
+                    <item name="delete" xsi:type="string" translatable="true">Delete Courier</item>
+                    <item name="delete_message" xsi:type="string" translatable="true">Are you sure you want to delete Courier?</item>
+                </item>
+                <item name="save" xsi:type="array">
+                    <!-- uncomment lines below to remove the "Save and close" and "Save and duplicate" buttons -->
+                    <!--<item name="allow_close" xsi:type="boolean">false</item>-->
+                    <!--<item name="allow_duplicate" xsi:type="boolean">false</item>-->
+                </item>
+                <item name="list" xsi:type="array">
+                    <item name="page_title" xsi:type="string" translatable="true">Couriers</item>
+                </item>
+                <item name="messages" xsi:type="array">
+                    <item name="delete" xsi:type="array">
+                        <item name="success" xsi:type="string" translatable="true">Courier successfully deleted</item>
+                        <item name="missing_entity" xsi:type="string" translatable="true">Couldn't find Courier to delete</item>
+                        <item name="error" xsi:type="string" translatable="true">There was a problem deleting the Courier</item>
+                    </item>
+                    <item name="save" xsi:type="array">
+                        <item name="success" xsi:type="string" translatable="true">Courier successfully saved</item>
+                        <item name="error" xsi:type="string" translatable="true">There was a problem saving the Courier</item>
+                        <item name="duplicate" xsi:type="string" translatable="true">Courier duplicated successfully</item>
+                    </item>
+                    <item name="mass_delete" xsi:type="array">
+                        <item name="success" xsi:type="string" translatable="true">%1 Couriers were successfully deleted</item>
+                        <item name="error" xsi:type="string" translatable="true">There was a problem deleting the Courier</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <!--[-] define the ui config for "courier" entity -->
+    <!--[+] configure admin controllers to use the ui entity config for "courier" -->
+    <type name="MageMaclean\MyShipping\Controller\Adminhtml\Courier\Index">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+        </arguments>
+    </type>
+    <type name="MageMaclean\MyShipping\Controller\Adminhtml\Courier\Edit">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+            <argument name="entityUiManager" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiManager</argument>
+        </arguments>
+    </type>
+    <type name="MageMaclean\MyShipping\Controller\Adminhtml\Courier\Save">
+        <arguments>
+            <argument name="entityUiManager" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiManager</argument>
+            <argument name="dataProcessor" xsi:type="object">MyShippingCourierSaveDataProcessor</argument>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+        </arguments>
+    </type>
+    <type name="MageMaclean\MyShipping\Controller\Adminhtml\Courier\InlineEdit">
+        <arguments>
+            <argument name="entityUiManager" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiManager</argument>
+            <argument name="dataProcessor" xsi:type="object">MageMaclean\MyShipping\Ui\SaveDataProcessor\NullProcessor</argument>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+        </arguments>
+    </type>
+    <type name="MageMaclean\MyShipping\Controller\Adminhtml\Courier\Delete">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+            <argument name="uiManager" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiManager</argument>
+        </arguments>
+    </type>
+    <type name="MageMaclean\MyShipping\Controller\Adminhtml\Courier\MassDelete">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+            <argument name="uiManager" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiManager</argument>
+            <argument name="collectionProvider" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiCollectionProvider</argument>
+        </arguments>
+    </type>
+    <!--[+] configure admin controllers to use the ui entity config for "courier" -->
+    <virtualType name="MyShippingCourierSaveDynamicRowsProcessor" type="MageMaclean\MyShipping\Ui\SaveDataProcessor\DynamicRows">
+        <arguments>
+            <argument name="fields" xsi:type="array">
+                <item name="methods" xsi:type="string">methods</item>
+            </argument>
+            <argument name="strict" xsi:type="boolean">true</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierSaveDataProcessor" type="MageMaclean\MyShipping\Ui\SaveDataProcessor\CompositeProcessor">
+        <arguments>
+            <argument name="modifiers" xsi:type="array">
+                <item name="dynamic_rows" xsi:type="object">MyShippingCourierSaveDynamicRowsProcessor</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="MyShippingCourierFormDynamicRowsModifier" type="MageMaclean\MyShipping\Ui\Form\DataModifier\DynamicRows">
+        <arguments>
+            <argument name="fields" xsi:type="array">
+                <item name="methods" xsi:type="string">methods</item>
+                </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierFormDataModifier" type="MageMaclean\MyShipping\Ui\Form\DataModifier\CompositeDataModifier">
+        <arguments>
+            <argument name="modifiers" xsi:type="array">
+                <item name="dynamic_rows" xsi:type="object">MyShippingCourierFormDynamicRowsModifier</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierUiFormDataProvider" type="MageMaclean\MyShipping\Ui\Form\DataProvider">
+        <arguments>
+            <argument name="primaryFieldName" xsi:type="object">courier_id</argument>
+            <argument name="requestFieldName" xsi:type="object">courier_id</argument>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+            <argument name="dataModifier" xsi:type="object">MyShippingCourierFormDataModifier</argument>
+            <argument name="collectionProvider" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiCollectionProvider</argument>
+        </arguments>
+    </virtualType>
+    <!--[+] form button configuration for 'courier' -->
+    <virtualType name="MyShippingCourierButtonBack" type="MageMaclean\MyShipping\Block\Adminhtml\Courier\Button\Back">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierButtonSave" type="MageMaclean\MyShipping\Block\Adminhtml\Courier\Button\Save">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MyShippingCourierButtonDelete" type="MageMaclean\MyShipping\Block\Adminhtml\Courier\Button\Delete">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+            <argument name="entityUiManager" xsi:type="object">MageMaclean\MyShipping\Model\CourierUiManager</argument>
+        </arguments>
+    </virtualType>
+    <!--[-] form button configuration for 'courier' -->
+    <!--[+] configure the grid actions column  for "courier" entity-->
+    <virtualType name="MyShippingCourierGridActions" type="MageMaclean\MyShipping\Ui\Component\Listing\ActionsColumn">
+        <arguments>
+            <argument name="uiConfig" xsi:type="object">MyShippingCourierUiConfig</argument>
+        </arguments>
+    </virtualType>
+    <!--[-] configure the grid actions column  for "courier" entity-->
+</config>

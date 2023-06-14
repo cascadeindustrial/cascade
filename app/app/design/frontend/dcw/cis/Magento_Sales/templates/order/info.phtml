@@ -1,0 +1,110 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php /** @var $block \Magento\Sales\Block\Order\Info */ ?>
+<?php $_order = $block->getOrder() ?>
+<div class="block block-order-details-view">
+    <div class="block-title">
+        <strong><?= $block->escapeHtml(__('Order Information')) ?></strong>
+    </div>
+    <div class="block-content">
+        <?php if (!$_order->getIsVirtual()) : ?>
+            <div class="box box-order-shipping-address">
+                <strong class="box-title"><span><?= $block->escapeHtml(__('Shipping Address')) ?></span></strong>
+                <div class="box-content">
+                    <address><?= /* @noEscape */ $block->getFormattedAddress($_order->getShippingAddress()) ?></address>
+                </div>
+            </div>
+
+            <div class="box box-order-shipping-method">
+                <strong class="box-title">
+                    <span><?= $block->escapeHtml(__('Shipping Method')) ?></span>
+                </strong>
+                <div class="box-content">
+                <?php if ($_order->getShippingDescription()) : ?>
+                    <?= $block->escapeHtml($_order->getShippingDescription()) ?>
+                <?php else : ?>
+                    <?= $block->escapeHtml(__('No shipping information available')) ?>
+                <?php endif; ?>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <div class="box box-order-billing-address">
+            <strong class="box-title">
+                <span><?= $block->escapeHtml(__('Billing Address')) ?></span>
+            </strong>
+            <div class="box-content">
+                <address><?= /* @noEscape */ $block->getFormattedAddress($_order->getBillingAddress()) ?></address>
+            </div>
+        </div>
+        <div class="box box-order-billing-method">
+            <strong class="box-title">
+                <span><?= $block->escapeHtml(__('Payment Method')) ?></span>
+            </strong>
+            <div class="box-content">
+                <?= $block->getPaymentInfoHtml() ?>
+            </div>
+        </div>
+    </div>
+</div>
+<?php 
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $request = $objectManager->get('Magento\Framework\App\Action\Context')->getRequest();
+       
+        if (strpos($request->getFullActionName(), 'print')) { ?>
+            <!-- End Content -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="footer">
+                        <br><br>
+                        <table class="footer-section" style="width: 100%; margin: 0px auto; border-top: 1px solid #110C0A;">
+                            <tr>
+                                <td style="padding-top: 10px;">
+                                    <table class="footer_links" style="width:100%;text-align: center;">
+                                        <tr>
+                                            <td>
+                                                <p style="color: #192738;font-weight: 600;">Contact Us</p>
+                                                <a href="tel:8772807825" style="text-decoration: none !important;"> <span style="text-decoration: none;font-size: 14px;color: #192738;">877-280-7825</span></a>
+                                            </td>
+                                            <td>
+                                                <p style="color: #192738;font-weight: 600;">Need a Quote?</p>
+                                                <a href="mailto:#" style="text-decoration: none !important;"><span style="text-decoration: none;font-size: 14px;color: #192738;"> Send Us an Email </span></a>
+                                            </td>
+                                            <td>
+                                                <p style="color: #192738;font-weight: 600;">Have a Question</p>
+                                                <a href="http://dotcomweaversnet.helpdocsonline.com/faq" target="_blank" style="text-decoration: none !important;"><span style="text-decoration: none;font-size: 14px;color: #192738;"> View our FAQ </span></a>
+                                            </td>
+                                        </tr>
+                                    </table>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 10px 0 0;">
+                                    <p style="width:92%;">3100 E. Cedar Street Suite #6 <br/> Ontario, California 91761, USA</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="footer_social_links" style="text-align:center;padding-top: 10px;">
+                                    <p style="width:92%;">
+                                    <a href="https://www.facebook.com/CascadeIndustrial" target="_blank"><img src="<?php echo $this->getViewFileUrl('Magento_Sales::images/facebook.png'); ?>" class="right-logo" alt="facebook"></a>
+                                    <a href="https://twitter.com/CascadeInd" target="_blank"><img src="<?php echo $this->getViewFileUrl('Magento_Sales::images/twitter.png'); ?>" class="right-logo" alt="twitter"></a>
+                                    <a href="https://www.linkedin.com/company/cascadeindustrial/" target="_blank"><img src="<?php echo $this->getViewFileUrl('Magento_Sales::images/lkd.png'); ?>" class="right-logo" alt="linked"></a>
+                                </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- End wrapper table -->
+</body>
+<?php } ?>

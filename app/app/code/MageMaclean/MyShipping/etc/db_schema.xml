@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="myshipping_courier" resource="default" engine="innodb" comment="Courier Table">
+        <column xsi:type="smallint" name="courier_id" padding="6" unsigned="false" nullable="false" identity="true" comment="Courier ID" />
+        <column xsi:type="smallint" name="is_enabled" padding="2" nullable="false" comment="Courier Is Enabled" />
+        <column xsi:type="smallint" name="sallowspecific" nullable="false" comment="Courier Shipping Allow Specific" />
+        <column xsi:type="text" name="specificcountry" nullable="true" comment="Courier Specific Country" />
+        <column xsi:type="varchar" name="title" length="255" nullable="false" comment="Courier Title" />
+        <column xsi:type="text" name="methods" nullable="true" comment="Courier Methods" />
+        <column xsi:type="int" name="sort_order" nullable="true" comment="Sort Order" />
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="Courier Created at" />
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Courier Updated At" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="courier_id" />
+        </constraint>
+    </table>
+    <table name="myshipping_courier_store" resource="default" engine="innodb" comment="Courier Store Link Table">
+        <column xsi:type="smallint" name="courier_id" padding="6" unsigned="false" nullable="false" identity="false" />
+        <column xsi:type="smallint" name="store_id" padding="5" unsigned="true" nullable="false" identity="false" comment="Store ID" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="courier_id" />
+            <column name="store_id" />
+        </constraint>
+        <constraint xsi:type="foreign" referenceId="MYSHIPPING_COURIER_STORE_COURIER_ID_MYSHIPPING_COURIER_COURIER_ID" table="myshipping_courier_store" column="courier_id" referenceTable="myshipping_courier" referenceColumn="courier_id" onDelete="CASCADE" />
+        <constraint xsi:type="foreign" referenceId="MYSHIPPING_COURIER_STORE_ID_STORE_STORE_ID" table="myshipping_courier_store" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE" />
+        <index referenceId="MYSHIPPING_COURIER_STORE_STORE_ID" indexType="btree">
+            <column name="store_id" />
+        </index>
+    </table>
+
+    <table name="myshipping_account" resource="default" engine="innodb" comment="Account Table">
+        <column xsi:type="smallint" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="Account ID" />
+        <column xsi:type="smallint" name="customer_id" nullable="false" comment="Customer Id" />
+        <column xsi:type="smallint" name="myshipping_courier_id" padding="6" unsigned="false" nullable="false" comment="MyShipping Courier Id" />
+        <column xsi:type="varchar" name="myshipping_account" length="255" nullable="false" comment="MyShipping Account" />
+        <column xsi:type="int" name="position" nullable="true" comment="Position" />
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="MyShipping Account Created at" />
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="MyShipping Account Updated At" />
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+
+        <constraint xsi:type="foreign" referenceId="MYSHIPPING_ACCOUNT_MYSHIPPING_COURIER_ID_COURIER_ID" table="myshipping_account" column="myshipping_courier_id" referenceTable="myshipping_courier" referenceColumn="courier_id" onDelete="CASCADE" />
+
+        <index referenceId="MYSHIPPING_ACCOUNT_MYSHIPPING_COURIER_ID_MYSHIPPING_COURIER_ID" indexType="btree">
+            <column name="myshipping_courier_id" />
+        </index>
+    </table>
+
+    <table name="myshipping_quote" resource="default" engine="innodb" comment="Quote Table">
+        <column xsi:type="int" name="id" unsigned="false" nullable="false" identity="true" comment="Myshipping Quote ID" />
+        <column xsi:type="int" name="quote_address_id" unsigned="true" nullable="false" default="0" comment="Quote Address Id" />
+        <column xsi:type="smallint" name="myshipping_account_id" nullable="false" comment="MyShipping Account Id" />
+        <column xsi:type="smallint" name="myshipping_courier_id" padding="6" nullable="false" comment="MyShipping Courier Id" />
+        <column xsi:type="varchar" name="myshipping_account" length="255" nullable="false" comment="MyShipping Account" />
+        <column xsi:type="varchar" name="myshipping_courier_method" length="255" nullable="false" comment="MyShipping Courier Method" />
+        <column xsi:type="smallint" name="myshipping_save" nullable="false" comment="MyShipping Save" />
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+
+        <!-- constraint xsi:type="foreign" referenceId="MYSHIPPING_QUOTE_ADDRESS_ID_QUOTE_ADDRESS_ID" table="myshipping_quote" column="quote_address_id" referenceTable="quote_address" referenceColumn="address_id" onDelete="CASCADE" />
+        <index referenceId="MYSHIPPING_QUOTE_QUOTE_ADDRESS_ID" indexType="btree">
+            <column name="quote_address_id" />
+        </index -->
+    </table>
+
+    <table name="sales_order" resource="default" engine="innodb">
+        <column xsi:type="smallint" name="myshipping_account_id" unsigned="false" nullable="false" identity="false" comment="MyShipping Account Id" />
+        <column xsi:type="smallint" name="myshipping_courier_id" unsigned="false" nullable="false" identity="false" comment="MyShipping Courier Id" />
+        <column xsi:type="varchar" name="myshipping_courier_method" length="255" nullable="false" comment="MyShipping Courier Method" />
+        <column xsi:type="varchar" name="myshipping_account" length="255" nullable="false" comment="MyShipping Account" />
+    </table>
+</schema>

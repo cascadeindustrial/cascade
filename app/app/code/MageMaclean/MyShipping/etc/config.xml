@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <myshipping>
+                <active>1</active>
+                <model>MageMaclean\MyShipping\Model\Carrier</model>
+                <new_title>Use My Shipping Account</new_title>
+                <new_name>New Account</new_name>
+                <account_title>Use My Stored Account</account_title>
+                <account_name>{{courier}} - #{{account}}</account_name>
+                <format_shipping_description>{{courier}} #{{account}} - {{method}}</format_shipping_description>
+                <sort_order>90</sort_order>
+                <showmethod>0</showmethod>
+                <specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+            </myshipping>
+        </carriers>
+        <myshipping>
+            <general>
+                <enabled>1</enabled>
+            </general>
+            <checkout>
+                <enabled>1</enabled>
+                <new_enabled>1</new_enabled>
+                <guest_new_enabled>1</guest_new_enabled>
+                <info_new><![CDATA[
+<p>We can deliver using your shipping account, so you can track and pay your own shipping. </p>
+                ]]></info_new>
+                <info_accounts><![CDATA[
+<p>Use your shipping account, so you can track and pay your own shipping. </p>
+                ]]></info_accounts>
+                <show_method_prices>1</show_method_prices>
+            </checkout>
+            <sales>
+                <enabled>1</enabled>
+                <new_enabled>1</new_enabled>
+                <guest_new_enabled>1</guest_new_enabled>
+                <show_method_prices>1</show_method_prices>
+            </sales>
+            <account_validation>
+                <min_length>5</min_length>
+                <max_length>20</max_length>
+                <rules>validate-alphanum-with-spaces</rules>
+            </account_validation>
+        </myshipping>
+    </default>
+</config>

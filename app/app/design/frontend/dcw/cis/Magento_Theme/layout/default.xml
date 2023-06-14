@@ -1,0 +1,40 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+​
+<referenceContainer name="header.container">
+            <container name="header-wrapper-top" label="Page Header Top" as="header-wrapper-top" htmlTag="div" htmlClass="header-top">
+                 <container name="header-wrapper" label="Page Header" as="header-wrapper" htmlTag="div" htmlClass="header content">
+                <block class="Magento\Theme\Block\Html\Header\Logo" name="logo">
+                    <arguments>
+                        <argument name="logo_img_width" xsi:type="number">189</argument>
+                        <argument name="logo_img_height" xsi:type="number">64</argument>
+                    </arguments>
+                </block>
+            </container>
+        </container>
+</referenceContainer>
+​
+<move element="top.search" destination="header-wrapper" after="logo" />
+<move element="currency" destination="header-wrapper" before="minicart"/>
+​
+<referenceContainer name="header-wrapper">
+<block class="Magento\Framework\View\Element\Template" name="account_content" as="account_content" template="Magento_Theme::html/header.phtml"/>
+</referenceContainer>
+<move element="navigation.sections" destination="header.container" />​
+<move element="minicart" destination="header.container" />
+<move element="miniquote" destination="header.container" before="minicart"/>
+
+<referenceBlock name="footer_links" remove="true" />
+<referenceBlock name="form.subscribe" remove="true" />
+​
+ <referenceBlock name="register-link" remove="true" />           <!--for Create Account Link-->
+<referenceBlock name="authorization-link" remove="true" />      <!--for Sign In Link  -->
+<referenceBlock name="my-account-link" remove="true" />
+<referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true" />
+<referenceBlock name="mca-files" remove="true" />
+<referenceBlock name="wish-list-link" remove="true" />                   <!--for WishList Link-->
+<referenceBlock name="greet.welcome" remove="true" />
+<!-- <referenceBlock name="top.links" remove="true" />   -->             <!--for My Account Link-->
+   <referenceBlock name="customer-account-navigation-product-reviews-link" remove="true"/>
+<referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
+​   <!-- <referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true"/> -->
+</page>

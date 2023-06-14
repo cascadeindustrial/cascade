@@ -1,0 +1,16 @@
+{
+    "name": "batao/module-fillquotecheckout",
+    "description": "Fill first, lastname and email automatically",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Batao\\FillQuoteCheckout\\": ""
+        }
+    }
+}

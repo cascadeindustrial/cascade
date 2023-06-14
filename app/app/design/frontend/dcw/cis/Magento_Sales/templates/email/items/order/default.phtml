@@ -1,0 +1,90 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate
+
+/** @var $block \Magento\Sales\Block\Order\Email\Items\DefaultItems */
+
+/** @var $_item \Magento\Sales\Model\Order\Item */
+//email order
+$_item = $block->getItem();
+$_order = $_item->getOrder();
+$objectManager =  \Magento\Framework\App\ObjectManager::getInstance();
+$productRepository = $objectManager->get('\Magento\Catalog\Model\ProductRepository');
+$productObj = $productRepository->get($block->getSku($_item));
+$productId = $_item->getProductId(); 
+
+// $resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
+// $connection = $resource->getConnection();
+// $query = "SELECT attribute_id FROM `eav_attribute` where attribute_code='enable_advanced_layout' and entity_type_id=4";
+// $connection->query($query);
+// $result = $connection->fetchRow($query);
+// $attrId = $result['attribute_id'];
+
+// $value ="SELECT value FROM catalog_product_entity_int WHERE entity_id = ".(int) $productId." and attribute_id = " .$attrId;
+// $connection->query($value);
+// $result1 = $connection->fetchRow($value);
+// $layout = $result1['value'];
+
+?>
+<tr>
+    <td class="item-info<?= ($block->getItemOptions() ? ' has-extra' : '') ?>">
+        <p class="product-name"><?= $block->escapeHtml($_item->getName()) ?></p>
+        <p class="sku"><?= $block->escapeHtml(__('SKU')) ?>: <?= $block->escapeHtml($block->getSku($_item)) ?></p>
+        <?php if($productObj->getData('model_no') != "") { ?>
+        <p class="model"><?php  echo "Model: ".$productObj->getData('model_no'); ?></p>
+        <?php } ?>
+        <?php 
+            $deliveryOption = $_item->getShippingOption();
+        if ($deliveryOption == 1) {
+                    //echo "Standard Delivery :".$_item->getProduct()->getAttributeText('standard_delivery_time');
+                    echo "Standard Delivery: ".$productObj->getAttributeText('standard_delivery_time');
+                 } elseif ($deliveryOption == 2){
+                   //echo "Expedited Delivery :".$_item->getProduct()->getAttributeText('expedited_delivery_time');
+                   echo "Expedited Delivery: ".$productObj->getAttributeText('expedited_delivery_time');
+                 } ?>
+        <?php if ($block->getItemOptions()) : ?>
+            <dl class="item-options">
+            <?php foreach ($block->getItemOptions() as $option) : ?>
+                <dt><strong><em><?= $block->escapeHtml($option['label']) ?></em></strong></dt>
+                <dd>
+                    <?= /* @noEscape */  nl2br($block->escapeHtml($option['value'])) ?>
+                </dd>
+            <?php endforeach; ?>
+            </dl>
+        <?php endif; ?>
+
+        <?php $addInfoBlock = $block->getProductAdditionalInformationBlock(); ?>
+        <?php if ($addInfoBlock) :?>
+            <?= $addInfoBlock->setItem($_item)->toHtml() ?>
+        <?php endif; ?>
+        <?= $block->escapeHtml($_item->getDescription()) ?>
+    </td>
+    <td class="item-qty"><?= (float) $_item->getQtyOrdered() ?></td>
+    <td class="item-price">
+        <?= /* @noEscape */ $block->getItemPrice($_item) ?>
+    </td>
+</tr>
+<?php if ($_item->getGiftMessageId()
+    && $_giftMessage = $this->helper(\Magento\GiftMessage\Helper\Message::class)
+        ->getGiftMessage($_item->getGiftMessageId())
+) : ?>
+    <tr>
+    <td colspan="3" class="item-extra">
+        <table class="message-gift">
+            <tr>
+                <td>
+                    <h3><?= $block->escapeHtml(__('Gift Message')) ?></h3>
+                    <strong><?= $block->escapeHtml(__('From:')) ?></strong> <?= $block->escapeHtml($_giftMessage->getSender()) ?>
+                    <br /><strong><?= $block->escapeHtml(__('To:')) ?></strong> <?= $block->escapeHtml($_giftMessage->getRecipient()) ?>
+                    <br /><strong><?= $block->escapeHtml(__('Message:')) ?></strong>
+                    <br /><?= $block->escapeHtml($_giftMessage->getMessage()) ?>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<?php endif; ?>

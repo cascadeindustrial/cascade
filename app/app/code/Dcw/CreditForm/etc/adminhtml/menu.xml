@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- <add id="Dcw_CreditForm::CreditForm" title="Dcw" module="Dcw_CreditForm" sortOrder="51" resource="Dcw_CreditForm::helloworld"/> -->
+        <add id="Dcw_CreditForm::post" title="Credit application form" module="Dcw_CreditForm" sortOrder="10"
+        	 action="creditformadmin/post/" resource="Dcw_CreditForm::post" parent="Dcw_CustomPricing::dcw"/>
+    </menu>
+</config>

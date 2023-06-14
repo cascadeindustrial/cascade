@@ -1,0 +1,73 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php
+// phpcs:disable Magento2.Templates.ThisInTemplate.FoundThis
+
+/**
+ * Category view template
+ *
+ * @var $block \Magento\Catalog\Block\Category\View
+ */
+$controllerName = $this->getRequest()->getControllerName();
+// echo $controllerName;
+// exit;
+?>
+<?php
+if($controllerName == 'index'):
+$_helper    = $this->helper(Magento\Catalog\Helper\Output::class);
+    $_category  = $block->getCurrentCategory();
+    $_imgHtml   = '';
+    if ($_imgUrl = $_category->getImageUrl()) {
+        $_imgHtml = '<div class="category-image"><img src="'
+            . $block->escapeUrl($_imgUrl)
+            . '" alt="'
+            . $block->escapeHtmlAttr($_category->getName())
+            . '" class="image" /></div>';
+        $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
+        /* @noEscape */ echo $_imgHtml;
+
+    }
+
+?>
+<?php if ($_description = $block->getCurrentCategory()->getDescription()) :?>
+    <div class="category-description">
+        <?= /* @noEscape */ $this->helper(Magento\Catalog\Helper\Output::class)->categoryAttribute(
+            $block->getCurrentCategory(),
+            $_description,
+            'description'
+        ) ?>
+    </div>
+    <div class="category-mobile- description">
+        <?= /* @noEscape */ $this->helper(Magento\Catalog\Helper\Output::class)->categoryAttribute(
+            $block->getCurrentCategory(),
+            $_description,
+            'description'
+        ) ?>
+        <span class='read-more'></span>
+    </div>
+<?php endif; ?>
+<?php endif; ?>
+
+<script>
+    require(['jquery', 'jquery/ui'], function($){
+        $(document).ready( function() {
+            /**** for description ***/
+            $(".category-view .read-more").text("read more");
+            $(".category-view .read-more").click(function(a) {
+                a.preventDefault();
+                $(".category-view").toggleClass("active-sec");
+                if ($(".category-view").hasClass("active-sec")){
+                    $(".category-view .read-more").text("read less");
+                }
+                else {
+                    $(".category-view .read-more").text("read more");
+                }
+            });
+
+        });
+    });
+</script>

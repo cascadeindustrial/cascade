@@ -1,0 +1,71 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2020 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+<?php
+/**
+ * @var \Amasty\Orderattr\Block\Order\Attributes $block
+ */
+?>
+
+<?php if ($orderAttributeList = $block->getOrderAttributesData()) : ?>
+  <?php
+          $orderId = $this->getRequest()->getParam('order_id');
+
+          // echo "<pre>";
+          // print_r($orderAttributeList);
+
+          $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+          $order = $objectManager->create('\Magento\Sales\Model\Order')
+                                     ->load($orderId);
+
+          $incrementId = $order->getIncrementId();
+
+          $sampleIncrementId = "INC".$incrementId;
+
+          $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); // Instance of object manager
+          $resource=$objectManager->create('\Magento\Framework\App\ResourceConnection');
+          $connection = $resource->getConnection(\Magento\Framework\App\ResourceConnection::DEFAULT_CONNECTION);
+
+          $sql = "SELECT * FROM `order_storedaccount_values` where increment_id='$sampleIncrementId'";
+          $orderData = $connection->fetchRow($sql);
+  ?>
+<div class="block block-order-details-view">
+    <div class="block-title">
+        <strong><?= $block->escapeHtml(__('Additional Info')) ?></strong>
+    </div>
+    <div class="block-content">
+        <?php foreach ($orderAttributeList as $attribute) : ?>
+          <?php if($attribute['code']=='account_selection_pm' || $attribute['code']== 'guest_fedex_radio_selectionpm' || $attribute['code']=='existing_account_selection_pm' || $attribute['code']=='ups_save_for_future_usepm' || $attribute['code']=='existing_account_selection_pm' || $attribute['code']=='fedex_radio_selectionpm' || $attribute['code']=='fedex_save_for_future_usepm')
+                      continue;
+          ?>
+        <div class="box">
+            <strong class="box-title">
+                <span><?= $block->escapeHtml(__($attribute['label'])); ?></span>
+            </strong>
+            <div class="box-content">
+                <?= /** @noEscape */ $attribute['value']; ?>
+            </div>
+        </div>
+        <?php endforeach;?>
+        <?php if($orderData['ups_account_no']!=0){?>
+          <tr>
+              <th><?= "UPS Account No:" ?></th>
+              <td>
+                  <strong><?= $orderData['ups_account_no']; ?></strong>
+              </td>
+          </tr>
+      <?php }else if($orderData['fedex_account_no']!=0){?>
+        <tr>
+            <th><?= "Fedex Account No:" ?></th>
+            <td>
+                <strong><?= $orderData['fedex_account_no']; ?></strong>
+            </td>
+        </tr>
+      <?php }?>
+    </div>
+</div>
+<?php endif; ?>

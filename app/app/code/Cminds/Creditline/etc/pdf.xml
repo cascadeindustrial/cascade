@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Cminds Creditline.
+ *
+ * @category Cminds
+ * @package  Cminds_Creditline
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/pdf_file.xsd">
+    <totals>
+        <total name="credit">
+            <title translate="true">Credit Line</title>
+            <source_field>creditline_amount</source_field>
+            <amount_prefix>-</amount_prefix>
+            <display_zero>false</display_zero>
+            <sort_order>600</sort_order>
+        </total>
+        <total name="creditline_refunded">
+            <title translate="true">Refunded to Credit Line</title>
+            <source_field>creditline_total_refunded</source_field>
+            <display_zero>false</display_zero>
+            <sort_order>700</sort_order>
+        </total>
+    </totals>
+</config>

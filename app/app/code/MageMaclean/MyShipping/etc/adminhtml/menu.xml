@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageMaclean_MyShipping::myshipping" 
+            title="My Shipping" 
+            module="MageMaclean_MyShipping" 
+            sortOrder="40" 
+            parent="MageMaclean_Core::magemaclean" 
+            resource="MageMaclean_MyShipping::myshipping" />
+
+        <add id="MageMaclean_MyShipping::myshipping_courier"
+             title="Couriers"
+             module="MageMaclean_MyShipping"
+             sortOrder="10"
+             action="myshipping/courier/"
+             resource="MageMaclean_MyShipping::myshipping_courier"
+             parent="MageMaclean_MyShipping::myshipping" />
+
+        <add id="MageMaclean_MyShipping::carrier" 
+            title="Carrier Configuration" 
+            module="MageMaclean_MyShipping" 
+            sortOrder="20" 
+            action="adminhtml/system_config/edit/section/carriers" 
+            parent="MageMaclean_MyShipping::myshipping" 
+            resource="Magento_Shipping::carriers" />
+
+        <add id="MageMaclean_MyShipping::configuration" 
+            title="System Configuration" 
+            module="MageMaclean_MyShipping" 
+            sortOrder="20" 
+            action="adminhtml/system_config/edit/section/myshipping" 
+            parent="MageMaclean_MyShipping::myshipping" 
+            resource="MageMaclean_MyShipping::configuration" />
+    </menu>
+</config>

@@ -1,0 +1,30 @@
+{
+    "name": "magemaclean/m2-myshipping-customer",
+    "description": "Magento 2 customer enabled feature for use my shipping account",
+    "require": {
+      "magemaclean/m2-core": "^1.0.0",
+      "magemaclean/m2-myshipping": "^2.0.0"
+    },
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "license": [
+        "OSL-3.0"
+    ],
+    "minimum-stability": "dev",
+    "authors": [
+      {
+        "name": "MageMaclean",
+        "email": "support@magemaclean.com",
+        "homepage": "https://magemaclean.com",
+        "role": "Leader"
+      }
+    ],
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "MageMaclean\\MyShippingCustomer\\": ""
+      }
+    }
+  }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+
+   <type name="Magento\Checkout\CustomerData\DefaultItem">
+        <plugin name="minicart-product-attribute" type="Dcw\CustomPricing\Plugin\DefaultItem" />
+    </type>
+     <type name="Magento\Checkout\Model\Cart">
+        <plugin name="prevent_add_to" type="Dcw\CustomPricing\Plugin\PreventAddToCart"/>
+    </type>
+     <type name="Magento\Quote\Model\Quote\Item\ToOrderItem">
+        <plugin name="shipping_option_quote_to_order_item" type="Dcw\CustomPricing\Plugin\QuoteToOrderItem"/>
+    </type>
+    <!-- <preference for="Cart2Quote\Quotation\Controller\Quote\Index" type="Dcw\CustomPricing\Controller\Quote\Index" />
+ -->
+   <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+      <arguments>
+         <argument name="collections" xsi:type="array">
+            <item name="dcw_custompricing_custompricing_listing_data_source" xsi:type="string">Dcw\CustomPricing\Model\ResourceModel\CustomPricing\Grid\Collection</item>
+         </argument>
+      </arguments>
+   </type>
+
+  <!-- <type name="Magento\Checkout\Model\DefaultConfigProvider">
+        <plugin name="AddAttPlug" type="Dcw\CustomPricing\Plugin\ConfigProviderPlugin" />
+    </type>-->
+
+   <virtualType name="Dcw\CustomPricing\Model\ResourceModel\CustomPricing\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+      <arguments>
+         <argument name="mainTable" xsi:type="string">dcw_custom_price_rules</argument>
+         <argument name="resourceModel" xsi:type="string">Dcw\CustomPricing\Model\ResourceModel\CustomPricing</argument>
+      </arguments>
+   </virtualType>
+
+</config>

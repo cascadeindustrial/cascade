@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2020 Amasty (https://www.amasty.com)
+ * @package Amasty_Checkout
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="sales_order_item_renderers"/>
+    <update handle="sales_order_item_price"/>
+    <body>
+        <referenceBlock name="checkout.success" remove="true"/>
+        <referenceContainer name="content">
+            <block ifconfig="amasty_checkout/general/enabled" class="Magento\Framework\View\Element\Messages" name="messages" as="messages" template="Magento_Theme::messages.phtml"/>
+            <block class="Magento\Checkout\Block\Onepage\Success" name="amasty.checkout.success" template="Amasty_Checkout::onepage/success.phtml" cacheable="false">
+                <container name="order.success.additional.info" label="Order Success Additional Info"/>
+                <block class="Amasty\Checkout\Block\Onepage\Success\Cms" name="amasty.checkout.success.cms" as="cms" after="-" >
+                    <arguments>
+                        <argument name="data" xsi:type="array">
+                            <item name="cache_lifetime" xsi:type="number">86400</item>
+                        </argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+         <referenceBlock name="page.main.title" remove="true"/>
+
+    </body>
+</page>

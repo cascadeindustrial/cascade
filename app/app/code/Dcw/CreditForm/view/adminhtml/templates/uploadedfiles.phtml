@@ -1,0 +1,18 @@
+<?php
+    // $urlInterface = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Framework\UrlInterface');
+    // $url = $urlInterface->getCurrentUrl();
+    // $parts = explode('/', parse_url($url, PHP_URL_PATH));
+    // $customer_id=$parts[7];
+    $id = $this->getRequest()->getParam('id');
+    $objm = \Magento\Framework\App\ObjectManager::getInstance();
+    $customerData = $objm->create('Dcw\CreditForm\Model\Post')->load($id)->getUploadFile();
+    $filepath = $objm->get('Magento\Store\Model\StoreManagerInterface')->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+    if($customerData){
+    $pdfFilePathArray = explode (",", $customerData);
+    foreach($pdfFilePathArray as $pdfpath){
+        $pdfFileNames = explode ("/", $pdfpath);
+        $name = end($pdfFileNames); ?>
+        <div class = "uploaded-file">
+        <a href="<?php echo $filepath.$pdfpath; ?>" target="_blank"><?php echo $name; ?> </a><br><br>
+        </div>
+<?php }}else{echo "Not uploaded any files";}  ?>

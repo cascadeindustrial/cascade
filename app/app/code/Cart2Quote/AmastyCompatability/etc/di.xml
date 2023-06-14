@@ -1,0 +1,9 @@
+<?xml version="1.0"?><!--
+  ~ Copyright (c) 2019. Cart2Quote B.V. All rights reserved.
+  ~ See COPYING.txt for license details.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Amasty\Checkout\Model\Quote\CheckoutInitialization">
+        <plugin name="amasty_checkout_plugin" type="Cart2Quote\AmastyCompatability\Plugin\Model\Quote\CheckoutInitializationPlugin"/>
+    </type>
+</config>

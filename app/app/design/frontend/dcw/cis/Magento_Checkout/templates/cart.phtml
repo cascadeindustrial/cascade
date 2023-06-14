@@ -1,0 +1,62 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+
+<?php
+/**
+ * Shopping cart template
+ *
+ * @var $block \Magento\Checkout\Block\Cart
+ */
+ $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/validator.log');
+           $logger = new \Zend\Log\Logger();
+           $logger->addWriter($writer);
+			
+			
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$cart = $objectManager->get('\Magento\Checkout\Model\Cart');
+$itemsCollection = $cart->getQuote()->getItemsCollection();
+$itemsVisible = $cart->getQuote()->getAllVisibleItems();
+$items = $cart->getQuote()->getAllVisibleItems();
+$shippingOption = 0;
+foreach($items as $item) {
+	$logger->info(json_encode((array)$item));
+	$customPrice = $item->getCustomPrice();
+		 //  if($customPrice){
+			//   echo $this->getLayout()
+			// 		->createBlock('Magento\Cms\Block\Block')
+			// 		->setBlockId('delivery_options')
+			// 		->toHtml();
+			// 		echo "first";
+			// 		break;
+			// }
+			if($item->getShippingOption())
+			{
+
+				$shippingOption = $item->getShippingOption();
+
+				break;
+			}
+}
+if($shippingOption == 1 || $shippingOption == 2 ){
+echo $this->getLayout()
+			->createBlock('Magento\Cms\Block\Block')
+			->setBlockId('delivery_options')
+			->toHtml();
+			//echo "second";
+		}?>
+
+	<!-- <p>*Changing your shipping preference will improve lead times and can be reviewed for each product by selecting</p>
+	<p>*View Details" for each product in the cart.</p> -->
+<?php //}
+if ($block->getItemsCount()) {
+    // phpcs:ignore Magento2.Security.LanguageConstruct.DirectOutput
+    echo $block->getChildHtml('with-items');
+
+} else {
+    // phpcs:ignore Magento2.Security.LanguageConstruct.DirectOutput
+    echo $block->getChildHtml('no-items');
+}

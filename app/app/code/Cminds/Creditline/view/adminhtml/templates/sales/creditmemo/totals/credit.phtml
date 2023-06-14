@@ -1,0 +1,14 @@
+<?php
+/** @var Item $block */
+
+$source = $block->getSource();
+$block->setPriceDataObject($source)
+?>
+<tr>
+    <td class="label">
+        <?= __('Credit Line') ?>
+    </td>
+    <td>
+        <?= $block->displayPrices(-$source->getBaseCreditlineAmount(), -$source->getCreditlineAmount()) ?>
+    </td>
+</tr>

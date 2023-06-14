@@ -1,0 +1,55 @@
+<?php
+/*
+ * Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Cart2Quote\Quotation\Block\Adminhtml\Quote\View\Tab\PreviousQuotes $block */
+?>
+
+<?php $quotes = $block->getQuotes(); ?>
+<?php if ($quotes && $quotes->getSize()) : ?>
+    <div class="admin__data-grid-wrap">
+        <h3 class="table-title"><?php echo $block->escapeHtml(__("%1's Previous Quotations.", $block->getCustomer()->getName())) ?></h3>
+        <table class="data-grid quotation_quote_history_table" id="my-quotes-table">
+            <div class="quotation-customer-history">
+                    <thead>
+                        <tr class="customer_quote_history_grid">
+                            <th scope="col" class="col id"><?php echo $block->escapeHtml(__('Quotation #')) ?></th>
+                            <th scope="col" class="col date"><?php echo $block->escapeHtml(__('Date')) ?></th>
+                            <th scope="col" class="col status"><?php echo $block->escapeHtml(__('Quotation Request Status')) ?></th>
+                            <th scope="col" class="col status"><?php echo $block->escapeHtml(__('Product Quantity')) ?></th>
+                            <th scope="col" class="col status"><?php echo $block->escapeHtml(__('Total Price')) ?></th>
+                            <th scope="col" class="col actions"><?php echo $block->escapeHtml(__('Actions')) ?></th>
+                        </tr>
+                    </thead>
+                <tbody>
+                <?php
+                /** @var \Cart2Quote\Quotation\Model\Quote $quote */
+                foreach ($quotes as $quote) : ?>
+                    <tr>
+                        <td data-th="<?php echo $block->escapeHtml(__('Quote #')) ?>"
+                            class="col id"><?php echo $block->escapeHtml($quote->getIncrementId()) ?></td>
+                        <td data-th="<?php echo $block->escapeHtml(__('Date')) ?>"
+                            class="col date"><?php echo $block->escapeHtml($block->formatDate($quote->getQuotationCreatedAt())) ?></td>
+                        <td data-th="<?php echo $block->escapeHtml(__('Status')) ?>"
+                            class="col status"><?php echo $block->escapeHtml($quote->getStatusLabel()->getText()) ?></td>
+                        <td data-th="<?php echo $block->escapeHtml(__('Product Quantity')) ?>"
+                            class="col item_qty"><?php echo $block->escapeHtml(__('%1 Product(s)', (int)$quote->getItemsQty())) ?></td>
+                        <td data-th="<?php echo $block->escapeHtml(__('Total Price')) ?>" class="col status">
+                            <?php echo $block->formatPrice($quote->getBaseGrandTotal()) ?></td>
+                        <td data-th="<?php echo $block->escapeHtml(__('Actions')) ?>" class="col actions">
+                            <a href="<?php echo $block->escapeHtml($block->getQuoteViewUrl($quote->getId())) ?>" class="action view">
+                                <span><?php echo $block->escapeHtml(__('View Quote')) ?></span>
+                            </a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </div>
+        </table>
+    </div>
+<?php else : ?>
+    <div class="message info empty"><span><?php echo $block->escapeHtml(__('%1 has no previous quotations.', $block->getCustomerName())); ?></span></div>
+<?php endif ?>
+

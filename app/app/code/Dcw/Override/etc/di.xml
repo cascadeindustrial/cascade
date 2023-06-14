@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+   <preference for="Amasty\Orderattr\Block\Order\Attributes" type="Dcw\Override\Block\Order\Attributes" />
+
+     <type name="Magento\Checkout\Block\Onepage">
+    <plugin name="Amasty_Checkout::InitializeQuote" disabled="true" />
+</type>
+<type name="Magento\Checkout\Block\Onepage">
+    <plugin disabled="false" name="OnepagePlugin" type="Dcw\Override\Plugin\Checkout\Block\OnepagePlugin" sortOrder="1" />
+</type>
+
+<!--      <preference for="MageWorx\GeoIP\Helper\Customer" type="Dcw\Override\Helper\Customer" />-->
+
+      <preference for="Magento\ConfigurableProduct\Block\Product\View\Type\Configurable" type="Dcw\Override\Block\Product\View\Type\Configurable" />
+ 
+  <preference for="Amasty\Orderattr\Observer\ConvertQuoteToOrder" type="Dcw\Override\Observer\ConvertQuoteToOrder" />
+
+  <preference for="Cart2Quote\Quotation\Controller\MoveToQuote\Index" type="Dcw\Override\Controller\MoveToQuote\Index" />
+
+  
+  <!--    <preference for="Amasty\Orderattr\Model\Config\Source\CheckoutStep" type="Dcw\Override\Model\Config\Source\CheckoutStep" />-->
+
+<!--   <preference for="Amasty\Orderattr\Model\Value\Metadata\Form" type="Dcw\Override\Model\Value\Metadata\Form" /> -->
+
+<!--  <preference for="Amasty\Orderattr\Model\Attribute\InputType\FrontendCaster" type="Dcw\Override\Model\Attribute\InputType\FrontendCaster" />-->
+</config>

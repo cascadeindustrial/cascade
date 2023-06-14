@@ -1,0 +1,125 @@
+<!--
+/**
+ * Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<div class="admin__page-section-item left-section-item">
+    <div class="admin__page-section-item-title">
+        <span class="title" data-bind="i18n: 'Coupon code'"></span>
+    </div>
+    <div class="admin__page-section-item-content">
+        <div class="fieldset-wrapper">
+            <div class="admin__fieldset-wrapper-content">
+                <fieldset class="admin__fieldset" id="coupon-fieldset">
+                    <div class="admin__field">
+                        <div class="admin__field-label">
+                            <label for="coupon-code">
+                                <span data-bind="i18n: 'Coupon code'"></span>
+                            </label>
+                        </div>
+                        <div class="admin__field-control">
+                            <input id="coupon-code"
+                                   class="input-text admin__control-text coupon-code"
+                                   data-bind="value: couponCode"
+                                   type="text"/>
+                        </div>
+                    </div>
+                    <div class="admin__field">
+                        <div class="admin__field-label">
+                            <label for="coupon-code-amount">
+                                <span data-bind="i18n: 'Coupon amount'"></span>
+                            </label>
+                        </div>
+                        <div class="admin__field-control">
+                            <input id="coupon-code-amount"
+                                   data-bind="value: couponCodeAmount"
+                                   data-validate="{'validate-number':true,'validate-greater-than-zero':true}"
+                                   class="input-text admin__control-text admin__control-number coupon-amount"
+                                   type="number"
+                            />
+                        </div>
+                    </div>
+                    <div class="admin__field">
+                        <div class="admin__field-control">
+                            <div class="admin__actions-switch" data-role="switcher">
+                                <input id="coupon-code-as-percentage"
+                                       type="checkbox"
+                                       data-bind="checked: couponCodeAsPercentage"
+                                       class="admin__actions-switch-checkbox percentage-amount-switch"
+                                       data-percentage-for="#coupon-code-amount"
+                                       afterRender="initSubscribe"
+                                       value="0">
+                                <label class="admin__actions-switch-label" for="coupon-code-as-percentage">
+                                    <span class="admin__actions-switch-text" data-text-on="Percentage"
+                                          data-text-off="Amount"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin__field">
+                        <div class="admin__field-control">
+                            <button type="button" id="coupon-code-apply-button"
+                                    data-bind="i18n: 'Apply coupon code', click: applyCouponCode"></button>
+                            <button type="button" id="coupon-code-remove-button"
+                                    data-bind="i18n: 'Remove coupon code', click: removeCouponCode"></button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="admin__page-section-item right-section-item">
+    <div class="admin__page-section-item-title">
+        <span class="title" data-bind="i18n: 'Subtotal proposal'"></span>
+    </div>
+    <div class="admin__page-section-item-content">
+        <div class="fieldset-wrapper">
+            <div class="admin__fieldset-wrapper-content">
+                <fieldset class="admin__fieldset" id="subtotal-proposal-fieldset">
+                    <div class="admin__field">
+                        <div class="admin__field-label">
+                            <label for="subtotal-proposal-amount">
+                                <span data-bind="i18n: 'Subtotal proposal'"></span>
+                            </label>
+                        </div>
+                        <div class="admin__field-control">
+                            <input id="subtotal-proposal-amount" data-bind="value: subtotalProposalAmount"
+                                   data-validate="{'validate-no-empty': true, 'validate-number':true,'validate-greater-than-zero':true}"
+                                   class="input-text admin__control-text admin__control-number subtotal-proposal-amount"
+                                   type="number"
+                            />
+                        </div>
+                    </div>
+                    <div class="admin__field">
+                        <div class="admin__field-control">
+                            <div class="admin__actions-switch" data-role="switcher">
+                                <input id="subtotal-proposal-as-percentage"
+                                       data-bind="checked: subtotalProposalAsPercentage"
+                                       type="checkbox"
+                                       class="admin__actions-switch-checkbox percentage-amount-switch"
+                                       value="0"
+                                       afterRender="initSubscribe"
+                                       data-percentage-for="#subtotal-proposal-amount"
+                                >
+                                <label class="admin__actions-switch-label" for="subtotal-proposal-as-percentage">
+                                    <span class="admin__actions-switch-text" data-text-on="Percentage"
+                                          data-text-off="Amount"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin__field">
+                        <div class="admin__field-control">
+                            <button type="button" id="subtotal-proposal-apply-button"
+                                    data-bind="i18n: 'Apply subtotal proposal', click: applySubtotalProposal"></button>
+                            <button type="button" id="subtotal-proposal-reset-button"
+                                    data-bind="i18n: 'Reset subtotal proposal', click: resetSubtotalProposal"></button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>

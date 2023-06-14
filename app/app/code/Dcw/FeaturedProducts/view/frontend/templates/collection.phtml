@@ -1,0 +1,226 @@
+<?php
+$placeholderImageUrl = $block->getDefaultPlaceholderImageUrl();
+const PARAM_NAME_BASE64_URL = 'r64';
+//const PARAM_NAME_URL_ENCODED = 'uenc';
+use Magento\Framework\App\Action\Action;
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$collection = $block->getProductCollection();
+$featuredCategoryUrl = $block->getCategoryUrl();
+//$customVariableValue = $block->getVariableValue();
+$urlVariable = $objectManager->create('Cart2Quote\Quotation\Block\Product\Listing\Form');
+
+?>
+<div class="featured-prodcuts">
+<div class="container">
+<div class="title"><?php echo "Featured Products";?>
+ <a href="<?php echo $featuredCategoryUrl ?>" title="Featured Category">
+  <span>View All</span>
+</a>
+</div>
+<div class="products-grid grid">
+<ul class="featured-prodcuts-slider">
+<?php foreach ($collection as $featuredcollection):
+ $mediaUrl = $block->getMediaUrl();
+$price=$objectManager->create('Magento\Framework\Pricing\Helper\Data')->currency(number_format($featuredcollection->getPrice(),2));// store wise value can change with currency.
+$specialPrice=$objectManager->create('Magento\Framework\Pricing\Helper\Data')->currency(number_format($featuredcollection->getSpecialPrice(),2));
+ // echo $quoteUrl= $urlVariable->getAddToQuoteUrl($featuredcollection);
+ // exit;
+?>
+<li class="product-block">
+<div class="image-wrapper">
+  <?php
+$imgHtml = $mediaUrl.'catalog/product/'. $featuredcollection->getData('thumbnail');
+ if($imgHtml == $mediaUrl.'catalog/product/'){
+$imgHtml = $placeholderImageUrl;
+//echo $imgHtml."1111111111";exit;
+} ?>
+ <img height="150" width="150" src="<?php echo $imgHtml; ?>" />
+</div>
+<div class="featured_products_details ">
+                <a href="#" data-post='<?php  echo $this->helper('Magento\Wishlist\Helper\Data')->getAddParams($featuredcollection) ?>' class="action towishlist" data-action="add-to-wishlist">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+                <a class="product-name"><?php echo "" .$featuredcollection->getData('name'); ?></span></a>
+                <div class="products_detail">
+                <div class="sku-model-brand">
+                <span class="smd"><?php echo "<label>Sku:</label>" .$featuredcollection->getData('sku'); ?></span>
+                <span class="smd"><?php echo "<label>Model:</label>". $featuredcollection->getData('model_no'); ?></span>
+                </div>
+                  <?php if( $featuredcollection->getData('type_id') == 'simple' ): ?>
+                  <?php $postParams = $block->getAddToCartPostParams($featuredcollection); ?>
+                      
+                  <form class="qty-block" data-role="tocart-form" data-quote-submit-action="<?php echo $quoteUrl= $urlVariable->getAddToQuoteUrl($featuredcollection) ?>" action="<?php /* @escapeNotVerified */ echo $postParams['action']; ?>" method="post">
+                    <div class="control">
+                                <span class="input-group__addon">
+                                    <div onclick="decreaseQty(<?= $block->escapeHtml($featuredcollection->getId()) ?>)" class="input-groupbutton input-group_button--decrease">
+                                        <span class="input-group_icon input-group_icon--decrease">-</span>
+                                    </div>
+                                </span>
+                                <input type="number" name="qty" onchange="changeQty(<?= $block->escapeHtml($featuredcollection->getId()) ?>)"id="qty-<?= $block->escapeHtml($featuredcollection->getId()) ?>" maxlength="12" class="input-group_input qty" value="1"/>
+                                <span class="input-group__addon">
+                                    <div onclick="increaseQty(<?= $block->escapeHtml($featuredcollection->getId()) ?>)" class="input-groupbutton input-group_button--increase">
+                                        <span class="input-group_icon input-group_icon--increase">+</span>
+                                    </div>
+                                </span>
+                    </div>
+                    <div class="price-boxes">
+                              <div class="product-special-price">
+                                <?php if ($featuredcollection->getData('special_price') > 0) {
+                                echo "". $specialPrice;} ?></div>
+
+                                <?php if ($featuredcollection->getData('special_price') > 0): ?>
+                                <div class="product-price strike"><?php echo "". $price; ?></div>
+                                <?php else: ?>
+                                <div class="product-price"><?php echo "". $price; ?></div>
+                                <?php endif; ?>
+                    </div>
+
+                      <input type="hidden" name="product" value="<?php /* @escapeNotVerified */ echo $postParams['data']['product']; ?>">
+                      <input type="hidden" name="<?php /* @escapeNotVerified */ echo Action::PARAM_NAME_URL_ENCODED; ?>" value="<?php /* @escapeNotVerified */ echo $postParams['data'][Action::PARAM_NAME_URL_ENCODED]; ?>">
+                      <?php echo $block->getBlockHtml('formkey')?>
+                          <button type="submit"
+                                  title="<?php echo $block->escapeHtml(__('Add to Cart')); ?>"
+                                  class="action tocart primary">
+                              <span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span>
+                          </button>
+                          <button type="submit"
+                    data-role="addToQuoteButton"
+                    title="<?php echo $block->escapeHtml(__('Request Quote')) ?>"
+                    class="action primary toquote tocart quote-btn-list">
+                <span>
+                    <?php echo $block->escapeHtml(__('Request Quote')) ?>
+                </span>
+            </button>
+                          
+                  </form>
+                    <?php endif; ?>
+                     <?php if( $featuredcollection->getData('type_id') == 'configurable' ): ?>
+                      <form class="qty-block" data-role="tocart-form" data-quote-submit-action="<?php echo $this->getUrl('quotation/quote/add') ?>" action="<?php /* @escapeNotVerified */ echo $postParams['action']; ?>" method="post">
+                     <div class="price-boxes">
+                      <div class="product-price"><?php echo "". $price; ?></div>
+                    </div>
+                    <button class="view-details action tocart primary"><a href="<?php echo $featuredcollection->getProductUrl() ?>" title="Add to Cart" class="action tab-addtocart add-to-cart">
+                      <span>View Details</span>
+                    </a>
+                  </button>
+                  <button type="submit"
+                    data-role="addToQuoteButton"
+                    title="<?php echo $block->escapeHtml(__('Request Quote')) ?>"
+                    class="action primary toquote tocart quote-btn-list">
+                <span>
+                    <?php echo $block->escapeHtml(__('Request Quote')) ?>
+                </span>
+            </button>
+                </form>
+                   <?php endif; ?>
+                </div>
+              </div>
+</li>
+    <?php endforeach;  ?>
+</ul>
+</div>
+</div>
+</div>
+<script>
+  function decreaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) -1;
+        if(qty < 1){
+            qty =1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function increaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) +1;
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function changeQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        if(qty< 1){
+            qty = 1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+require(['jquery','slick'],function($){
+  $(document).ready(function(){
+    $('.featured-prodcuts-slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      centerMode: false,
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 1,
+            prevArrow: false,
+          nextArrow: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 1,
+            prevArrow: false,
+          nextArrow: false
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  });
+})
+</script>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "wishlist": {
+                    "component": "Magento_Wishlist/js/view/wishlist"
+                }
+            }
+        }
+    }
+}
+</script>
+
+<script type="text/x-magento-init">
+ {
+        "[data-role=tocart-form], .form.map.checkout": {
+            "catalogAddToCart": {
+                "addToQuoteButtonSelector": "[data-role=addToQuoteButton]",
+                "addToCartButtonSelector": "[data-role=addToCartButton]"
+            }
+        }
+    }
+    </script>
+

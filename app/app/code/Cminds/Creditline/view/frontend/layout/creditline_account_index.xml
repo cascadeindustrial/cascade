@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" name="title" xsi:type="string">My Credit Line</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block name="creditline_customer_account" class="Cminds\Creditline\Block\Customer\Account" template="customer/account.phtml" ifconfig="creditline/general/creditline_active">
+                <block name="balance" class="Cminds\Creditline\Block\Customer\Account" template="customer/account/balance.phtml" cacheable="false" />
+                <block name="send_to_friend" class="Cminds\Creditline\Block\Customer\Account" template="customer/account/send_to_friend.phtml" ifconfig="creditline/general/enable_send_friend" />
+                <block name="transactions" class="Cminds\Creditline\Block\Customer\Account" template="customer/account/transactions.phtml" />
+                <block name="refill" class="Cminds\Creditline\Block\Customer\Refill" template="customer/account/refill.phtml" />
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,74 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<div data-bind="scope: 'messages'" class="msg">
+    <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
+    <div role="alert" data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages cookie_msg_content">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text" class="msg_cnt"></div>
+            <a class="close_btn">x</a>
+        </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: messages().messages && messages().messages.length > 0 -->
+    <div role="alert" data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages msg_content">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text" class="msg_cnt"></div>
+            <a class="close_btn">x</a>
+        </div>
+    </div>
+    <!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }
+</script>
+
+<script type="text/javascript">
+ require(['jquery', 'jquery/jquery-storageapi' , 'domReady!'], function($){
+ setTimeout(function()
+    {
+        $.cookieStorage.set('mage-messages', '');
+    }, 8000);
+    // setTimeout(function(){ jQuery('.checkout-onepage-success .msg').addClass('act'); }, 2000);
+    // jQuery('.checkout-onepage-success .msg').on('click', function(){
+    //     setTimeout(function(){ jQuery('.checkout-onepage-success .msg').hide(); }, 500);
+    // })
+})
+</script>
+
+<script>
+    require(['jquery', 'slick'], function($) {
+        $(document).ready(function($) {
+
+            // setTimeout(function(){ jQuery('.page.messages a.close_btn').html('x'); }, 5000);
+
+            // setTimeout(function(){
+            //     if(!(jQuery(".msg_content").length == 0)){
+            //         jQuery(".msg_content").parent().closest('.msg').addClass('msg-hide');
+            //     }
+            // }, 5000);
+            // setTimeout(function(){
+            //     jQuery('.msg-hide').hide();
+            // }, 4000);
+        });
+    });    
+</script>   

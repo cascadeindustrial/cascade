@@ -1,0 +1,65 @@
+<?php
+$_product = $block->getProduct();
+$helper = $this->helper('Dcw\Products\Helper\Data');
+$stockItem = $_product->getExtensionAttributes()->getStockItem();?>
+   <?php
+   if ((!$helper->isLoggedIn()) && (!$stockItem->getIsInStock())) {
+    $stockdeli = $_product->getAttributeText('standard_delivery_time');
+  $stockattribute = $_product->getResource()->getAttribute('standard_delivery_time');
+      if (!is_null($_product->getData($stockattribute->getAttributeCode())) && ((string)$stockattribute->getFrontend()->getValue($_product) != '')) { ?>
+ <div class="stock_delivery deltime-option"><span class="final_delivery_time"><?php  echo $stockdeli; ?> </span><img src="<?php echo $this->getViewFileUrl('images/calaendar.png'); ?>" alt="cascade"></div>
+<?php  }
+      }
+?>
+<?php
+   if ($stockItem->getIsInStock()) {
+    $standarddeli = $_product->getAttributeText('standard_delivery_time');
+  $standardattribute = $_product->getResource()->getAttribute('standard_delivery_time');
+
+      }
+?>
+   <?php
+   if (!$stockItem->getIsInStock() && $helper->isLoggedIn()) {
+    $shipdeli = $_product->getAttributeText('standard_delivery_time');
+  $shipsattribute = $_product->getResource()->getAttribute('standard_delivery_time');
+    if (!is_null($_product->getData($shipsattribute->getAttributeCode())) && ((string)$shipsattribute->getFrontend()->getValue($_product) != '')) { ?>
+ <div class="ship_delivery deltime-option"><span><?php  echo $shipdeli; ?> </span><img src="<?php echo $this->getViewFileUrl('images/calaendar.png'); ?>" alt="cascade"></div>
+ <?php  }
+
+   }
+?>
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$urlVariable = $objectManager->create('Cart2Quote\Quotation\Block\Product\Listing\Form');
+$postParams = $block->getAddToCartPostParams($_product); ?>
+<?php if (!$stockItem->getIsInStock()) { ?>
+<form class="qty-block" data-role="tocart-form" data-quote-submit-action="<?php echo $quoteUrl= $urlVariable->getAddToQuoteUrl($_product) ?>" action="<?= $block->escapeUrl($postParams['action']) ?>" method="post">
+<?php echo $block->getBlockHtml('formkey'); ?>
+
+    <div class="field choice related">
+          <button type="submit" data-role="addToQuoteButton" title="<?php echo $block->escapeHtml(__('Request Quote')) ?>" class="action primary toquote tocart quote-btn-list">
+             <span>
+               <?php echo $block->escapeHtml(__('Request Quote')) ?>
+             </span>
+           </button>
+    </div>
+    <div>
+      <a href="#" data-post='<?php  echo $this->helper('Magento\Wishlist\Helper\Data')->getAddParams($_product) ?>' class="action towishlist" data-action="add-to-wishlist"><span> Add to Wish List </span></a>
+    </div>
+
+
+</form>
+<?php  } ?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "wishlist": {
+                    "component": "Magento_Wishlist/js/view/wishlist"
+                }
+            }
+        }
+    }
+}
+</script>

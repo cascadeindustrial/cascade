@@ -1,0 +1,53 @@
+<!--@subject  {{if emailSubject}} {{var emailSubject}} {{else}} {{var store.getFrontendName()}}: Reminder # {{var invoice.increment_id}} for Order # {{var order.increment_id}} {{/if}} @-->
+{{template config_path="design/email/header_template"}}
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="email-heading">
+                        <h1>Thank you for your order from {{var store.getFrontendName()}}.</h1>
+                        <p>You can check the status of your order by <a href="{{store url="customer/account/"}}">logging into your account</a>.</p>
+                        <br>
+                        <p>We would like to kindly remind you that your Credit Term is ending at {{var dueDate}}. You could clear your balance by following below instructions.</p>
+                    </td>
+                    <td class="store-info">
+                        <h4>Order Questions?</h4>
+                        <p>
+                            {{depend store_phone}}
+                            <strong>Call Us:</strong>
+                            <a href="tel:{{var phone}}">{{var store_phone}}</a><br>
+                            {{/depend}}
+                            {{depend store_hours}}
+                            <span class="no-link">{{var store_hours}}</span><br>
+                            {{/depend}}
+                            {{depend store_email}}
+                            <strong>Email:</strong> <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                            {{/depend}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="order-details">
+            <h3>Your Credit Line Invoice <span class="no-link">{{var invoice.increment_id}}</span></h3>
+            <h4>Balance: <span class="no-link">{{var balance}}</span></h4>
+            <a href="{{var repay}}"><button>PAY NOW</button></a>
+        </td>
+    </tr>
+    <tr class="order-information">
+        <td>
+            {{if comment}}
+            <table cellspacing="0" cellpadding="0" class="message-container">
+                <tr>
+                    <td>{{var comment}}</td>
+                </tr>
+            </table>
+            {{/if}}
+            {{layout area="frontend" handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Dcw_CustomPricing::dcw" title="DCW" module="Dcw_CustomPricing" sortOrder="51" resource="Dcw_CustomPricing::dcw"/>
+        <add id="Dcw_CustomPricing::custompricing" title="Custom Price Rules" module="Dcw_CustomPricing" sortOrder="10" action="dcw_custompricing/custompricing/index" resource="Dcw_CustomPricing::custompricing" parent="Dcw_CustomPricing::dcw"/>
+    </menu>
+</config>

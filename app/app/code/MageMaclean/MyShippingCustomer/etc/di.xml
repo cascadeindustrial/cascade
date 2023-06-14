@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="MageMaclean\MyShipping\Model\Carrier">
+        <plugin name="myshippingcustomer_myshipping_carrier" type="MageMaclean\MyShippingCustomer\Plugin\MyShipping\Carrier" />
+    </type>
+
+    <type name="MageMaclean\MyShipping\Block\Account\Grid">
+        <plugin name="myshippingcustomer_myshipping_account_grid" type="MageMaclean\MyShippingCustomer\Plugin\MyShipping\Account\Grid" />
+    </type>
+</config>

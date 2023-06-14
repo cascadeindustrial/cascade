@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Cart2Quote\Quotation\Block\Quote\QuoteCheckout\LayoutProcessor">
+        <plugin name="fill_form_data" type="Batao\FillQuoteCheckout\Plugin\Checkout\Model\Checkout\LayoutProcessor" sortOrder="100"/>
+    </type>
+    <type name="Magento\Checkout\Model\DefaultConfigProvider">
+        <plugin disabled="false" name="Batao_Email" sortOrder="10" type="Batao\FillQuoteCheckout\Plugin\Checkout\Model\Checkout\ConfigProvider"/>
+    </type>
+</config>

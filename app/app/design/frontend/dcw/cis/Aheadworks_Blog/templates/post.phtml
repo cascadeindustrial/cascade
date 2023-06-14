@@ -1,0 +1,208 @@
+<?php
+/* @var $block \Aheadworks\Blog\Block\Post */
+
+// @codingStandardsIgnoreFile
+?>
+<?php
+$controllerName = $this->getRequest()->getControllerName();
+$actionName = $this->getRequest()->getActionName();
+$moduleName = $this->getRequest()->getModuleName();
+$indexName = $moduleName."/".$controllerName."/".$actionName;
+$post = $block->getPost();
+$writer = new \Zend\Log\Writer\Stream(BP . '/var/log/custom.log');
+$logger = new \Zend\Log\Logger();
+$logger->addWriter($writer);
+$logger->info('post ids');
+$logger->info($post->getId());
+?>
+<?php if ($post): ?>
+    <?php if($indexName == 'aw_blog/category/view' || $indexName == 'aw_blog/index/index'): ?>
+    <article class="blog-posts-post blog-post">
+        <?php if ($block->isFeaturedImageLoaded()): ?>
+            <div class="blog-post-featured-image-wrapper">
+                <?php if ($block->isListItemMode()): ?>
+                    <a href="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getPostUrl($post)) ?>" class="blog-post-featured-image-link">
+                        <img class="blog-post-featured-image"
+                             src = "<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getFeaturedImageUrl()) ?>"
+                             title = "<?php echo $block->escapeHtml($post->getFeaturedImageTitle()) ?>"
+                             alt = "<?php echo $block->escapeHtml($post->getFeaturedImageAlt()) ?>"
+                        />
+                    </a>
+                <?php else: ?>
+                    <img class="blog-post-featured-image"
+                         src = "<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getFeaturedImageUrl()) ?>"
+                         title = "<?php echo $block->escapeHtml($post->getFeaturedImageTitle()) ?>"
+                         alt = "<?php echo $block->escapeHtml($post->getFeaturedImageAlt()) ?>"
+                    />
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <header class="blog-post-header">
+            <?php if ($block->isListItemMode()): ?>
+                <h2 class="blog-post-title">
+                    <a href="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getPostUrl($post)) ?>" class="blog-post-title-link">
+                        <?php echo $block->escapeHtml($post->getTitle()) ?>
+                    </a>
+                </h2>
+            <?php else: ?>
+                <h1 class="blog-post-title"><?php echo $block->escapeHtml($post->getTitle()) ?></h1>
+            <?php endif; ?>
+            <ul class="blog-post-info">
+                <?php if ($post->getAuthor()): ?>
+                    <li class="blog-post-info-item">
+                        <?php if ($block->isViewMode() && $post->getAuthor()->getImageFile()): ?>
+                            <a class="author-image-link" href="<?= /* @noEscape */ $block->getAuthorUrl() ?>">
+                                <img class="author-image"
+                                     src="<?= $block->escapeUrl($block->getAuthorImageUrl()) ?>"
+                                     title="<?= $block->escapeHtml($block->getAuthorFullname()) ?>"
+                                     alt="<?= $block->escapeHtml($block->getAuthorImageAlt()) ?>"
+                                />
+                            </a>
+                        <?php endif; ?>
+                        <span class="inline-by"><?php /* @noEscape */ echo __('By ') ?></span>
+                        <a class="author-link" href="<?= /* @noEscape */ $block->getAuthorUrl() ?>">
+                            <?php /* @noEscape */ echo $block->getAuthorFullname() ?>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <li class="blog-post-info-item"><?php /* @noEscape */ echo $block->formatDate($post->getPublishDate(), \IntlDateFormatter::MEDIUM) ?></li>
+                <?php if ($block->commentsEnabled()): ?>
+                    <li class="blog-post-info-item">
+                        <a href="#" data-url="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getPostUrl($post)) ?>#disqus_thread"
+                           data-mage-init='{"blogCommentsLink": {}}' class="blog-post-info-comments">
+                            <span class="blog-post-info-comments-icon"></span>
+                            <!-- <span class="blog-post-info-comments-icon-comment">Comments</span> -->
+                            <span class="disqus-comment-count" data-disqus-identifier="<?php echo $block->escapeHtml($post->getId()) ?>"></span>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <?php if ($socialIconsHtml = $block->getSocialIconsHtml()): ?>
+                    <li class="blog-post-info-item socialIcons">
+                        <?php /* @noEscape */ echo $socialIconsHtml ?>
+                    </li>
+                <?php endif; ?>
+            </ul>
+        </header>
+        <?php endif; ?>
+        <?php if($indexName == 'aw_blog/post/view'): ?>
+            <header class="blog-post-header">
+            <?php if ($block->isListItemMode()): ?>
+                <h2 class="blog-post-title">
+                    <a href="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getPostUrl($post)) ?>" class="blog-post-title-link">
+                        <?php echo $block->escapeHtml($post->getTitle()) ?>
+                    </a>
+                </h2>
+            <?php else: ?>
+                <h1 class="blog-post-title"><?php echo $block->escapeHtml($post->getTitle()) ?></h1>
+            <?php endif; ?>
+            <ul class="blog-post-info">
+                <?php if ($post->getAuthor()): ?>
+                    <li class="blog-post-info-item">
+                        <?php if ($block->isViewMode() && $post->getAuthor()->getImageFile()): ?>
+                            <a class="author-image-link" href="<?= /* @noEscape */ $block->getAuthorUrl() ?>">
+                                <img class="author-image"
+                                     src="<?= $block->escapeUrl($block->getAuthorImageUrl()) ?>"
+                                     title="<?= $block->escapeHtml($block->getAuthorFullname()) ?>"
+                                     alt="<?= $block->escapeHtml($block->getAuthorImageAlt()) ?>"
+                                />
+                            </a>
+                        <?php endif; ?>
+                        <span class="inline-by"><?php /* @noEscape */ echo __('By ') ?></span>
+                        <a class="author-link" href="<?= /* @noEscape */ $block->getAuthorUrl() ?>">
+                            <?php /* @noEscape */ echo $block->getAuthorFullname() ?>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <li class="blog-post-info-item"><?php /* @noEscape */ echo $block->formatDate($post->getPublishDate(), \IntlDateFormatter::MEDIUM) ?></li>
+                <?php if ($block->commentsEnabled()): ?>
+                    <li class="blog-post-info-item">
+                        <a href="#" data-url="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getPostUrl($post)) ?>#disqus_thread"
+                           data-mage-init='{"blogCommentsLink": {}}' class="blog-post-info-comments">
+                            <span class="blog-post-info-comments-icon"></span>
+                            <!-- <span class="blog-post-info-comments-icon-comment">Comments</span> -->
+                            <span class="disqus-comment-count" data-disqus-identifier="<?php echo $block->escapeHtml($post->getId()) ?>"></span>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <?php if ($socialIconsHtml = $block->getSocialIconsHtml()): ?>
+                    <li class="blog-post-info-item socialIcons">
+                        <?php /* @noEscape */ echo $socialIconsHtml ?>
+                    </li>
+                <?php endif; ?>
+            </ul>
+        </header>
+            <?php if ($block->isFeaturedImageLoaded()): ?>
+            <div class="blog-post-featured-image-wrapper">
+                <?php if ($block->isListItemMode()): ?>
+                    <a href="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getPostUrl($post)) ?>" class="blog-post-featured-image-link">
+                        <img class="blog-post-featured-image"
+                             src = "<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getFeaturedImageUrl()) ?>"
+                             title = "<?php echo $block->escapeHtml($post->getFeaturedImageTitle()) ?>"
+                             alt = "<?php echo $block->escapeHtml($post->getFeaturedImageAlt()) ?>"
+                        />
+                    </a>
+                <?php else: ?>
+                    <img class="blog-post-featured-image"
+                         src = "<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getFeaturedImageUrl()) ?>"
+                         title = "<?php echo $block->escapeHtml($post->getFeaturedImageTitle()) ?>"
+                         alt = "<?php echo $block->escapeHtml($post->getFeaturedImageAlt()) ?>"
+                    />
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php endif; ?>
+
+        <div class="blog-post-content">
+            <?php /* @noEscape */ echo $block->getContent($post) ?>
+        </div>
+        <?php if ($block->showReadMoreButton($post)): ?>
+            <p class="blog-post-read-more-wrapper">
+                <a href="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getPostUrl($post)) ?>"
+                   class="blog-post-read-more action">
+                    <?php echo $block->escapeHtml(__()) ?>
+                </a>
+            </p>
+        <?php endif; ?>
+        <?php if ($block->isViewMode()): ?>
+            <div class="blog-post-tags">
+                <div class="blog-tags blog-tags-plain">
+                    <?php foreach ($post->getTagNames() as $tagName): ?>
+                        <a href="<?php /* @noEscape */ echo $block->escapeXssInUrl($block->getSearchByTagUrl($tagName)) ?>"
+                           class="blog-tags-tag">
+                            <?php echo $block->escapeHtml($tagName) ?>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        <?php endif; ?>
+        <?php /* @noEscape */ echo $block->getPrevNextHtml($block->isViewMode()) ?>
+        <?php /* @noEscape */ echo $block->getRelatedPostHtml($block->isViewMode()) ?>
+        <?php /* @noEscape */ echo $block->getRelatedProductHtml($block->isViewMode(), $block->getPositionAfterPost()) ?>
+        <?php if ($block->isViewMode() && $block->commentsEnabled()): ?>
+            <?php /* @noEscape */ echo $block->getDisqusEmbedHtml() ?>
+        <?php endif; ?>
+        <?php /* @noEscape */ echo $block->getRelatedProductHtml($block->isViewMode(), $block->getPositionAfterComments()) ?>
+    </article>
+<?php endif; ?>
+<?php //if($indexName == 'aw_blog/post/view'): ?>
+
+<!-- <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://titan-13.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+ <?php //endif; ?>

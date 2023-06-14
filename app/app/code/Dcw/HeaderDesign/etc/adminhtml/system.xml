@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="generalconfiguration" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>dcw</tab>
+            <resource>Dcw_HeaderDesign::header_settings</resource>
+            <group id="headerdesignsettings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Header Desktop Design settings</label>
+                <!--<field id="background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">-->
+                    <!--<label>Background color</label>-->
+                    <!--<frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>-->
+                    <!--<comment>Default is #FFFFFF</comment>-->
+                <!--</field>-->
+                <field id="navigation_anchortag_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Navigation anchor tag color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #272727</comment>
+                </field>
+                <field id="search_button_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Button color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="search_button_label_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Button Label color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFFFFF</comment>
+                </field>
+                <field id="search_input_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Input Background color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #F4F4F4</comment>
+                </field>
+                <field id="search_input_text_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Bar Input Text color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #F4F4F4</comment>
+                </field>
+                <field id="contactus_link_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Contact Us Link Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #272727</comment>
+                </field>
+                <field id="contactus_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Contact Us Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="currency_link_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Currency Link Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="myaccount_link_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Myaccount Label Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #272727</comment>
+                </field>
+                <field id="myaccount_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Myaccount Link Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="phone_number_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Phone Number Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #272727</comment>
+                </field>
+                <field id="phone_number_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Phone Number Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="minicart_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Dropdown Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="minicart_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Icon with label Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="quote_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Quote Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="header_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Header Background Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #F4F4F4</comment>
+                </field>
+                <field id="header_top_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Topmenu Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFFFFF</comment>
+                </field>
+                <field id="myaccount_dropdown_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Myaccount dropdownIcon color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="currency_dropdown_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Currency Dropdown Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="searchinput_dropshadow_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Input Dropshadow Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #000000</comment>
+                </field>
+                <!-- <field id="searchinput_dropshadow_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Input Dropshadow Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFFFFF</comment>
+                </field> -->
+                <field id="minicart_notification_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Notification Background Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFD508</comment>
+                </field>
+                <field id="minicart_notification_font_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Notification Font Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field>
+                <field id="quote_notification_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Quote Cart Notification Background Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #E45050</comment>
+                </field>
+                <field id="quote_notification_font_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Quote Cart Notification Font Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFFFFF</comment>
+                </field>
+                <field id="navigation_anchor_dropdownicon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Navigation Anchor DropdownIcon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #2D418C</comment>
+                </field>
+                <!-- <field id="currency_dropdown_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Currency Dropdown Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFFFFF</comment>
+                </field>
+                <field id="currency_dropdown_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Currency Dropdown Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFFFFF</comment>
+                </field> -->
+            </group>
+            <group id="headerdesignsettingsmobile" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Header Mobile Design settings</label>
+                <field id="navigation_anchortag_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Navigation anchor tag color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #272727</comment> -->
+                </field>
+                <field id="search_button_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Button color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #212858</comment> -->
+                </field>
+                <!-- <field id="search_button_label_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Button Label color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                </field> -->
+                <field id="search_input_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Input Background color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #F4F4F4</comment> -->
+                </field>
+                <field id="search_mobile_input_text_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Bar Input Text color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #F4F4F4</comment>
+                </field>
+                <field id="contactus_link_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Contact Us Link Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #272727</comment> -->
+                </field>
+                <field id="contactus_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Contact Us Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #212858</comment> -->
+                </field>
+                <field id="currency_link_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Currency Link Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #212858</comment> -->
+                </field>
+                <!-- <field id="myaccount_link_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Myaccount Label Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #272727</comment>
+                </field> -->
+                <!-- <field id="myaccount_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Myaccount Link Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field> -->
+                <field id="phone_number_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Phone Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #272727</comment> -->
+                </field>
+                <field id="magnifying_glassicon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Magnifying glass icon color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #272727</comment> -->
+                </field>
+                <!-- <field id="phone_number_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Phone Number Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field> -->
+                <field id="minicart_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Dropdown Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #212858</comment> -->
+                </field>
+                <!-- <field id="minicart_icon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Icon with label Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field> -->
+                <field id="quote_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Quote Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #212858</comment> -->
+                </field>
+                <field id="header_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Header Background Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #F4F4F4</comment> -->
+                </field>
+                <!-- <field id="header_top_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Topmenu Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #FFFFFF</comment>
+                </field> -->
+                <!-- <field id="myaccount_dropdown_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Myaccount dropdownIcon color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <comment>Default is #212858</comment>
+                </field> -->
+                <field id="currency_dropdown_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Currency Dropdown Icon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #212858</comment> -->
+                </field>
+                <field id="searchinput_dropshadow_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Search Input Dropshadow Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #000000</comment> -->
+                </field>
+                <field id="minicart_notification_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Notification Background Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #FFD508</comment> -->
+                </field>
+                <field id="minicart_notification_font_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Minicart Notification Font Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #212858</comment> -->
+                </field>
+                <field id="quote_notification_background_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Quote Cart Notification Background Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #E45050</comment> -->
+                </field>
+                <field id="quote_notification_font_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Quote Cart Notification Font Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #FFFFFF</comment> -->
+                </field>
+                <field id="navigation_anchor_dropdownicon_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Navigation Anchor DropdownIcon Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #2D418C</comment> -->
+                </field>
+                <field id="account_links_color" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Account Links Color</label>
+                    <frontend_model>Dcw\HeaderDesign\Block\System\ColorPicker</frontend_model>
+                    <!-- <comment>Default is #2D418C</comment> -->
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- <tab id="mageplaza" translate="label" sortOrder="10">
+            <label>Mageplaza</label>
+        </tab> -->
+        <section id="generalconfiguration" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>dcw</tab>
+            <resource>Dcw_CustomRequestForm::CustomRequestForm_settings</resource>
+            <group id="validations" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom Form configurations</label>
+                <field id="email" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Email Validation</label>
+              </field>
+ <field id="number" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Number Validation</label>
+               </field>
+ <field id="alphanumeric" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Alphanumeric Validation</label>
+               </field>
+            </group>
+        </section>
+    </system>
+</config>

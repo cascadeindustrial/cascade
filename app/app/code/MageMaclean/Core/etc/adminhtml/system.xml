@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magemaclean" translate="label" sortOrder="402" class="magemaclean-extensions">
+            <label>MageMaclean Extensions</label>
+        </tab>
+        <section id="magemaclean" translate="label" type="text" sortOrder="6600" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Core Configuration</label>
+            <tab>magemaclean</tab>
+            <resource>MageMaclean_Core::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="menu" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable MageMaclean Menu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>If yes, the MageMaclean menu will be displayed on the admin navigation. All of the MageMaclean module menus will be displayed there.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

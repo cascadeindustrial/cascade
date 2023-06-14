@@ -1,0 +1,61 @@
+<?php
+/*
+ * Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+?>
+<?php
+$quote = $block->getQuote();
+?>
+<div class="admin__field field-comment ">
+    <th>
+        <label for="quote-followup-date" class="admin__field-label">
+            <span><?php echo $block->escapeHtml(__('Follow Up Date')) ?></span>
+        </label>
+    </th>
+    <td>
+        <div class="admin__field-control">
+                <span id="followup_date_wrap" class="datebox-datepicker">
+                    <input type="text"
+                           id="followup_date"
+                           class="input-text admin__control-text no-changes _has-datepicker"
+                           name="quote[followup_date]"
+                           value="<?php echo $block->escapeHtml($quote->getFollowupDate()); ?>"/>
+                    <button type="button" style="display:none;"
+                            class="ui-datepicker-trigger followup-trigger v-middle">
+                        <span>Follow Up Date</span>
+                    </button>
+                </span>
+                <div class="admin__actions-switch" data-role="switcher">
+                    <input id="quote-followup-switch"
+                           name="quote[followup_enabled]"
+                           type="checkbox"
+                           class="admin__actions-switch-checkbox"
+                           value="1"
+                        <?php if ($quote->getReminderEnabled()) : ?>
+                            checked
+                        <?php endif; ?>
+                    />
+                    <label class="admin__actions-switch-label"
+                           for="quote-followup-switch">
+                        <span class="admin__actions-switch-text"
+                              data-text-on="Yes" data-text-off="No"></span>
+                    </label>
+                    <div class="switcher-caption"><?php echo $block->escapeHtml(__('[send follow-up email]')) ?></div>
+                </div>
+            </div>
+        </div>
+    </td>
+</div>
+<script type="text/javascript">
+    require(["jquery", "jquery/ui"], function ($) {
+        $(document).ready(function () {
+            $("#followup_date").datepicker({dateFormat: "yy-mm-dd"});
+            $(".followup-trigger").removeAttr("style");
+            $(".followup-trigger").click(function () {
+                $("#followup_date").focus();
+            });
+        });
+    });
+</script>

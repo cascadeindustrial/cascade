@@ -1,0 +1,24 @@
+<?php
+/**
+ * Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+ * See COPYING.txt for license details.
+ * @codingStandardsIgnoreFile
+ */
+?>
+<?php
+/**
+ * @var \Cart2Quote\Quotation\Block\Quote\View $block
+ */
+?>
+<form action="<?php echo $block->escapeHtml($block->getPrintUrl()) ?>" method="post">
+    <?php echo $block->getBlockHtml('formkey'); ?>
+    <div class="quote main actions clearfix">
+        <button
+            type="submit" name="print_quote_action"
+            value="print_quote"
+            title="<?php echo $block->escapeHtml(__('Print Quote')) ?>"
+            class="action cart2quote-print-quote-btn">
+            <span><?php echo $block->escapeHtml(__('Print Quote')) ?></span>
+        </button>
+    </div>
+</form>

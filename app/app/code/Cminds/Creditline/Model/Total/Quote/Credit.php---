@@ -1,0 +1,325 @@
+<?php
+
+
+namespace Cminds\Creditline\Model\Total\Quote;
+
+use Cminds\Creditline\Helper\Calculation;
+use Cminds\Creditline\Helper\Data;
+use Cminds\Creditline\Model\Config;
+use Magento\Framework\Api\ExtensibleDataInterface;
+use Magento\Framework\App\RequestInterface;
+use Magento\Framework\App\ProductMetadataInterface;
+use Magento\Framework\Pricing\Helper\Data as PricingHelper;
+use Magento\Quote\Api\Data\ShippingAssignmentInterface;
+use Magento\Quote\Model\Quote;
+use Magento\Quote\Model\Quote\Address\Total\AbstractTotal;
+use Magento\Quote\Model\Quote\Address\Total as AddressTotal;
+use Magento\Customer\Model\Data\Region;
+
+/**
+ * Cminds Creditline.
+ *
+ * @category Cminds
+ * @package  Cminds_Creditline
+ */
+class Credit extends AbstractTotal
+{
+    /**
+     * @var array
+     */
+    private $processedShippingAddresses = [];
+
+    /**
+     * @var int
+     */
+    private $amountUsed = 0;
+
+    /**
+     * @var int
+     */
+    private $baseAmountUsed = 0;
+
+    /**
+     * @var Calculation
+     */
+    private $calculationHelper;
+
+    /**
+     * @var PricingHelper
+     */
+    private $currencyHelper;
+
+    /**
+     * @var Data
+     */
+    private $creditHelper;
+
+    /**
+     * @var Config
+     */
+    private $config;
+
+    public function __construct(
+        ProductMetadataInterface $productMetadata,
+        Calculation $calculationHelper,
+        PricingHelper $currencyHelper,
+        Data $creditHelper,
+        Config $config,
+        RequestInterface $request
+    ) {
+        $this->productMetadata   = $productMetadata;
+        $this->calculationHelper = $calculationHelper;
+        $this->currencyHelper    = $currencyHelper;
+        $this->creditHelper      = $creditHelper;
+        $this->config            = $config;
+        $this->request           = $request;
+    }
+
+    /**
+     * @param Quote                       $quote
+     * @param ShippingAssignmentInterface $shippingAssignment
+     * @param AddressTotal                $total
+     *
+     * @return $this
+     *
+     */
+    public function collect(
+        Quote $quote,
+        ShippingAssignmentInterface $shippingAssignment,
+        AddressTotal $total
+    ) {
+
+        if(!$this->config->isExistGroup()){
+            return $this;
+        }
+
+        if(!$this->config->isEnabled()){
+            return $this;
+        }
+
+        if($this->hasCreitline($quote)){
+            return $this;
+        }
+
+        if ($quote->getUseCredit() == Config::USE_CREDIT_NO) {
+            return $this;
+        }
+
+        if ($quote->getUseCredit() == Config::USE_CREDIT_UNDEFINED && !$this->config->isAutoApplyEnabled()) {
+            return $this;
+        }
+
+        if (!$quote->getCustomer() || !$quote->getCustomer()->getId()) {
+            return $this;
+        }
+
+        $quote->setUseCredit(Config::USE_CREDIT_YES);
+
+        $this->fixQuoteRegion($quote);
+
+        if (version_compare($this->productMetadata->getVersion(), "2.2.2", ">=")) {
+            if ($quote->isVirtual()) {
+                $addressTotalsData = $quote->getBillingAddress()->getData();
+                if (isset($addressTotalsData[ExtensibleDataInterface::EXTENSION_ATTRIBUTES_KEY])) {
+                    unset($addressTotalsData[ExtensibleDataInterface::EXTENSION_ATTRIBUTES_KEY]);
+                    $quote->getBillingAddress()->setData($addressTotalsData)->save();
+                }
+            } else {
+                $addressTotalsData = $quote->getShippingAddress()->getData();
+                if (isset($addressTotalsData[ExtensibleDataInterface::EXTENSION_ATTRIBUTES_KEY])) {
+                    unset($addressTotalsData[ExtensibleDataInterface::EXTENSION_ATTRIBUTES_KEY]);
+                    $quote->getShippingAddress()->setData($addressTotalsData)->save();
+                }
+            }
+        }
+        $quote->setBaseCreditlineAmountUsed(0)
+            ->setCreditlineAmountUsed(0)
+            ->save();
+
+        $address = $shippingAssignment->getShipping()->getAddress();
+
+        $this->resetMultishippingTotalsOnRecollection($quote, $address->getId());
+
+        $balance = $this->creditHelper->getBalance($quote->getCustomerId(), $quote->getQuoteCurrencyCode());
+
+        // Amount that was selected by customer
+        $used = $baseUsed = $balance->getAmount();
+
+
+        if ($quote->getManualUsedCredit() > 0 && $used >= $quote->getManualUsedCredit()) {
+            $used = $quote->getManualUsedCredit();
+
+            $baseUsed = $this->calculationHelper->convertToCurrency(
+                $used, $quote->getQuoteCurrencyCode(), $balance->getCurrencyCode(), $quote->getStore()
+            );
+        } else {
+            $used = $this->calculationHelper->convertToCurrency(
+                $used, $balance->getCurrencyCode(), $quote->getQuoteCurrencyCode(), $quote->getStore()
+            );
+        }
+
+        $balance->setTransactionCurrencyCode($quote->getQuoteCurrencyCode());
+
+
+        $customerUsed = $used;
+        $customerBaseUsed = $baseUsed;
+        if ($quote->getIsMultiShipping()) {
+            $used -= $this->amountUsed;
+            $baseUsed -= $this->baseAmountUsed;
+        } else {
+            $this->amountUsed = $used;
+            $this->baseAmountUsed = $baseUsed;
+        }
+
+        if ($total->getGrandTotal()) {
+            $quoteTotal = $total->getGrandTotal();
+            $quoteBaseTotal = $total->getBaseGrandTotal();
+        } else {
+            $quoteTotal = array_sum($total->getAllTotalAmounts());
+            $quoteBaseTotal = array_sum($total->getAllBaseTotalAmounts());
+        }
+        if ($used > $quoteTotal && $quoteTotal >= 0) {
+            $used     = $quoteTotal;
+            $baseUsed = $quoteBaseTotal;
+        }
+        $maxUsed = $this->calculationHelper->calc(
+            $quoteTotal, $total->getTotalAmount('tax'), $total->getTotalAmount('shipping')
+        );
+        if ($maxUsed < $used) {
+            $used = $maxUsed;
+        }
+        $maxBaseUsed = $this->calculationHelper->calc(
+            $quoteBaseTotal, $total->getBaseTotalAmount('tax'), $total->getBaseTotalAmount('shipping')
+        );
+        if ($maxBaseUsed < $baseUsed) {
+            $baseUsed = $maxBaseUsed;
+        }
+
+        if ($quote->getIsMultiShipping()) {
+            $this->amountUsed += $used;
+            $this->baseAmountUsed += $baseUsed;
+
+            if ($this->amountUsed > $customerUsed) {
+                $this->amountUsed = $customerUsed;
+                $this->baseAmountUsed = $customerBaseUsed;
+            }
+
+            $this->processedShippingAddresses[$address->getId()] = $used;
+        } else {
+            $this->amountUsed = $used;
+            $this->baseAmountUsed = $baseUsed;
+        }
+
+        $quote->setBaseCreditlineAmountUsed($this->baseAmountUsed)
+            ->setCreditlineAmountUsed($this->amountUsed);
+
+        $address->setBaseCreditlineAmount($baseUsed)
+            ->setCreditlineAmount($used)
+            ->save();
+
+        $total->setBaseTotalAmount($this->getCode(), -$baseUsed);
+        $total->setTotalAmount($this->getCode(), -$used);
+
+        if ($total->getBaseGrandTotal()) {
+            $total->setBaseGrandTotal($quoteBaseTotal - $baseUsed);
+        }
+        if ($total->getGrandTotal()) {
+            $total->setGrandTotal($quoteTotal - $used);
+        }
+
+        $total->setBaseCreditlineAmount($baseUsed);
+        $total->setCreditlineAmount($used);
+
+        $quote->setCreditCollected(true)
+            ->save();
+
+        return $this;
+    }
+
+    /**
+     * @param  Quote $quote
+     * @return boolean
+     */
+    public function hasCreitline($quote){
+        $items = $quote->getItemsCollection();
+        if($items->count() > 0){
+            foreach($items as $item) {
+               if($item->getSku() == Config::REFILL_PRODUCT_SKU){
+                  return true;
+               }
+            }
+        }else{
+            return false;
+        }
+        return false;
+    }
+
+    /**
+     * @param Quote        $quote
+     * @param AddressTotal $total
+     * @return array|null
+     *
+     */
+    public function fetch(Quote $quote, AddressTotal $total)
+    {
+        $creditTotal = null;
+        if ($quote->getIsVirtual()) {
+            $address = $quote->getBillingAddress();
+        } else {
+            $address = $quote->getShippingAddress();
+        }
+
+        if ($quote->getUseCredit() == Config::USE_CREDIT_YES && (float)$total->getCreditlineAmount()) {
+            $creditTotal = [
+                'code'  => $this->getCode(),
+                'title' => __('Credit Line'),
+                'value' => -$total->getCreditlineAmount(),
+            ];
+
+            $address->addTotal($creditTotal);
+        }
+
+        return $creditTotal;
+    }
+
+    /**
+     * @param Quote $quote
+     * @param int $addressId
+     *
+     * @return void
+     */
+    protected function resetMultishippingTotalsOnRecollection($quote, $addressId)
+    {
+        if (
+            $quote->getIsMultiShipping()
+            && !empty($this->processedShippingAddresses[$addressId])
+            && $this->amountUsed
+        ) {
+            $this->amountUsed = 0;
+            $this->processedShippingAddresses = [];
+        }
+    }
+
+    /**
+     * @param Quote $quote
+     *
+     * @return void
+     */
+    protected function fixQuoteRegion($quote)
+    {
+        /** @var Region $region */
+        /** @var Version $region */
+        $region = $quote->getShippingAddress()->getRegion();
+        if ($region instanceof Region) {
+            $quote->getShippingAddress()->setRegion($region->getRegion());
+        } elseif (is_array($region)) { //M2.2.x
+            $quote->getShippingAddress()->setRegion($region['region'] ?: '');
+        }
+        $region = $quote->getBillingAddress()->getRegion();
+        if ($region instanceof Region) {
+            $quote->getBillingAddress()->setRegion($region->getRegion());
+        } elseif (is_array($region)) { //M2.2.x
+            $quote->getBillingAddress()->setRegion($region['region'] ?: '');
+        }
+    }
+}

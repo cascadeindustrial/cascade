@@ -1,0 +1,58 @@
+<form class="form-account-edit"
+      action="<?= $block->escapeUrl($block->getSaveUrl()) ?>"
+      method="post"
+      id="form-validate"
+      enctype="multipart/form-data"
+      data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+      data-mage-init='{"validation": {}}'>
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?= $block->escapeHtml(__('My Shipping Account Information')) ?></span></legend><br>
+        <?= $block->getBlockHtml('formkey') ?>
+        <input type="hidden" name="success_url" value="<?= $block->escapeUrl($block->getSuccessUrl()) ?>">
+        <input type="hidden" name="error_url" value="<?= $block->escapeUrl($block->getErrorUrl()) ?>">
+
+        <div class="field myshipping_carrier required">
+            <label for="myshipping_carrier" class="label">
+                <span><?= __("Courier"); ?></span>
+            </label>
+            <div class="control">
+                <select id="myshipping_courier_id" name="myshipping_courier_id"
+                        title="<?= __('Courier'); ?>"
+                        class="validate-select myshipping_courier_id">
+                    <option value=""><?= $block->escapeHtml(__('Please select a shipping courier.')) ?></option>
+                    <?php foreach($block->getCourierOptions() as $option): ?>
+                        <?php $_selected = ($option['value'] == $block->getAccount()->getMyshippingCourierId()) ? "SELECTED" : ""; ?>
+                        <option value="<?= $option['value']; ?>" <?= $_selected; ?>><?= $option['label']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+        <div class="field myshipping_account required">
+            <label class="label" for="myshipping_account"><span><?= __("My Account"); ?></span></label>
+            <div class="control">
+                <input type="text"
+                       name="myshipping_account"
+                       value="<?= $block->escapeHtmlAttr($block->getAccount()->getMyshippingAccount()) ?>"
+                       title="<?= __("My Account"); ?>"
+                       class="input-text <?php echo $block->getAccountValidationClasses(); ?>"
+                       id="myshipping_account"
+                       data-validate="{required: true, 'validate-length': true}">
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit"
+                    class="action save primary"
+                    data-action="save-account"
+                    title="<?= $block->escapeHtmlAttr(__('Save Account')) ?>">
+                <span><?= $block->escapeHtml(__('Save Account')) ?></span>
+            </button>
+        </div>
+        <div class="secondary">
+            <a class="action back" href="<?= $block->escapeUrl($block->getBackUrl()) ?>">
+                <span><?= $block->escapeHtml(__('Go back')) ?></span>
+            </a>
+        </div>
+    </div>
+</form>

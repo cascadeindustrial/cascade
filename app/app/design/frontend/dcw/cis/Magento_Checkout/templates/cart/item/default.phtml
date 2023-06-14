@@ -1,0 +1,211 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate
+// phpcs:disable Magento2.Files.LineLength.MaxExceeded
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer */
+$objectManager =  \Magento\Framework\App\ObjectManager::getInstance(); 
+
+$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+$store = $storeManager->getStore();
+$baseUrl = $store->getBaseUrl();
+$_item = $block->getItem();
+$product = $_item->getProduct();
+$isVisibleProduct = $product->isVisibleInSiteVisibility();
+/** @var \Magento\Msrp\Helper\Data $helper */
+$helper = $this->helper(Magento\Msrp\Helper\Data::class);
+$canApplyMsrp = $helper->isShowBeforeOrderConfirm($product) && $helper->isMinimalPriceLessMsrp($product);
+?>
+<tbody class="cart item">
+    <tr class="item-info">
+        <td data-th="<?= $block->escapeHtmlAttr(__('Item')) ?>" class="col item">
+            <?php if ($block->hasProductUrl()) :?>
+                <a href="<?= $block->escapeUrl($block->getProductUrl()) ?>"
+                   title="<?= $block->escapeHtmlAttr($block->getProductName()) ?>"
+                   tabindex="-1"
+                   class="product-item-photo">
+            <?php else :?>
+                <span class="product-item-photo">
+            <?php endif;?>
+            <?= $block->getImage($block->getProductForThumbnail(), 'cart_page_product_thumbnail')->toHtml() ?>
+            <?php if ($block->hasProductUrl()) :?>
+                </a>
+            <?php else :?>
+                </span>
+            <?php endif; ?>
+            <div class="product-item-details">
+                <strong class="product-item-name">
+                    <?php if ($block->hasProductUrl()) :?>
+                        <a href="<?= $block->escapeUrl($block->getProductUrl()) ?>"><?= $block->escapeHtml($block->getProductName()) ?></a>
+                    <?php else :?>
+                        <?= $block->escapeHtml($block->getProductName()) ?>
+                    <?php endif; ?>
+                </strong>
+    <div class="show_details_shopping_cart" id="toggle" data-role="title" data-collapsible="true">
+    <!-- <i class="fa fa-chevron-right" aria-hidden="true"></i> -->
+        <strong id="block-discountdiscount-heading" class="viewdetails" role="heading" aria-level="2"><?= $block->escapeHtml(__('View Details')) ?><i class="fa fa-angle-up"></i></strong>
+        <div class="item-options">
+         <!--  <span class="smd-skus"><?php echo "<label>SKU #:</label>";echo "<p><i class='smd-sku'>". $_item->getProduct()->getData('sku')."</i></p>"; ?>  </span>
+         <span class="smd"><?php echo "<label>Model</label>";echo "<p><i class='smd-val'>". $_item->getProduct()->getData('model_no')."</i></p>"; ?>  </span> -->
+         <?php
+           $productsku = $_item->getSku();
+           $productRepository = $objectManager->get('\Magento\Catalog\Model\ProductRepository');
+            $productObj = $productRepository->get($productsku);
+
+            ?>
+         <span class="smd-skus"><?php echo "<label>SKU #:</label>";echo "<p><i class='smd-sku'>".$productsku."</i></p>"; ?>  </span>
+
+           <?php 
+                 $productData = $objectManager->get('Magento\Catalog\Api\ProductRepositoryInterface')->get($productsku);
+                 ?>
+                 <?php if ($productData->getModelNo()) { ?>
+                     
+         <span class="smd"><?php echo "<label>Model</label>";echo "<p><i class='smd-val'>". $productData->getModelNo()."</i></p>"; ?>  </span>
+     <?php } ?>
+         <div class="shipping-preference"><?php
+          $shippingOption = 0;
+             $shippingOption = $_item->getShippingOption();
+            if($shippingOption == 1){ ?>
+                <div class="shipping-delivery">
+                <?php
+                   echo "<span class='expe-del'>Standard Delivery</span>"."<br>";
+                   //echo $_item->getProduct()->getAttributeText('standard_delivery_time');
+                   echo $productObj->getAttributeText('standard_delivery_time');?>
+                </div>
+                <p>To switch your preference to &nbsp;<strong>Expedited </strong>delivery, <a href="<?php echo $this->getUrl().'custompricing/price/indiproductprice/id/'.$_item->getId().'/deliveryOption/2'?>"> &nbsp; Click here.</a></p>
+            <?php }?> <?php
+            if($shippingOption == 2){ ?>
+                <div class="shipping-delivery">
+                    <?php
+                echo "<span class='expe-del'>Expedited Delivery</span>"."<br/>";
+                //echo $_item->getProduct()->getAttributeText('expedited_delivery_time');
+                echo $productObj->getAttributeText('expedited_delivery_time');?>
+                </div>
+                 <p>To switch your preference to &nbsp;<strong>Standard </strong> delivery,<a href="<?php echo $this->getUrl().'custompricing/price/indiproductprice/id/'.$_item->getId().'/deliveryOption/1'?>">&nbsp;Click here.</a></p>
+            <?php }?>
+               </div>
+    
+                <?php if ($_options = $block->getOptionList()) :?>
+                    <div class="item-options">
+                    <dl class="item-options">
+                        <?php foreach ($_options as $_option) :?>
+                            <?php $_formatedOptionValue = $block->getFormatedOptionValue($_option) ?>
+                            <dt><?= $block->escapeHtml($_option['label']) ?></dt>
+                            <dd>
+                                <?php if (isset($_formatedOptionValue['full_view'])) :?>
+                                    <?= $block->escapeHtml($_formatedOptionValue['full_view']) ?>
+                                <?php else :?>
+                                    <?= $block->escapeHtml($_formatedOptionValue['value'], ['span', 'a']) ?>
+                                <?php endif; ?>
+                            </dd>
+                        <?php endforeach; ?>
+                    </dl>
+                </div>
+                </div>
+                <?php endif;?>
+                <?php if ($messages = $block->getMessages()) :?>
+                    <?php foreach ($messages as $message) :?>
+                        <div class= "cart item message <?= $block->escapeHtmlAttr($message['type']) ?>">
+                            <div><?= $block->escapeHtml($message['text']) ?></div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+                <?php $addInfoBlock = $block->getProductAdditionalInformationBlock(); ?>
+                <?php if ($addInfoBlock) :?>
+                    <?= $addInfoBlock->setItem($_item)->toHtml() ?>
+                <?php endif;?>
+            </div>
+        </td>
+
+        <?php if ($canApplyMsrp) :?>
+            <td class="col msrp" data-th="<?= $block->escapeHtmlAttr(__('Price')) ?>">
+                <span class="pricing msrp">
+                    <span class="msrp notice"><?= $block->escapeHtml(__('See price before order confirmation.')) ?></span>
+                    <?php $helpLinkId = 'cart-msrp-help-' . $_item->getId(); ?>
+                    <a href="#" class="action help map"
+                       id="<?= ($block->escapeHtmlAttr($helpLinkId)) ?>"
+                       data-mage-init='{"addToCart":{
+                                            "helpLinkId": "#<?= $block->escapeJs($block->escapeHtml($helpLinkId)) ?>",
+                                            "productName": "<?= $block->escapeJs($block->escapeHtml($product->getName())) ?>",
+                                            "showAddToCart": false
+                                            }
+                                        }'
+                    >
+                        <span><?= $block->escapeHtml(__("What's this?")) ?></span>
+                    </a>
+                </span>
+            </td>
+        <?php else :?>
+            <td class="col price" data-th="<?= $block->escapeHtmlAttr(__('Price')) ?>">
+                <?= $block->getUnitPriceHtml($_item) ?>
+            </td>
+        <?php endif; ?>
+        <td class="col qty" data-th="<?php echo $block->escapeHtml(__('Qty')); ?>">
+            <div class="control qty">
+                   <div class="qty_control">
+
+                <button type="button"   id="<?= /* @escapeNotVerified */ $_item->getId() ?>-dec"  class="decreaseQty">-</button></div>
+                   <input id="cart-<?= /* @escapeNotVerified */ $_item->getId() ?>-qty"
+                       name="cart[<?= /* @escapeNotVerified */ $_item->getId() ?>][qty]"
+                       data-cart-item-id="<?= /* @escapeNotVerified */ $_item->getSku() ?>"
+                       value="<?= /* @escapeNotVerified */ $block->getQty() ?>"
+                       type="number"
+                       size="4"
+                       title="<?= $block->escapeHtml(__('Qty')) ?>"
+                       class="input-text qty"
+                       data-validate="{required:true,'validate-greater-than-zero':true}"
+                       data-role="cart-item-qty"/>                                                     
+
+            <div class="qty_control">
+                        <button type="button"  id="<?= /* @escapeNotVerified */ $_item->getId() ?>-upt" class="increaseQty">+</button>
+            
+            </div>
+        </div>
+  </td>
+
+        <td class="col subtotal" data-th="<?= $block->escapeHtmlAttr(__('Subtotal')) ?>">
+            <?php if ($canApplyMsrp) :?>
+                <span class="cart msrp subtotal">--</span>
+            <?php else :?>
+                <?= $block->getRowTotalHtml($_item) ?>
+            <?php endif; ?>
+        </td>
+        <td colspan="4" class="col actions-tool">
+            <div class="actions-toolbar">
+                <?= /* @noEscape */ $block->getActions($_item) ?>
+            </div>
+        </td>
+    </tr>
+    <!-- <tr class="item-actions">
+        
+    </tr> -->
+</tbody>
+<script type="text/javascript">
+require(["jquery"],function($){
+    $('#<?php echo $_item->getId();?>-upt, #<?php echo $_item->getId();?>-dec').on("click",function(){ 
+        var $this = $(this);
+        var ctrl = ($(this).attr('id').replace('-upt','')).replace('-dec','');          
+        var currentQty = $("#cart-"+ctrl+"-qty").val();
+        if($this.hasClass('increaseQty')){
+            var newAdd = parseInt(currentQty)+parseInt(1);
+             $("#cart-"+ctrl+"-qty").val(newAdd);
+        }else{
+             if(currentQty>1){
+                var newAdd = parseInt(currentQty)-parseInt(1);
+                $("#cart-"+ctrl+"-qty").val(newAdd); 
+             }
+        }
+    });
+$(".show_details_shopping_cart .viewdetails").click(function(){
+     $(this).parent().find(".item-options").slideToggle();
+     $(".viewdetails i").toggleClass("fa-angle-down fa-angle-up");
+     $(this).parent.siblings()().find(".item-options").slideUp();
+});
+
+});
+</script>
+

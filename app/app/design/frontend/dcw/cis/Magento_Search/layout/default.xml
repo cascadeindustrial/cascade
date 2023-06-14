@@ -1,0 +1,15 @@
+<!-- <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<move element="top.search" destination="page.top" after="logo" />
+
+ 	        <move element="top.search" destination="page.top" after="navigation.sections" />
+
+ </page> -->
+ <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<!-- <container name="header.main.search" htmlTag="div" htmlClass="header-search" after="-">
+<block class="Magento\Framework\View\Element\Template" template="Magento_Search::form.mini.phtml" />
+</container> -->
+<!-- <move element="block.search" destination="header-wrapper" />
+<move element="currency" destination="header" after="minicart"/>
+<move element="top.links" as="top.links" destination="header-contect" after="logo"/> -->
+<!-- <move element="top.links" destination="header-wrapper" after="header.main.search" />
+ --></page>

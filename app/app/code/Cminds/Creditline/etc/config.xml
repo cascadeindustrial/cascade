@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Cminds Creditline.
+ *
+ * @category Cminds
+ * @package  Cminds_Creditline
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <creditline>
+            <general>
+                <creditline_active>1</creditline_active>
+                <creditline_default>1000</creditline_default>
+                <creditline_select>1</creditline_select>
+                <number_of_days>30</number_of_days>
+                <creditline_customer>0</creditline_customer>
+                <enable_send_friend>1</enable_send_friend>
+                <share_balance>balance_global</share_balance>
+            </general>
+            <email>
+                <email_identity>general</email_identity>
+                <send_balance_update>1</send_balance_update>
+                <balance_update_template>creditline_email_balance_update_template</balance_update_template>
+            </email>
+        </creditline>
+    </default>
+</config>

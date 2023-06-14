@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="myshipping">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">My Shipping Accounts</item>
+                <item name="sortOrder" xsi:type="number">10</item>
+            </item>
+        </argument>
+
+        <dynamicRows name="myshipping_accounts">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">50</item>
+                </item>
+            </argument>
+            <settings>
+                <addButtonLabel translate="true">Add Account</addButtonLabel>
+                <additionalClasses>
+                    <class name="admin__field-wide">true</class>
+                    <class name="myshipping-accounts">true</class>
+                </additionalClasses>
+                <componentType>dynamicRows</componentType>
+            </settings>
+
+            
+            <container name="record" component="Magento_Ui/js/dynamic-rows/record">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="isTemplate" xsi:type="boolean">true</item>
+                        <item name="is_collection" xsi:type="boolean">true</item>
+                        <item name="componentType" xsi:type="string">container</item>
+                        <!-- item name="positionProvider" xsi:type="string">position</item -->
+                        <item name="source" xsi:type="string">customer</item>
+                    </item>
+                </argument>
+                
+
+                <field name="myshipping_courier_id" formElement="select" sortOrder="10">
+                    <argument name="data" xsi:type="array">
+                        <item name="config" xsi:type="array">
+                            <item name="source" xsi:type="string">customer</item>
+                            <item name="additionalClasses" xsi:type="string">myshipping-courier</item>
+                        </item>
+                    </argument>
+                    <settings>
+                        <dataType>text</dataType>
+                        <label translate="true">Courier</label>
+                        <disabled>false</disabled>
+                        <dataScope>myshipping_courier_id</dataScope>
+                    </settings>
+                    <formElements>
+                        <select>
+                            <settings>
+                                <options class="MageMaclean\MyShipping\Source\Courier"/>
+                            </settings>
+                        </select>
+                    </formElements>
+                </field>
+
+                <field name="myshipping_account" sortOrder="30" formElement="input">
+                    <argument name="data" xsi:type="array">
+                        <item name="config" xsi:type="array">
+                            <item name="source" xsi:type="string">customer</item>
+                            <item name="additionalClasses" xsi:type="string">myshipping-account</item>
+                        </item>
+                    </argument>
+                    <settings>
+                        <label translate="true">Account</label>
+                        <dataType>text</dataType>
+                        <dataScope>myshipping_account</dataScope>
+                        <validation>
+                            <rule name="required-entry" xsi:type="boolean">true</rule>
+                            <rule name="min_text_length" xsi:type="number">1</rule>
+                        </validation>
+                    </settings>
+                </field>
+                <actionDelete sortOrder="40">
+                    <argument name="data" xsi:type="array">
+                        <item name="config" xsi:type="array">
+                            <item name="componentType" xsi:type="string">actionDelete</item>
+                            <item name="dataType" xsi:type="string">text</item>
+                            <item name="fit" xsi:type="boolean">false</item>
+                            <item name="label" xsi:type="string">Actions</item>
+                            <item name="sortOrder" xsi:type="string">500</item>
+                            <item name="additionalClasses" xsi:type="string">myshipping-delete data-grid-actions-cell</item>
+                            <item name="template" xsi:type="string">Magento_Backend/dynamic-rows/cells/action-delete</item>
+                        </item>
+                    </argument>
+                </actionDelete>
+                <field name="position">
+                    <argument name="data" xsi:type="array">
+                        <item name="config" xsi:type="array">
+                            <item name="source" xsi:type="string">customer</item>
+                            <item name="dataType" xsi:type="string">number</item>
+                            <item name="formElement" xsi:type="string">input</item>
+                            <item name="componentType" xsi:type="string">field</item>
+                            <item name="label" xsi:type="string" translate="true"></item>
+                            <item name="additionalClasses" xsi:type="string">myshipping-position</item>
+                            <!-- item name="dataScope" xsi:type="string">position</item -->
+                            <item name="visible" xsi:type="boolean">true</item>
+                        </item>
+                    </argument>
+                </field>
+            </container>
+        </dynamicRows>
+    </fieldset>
+</form>

@@ -1,0 +1,11 @@
+<!--
+  ~ Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+  ~ See COPYING.txt for license details.
+  -->
+
+<div data-bind="blockLoader: isLoading, visible: isVisible()">
+    <div class="message update-available">
+        <!-- ko i18n: 'New update available.' --><!-- /ko -->&nbsp
+        <a data-bind="attr: { href: releaseNotesUrl() }, text: releaseNotesLinkText()" target="_blank" />
+    </div>
+</div>

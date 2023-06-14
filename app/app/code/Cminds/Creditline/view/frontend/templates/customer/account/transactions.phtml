@@ -1,0 +1,53 @@
+<?php
+//@codingStandardsIgnoreFile
+/** @var Account $block */
+
+$balance = $block->getBalance();
+$transactions = $block->getTransactionCollection();
+?>
+<div class="block">
+    <div class="block-title">
+        <strong><?= __('Your Previous Credit Orders:') ?></strong>
+    </div>
+    <div class="block-content">
+        <?php if ($transactions->count()): ?>
+            <div class="table-wrapper orders-recent">
+                <table class="data table table-order-items">
+                    <thead>
+                    <tr>
+                        <th><?= __('Order') ?></th>
+                        <th><?= __('Date') ?></th>
+                        <th><?= __('Credit Balance') ?></th>
+                        <th><?= __('Credit Balance Change') ?></th>
+                        <th><?= __('Action') ?></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php $odd = 0 ?>
+                    <?php foreach ($transactions as $transaction): ?>
+                        <tr>
+                            <td data-th="<?= __('Comment') ?>"><?= $transaction->getFrontendMessage() ?></td>
+                            <td class="last" data-th="<?= __('Created At') ?>" nowrap>
+                                <?= $block->formatDate($transaction->getCreatedAt(), \IntlDateFormatter::MEDIUM, true) ?>
+                            </td>
+                            <td data-th="<?= __('Balance') ?>">
+                                <?= $block->formatPrice($transaction->getBalanceAmount(), $block->getStoreCurrencyCode(), $balance->getCurrencyCode()); ?>
+                            </td>
+                            <td data-th="<?= __('Balance Change') ?>">
+                                <span style="color: <?= $transaction->getBalanceDelta() > 0 ? '#0a0' : '#f00' ?>">
+                                    <?= $block->formatPrice($transaction->getBalanceDelta(), $transaction->getCurrencyCode()) ?>
+                                </span>
+                            </td>
+                            <td data-th="<?= __('Credit Action') ?>"><?= ucfirst($transaction->getAction()) ?></td>
+                        </tr>
+                    <?php endforeach ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php else: ?>
+            <div class="message info empty">
+                <span><?= __('There are no transactions yet.') ?></span>
+            </div>
+        <?php endif ?>
+    </div>
+</div>

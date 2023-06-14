@@ -1,0 +1,518 @@
+@import url("{{base_url_path}}/css/email-fonts.css");
+
+html,
+body {
+  background-color: #ffffff;
+}
+body, table tr td {font-family:'Lato', sans-serif;vertical-align: top;}
+p{font-family: 'Source Sans Pro', sans-serif;font-size: 14px;line-height: 20px;}
+.button .inner-wrapper td:hover{background-color: transparent !important;}
+a{color: #C78900 !important;}
+a:hover{color: #192738 !important;}
+a:visited{color: #192738 !important;}
+p a {color: #C78900 !important;}
+p a:hover {color: #C78900 !important;text-decoration: none !important;}
+table tr td dl {width: 100% !important;padding-left: 0px !important;font-family:'Lato', sans-serif !important;}
+table tr td dl dd {line-height: 24px;padding: 0 !important;margin: 0 !important;padding-left: 0 !important;}
+table tr td dl dt em {font-style: normal !important;}
+.method-info dl dd{margin: 0 !important;}
+.wrapper {
+  margin: 0 auto;
+}
+.wrapper-inner {
+  padding-bottom: 30px;
+  width: 100%;
+}
+.main {
+  margin: 0 auto;
+  text-align: left;
+  width: 600px;
+}
+.header {
+  padding: 30px 0 15px;
+}
+.header-bar{
+  background-color: #3d75ae;
+  height: 15px;
+}
+.email-information-table{
+  width: 100%;
+  background-color: #f5f5f5 !important;
+  text-align: left;
+}
+.email-information-table th{
+  background: none !important;
+}
+.email-items{
+  border: none !important;
+  background-color: #f5f5f5;
+}
+.email-items table{
+  background-color: #f5f5f5 !important;
+}
+
+.email-items td{
+  background: none !important;
+}
+.gray_box{
+  background-color: #f5f5f5;
+  border: solid 30px #f5f5f5;
+  text-align: center;
+}
+.gray_box div{
+  display: none !important;
+}
+.gray_box .gray_title{
+  font-size: 30px;
+  color: #3d3d3d;
+  line-height: 2;
+}
+.gray_box p strong{
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 600;
+}
+.gray_box .button span{
+  padding: 0 15px;
+  line-height: 3;
+  background-color: #192738;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+.email-img{
+  display: block;
+  margin: 0 auto;
+}
+.header .header_table{
+  border-bottom: solid thin #C8C8C8;
+  width: 100%;
+}
+.header .header_table td{
+  padding: 10px 0;
+}
+.header_right{
+  text-align: right;
+  vertical-align: middle;
+}
+.header_right .right-logo{
+  width: 25px;
+}
+.header_right span{
+  font-size: 30px;
+  padding-left: 10px;
+}
+.header_right p{
+  font-size: 11px;
+  color: #3D3D3D;
+  font-weight: bold;
+  margin: 0;
+}
+.main-content {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.email-title{
+  font-size: 24px;
+  color: #3d3d3d;
+  width: 100%;
+  text-align: center;
+  line-height: 2.5;
+  font-weight: normal;
+}
+.email-subtitle{
+  font-size: 22px;
+  color: #3d3d3d;
+  line-height: 30px;
+}
+.button > tr > td {
+  padding-bottom: 10px;
+}
+.button .inner-wrapper td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #1979c3;
+}
+.button .inner-wrapper td a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #1979c3;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+.message-info,
+.message-gift {
+  width: 100%;
+}
+.message-info td,
+.message-gift td {
+  background-color: #fdf0d5;
+  border: 1px solid false;
+  color: #333333;
+  margin: 0;
+  padding: 10px;
+}
+.message-info td a,
+.message-gift td a {
+  color: #1979c3;
+}
+.message-info td h1,
+.message-gift td h1,
+.message-info td h2,
+.message-gift td h2,
+.message-info td h3,
+.message-gift td h3,
+.message-info td h4,
+.message-gift td h4,
+.message-info td h5,
+.message-gift td h5,
+.message-info td h6,
+.message-gift td h6 {
+  margin-top: 0;
+}
+.ticket-details th {
+  padding: 0.5rem 2rem 0.5rem 0;
+  vertical-align: top;
+}
+.ticket-details td {
+  padding: 0.5rem 0;
+}
+.hdmx-email__satisfaction {
+  text-align: center;
+  margin: 2rem 0;
+}
+.hdmx-email__satisfaction .hdmx-email__satisfaction-rate {
+  width: 7rem;
+  float: left;
+  text-align: center;
+  margin-right: 2rem;
+}
+.hdmx-email__satisfaction .hdmx-email__satisfaction-rate h2 {
+  margin: 1rem 0;
+}
+.hdmx-email__satisfaction .hdmx-email__satisfaction-rate.great {
+  margin-left: 6rem;
+}
+.hdmx-email__satisfaction .hdmx-email__satisfaction-rate.great a {
+  color: #690;
+}
+.hdmx-email__satisfaction .hdmx-email__satisfaction-rate.bad a {
+  color: #c00;
+}
+.hdmx-email__satisfaction .hdmx-email__satisfaction-rate p {
+  line-height: normal;
+  margin: 0;
+  color: #777;
+  font-size: 10px;
+}
+.email-items .bundle-option-label > td {
+  padding: 0 10px 0 30px;
+}
+.email-items .bundle-option-value > td {
+  padding: 0 10px 10px;
+}
+.email-items .bundle-option-value > td.item-info {
+  padding: 0 10px 10px 40px;
+}
+.email-items tr.bundle-option-value + tr > td.item-extra {
+  padding-top: 10px;
+}
+.email-summary h1 {
+  margin-bottom: 5px;
+}
+.order-details {
+  width: 100%;
+}
+.order-details tr > .address-details{
+  border-bottom: solid thin #ccc;
+}
+.order-details tr > .address-details,
+.order-details tr > .method-info {
+  padding: 10px 10px 10px 0;
+  width: 50%;
+}
+.address-details h3,
+.method-info h3{
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.item-subtotal{
+  text-align: right !important;
+}
+.order-details tr > .address-details h3,
+.order-details tr > .method-info h3 {
+  margin-top: 0;
+}
+.order-details tr + .method-info > td {
+  padding: 0 0 10px;
+}
+.order-details .payment-method {
+  margin-bottom: 10px;
+}
+.order-details .payment-method .title {
+  font-weight: 400;
+}
+.order-details .payment-method .data.table > caption {
+  display: none;
+}
+.order-details .payment-method .data.table th {
+  padding-right: 10px;
+}
+.shipment-track {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+}
+.shipment-track th {
+  text-align: left;
+}
+.shipment-track > tbody > tr > th,
+.shipment-track > tfoot > tr > th,
+.shipment-track > tbody > tr > td,
+.shipment-track > tfoot > tr > td {
+  vertical-align: top;
+}
+.shipment-track > thead > tr > th,
+.shipment-track > thead > tr > td {
+  vertical-align: bottom;
+}
+.shipment-track > thead > tr > th,
+.shipment-track > tbody > tr > th,
+.shipment-track > tfoot > tr > th,
+.shipment-track > thead > tr > td,
+.shipment-track > tbody > tr > td,
+.shipment-track > tfoot > tr > td {
+  padding: 0 10px;
+}
+.shipment-track thead > tr > th,
+.shipment-track tbody > tr > th,
+.shipment-track thead > tr > td,
+.shipment-track tbody > tr > td {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 50%;
+}
+.shipment-track thead > tr + tr th,
+.shipment-track tbody > tr + tr th,
+.shipment-track thead > tr + tr td,
+.shipment-track tbody > tr + tr td {
+  padding-top: 0;
+}
+.email-items {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+}
+
+.email-items > tbody > tr > th,
+.email-items > tfoot > tr > th,
+.email-items > tbody > tr > td,
+.email-items > tfoot > tr > td {
+  vertical-align: top;
+}
+.email-items > thead > tr > th,
+.email-items > thead > tr > td {
+  vertical-align: bottom;
+}
+.email-items > thead > tr > th,
+.email-items > tbody > tr > th,
+.email-items > tfoot > tr > th,
+.email-items > thead > tr > td,
+.email-items > tbody > tr > td,
+.email-items > tfoot > tr > td {
+  padding: 0 10px;
+}
+.email-items thead > tr > th,
+.email-items tfoot > tr > th,
+.email-items thead > tr > td,
+.email-items tfoot > tr > td {
+  background-color: #f2f2f2;
+}
+.email-items > thead > tr > th,
+.email-items > tbody > tr > th {
+  padding: 10px;
+}
+.email-items > thead > tr > td,
+.email-items > tbody > tr > td {
+  padding: 10px;
+}
+.email-items > thead > tr > td.message-gift,
+.email-items > tbody > tr > td.message-gift {
+  border-top: none;
+  padding-top: 0;
+}
+.email-items > tbody > tr > th,
+.email-items > tfoot > tr > th,
+.email-items > tbody > tr > td,
+.email-items > tfoot > tr > td {
+  border-top: 1px solid #d1d1d1;
+}
+.email-items > tbody > tr + tr > th,
+.email-items > tfoot > tr + tr > th,
+.email-items > tbody > tr + tr > td,
+.email-items > tfoot > tr + tr > td {
+  border-top: 0;
+}
+.email-items p {
+  margin-bottom: 0;
+}
+.email-items .product-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.email-items .has-extra .sku {
+  margin-bottom: 10px;
+}
+.email-items .item-info dl {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+.email-items .item-info{
+  text-align: left;
+}
+.email-items .item-info dl dt,
+.email-items .item-info dl dd {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.email-items .item-info dl dd {
+  padding-left: 10px;
+}
+.email-items thead th{
+  font-size: 16px;
+}
+.email-items .item-qty {
+  text-align: center;
+}
+.email-items .item-price {
+  text-align: right;
+}
+.email-items .item-extra {
+  padding-top: 0;
+}
+.email-items .order-totals > tr > th {
+  font-weight: 400;
+}
+.email-items .order-totals > tr > th,
+.email-items .order-totals > tr > td {
+  padding: 10px;
+  text-align: right;
+}
+.email-items .order-totals > tr + tr th,
+.email-items .order-totals > tr + tr td {
+  padding-top: 0;
+}
+.email-items .order-totals .price {
+  white-space: nowrap;
+}
+.email-invoice{
+  width: 100%;
+}
+.email-invoice .email-summary h3{
+  font-size: 18px;
+  color: #3d3d3d;
+  font-weight: 600;
+}
+.email-invoice .email-summary em{
+  font-style: normal;
+  color: #C78900;
+  font-weight: bold;
+}
+.email-invoice .email-head .email-title{
+  line-height: 1.5;
+}
+.email-subtitle{
+  font-size: 24px !important;
+}
+.email-invoice .email-intro{
+  text-align: center;
+}
+.AbndndCart .email-title{
+  line-height: 1 !important;
+}
+.AbndndCart th{
+  text-align: left;
+}
+.AbndndCart .email-subtitle{
+  font-size: 14px !important;
+  text-align: center;
+}
+.AbndndCart .email-invoice .item-item{
+  width: 20%;
+}
+.AbndndCart .email-invoice th,
+.AbndndCart .email-invoice td{
+  padding: 10px 15px;
+  height: 30px;
+  vertical-align: middle;
+  border-bottom: solid thin #555;
+}
+.AbndndCart .email-invoice th.item-product,
+.AbndndCart .email-invoice td.item-product{
+  text-align: left;
+  width: 40%;
+}
+.AbndndCart .email-invoice td.item-product a{
+  color: #3d3d3d;
+  font-weight: 600;
+}
+.AbndndCart .email-invoice th.item-qty,
+.AbndndCart .email-invoice td.item-qty{
+  text-align: center;
+}
+.AbndndCart .email-invoice th.item-price,
+.AbndndCart .email-invoice td.item-price{
+  text-align: right;
+}
+.AbndndCart .email-invoice tfoot{
+  text-align: right;
+}
+
+.AbndndCart .email-invoice tfoot .item-price{
+  font-size: 24px;
+  color: #3d75ae;
+  font-weight: bold;
+}
+
+.AbndndCart .complete,
+.AbndndCart .continue{
+  line-height: 2.5;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.AbndndCart .complete:hover,
+.AbndndCart .continue:hover{
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.AbndndCart .complete{
+  background-color: #3d75ae;
+}
+.AbndndCart .continue{
+  background-color: #FF6200;
+}
+.wishlist-table span img{
+  width: 180px !important;
+  height: auto;
+}
+
+.wishlist-table p{
+  text-align: center;
+}
+
+

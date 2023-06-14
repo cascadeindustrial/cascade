@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+  ~ See COPYING.txt for license details.
+  -->
+
+<table class="data-grid">
+    <thead>
+    <tr>
+        <th class="data-grid-th"><span data-bind="i18n: 'Row'"></span></th>
+        <th class="data-grid-th"><span data-bind="i18n: 'Visible'"></span></th>
+    </tr>
+    </thead>
+    <tbody data-bind="foreach: getItemsFields()">
+    <tr style="text-align: center">
+        <td style="padding: 1rem 1rem;" class="a-left col-description">
+            <span data-bind="i18n: label"></span>
+        </td>
+        <td style="padding: 1rem 1rem;" class="a-left col-description">
+            <input data-bind="checked: visibility, checkedValue: name"
+                   type="checkbox"
+                   name="visibility"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<input data-bind="attr: { id: htmlId, name: name}, value: ko.toJSON(getItemsFields())"
+       class=" input-text admin__control-text"
+       type="text"
+       style="display: none">

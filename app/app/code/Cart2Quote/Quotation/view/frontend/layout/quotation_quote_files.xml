@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2021. Cart2Quote B.V. All rights reserved.
+  ~ See COPYING.txt for license details.
+  -->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <update handle="quotation_quote_info_links"/>
+    <body>
+        <referenceContainer name="page.main.title">
+            <block class="Cart2Quote\Quotation\Block\Quote\StatusMessage" name="quote.status.message" after="quote.date"/>
+            <block class="Magento\Framework\View\Element\Template" name="ajax.message.placeholder" after="quote.date"/>
+            <block class="Cart2Quote\Quotation\Block\Quote\Info" name="quote.status" template="quote/quote_status.phtml"/>
+            <block class="Cart2Quote\Quotation\Block\Quote\Info" name="quote.date" template="quote/quote_date.phtml"/>
+            <container name="quote.actions.container" htmlTag="div" htmlClass="actions-toolbar order-actions-toolbar"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Cart2Quote\Quotation\Block\Quote\Files" name="files" template="Cart2Quote_Quotation::quote/files.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

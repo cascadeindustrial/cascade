@@ -1,0 +1,15 @@
+<?php
+$source = $block->getSource();
+$order = $block->getOrder();
+?>
+
+<?php if ($source->getCreditlineAmount()): ?>
+    <tr>
+        <td <?= $block->getLabelProperties() ?>>
+            <?= __('Credit Line'); ?>
+        </td>
+        <td <?= $block->getValueProperties() ?>>
+            -<?= $order->formatPrice($source->getCreditlineAmount()) ?>
+        </td>
+    </tr>
+<?php endif ?>

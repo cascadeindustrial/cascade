@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2019.
+  ~ Copyright Holder : CompactCode - CompactCode BvBa - Belgium
+  ~ Copyright : Unless granted permission from CompactCode BvBa.
+  ~ You can not distribute, reuse, edit, resell or sell this.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ccmessagepopup>
+            <general>
+                <enable>0</enable>
+                <fixed_enable>0</fixed_enable>
+            </general>
+            <messagepopup>
+                <message_class>message</message_class>
+                <message_position>cc-message-left-bottom-corner</message_position>
+            </messagepopup>
+            <messageanimation>
+                <message_delete_option>0</message_delete_option>
+                <message_animation_in>bounceIn</message_animation_in>
+                <message_animation_out>bounceOut</message_animation_out>
+                <message_animation_time>5</message_animation_time>
+            </messageanimation>
+        </ccmessagepopup>
+    </default>
+</config>

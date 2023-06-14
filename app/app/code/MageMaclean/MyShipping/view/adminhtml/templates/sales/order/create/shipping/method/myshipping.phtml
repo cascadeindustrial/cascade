@@ -1,0 +1,212 @@
+<?php $viewModel = $block->getData('viewModel'); ?>
+
+<?php if($viewModel->canUseMyshipping()): ?>
+    <?php $myshippingNewData = $viewModel->getMyshippingNewData(); ?>
+    <dd id="myshipping-new" class="myshipping-container myshipping-new admin__order-shipment-methods-options" style="margin-top:10px;">
+        <ul class="admin__order-shipment-methods-options-list" >
+            <li class="myshipping-field myshipping-field-courier">
+                <label class="admin__field-label myshipping-label" for="myshipping_new_courier"><?php echo __('Courier'); ?>: </label>
+                <select
+                    id="myshipping_new_courier"
+                    name="myshipping['courier_id']"
+                    class="myshipping-courier admin__control-select data required-entry"
+                    disabled="true">
+                    <?php foreach($viewModel->getCourierOptions() as $option): ?>
+                        <?php $_courierSelected = ($myshippingNewData && $option['value'] == $myshippingNewData['myshipping_courier_id']) ? 'SELECTED' : ''; ?>
+                        <option value="<?= $option['value'] ?>" <?= $_courierSelected; ?>><?= $option['label'] ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </li>
+            <li class="myshipping-field myshipping-field-account">
+                <label class="admin__field-label myshipping-label" for="myshipping_new_account"><?php echo __('Account'); ?>: </label>
+                <input
+                    id="myshipping_new_account"
+                    value="<?= ($myshippingNewData) ? $myshippingNewData["myshipping_account"] : '' ?>"
+                    type="text"
+                    name="myshipping['account']"
+                    class="myshipping-account data input-text admin__control-text <?php #echo $viewModel->getAccountValidationClasses(); ?>"
+                    data-validate='<?= $viewModel->getAccountValidationConfigJson(); ?>'
+                    disabled="true" />
+            </li>
+            <li class="myshipping-field myshipping-field-courier-method">
+                <label class="admin__field-label myshipping-label" for="myshipping_new_courier_method"><?php echo __('Method'); ?>: </label>
+                <select
+                    id="myshipping_new_courier_method"
+                    name="myshipping['courier_method']"
+                    class="myshipping-courier-method admin__control-select data required-entry"
+                    disabled="true">
+                </select>
+            </li>
+            <?php if($viewModel->canShowMyshippingSave()): ?>
+                <li class="myshipping-field myshipping-field-save">
+                    <input
+                        id="myshipping_new_save"
+                        value="1"
+                        <?= (!$myshippingNewData || $myshippingNewData['myshipping_save']) ? "CHECKED" : '' ?>
+                        type="checkbox"
+                        name="myshipping['save']"
+                        class="myshipping-save data input-checkbox admin__control-checkbox"
+                        disabled="true" />
+                    <label class="admin__field-label myshipping-label" for="myshipping_new_save"><?php echo __('Save shipping account'); ?></label>
+                </li>
+            <?php endif; ?>
+            <li class="myshipping-actions">
+                <button type="button" class="myshipping-submit action-default scalable primary" ><span><?= __('Use Shipping Account') ?></span></button>
+            </li>
+        </ul>
+    </dd>
+
+    <script type="text/javascript">
+        require(
+            [
+            'jquery',
+            'underscore',
+            'mage/validation'
+            ],
+            function($, _) {
+                var containerId = '#myshipping-new';
+                var selectorId = '#s_method_myshipping_new';
+
+                $(selectorId).parent().append($(containerId).detach());
+                $(selectorId).attr('onclick', "order.showMyshipping('new')");
+
+                var allCourierMethods = <?= $viewModel->getAllCourierMethodOptionsJson() ?>;
+                var onCourierUpdate = function (selectedCourierMethod = false) {
+                    var courierId = $('.myshipping-courier', $(containerId)).val();
+                    var options = allCourierMethods[courierId];
+
+                    var targetSelect = $('.myshipping-courier-method', $(containerId));
+                    targetSelect.html('');
+                    $.each(options, function (i, item) {
+                        targetSelect.append($('<option>', {
+                            value: item.value,
+                            text : item.label,
+                            selected: (selectedCourierMethod && selectedCourierMethod == item.value) ? true : false
+                        }));
+                    });
+                };
+                $('.myshipping-courier', $(containerId)).on('change', onCourierUpdate);
+
+                var onSubmit = function () {
+                    var isValid = $(".data", $(containerId)).valid();
+                    if(!isValid) return;
+
+                    var payload = {
+                        myshipping_account_id: 0,
+                        myshipping_account: $('.myshipping-account', $(containerId)).val(),
+                        myshipping_courier_id: $('.myshipping-courier', $(containerId)).val(),
+                        myshipping_courier_method: $('.myshipping-courier-method', $(containerId)).val(),
+                        myshipping_save: $('.myshipping-save', $(containerId)).is(":checked")
+                    }
+                    order.setMyshipping(JSON.stringify(payload));
+
+                }
+                $('.myshipping-submit', $(containerId)).on('click', onSubmit);
+
+                <?php if($myshippingNewData): ?>
+                    onCourierUpdate('<?= $myshippingNewData['myshipping_courier_method'] ?>');
+
+                    $('.data', containerId).attr('disabled', false);
+                    $(containerId).show();
+                <?php else: ?>
+                    onCourierUpdate();
+                    $('.data', containerId).attr('disabled', true);
+                    $(containerId).hide();
+                <?php endif; ?>
+            }
+        );
+    </script>
+
+    <?php if($viewModel->getAccounts()): ?>
+        <?php foreach($viewModel->getAccounts() as $account): ?>
+            <?php $myshippingAccountData = $viewModel->getMyshippingAccountData($account); ?>
+            <dd id="myshipping-account-<?= $account->getId() ?>"
+                class="myshipping-container myshipping-account admin__order-shipment-methods-options">
+                <ul class="admin__order-shipment-methods-options-list">
+                    <li class="myshipping-field myshipping-field-courier">
+                        <label class="admin__field-label myshipping-label" for="myshipping_account_<?= $account->getId() ?>_courier"><?php echo __('Courier'); ?>: </label>
+                        <span><?= $account->getCourier()->getTitle() ?></span>
+                    </li>
+                    <li class="myshipping-field myshipping-field-courier-method">
+                        <label class="admin__field-label myshipping-label" for="myshipping_account_<?= $account->getId() ?>_courier_method"><?php echo __('Method'); ?>: </label>
+                        <select
+                        name="myshipping['courier_method']"
+                        id="myshipping_account_<?= $account->getId() ?>_courier_method"
+                        class="myshipping-courier-method admin__control-select data required-entry"
+                        disabled="true" >
+                            <?php foreach($viewModel->getCourierMethodOptions($account->getMyshippingCourierId()) as $option): ?>
+                                <?php $_methodSelected = ($myshippingAccountData && $myshippingAccountData['myshipping_courier_method'] == $option['value']) ? 'SELECTED' : ''; ?>
+                                <option value="<?= $option['value']; ?>" <?= $_methodSelected ?>><?= $option['label'] ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </li>
+                    <li class="myshipping-field myshipping-field-account">
+                        <label class="admin__field-label myshipping-label" for="myshipping_account_<?= $account->getId() ?>_account"><?php echo __('Account'); ?>: </label>
+                        <span><?= $account->getMyshippingAccount() ?></span>
+                    </li>
+
+                    <li class="myshipping-actions">
+                        <button type="button" class="myshipping-submit action-default scalable primary" ><span><?= __('Use Shipping Account') ?></span></button>
+                    </li>
+                </ul>
+            </dd>
+            <script type="text/javascript">
+                require(
+                    [
+                    'jquery'
+                    ],
+                    function($) {
+                        var containerId = '#myshipping-account-<?= $account->getId() ?>';
+                        var selectorId = '#s_method_myshipping_account_<?= $account->getId() ?>';
+
+                        $(selectorId).parent().append($(containerId).detach());
+                        $(containerId).hide();
+                        $(selectorId).attr('onclick', "order.showMyshipping('<?= $account->getId() ?>')");
+
+                        var onSubmit = function () {
+                            var isValid = $(".data", $(containerId)).valid();
+                            if(!isValid) return;
+
+                            var payload = {
+                                myshipping_account_id: '<?= $account->getId() ?>',
+                                myshipping_account: '<?= $account->getMyshippingAccount() ?>',
+                                myshipping_courier_id: '<?= $account->getMyshippingCourierId() ?>',
+                                myshipping_courier_method: $('.myshipping-courier-method', $(containerId)).val(),
+                                myshipping_save: false
+                            }
+                            order.setMyshipping(JSON.stringify(payload));
+                        }
+                        $('.myshipping-submit', $(containerId)).on('click', onSubmit);
+
+                        <?php if($myshippingAccountData): ?>
+                            $('.data', containerId).attr('disabled', false);
+                            $(containerId).show();
+                        <?php else: ?>
+                            $('.data', containerId).attr('disabled', true);
+                            $(containerId).hide();
+                        <?php endif; ?>
+                    }
+                );
+            </script>
+
+        <?php endforeach; ?>
+    <?php endif; ?>
+
+    <?php if($myshippingActiveData = $viewModel->getMyshippingActiveData()): ?>
+        <div id="myshipping-info">
+            <?= $myshippingActiveData['carrier_title'] . ' - ' . $myshippingActiveData['method_title'] ?><br />
+            <strong><span class="price"><?= $myshippingActiveData['price']; ?></span></strong>
+        </div>
+        <script type="text/javascript">
+        require(
+            ['jquery'],
+            function($) {
+                var myshippingInfo = $('#myshipping-info');
+                var target = $('#order-shipping-method-info dl dd');
+
+                target.html(myshippingInfo.detach());
+            }
+        );
+        </script>
+    <?php endif; ?>
+<?php endif; ?>

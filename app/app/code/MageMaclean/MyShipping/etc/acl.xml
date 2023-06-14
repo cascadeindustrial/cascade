@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="MageMaclean_Core::magemaclean">
+                    <resource id="MageMaclean_MyShipping::myshipping" title="My Shipping" sortOrder="200">
+                        <resource id="MageMaclean_MyShipping::myshipping_courier" title="Couriers"/>
+                        <resource id="MageMaclean_MyShipping::myshipping_account" title="Accounts" />
+                        <resource id="MageMaclean_MyShipping::configuration" title="Configuration" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
