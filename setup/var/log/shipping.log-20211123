@@ -1,0 +1,1 @@
+[2021-11-22 16:27:37] main.CRITICAL: Error Fetching http headers {"exception":"[object] (SoapFault(code: 0): Error Fetching http headers at /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-fedex/Model/Carrier.php:508)"} []

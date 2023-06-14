@@ -1,0 +1,837 @@
+
+----------------------------------------------------------------------------
+07:17 12/04/2021
+
+array: 0 [
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+07:21 12/04/2021
+
+array: 0 [
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+07:22 12/04/2021
+
+array: 0 [
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+07:40 12/04/2021
+
+null
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+07:41 12/04/2021
+
+array: 79 [
+    "entity_id" => 571
+    "state" => payment_review
+    "status" => payment_review
+    "protect_code" => 508218f1e600d9fea38e1c80be2d4e96
+    "is_virtual" => 1
+    "store_id" => 1
+    "customer_id" => 156
+    "base_discount_amount" => 0.0000
+    "base_discount_invoiced" => 0.0000
+    "base_grand_total" => 2.1550
+    "base_shipping_amount" => 0.0000
+    "base_shipping_invoiced" => 0.0000
+    "base_subtotal" => 2.0000
+    "base_subtotal_invoiced" => 2.0000
+    "base_tax_amount" => 0.1550
+    "base_tax_invoiced" => 0.1550
+    "base_to_global_rate" => 1.0000
+    "base_to_order_rate" => 1.0000
+    "base_total_invoiced" => 2.1550
+    "base_total_invoiced_cost" => 0.0000
+    "discount_amount" => 0.0000
+    "discount_invoiced" => 0.0000
+    "grand_total" => 2.1550
+    "shipping_amount" => 0.0000
+    "shipping_invoiced" => 0.0000
+    "shipping_tax_amount" => 0.0000
+    "store_to_base_rate" => 0.0000
+    "store_to_order_rate" => 0.0000
+    "subtotal" => 2.0000
+    "subtotal_invoiced" => 2.0000
+    "tax_amount" => 0.1550
+    "tax_invoiced" => 0.1550
+    "total_invoiced" => 2.1550
+    "total_qty_ordered" => 2.0000
+    "customer_is_guest" => 0
+    "customer_note_notify" => 1
+    "customer_group_id" => 1
+    "quote_id" => 2207
+    "base_shipping_discount_amount" => 0.0000
+    "base_subtotal_incl_tax" => 2.1550
+    "base_total_due" => 2.1600
+    "shipping_discount_amount" => 0.0000
+    "subtotal_incl_tax" => 2.1550
+    "total_due" => 2.1600
+    "weight" => 0.0000
+    "increment_id" => 000000687
+    "base_currency_code" => USD
+    "customer_email" => irina.korol@amasty.com
+    "customer_firstname" => test
+    "customer_lastname" => test
+    "global_currency_code" => USD
+    "order_currency_code" => USD
+    "remote_ip" => 82.209.247.206
+    "store_currency_code" => USD
+    "store_name" => Main Website
+Main Website Store
+Default Store View
+    "x_forwarded_for" => 82.209.247.206
+    "created_at" => 2021-04-12 07:41:07
+    "updated_at" => 2021-04-12 07:41:07
+    "total_item_count" => 1
+    "discount_tax_compensation_amount" => 0.0000
+    "base_discount_tax_compensation_amount" => 0.0000
+    "shipping_discount_tax_compensation_amount" => 0.0000
+    "base_shipping_discount_tax_compensation_amnt" => 0.0000
+    "discount_tax_compensation_invoiced" => 0.0000
+    "base_discount_tax_compensation_invoiced" => 0.0000
+    "shipping_incl_tax" => 0.0000
+    "base_shipping_incl_tax" => 0.0000
+    "paypal_ipn_customer_notified" => 0
+    "base_creditline_amount" => 0.0000
+    "creditline_amount" => 0.0000
+    "base_creditline_invoiced" => 0.0000
+    "creditline_invoiced" => 0.0000
+    "base_creditline_refunded" => 0.0000
+    "creditline_refunded" => 0.0000
+    "base_creditline_total_refunded" => 0.0000
+    "creditline_total_refunded" => 0.0000
+    "payment (Magento\Sales\Model\Order\Payment\Interceptor)" => array: 14 [
+        "entity_id" => 571
+        "parent_id" => 571
+        "base_amount_authorized" => 2.1600
+        "base_shipping_amount" => 0.0000
+        "shipping_amount" => 0.0000
+        "amount_authorized" => 2.1600
+        "base_amount_ordered" => 2.1600
+        "amount_ordered" => 2.1600
+        "cc_ss_start_year" => 0
+        "method" => anet_echeck
+        "cc_ss_start_month" => 0
+        "last_trans_id" => 40062529975
+        "cc_exp_year" => 0
+        "additional_information" => array: 9 [
+            "customer_id" => 156
+            "public_hash" => 8b08fce8d14c9d9e3cfde790bfd6ace298eaf8f292aed8d1b514becceff96411
+            "routingNumber" => 0021
+            "accountNumber" => 1111
+            "accountName" => Demo
+            "accountType" => checking
+            "is_active_payment_token_enabler" => false
+            "method_title" => eCheck (Authorize.Net)
+            "transactionId" => 40062529975
+        ]
+    ]
+    "items" => array: 1 [
+        "793 (Magento\Sales\Model\Order\Item\Interceptor)" => array: 52 [
+            "item_id" => 793
+            "order_id" => 571
+            "quote_item_id" => 4772
+            "store_id" => 1
+            "created_at" => 2021-04-12 07:41:07
+            "updated_at" => 2021-04-12 07:41:07
+            "product_id" => 1142
+            "product_type" => virtual
+            "product_options" => ...
+            "weight" => 0.0000
+            "is_virtual" => 1
+            "sku" => test-1
+            "name" => test
+            "is_qty_decimal" => 0
+            "no_discount" => 0
+            "qty_canceled" => 0.0000
+            "qty_invoiced" => 2.0000
+            "qty_ordered" => 2.0000
+            "qty_refunded" => 0.0000
+            "qty_shipped" => 0.0000
+            "price" => 1.0000
+            "base_price" => 1.0000
+            "original_price" => 1.0000
+            "base_original_price" => 1.0000
+            "tax_percent" => 7.7500
+            "tax_amount" => 0.1550
+            "base_tax_amount" => 0.1550
+            "tax_invoiced" => 0.1550
+            "base_tax_invoiced" => 0.1550
+            "discount_percent" => 0.0000
+            "discount_amount" => 0.0000
+            "base_discount_amount" => 0.0000
+            "discount_invoiced" => 0.0000
+            "base_discount_invoiced" => 0.0000
+            "amount_refunded" => 0.0000
+            "base_amount_refunded" => 0.0000
+            "row_total" => 2.0000
+            "base_row_total" => 2.0000
+            "row_invoiced" => 2.0000
+            "base_row_invoiced" => 2.0000
+            "row_weight" => 0.0000
+            "price_incl_tax" => 1.0775
+            "base_price_incl_tax" => 1.0775
+            "row_total_incl_tax" => 2.1550
+            "base_row_total_incl_tax" => 2.1550
+            "discount_tax_compensation_amount" => 0.0000
+            "base_discount_tax_compensation_amount" => 0.0000
+            "discount_tax_compensation_invoiced" => 0.0000
+            "base_discount_tax_compensation_invoiced" => 0.0000
+            "gift_message_available" => 0
+            "free_shipping" => 0
+            "weee_tax_applied" => []
+        ]
+    ]
+    "addresses" => array: 0 [
+    ]
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+07:43 12/04/2021
+
+array: 79 [
+    "entity_id" => 572
+    "state" => payment_review
+    "status" => payment_review
+    "protect_code" => f20a0999ff64fc7f751d650abb04abf7
+    "is_virtual" => 1
+    "store_id" => 1
+    "customer_id" => 156
+    "base_discount_amount" => 0.0000
+    "base_discount_invoiced" => 0.0000
+    "base_grand_total" => 2.1550
+    "base_shipping_amount" => 0.0000
+    "base_shipping_invoiced" => 0.0000
+    "base_subtotal" => 2.0000
+    "base_subtotal_invoiced" => 2.0000
+    "base_tax_amount" => 0.1550
+    "base_tax_invoiced" => 0.1550
+    "base_to_global_rate" => 1.0000
+    "base_to_order_rate" => 1.0000
+    "base_total_invoiced" => 2.1550
+    "base_total_invoiced_cost" => 0.0000
+    "discount_amount" => 0.0000
+    "discount_invoiced" => 0.0000
+    "grand_total" => 2.1550
+    "shipping_amount" => 0.0000
+    "shipping_invoiced" => 0.0000
+    "shipping_tax_amount" => 0.0000
+    "store_to_base_rate" => 0.0000
+    "store_to_order_rate" => 0.0000
+    "subtotal" => 2.0000
+    "subtotal_invoiced" => 2.0000
+    "tax_amount" => 0.1550
+    "tax_invoiced" => 0.1550
+    "total_invoiced" => 2.1550
+    "total_qty_ordered" => 2.0000
+    "customer_is_guest" => 0
+    "customer_note_notify" => 1
+    "customer_group_id" => 1
+    "quote_id" => 2207
+    "base_shipping_discount_amount" => 0.0000
+    "base_subtotal_incl_tax" => 2.1550
+    "base_total_due" => 2.1600
+    "shipping_discount_amount" => 0.0000
+    "subtotal_incl_tax" => 2.1550
+    "total_due" => 2.1600
+    "weight" => 0.0000
+    "increment_id" => 000000688
+    "base_currency_code" => USD
+    "customer_email" => irina.korol@amasty.com
+    "customer_firstname" => test
+    "customer_lastname" => test
+    "global_currency_code" => USD
+    "order_currency_code" => USD
+    "remote_ip" => 82.209.247.206
+    "store_currency_code" => USD
+    "store_name" => Main Website
+Main Website Store
+Default Store View
+    "x_forwarded_for" => 82.209.247.206
+    "created_at" => 2021-04-12 07:43:50
+    "updated_at" => 2021-04-12 07:43:50
+    "total_item_count" => 1
+    "discount_tax_compensation_amount" => 0.0000
+    "base_discount_tax_compensation_amount" => 0.0000
+    "shipping_discount_tax_compensation_amount" => 0.0000
+    "base_shipping_discount_tax_compensation_amnt" => 0.0000
+    "discount_tax_compensation_invoiced" => 0.0000
+    "base_discount_tax_compensation_invoiced" => 0.0000
+    "shipping_incl_tax" => 0.0000
+    "base_shipping_incl_tax" => 0.0000
+    "paypal_ipn_customer_notified" => 0
+    "base_creditline_amount" => 0.0000
+    "creditline_amount" => 0.0000
+    "base_creditline_invoiced" => 0.0000
+    "creditline_invoiced" => 0.0000
+    "base_creditline_refunded" => 0.0000
+    "creditline_refunded" => 0.0000
+    "base_creditline_total_refunded" => 0.0000
+    "creditline_total_refunded" => 0.0000
+    "payment (Magento\Sales\Model\Order\Payment\Interceptor)" => array: 14 [
+        "entity_id" => 572
+        "parent_id" => 572
+        "base_amount_authorized" => 2.1600
+        "base_shipping_amount" => 0.0000
+        "shipping_amount" => 0.0000
+        "amount_authorized" => 2.1600
+        "base_amount_ordered" => 2.1600
+        "amount_ordered" => 2.1600
+        "cc_ss_start_year" => 0
+        "method" => anet_echeck
+        "cc_ss_start_month" => 0
+        "last_trans_id" => 40062530073
+        "cc_exp_year" => 0
+        "additional_information" => array: 9 [
+            "customer_id" => 156
+            "public_hash" => 8b08fce8d14c9d9e3cfde790bfd6ace298eaf8f292aed8d1b514becceff96411
+            "routingNumber" => 0021
+            "accountNumber" => 1111
+            "accountName" => Demo
+            "accountType" => checking
+            "is_active_payment_token_enabler" => false
+            "method_title" => eCheck (Authorize.Net)
+            "transactionId" => 40062530073
+        ]
+    ]
+    "items" => array: 1 [
+        "794 (Magento\Sales\Model\Order\Item\Interceptor)" => array: 52 [
+            "item_id" => 794
+            "order_id" => 572
+            "quote_item_id" => 4772
+            "store_id" => 1
+            "created_at" => 2021-04-12 07:43:50
+            "updated_at" => 2021-04-12 07:43:50
+            "product_id" => 1142
+            "product_type" => virtual
+            "product_options" => ...
+            "weight" => 0.0000
+            "is_virtual" => 1
+            "sku" => test-1
+            "name" => test
+            "is_qty_decimal" => 0
+            "no_discount" => 0
+            "qty_canceled" => 0.0000
+            "qty_invoiced" => 2.0000
+            "qty_ordered" => 2.0000
+            "qty_refunded" => 0.0000
+            "qty_shipped" => 0.0000
+            "price" => 1.0000
+            "base_price" => 1.0000
+            "original_price" => 1.0000
+            "base_original_price" => 1.0000
+            "tax_percent" => 7.7500
+            "tax_amount" => 0.1550
+            "base_tax_amount" => 0.1550
+            "tax_invoiced" => 0.1550
+            "base_tax_invoiced" => 0.1550
+            "discount_percent" => 0.0000
+            "discount_amount" => 0.0000
+            "base_discount_amount" => 0.0000
+            "discount_invoiced" => 0.0000
+            "base_discount_invoiced" => 0.0000
+            "amount_refunded" => 0.0000
+            "base_amount_refunded" => 0.0000
+            "row_total" => 2.0000
+            "base_row_total" => 2.0000
+            "row_invoiced" => 2.0000
+            "base_row_invoiced" => 2.0000
+            "row_weight" => 0.0000
+            "price_incl_tax" => 1.0775
+            "base_price_incl_tax" => 1.0775
+            "row_total_incl_tax" => 2.1550
+            "base_row_total_incl_tax" => 2.1550
+            "discount_tax_compensation_amount" => 0.0000
+            "base_discount_tax_compensation_amount" => 0.0000
+            "discount_tax_compensation_invoiced" => 0.0000
+            "base_discount_tax_compensation_invoiced" => 0.0000
+            "gift_message_available" => 0
+            "free_shipping" => 0
+            "weee_tax_applied" => []
+        ]
+    ]
+    "addresses" => array: 0 [
+    ]
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+08:10 12/04/2021
+
+array: 66 [
+    0 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 121
+        "function" => beforeExecute
+        "class" => Amasty\AdvancedMSI\Plugin\InventoryDistanceBasedSourceSelection\DistanceBasedAlgorithmPlugin
+        "type" => ->
+    ]
+    1 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 153
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\InventoryDistanceBasedSourceSelection\Model\Algorithms\DistanceBasedAlgorithm\Interceptor
+        "type" => ->
+    ]
+    2 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/InventoryDistanceBasedSourceSelection/Model/Algorithms/DistanceBasedAlgorithm/Interceptor.php
+        "line" => 26
+        "function" => ___callPlugins
+        "class" => Magento\InventoryDistanceBasedSourceSelection\Model\Algorithms\DistanceBasedAlgorithm\Interceptor
+        "type" => ->
+    ]
+    3 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-inventory-source-selection-api/Model/SourceSelectionService.php
+        "line" => 61
+        "function" => execute
+        "class" => Magento\InventoryDistanceBasedSourceSelection\Model\Algorithms\DistanceBasedAlgorithm\Interceptor
+        "type" => ->
+    ]
+    4 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/InventorySourceSelectionApi/Model/SourceSelectionService/Interceptor.php
+        "line" => 24
+        "function" => execute
+        "class" => Magento\InventorySourceSelectionApi\Model\SourceSelectionService
+        "type" => ->
+    ]
+    5 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-inventory-shipping/Model/GetSourceSelectionResultFromInvoice.php
+        "line" => 99
+        "function" => execute
+        "class" => Magento\InventorySourceSelectionApi\Model\SourceSelectionService\Interceptor
+        "type" => ->
+    ]
+    6 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-inventory-shipping/Observer/VirtualSourceDeductionProcessor.php
+        "line" => 96
+        "function" => execute
+        "class" => Magento\InventoryShipping\Model\GetSourceSelectionResultFromInvoice
+        "type" => ->
+    ]
+    7 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Event/Invoker/InvokerDefault.php
+        "line" => 88
+        "function" => execute
+        "class" => Magento\InventoryShipping\Observer\VirtualSourceDeductionProcessor
+        "type" => ->
+    ]
+    8 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Event/Invoker/InvokerDefault.php
+        "line" => 74
+        "function" => _callObserverMethod
+        "class" => Magento\Framework\Event\Invoker\InvokerDefault
+        "type" => ->
+    ]
+    9 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Event/Manager.php
+        "line" => 66
+        "function" => dispatch
+        "class" => Magento\Framework\Event\Invoker\InvokerDefault
+        "type" => ->
+    ]
+    10 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Framework/Event/Manager/Proxy.php
+        "line" => 95
+        "function" => dispatch
+        "class" => Magento\Framework\Event\Manager
+        "type" => ->
+    ]
+    11 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Model/AbstractModel.php
+        "line" => 829
+        "function" => dispatch
+        "class" => Magento\Framework\Event\Manager\Proxy
+        "type" => ->
+    ]
+    12 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Model/ResourceModel/Db/VersionControl/AbstractDb.php
+        "line" => 56
+        "function" => afterSave
+        "class" => Magento\Framework\Model\AbstractModel
+        "type" => ->
+    ]
+    13 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php
+        "line" => 424
+        "function" => processAfterSaves
+        "class" => Magento\Framework\Model\ResourceModel\Db\VersionControl\AbstractDb
+        "type" => ->
+    ]
+    14 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Model/AbstractModel.php
+        "line" => 655
+        "function" => save
+        "class" => Magento\Framework\Model\ResourceModel\Db\AbstractDb
+        "type" => ->
+    ]
+    15 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-sales/Model/ResourceModel/Order/Relation.php
+        "line" => 94
+        "function" => save
+        "class" => Magento\Framework\Model\AbstractModel
+        "type" => ->
+    ]
+    16 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Model/ResourceModel/Db/VersionControl/RelationComposite.php
+        "line" => 48
+        "function" => processRelation
+        "class" => Magento\Sales\Model\ResourceModel\Order\Relation
+        "type" => ->
+    ]
+    17 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Model/ResourceModel/Db/VersionControl/AbstractDb.php
+        "line" => 57
+        "function" => processRelations
+        "class" => Magento\Framework\Model\ResourceModel\Db\VersionControl\RelationComposite
+        "type" => ->
+    ]
+    18 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php
+        "line" => 424
+        "function" => processAfterSaves
+        "class" => Magento\Framework\Model\ResourceModel\Db\VersionControl\AbstractDb
+        "type" => ->
+    ]
+    19 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-sales/Model/ResourceModel/Order.php
+        "line" => 178
+        "function" => save
+        "class" => Magento\Framework\Model\ResourceModel\Db\AbstractDb
+        "type" => ->
+    ]
+    20 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Sales/Model/ResourceModel/Order/Interceptor.php
+        "line" => 37
+        "function" => save
+        "class" => Magento\Sales\Model\ResourceModel\Order
+        "type" => ->
+    ]
+    21 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-sales/Model/OrderRepository.php
+        "line" => 270
+        "function" => save
+        "class" => Magento\Sales\Model\ResourceModel\Order\Interceptor
+        "type" => ->
+    ]
+    22 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 58
+        "function" => save
+        "class" => Magento\Sales\Model\OrderRepository
+        "type" => ->
+    ]
+    23 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 138
+        "function" => ___callParent
+        "class" => Magento\Sales\Model\OrderRepository\Interceptor
+        "type" => ->
+    ]
+    24 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 153
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Sales\Model\OrderRepository\Interceptor
+        "type" => ->
+    ]
+    25 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Sales/Model/OrderRepository/Interceptor.php
+        "line" => 78
+        "function" => ___callPlugins
+        "class" => Magento\Sales\Model\OrderRepository\Interceptor
+        "type" => ->
+    ]
+    26 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-sales/Model/Service/OrderService.php
+        "line" => 216
+        "function" => save
+        "class" => Magento\Sales\Model\OrderRepository\Interceptor
+        "type" => ->
+    ]
+    27 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 58
+        "function" => place
+        "class" => Magento\Sales\Model\Service\OrderService
+        "type" => ->
+    ]
+    28 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 138
+        "function" => ___callParent
+        "class" => Magento\Sales\Model\Service\OrderService\Interceptor
+        "type" => ->
+    ]
+    29 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 153
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Sales\Model\Service\OrderService\Interceptor
+        "type" => ->
+    ]
+    30 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Sales/Model/Service/OrderService/Interceptor.php
+        "line" => 117
+        "function" => ___callPlugins
+        "class" => Magento\Sales\Model\Service\OrderService\Interceptor
+        "type" => ->
+    ]
+    31 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-quote/Model/QuoteManagement.php
+        "line" => 563
+        "function" => place
+        "class" => Magento\Sales\Model\Service\OrderService\Interceptor
+        "type" => ->
+    ]
+    32 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-quote/Model/QuoteManagement.php
+        "line" => 453
+        "function" => submitQuote
+        "class" => Magento\Quote\Model\QuoteManagement
+        "type" => ->
+    ]
+    33 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 58
+        "function" => submit
+        "class" => Magento\Quote\Model\QuoteManagement
+        "type" => ->
+    ]
+    34 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 138
+        "function" => ___callParent
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    35 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 153
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    36 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Quote/Model/QuoteManagement/Interceptor.php
+        "line" => 91
+        "function" => ___callPlugins
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    37 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-quote/Model/QuoteManagement.php
+        "line" => 411
+        "function" => submit
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    38 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 58
+        "function" => placeOrder
+        "class" => Magento\Quote\Model\QuoteManagement
+        "type" => ->
+    ]
+    39 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 138
+        "function" => ___callParent
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    40 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-braintree/Plugin/OrderCancellation.php
+        "line" => 63
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    41 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 135
+        "function" => aroundPlaceOrder
+        "class" => Magento\Braintree\Plugin\OrderCancellation
+        "type" => ->
+    ]
+    42 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 153
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    43 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Quote/Model/QuoteManagement/Interceptor.php
+        "line" => 65
+        "function" => ___callPlugins
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    44 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-checkout/Model/PaymentInformationManagement.php
+        "line" => 86
+        "function" => placeOrder
+        "class" => Magento\Quote\Model\QuoteManagement\Interceptor
+        "type" => ->
+    ]
+    45 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 58
+        "function" => savePaymentInformationAndPlaceOrder
+        "class" => Magento\Checkout\Model\PaymentInformationManagement
+        "type" => ->
+    ]
+    46 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 138
+        "function" => ___callParent
+        "class" => Magento\Checkout\Model\PaymentInformationManagement\Interceptor
+        "type" => ->
+    ]
+    47 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/app/code/Meetanshi/OrderUpload/Model/Checkout/PaymentInformationManagementPlugin.php
+        "line" => 64
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Checkout\Model\PaymentInformationManagement\Interceptor
+        "type" => ->
+    ]
+    48 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 135
+        "function" => aroundSavePaymentInformationAndPlaceOrder
+        "class" => Meetanshi\OrderUpload\Model\Checkout\PaymentInformationManagementPlugin
+        "type" => ->
+    ]
+    49 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 153
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Checkout\Model\PaymentInformationManagement\Interceptor
+        "type" => ->
+    ]
+    50 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Checkout/Model/PaymentInformationManagement/Interceptor.php
+        "line" => 26
+        "function" => ___callPlugins
+        "class" => Magento\Checkout\Model\PaymentInformationManagement\Interceptor
+        "type" => ->
+    ]
+    51 => array: 3 [
+        "function" => savePaymentInformationAndPlaceOrder
+        "class" => Magento\Checkout\Model\PaymentInformationManagement\Interceptor
+        "type" => ->
+    ]
+    52 => array: 3 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-webapi/Controller/Rest/SynchronousRequestProcessor.php
+        "line" => 95
+        "function" => call_user_func_array
+    ]
+    53 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-webapi/Controller/Rest.php
+        "line" => 188
+        "function" => process
+        "class" => Magento\Webapi\Controller\Rest\SynchronousRequestProcessor
+        "type" => ->
+    ]
+    54 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 58
+        "function" => dispatch
+        "class" => Magento\Webapi\Controller\Rest
+        "type" => ->
+    ]
+    55 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 138
+        "function" => ___callParent
+        "class" => Magento\Webapi\Controller\Rest\Interceptor
+        "type" => ->
+    ]
+    56 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/cart2quote/module-features/Feature/ApiAccess/Rest.php
+        "line" => 2
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Webapi\Controller\Rest\Interceptor
+        "type" => ->
+    ]
+    57 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 135
+        "function" => aroundDispatch
+        "class" => Cart2Quote\Features\Feature\ApiAccess\Rest
+        "type" => ->
+    ]
+    58 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/cart2quote/module-features/Feature/ApiAccess/Rest.php
+        "line" => 2
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Webapi\Controller\Rest\Interceptor
+        "type" => ->
+    ]
+    59 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 135
+        "function" => aroundDispatch
+        "class" => Cart2Quote\Features\Feature\ApiAccess\Rest
+        "type" => ->
+    ]
+    60 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php
+        "line" => 153
+        "function" => Magento\Framework\Interception\{closure}
+        "class" => Magento\Webapi\Controller\Rest\Interceptor
+        "type" => ->
+    ]
+    61 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php
+        "line" => 26
+        "function" => ___callPlugins
+        "class" => Magento\Webapi\Controller\Rest\Interceptor
+        "type" => ->
+    ]
+    62 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/Http.php
+        "line" => 116
+        "function" => dispatch
+        "class" => Magento\Webapi\Controller\Rest\Interceptor
+        "type" => ->
+    ]
+    63 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Framework/App/Http/Interceptor.php
+        "line" => 24
+        "function" => launch
+        "class" => Magento\Framework\App\Http
+        "type" => ->
+    ]
+    64 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/Bootstrap.php
+        "line" => 261
+        "function" => launch
+        "class" => Magento\Framework\App\Http\Interceptor
+        "type" => ->
+    ]
+    65 => array: 5 [
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/pub/index.php
+        "line" => 40
+        "function" => run
+        "class" => Magento\Framework\App\Bootstrap
+        "type" => ->
+    ]
+]
+----------------------------------------------------------------------------
+

@@ -1,0 +1,75 @@
+<?php /** * @author Amasty Team * @copyright Copyright (c) 2021 Amasty (https://www.amasty.com) * @package Amasty_Dropshipping */ ?> <?php /** @var \Magento\Backend\Block\Template $block */ /** @var \Magento\Framework\Escaper $escaper */ /** @var \Amasty\Dropshipping\Block\Adminhtml\Dealer\Grid\Customers $gridBlock */ $gridBlock = $block->getLayout()->getBlock('dealerCustomersGrid'); if (!is_object($gridBlock) && !$gridBlock->getJsObjectName()) { return; } ?> <script>
+    require([
+        'jquery',
+        'mage/adminhtml/grid',
+        'prototype'
+    ], function(jQuery) {
+        var checkBoxes = $H(<?= $escaper->escapeHtml($gridBlock->getCustomers(true)) ?>);
+        jQuery('#in_dealer_customer').val(checkBoxes.toQueryString());
+        jQuery('#<?= $escaper->escapeHtml($gridBlock->getId()) ?>').on('gridinit', handleCustomerGridInit);
+
+        function registerCustomerDealer(grid, element, checked)
+        {
+            if (checked) {
+                checkBoxes.set(element.value, 0);
+            } else {
+                checkBoxes.unset(element.value);
+            }
+            $('in_dealer_customer').value = checkBoxes.toQueryString();
+            grid.reloadParams = {'in_dealer_customer[]':checkBoxes.keys()};
+        }
+
+        function dealerCustomersRowClick(grid, event)
+        {
+            var trElement = Event.findElement(event, 'tr');
+            var isInput = Event.element(event).tagName === 'input';
+            if (trElement) {
+                var checkbox = Element.getElementsBySelector(trElement, 'input');
+                if(checkbox[0]){
+                    var checked = isInput ? !checkbox[0].checked : checkbox[0].checked;
+                    if (checked) {
+                        checkbox[0].checked = false;
+                        checkBoxes.unset(checkbox[0].value);
+                        varienElementMethods.setHasChanges(checkbox[0]);
+                    } else {
+                        checkbox[0].checked = true;
+                        checkBoxes.set(checkbox[0].value, true);
+                    }
+
+                    $('in_dealer_customer').value = checkBoxes.toQueryString();
+                    grid.reloadParams = {'in_dealer_customer[]':checkBoxes.keys()};
+                }
+            }
+        }
+
+        function dealerCustomersRowInit(grid, row)
+        {
+            var checkbox = $(row).getElementsByClassName('checkbox')[0];
+            if (checkbox) {
+                if (checkbox.checked) {
+                    checkBoxes.set(checkbox.value, checkbox.checked);
+                } else {
+                    checkBoxes.unset(checkbox.value);
+                }
+
+                $('in_dealer_customer').value = checkBoxes.toQueryString();
+                grid.reloadParams = {'in_dealer_customer[]':checkBoxes.keys()};
+            }
+        }
+
+        function handleCustomerGridInit(event, gridObject) {
+            gridObject.rowClickCallback = dealerCustomersRowClick;
+            gridObject.initRowCallback = dealerCustomersRowInit;
+            gridObject.checkboxCheckCallback = registerCustomerDealer;
+            gridObject.checkCheckboxes = function (allCheckbox) {
+                gridObject.rows.each(function(row) {
+                    $(row).getElementsByClassName('checkbox')[0].checked = allCheckbox.checked;
+                    dealerCustomersRowInit(gridObject, row);
+                });
+            };
+            gridObject.rows.each(function(row) {
+                dealerCustomersRowInit(gridObject, row)
+            });
+            $('in_dealer_customer_old').value = $('in_dealer_customer').value;
+        }
+    });</script>

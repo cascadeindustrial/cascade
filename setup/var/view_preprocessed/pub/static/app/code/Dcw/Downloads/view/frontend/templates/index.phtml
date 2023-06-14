@@ -1,0 +1,89 @@
+<?php use Magento\Framework\App\Action\Action; $_product = $block->getProductDetails(); $attachmentParams = $block->getProductAttachments(); $currencySymbol = $block->getCurrentCurrencySymbol(); $formattedExpeditedPrice = $formattedStandardPrice = $expeditedPrice = $standardPrice = $standardDeli = ''; $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); $product = $objectManager->create('Magento\Catalog\Model\Product')->load($_product); $resource = $objectManager->get('Magento\Framework\App\ResourceConnection'); $connection = $resource->getConnection(); $customerSession = $objectManager->create('Magento\Customer\Model\Session'); $loggedCustomerGroupId = $customerSession->getCustomer()->getGroupId(); $requestInterface = $objectManager->get('Magento\Framework\App\RequestInterface'); $rulesCatIds = array(); $finalResult1 = array(); $categories = $product->getCategoryIds(); $catIds = implode(',',$categories); $brandId = $product->getData('brand'); $data1 = $finalResult= 0; if($customerSession->isLoggedIn() && count($categories)!=0){ if($brandId) { $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '".$brandId."' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $data1 = $connection->fetchAll($sql); if(!$data1){ $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $data1 = $connection->fetchAll($sql); } }else{ $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $data1 = $connection->fetchAll($sql); } $finalResult = $data1; if(count($data1)==0) $finalResult = 0; if($finalResult!=0){ if(isset($data1[0]) && is_array($data1[0])) { foreach($data1 as $res) { $rulesCatId = $res['category']; $rulesCatIdsOriginal = explode(',',$rulesCatId); $c = array_intersect($rulesCatIdsOriginal, $categories); if (count($c) > 0) { $finalResult1 = $res; break; } } if(count($finalResult1)==0) $finalResult = 0; else $finalResult = $finalResult1; } else{ $rulesCatId = $finalResult['category']; $rulesCatIdsOriginal = explode(',',$rulesCatId); $c = array_intersect($rulesCatIdsOriginal, $categories); if(count($c) == 0) { $finalResult = 0; } } } if($finalResult==0){ $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $result = $connection->fetchAll($sql); foreach($result as $res) { $rulesCatId = $res['category']; $rulesCatIdsOriginal = explode(',',$rulesCatId); $c = array_intersect($rulesCatIdsOriginal, $categories); if (count($c) > 0) { $finalResult1 = $res; break; } } if(count($finalResult1)==0) $finalResult = 0; else $finalResult = $finalResult1; } } $hydralicCategoryId = $finalResult['category']; $customerGroupId = $finalResult['customer_group']; $expeditedDiscountPercentage = $finalResult['discount_percentage']; $standardDiscountPercentage = $finalResult['standard_discount_percentage']; $categoryId = explode(',',$finalResult['category']); $brandName = $finalResult['brand']; $categories = $product->getCategoryIds(); $helper = $this->helper('Dcw\Products\Helper\Data'); $currencySymbol = $helper->getCurrentCurrencySymbol(); $layout = $product->getAttributeText('enable_advanced_layout'); $urlVariable = $objectManager->create('Dcw\Products\Block\Desrdata'); $stockItem = $objectManager->get('\Magento\CatalogInventory\Api\StockStateInterface'); $stockQty = $stockItem->getStockQty($product->getId(), $product->getStore()->getWebsiteId()); $expeditedDeli = $product->getAttributeText('expedited_delivery_time'); $customprice = $product->getFinalPrice(); $priceHelper = $objectManager->create('Magento\Framework\Pricing\Helper\Data'); $formattedCustomPrice = $priceHelper->currency($customprice, true, false); $expeditedprice = $product->getExpeditedShippingPrice(); $expediteddeliattr = $product->getResource()->getAttribute('expedited_delivery_time'); $expeditedLabel = $product->getResource()->getAttribute('expedited_delivery_time')->getFrontend()->getLabel($product); $standardDeli = $product->getAttributeText('standard_delivery_time'); $standardprice = $product->getStandardShippingPrice(); $standarddeliattr = $product->getResource()->getAttribute('standard_delivery_time'); $standardLabel = $product->getResource()->getAttribute('standard_delivery_time')->getFrontend()->getLabel($product); $deliveryOption = $product->getAttributeText('enable_delivery_options'); ?> <div class="top-wrapper"><div class="product-details"><div class="item-name"><?php echo $product->getData('name'); ?></div><div class="sku"><label class="label">sku</label> <span class="value"><?php echo $product->getData('sku'); ?></span></div><div class="brand"><label class="label">brand</label> <span class="value"><?php echo $product->getResource()->getAttribute('brand')->getFrontend()->getValue($product); ?></span></div><?php $modelNo = $product->getData('model_no'); if($modelNo) { ?> <div class="model"><label class="label">model</label> <span class="value"><?php echo $product->getData('model_no');?></span></div><?php } ?></div><?php if($product->getData('type_id') == 'simple' ):?> <div class="shipping-details"><?php $postParams = $block->getAddToCartPostParams($product); ?> <form class="qty-block" data-role="tocart-form" data-quote-submit-action="<?php echo $quoteUrl= $urlVariable->getAddToQuoteUrl($product) ?>" action="<?php /* @escapeNotVerified */ echo $postParams['action']; ?>" method="post"><?php if($stockQty>0) { ?> <?php if ($finalResult != '') { ?> <?php if((strpos($brandName, $brandId) !== false) || ($expeditedDeli != '' && $standardDeli != '' && $deliveryOption == 'Yes')) { ?> <?php if($expeditedDeli) { $expeditedPrice = $customprice - (($customprice/100)*$expeditedDiscountPercentage); $formattedExpeditedPrice = $priceHelper->currency($expeditedPrice, true, false); ?> <div class="input-box radiobtndelivery expected-delivery"><input type="radio" class="input-text" title="expedited delivery" value="2" id="expedited_shipping" name="shipping_preference" /><span class="input-label"><?php echo $expeditedLabel; ?></span></div><?php } if($standardDeli) { $standardPrice = $customprice - (($customprice/100)*$standardDiscountPercentage); $formattedStandardPrice = $priceHelper->currency($standardPrice, true, false); ?> <div class="standard_delivery"><input type="radio" class="input-text" title="standard delivery" value="1" id="standard_shipping" name="shipping_preference" /><span class="input-label"><?php echo $standardLabel ?></span></div><input type="hidden" name="pdppage_delivery_options" class="pdppage_delivery_options" value="1"><?php } if($expeditedDeli) { ?> <div class="price-wrapper e-delivery" id="Del2" style="display: none;"><span class="price"><?php echo $formattedExpeditedPrice ?></span> <span class="old-price"><?php echo $formattedCustomPrice ?></span> <span class="est-delivery"><?php echo $expeditedDeli; ?></span></div><?php } if($standardDeli) { ?> <div class="price-wrapper s-delivery" id="Del1" style="display: none;"><span class="price"><?php echo $formattedStandardPrice ?></span> <span class="old-price"><?php echo $formattedCustomPrice ?></span> <span class="est-delivery"><?php echo $standardDeli; ?></span></div><?php } } }?> <?php $storeManager = $objectManager->get('Magento\Store\Model\StoreManagerInterface'); $currencyCode = $storeManager->getStore()->getCurrentCurrencyCode(); $currency = $objectManager->create('Magento\Directory\Model\CurrencyFactory')->create()->load($currencyCode); $currencySymbol = $currency->getCurrencySymbol(); $Price = $product->getData('price'); $formattedProductPrice = $priceHelper->currency($Price, true, false); ?> <div class="price-wrapper e-delivery" id="initial_prices" ><span class="price"><?php echo $formattedCustomPrice ?></span> <?php if($formattedCustomPrice != $formattedProductPrice) { ?> <span class="old-price"><?php echo $formattedProductPrice; ?></span> <?php } ?> <span class="est-delivery"><?php echo $standardDeli; ?></span></div><!-- <div class="price-wrapper old-price" id="initial_price" ><span class="prices"><?php ?></span></div> --><div class="control"><span class="input-group__addon"><div onclick="decreaseQty(<?= $block->escapeHtml($product->getId()) ?>)" class="input-groupbutton input-group_button--decrease"><span class="input-group_icon input-group_icon--decrease">-</span></div></span> <input type="number" name="qty" onchange="changeQty(<?= $block->escapeHtml($product->getId()) ?>)"id="qty-<?= $block->escapeHtml($product->getId()) ?>" maxlength="5" class="input-group_input qty" value="1"/><span class="input-group__addon"><div onclick="increaseQty(<?= $block->escapeHtml($product->getId()) ?>)" class="input-groupbutton input-group_button--increase"><span class="input-group_icon input-group_icon--increase">+</span></div></span> <input type="hidden" name="product" value="<?php /* @escapeNotVerified */ echo $postParams['data']['product']; ?>"><input type="hidden" name="<?php /* @escapeNotVerified */ echo Action::PARAM_NAME_URL_ENCODED; ?>" value="<?php /* @escapeNotVerified */ echo $postParams['data'][Action::PARAM_NAME_URL_ENCODED]; ?>"><?php echo $block->getBlockHtml('formkey')?> <button type="submit" title="<?php echo $block->escapeHtml(__('Add to Cart')); ?>" class="action tocart primary"><span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span></button> <?php } ?> <button type="submit" data-role="addToQuoteButton" title="<?php echo $block->escapeHtml(__('Request Quote')) ?>" class="action primary toquote tocart quote-btn-list"><span> <?php echo $block->escapeHtml(__('Request Quote')) ?></span></button> <a href="#" data-post='<?php echo $this->helper('Magento\Wishlist\Helper\Data')->getAddParams($product) ?>' class="action towishlist" data-action="add-to-wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></div></form><?php endif; ?> <?php if($product->getData('type_id') == 'configurable' ):?> <div class="action-buttons config-action-btn"><button class="action tocart primary"><a href="<?php echo $product->getProductUrl() ?>" title="Add to Cart" class="action tab-addtocart add-to-cart"><span>View Details</span></a></button> <button class="action primary toquote tocart quote-btn-list"><a href="<?php echo $product->getProductUrl() ?>" title="Request to Quote"><span>Request Quote</span></a></button> <a href="#" data-post='<?php echo $this->helper('Magento\Wishlist\Helper\Data')->getAddParams($product) ?>' class="action towishlist" data-action="add-to-wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></div><?php endif; ?></div><!-- <div class="shipping-details"><div class="expected-deli-label delidate"><input type="radio" checked><?php ?></input></div><div class="expected-delivery"><?php ?></div><div class="standard-deli-label delidate"><input type="radio"><?php ?></input></div><div class="standard-delivery"><?php ?></input></div></div> --><?php $productAttachments = $block->getDownloadsAttachments($_product); $mediaPath = $objectManager->get('Magento\Store\Model\StoreManagerInterface') ->getStore() ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA); $pathForFile = $mediaPath.'amasty/amfile/attach'; ?> <div class="widget am-attachments am-attachments-<?= $block->escapeHtml($this->getWidgetType()); ?>"><?php if ($block->getBlockTitle()) : ?> <div class="block-title"><strong><?= $block->escapeHtml($block->getBlockTitle()); ?></strong></div><?php endif; ?> <?php foreach ($productAttachments as $file) : $filePath = $file->getData('filepath'); $extension = $file->getData('extension'); $filePathName = $pathForFile.'/'.$filePath.'.'.$extension; if($attachmentParams == $file->getFileName()){?> <iframe src = "<?php echo $filePathName ?>" height="1000" width="1000"></iframe><?php }?> <?php endforeach; ?> <!-- <iframe src = "<?php ?>" height="1000" width="1000"></iframe> --></div><script>
+  function decreaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) -1;
+        if(qty < 1){
+            qty =1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function increaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) +1;
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function changeQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        if(qty< 1){
+            qty = 1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}</script><script type="text/x-magento-init">
+ {
+        "[data-role=tocart-form], .form.map.checkout": {
+            "catalogAddToCart": {
+                "addToQuoteButtonSelector": "[data-role=addToQuoteButton]",
+                "addToCartButtonSelector": "[data-role=addToCartButton]"
+            }
+        }
+    }</script><script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "wishlist": {
+                    "component": "Magento_Wishlist/js/view/wishlist"
+                }
+            }
+        }
+    }
+}</script><script>
+    require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+                $("input[name$='shipping_preference']").click(function() {
+                var test = $(this).val();
+                console.log(test);
+
+                
+                
+                $("#initial_prices").hide();
+                if(test == 1)
+                {
+                      $("#Del1").show();
+                      $("#Del2").hide();
+                 ?>";
+                 ?>";
+                
+                
+                
+                
+                }
+                else{
+                          $("#Del2").show();
+                          $("#Del1").hide();
+                 ?>";
+                 ?>";
+                
+                
+                
+                
+                }
+            });
+
+            setTimeout(function(){
+              var x = jQuery('.downloads-index-index .shipping-details .price-wrapper .est-delivery').text().length
+                console.log(x);
+              if(x < 3 ){
+                console.log('asas')
+                  jQuery('.downloads-index-index .shipping-details .price-wrapper .est-delivery').addClass('none').css({'display':'none'});
+              }
+            }, 5000);    
+
+        });
+    });</script><style> .downloads-index-index .page-wrapper .page-title-wrapper{display: none;} .downloads-index-index .page-wrapper .page-title-wrapper {display: none;} .downloads-index-index .shipping-details .price-wrapper .est-delivery.none{display: none !important;} .downloads-index-index .columns .column.main .top-wrapper .shipping-details span.price{width: auto;margin: 0 20px 0 0;} .downloads-index-index .columns .column.main .top-wrapper .shipping-details span.old-price{margin: 0 20px 0 0;}</style>

@@ -1,0 +1,130 @@
+<?php /** * Copyright © 2013-2017 Magento, Inc. All rights reserved. * See COPYING.txt for license details. */ /** @var $block \Magento\Catalog\Block\Product\View */ ?> <?php $_product = $block->getProduct(); $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); $_productSku = $block->getProduct()->getData('sku'); $product_id = $block->getProduct()->getData('id'); $standarddeli = $_product->getAttributeText('standard_delivery_time'); $expediteddeli = $_product->getAttributeText('expedited_delivery_time'); ?> <?php $buttonTitle = __('Add to Cart'); $stockItem = $_product->getExtensionAttributes()->getStockItem(); $customerSession = $objectManager->get('Magento\Customer\Model\Session'); ?> <?php echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::delivery.phtml")->toHtml(); ?> <?php if ($stockItem->getIsInStock() && $_productSku != 'custom-request-form') { ?> <div class="prices-ships"><?php echo $this->getLayout() ->createBlock('Magento\Catalog\Pricing\Render', "product.price.final", [ 'data' => [ 'price_render' => 'product.price.render.default', 'price_type_code' => 'final_price', 'zone' => 'item_view' ] ] ) ->toHtml(); echo $this->getLayout()->createBlock("Dcw\Products\Block\Desrdata")->setTemplate("Dcw_Products::productships.phtml")->toHtml(); ?> <?php ?> <!-- <div class="ship_delivery deltime-option" id="standdel"><span><?php <?php ?> <?php ?> <!-- <div class="ship_delivery deltime-option" id="expdel" style="display: none";><span><?php <?php ?></div><?php } ?> <?php ?> <!-- <span class="text"><?php <?php ?> <?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); ?> <?php if ($_product->isSaleable()): ?> <div class="box-tocart"><div class="fieldset"><?php if ($block->shouldRenderQuantity()): ?> <div class="field qty"><label class="label" for="qty"><span><?php /* @escapeNotVerified */ echo __('Qty') ?></span></label> <div class="control" data-bind="scope: 'qty_change'"><span class="input-group__addon"><div onclick="decreaseQty(<?= $block->escapeHtml($_product->getId()) ?>)" class="input-groupbutton input-group_button--decrease"><span class="input-group_icon input-group_icon--decrease">-</span></div></span> <input type="number" name="qty" onchange="changeQty(<?= $block->escapeHtml($_product->getId()) ?>)"id="qty-<?= $block->escapeHtml($_product->getId()) ?>" maxlength="5" class="input-group_input qty" value="1"/><span class="input-group__addon"><div onclick="increaseQty(<?= $block->escapeHtml($_product->getId()) ?>)" class="input-groupbutton input-group_button--increase"><span class="input-group_icon input-group_icon--increase">+</span></div></span></div></div><?php endif; ?> <div class="actions"><button type="submit" title="<?= $block->escapeHtmlAttr($buttonTitle) ?>" class="action primary tocart" id="product-addtocart-button" disabled><span><?= $block->escapeHtml($buttonTitle) ?></span></button> <?= $block->getChildHtml('', true) ?></div></div></div><?php endif; ?> <!-- <script type="text/x-magento-init">
+   {
+       "#product_addtocart_form": {
+           "Magento_Catalog/product/view/validation": {
+               "radioCheckboxClosest": ".nested"
+           }
+       }
+   }</script> --><!-- <?php ?> <script type="text/x-magento-init">
+   {
+       "#product_addtocart_form": {
+           "catalogAddToCart": {
+               "bindSubmit": true
+           }
+       }
+   }</script><?php ?> --><?php if($customerSession->isLoggedIn()) { ?> <script type="text/javascript">
+require(['jquery'], function ($) {
+$(document).ready(function () {
+    $('body').addClass('logged_in');
+  });
+});</script><?php } ?> <script>
+  function decreaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) -1;
+        if(qty < 1){
+            qty =1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function increaseQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        qty = parseInt(qty) +1;
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}
+function changeQty(dataId){
+        var qty = jQuery('#qty-'+dataId).val();
+        if(qty< 1){
+            qty = 1;
+        }
+        jQuery('#qty-'+dataId).val(qty);
+        jQuery('#qtydata-'+dataId).val(qty);
+        return false;
+}</script><script>
+    require([
+        'jquery'
+    ], function($){
+        $('.field.choice.related').parents('.prices-ships').addClass('active');
+    });</script><!-- <script>
+    require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+        
+        
+                $("input[name$='shipping_preference']").click(function() {
+                var test = $(this).val();
+                console.log(test);
+                $("#expdel").hide();
+                
+                if(test == 1)
+                {
+                      $("#standdel").show();
+                      $("#expdel").hide();
+                }
+                else{
+                          $("#expdel").show();
+                          $("#standdel").hide();
+                }
+               
+            });
+              
+
+        });
+    });</script> --><script>
+  require(['jquery', 'jquery/ui'], function($){
+      $(document).ready( function() {
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+        
+        
+        
+        
+
+
+  
+
+        jQuery('input.product-custom-option').each(function(){
+           jQuery(this).parent().closest(".field").addClass('custom_OPtions');
+        });
+
+        jQuery('textarea.product-custom-option').each(function(){
+           jQuery(this).parent().closest(".field").addClass('custom_OPtions');
+        });
+
+        jQuery('select.product-custom-option').each(function(){
+           jQuery(this).parent().closest(".field").addClass('custom_OPtions');
+        });
+
+        jQuery('.product-options-wrapper.active .custom_OPtions').insertBefore('.newlayout');
+
+      });
+    });</script>

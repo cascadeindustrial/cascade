@@ -1,0 +1,6 @@
+<?php /** * Copyright © Magefan (support@magefan.com). All rights reserved. * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement). */ ?> <?php /** * Add Change Customer Link to Account Information table * * @var $block \Magento\Backend\Block\Template */ ?> <?php if ($block->getAuthorization()->isAllowed('Magefan_GuestToCustomer::config_section')) { ?> <span id="mfgt_change_customer"?> (<a href="<?=$block->escapeUrl($block->getUrl( 'mfguesttocustomer/order/assigncustomerselect', ['order_id' => (int)$block->getRequest()->getParam('order_id')] )) ?>"><?= $block->escapeHtml(__('Change Customer')) ?></a>)</span> <script>
+        require(['jquery', 'domReady!'], function($){
+            $('#mfgt_change_customer').appendTo(
+                $($('.order-account-information .admin__page-section-item-content td').get(0))
+            );
+        });</script><?php } ?>

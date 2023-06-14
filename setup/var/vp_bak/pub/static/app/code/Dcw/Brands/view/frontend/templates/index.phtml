@@ -1,0 +1,31 @@
+<?php $brandInfo = $block->getBrandCollection(); $mediaUrl = $block->getMediaUrl(); $mediaUrl .= "amasty/shopby/option_images/"; $brandImage = $brandInfo['image']; $brandTitle = $this->getBrandTitle(); $categories = array(); ?> <div class="brand_title"><?php echo $brandTitle; ?></div><?php echo "<div class='brand-category-view'>"; if($brandImage){ ?> <div class="brand-category-image"><img src="<?php echo $mediaUrl.$brandImage; ?>"></div><?php } echo "<div class='brand-category-description'>"; echo $brandInfo['description']; $catIdsArray=''; $productCollection = $block->getProductsCollection(); echo "</div>"; echo "<span class='read-more'></span>"; echo "</div>"; foreach ($productCollection as $product) { $productId = $product['entity_id']; $product = $block->getProductById($productId); $categoryIds = $product->getCategoryIds(); if(!empty($categoryIds)){ $catCovertionResult = implode(', ',$categoryIds); $catIdsArray .= $catCovertionResult.","; } } $catIdsArrayTrim = trim($catIdsArray,","); $catIdsResult = explode(',',$catIdsArrayTrim); $catIdsResultUnique = array_unique($catIdsResult); $brandurl = $block->getBrandUrl(); foreach($catIdsResultUnique as $catId){ if($catId) { $catPathInfo = $block->getCategoryInfo($catId); if($catPathInfo['children_count'] != 0) continue; $path = $catPathInfo['path']; $pathArray=explode("/",$path); $pathResult = array_slice($pathArray, 2); $ourCategoryId = end($pathResult); $parentCategoryId = $pathResult[0]; $categories[$parentCategoryId][] = $ourCategoryId; } } if(count($categories)>0) $keys= array_keys($categories); else { echo "<br><br><b>No categories found for this brand products<b><br>"; return; } echo "<div class='bclp-title-wrapper'><h1 class='page-title'>Product Categories</h1></div>"; echo "<div class='bclp-section'>"; $i=0; foreach($keys as $key){ $values = $categories[$key]; $res = array_unique($values); $unsetValue = array_search( $key, $res ); if($unsetValue) unset( $res[$unsetValue] ); if(!($res)) continue; $keysheading = $block->getCategoryName($key); echo "<div class='bclp-block'>"; echo "<strong class='bclp-title'>".$keysheading['value']."</strong>"; echo "<div class='bclp-items'>"; foreach($res as $value){ $i++; $valuesnames = $block->getCategoryName($value); ?> <a href = "<?php echo $brandurl; ?>?cat=<?php echo $value; ?>"><?php echo $valuesnames['value']."<br>"; ?></a><?php if($i==6) echo "<span class='more-items'></span>"; } echo "</div>"; echo "</div>"; } echo "</div>"; ?> <script>
+    require(['jquery', 'jquery/ui'], function($){
+        $(document).ready( function() {
+            /**** for description ***/
+            $(".brand-category-view .read-more").text("read more");
+            $(".brand-category-view .read-more").click(function(a) {
+                a.preventDefault();
+                $(".brand-category-view").toggleClass("active-sec");
+                if ($(".brand-category-view").hasClass("active-sec")){
+                    $(".brand-category-view .read-more").text("read less");
+                }
+                else {
+                    $(".brand-category-view .read-more").text("read more");
+                }
+            });
+
+            /*** for brands items***/
+            $(".bclp-block .more-items").text("read more");
+            $(".bclp-block .more-items").click(function(a) {
+                a.preventDefault();
+                
+                $(".bclp-section .bclp-block").toggleClass("active-sec");
+                if ($(".bclp-section .bclp-block").hasClass("active-sec")){
+                    $(".bclp-block .more-items").text("read less");
+                }
+                else {
+                    $(".bclp-block .more-items").text("read more");
+                }
+            });
+        });
+    });</script>

@@ -1,0 +1,353 @@
+2021-04-07T08:15:16+00:00 INFO (6): 4
+2021-04-07T08:15:17+00:00 INFO (6): 4
+2021-04-07T08:15:17+00:00 INFO (6): 4
+2021-04-07T08:15:18+00:00 INFO (6): 4
+2021-04-07T08:15:18+00:00 INFO (6): 4
+2021-04-07T08:15:19+00:00 INFO (6): 4
+2021-04-07T08:15:24+00:00 INFO (6): 4
+2021-04-07T08:15:25+00:00 INFO (6): 4
+2021-04-07T08:15:26+00:00 INFO (6): 4
+2021-04-07T08:22:03+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5617',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '11111',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+)
+2021-04-07T08:22:21+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5617',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '11111',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+)
+2021-04-07T08:22:40+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5617',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '33333',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+)
+2021-04-07T08:22:41+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5617',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '33333',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+)
+2021-04-07T08:22:42+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5617',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '33333',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+)
+2021-04-07T08:22:49+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5618',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '33333',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_upspm',
+      'value' => '88888',
+    ),
+  )),
+  4 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+  5 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_ups_selectcountry',
+      'value' => '5808',
+    ),
+  )),
+  6 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_can_mex_method_ups',
+      'value' => '5827',
+    ),
+  )),
+)
+2021-04-07T08:22:50+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5618',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '33333',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_upspm',
+      'value' => '88888',
+    ),
+  )),
+  4 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+  5 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_ups_selectcountry',
+      'value' => '5808',
+    ),
+  )),
+  6 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_can_mex_method_ups',
+      'value' => '5827',
+    ),
+  )),
+)
+2021-04-07T08:22:51+00:00 INFO (6): array (
+  0 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'account_selection_pm',
+      'value' => '5616',
+    ),
+  )),
+  1 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_account_selection_pm',
+      'value' => '5618',
+    ),
+  )),
+  2 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_pm',
+      'value' => '33333',
+    ),
+  )),
+  3 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'stored_account_values_upspm',
+      'value' => '88888',
+    ),
+  )),
+  4 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_fedex_selectcountry',
+      'value' => '5807',
+    ),
+  )),
+  5 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_ups_selectcountry',
+      'value' => '5808',
+    ),
+  )),
+  6 => 
+  Magento\Framework\Api\AttributeValue::__set_state(array(
+     '_data' => 
+    array (
+      'attribute_code' => 'existing_can_mex_method_ups',
+      'value' => '5827',
+    ),
+  )),
+)

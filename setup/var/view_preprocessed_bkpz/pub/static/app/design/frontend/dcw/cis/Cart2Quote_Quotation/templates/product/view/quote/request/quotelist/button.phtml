@@ -1,0 +1,12 @@
+<?php /** * Copyright (c) 2020. Cart2Quote B.V. All rights reserved. * See COPYING.txt for license details. * @codingStandardsIgnoreFile */ /** @var \Cart2Quote\Quotation\Block\Quote\Request\Button\QuoteList $block */ ?> <?php $buttonTitle = __('Request Quote'); $_product = $block->getProduct(); $_productSku = $block->getProduct()->getData('sku'); $stockItem = $_product->getExtensionAttributes()->getStockItem(); $showButton = $block->showButton(); $showMessageNotLoggedIn = $block->showMessageNotLoggedIn(); ?> <?php if ($showButton && !$showMessageNotLoggedIn) : ?> <?php if ($stockItem->getIsInStock()) { if ($_productSku != 'custom-request-form'){ ?> <button type="submit" title="<?php echo $block->escapeHtml($buttonTitle) ?>" class="action primary toquote disabled product-addtoquote-button" id="product-addtoquote-button"><span><?php echo $block->escapeHtml($buttonTitle) ?></span></button> <?php } else { ?> <button type="submit" title="<?php echo $block->escapeHtml("Submit Quote Request") ?>" class="action primary toquote disabled product-addtoquote-button" id="product-addtoquote-button"><span><?php echo $block->escapeHtml("Submit Quote Request") ?></span></button> <?php } ?> <?php if ($_productSku != 'custom-request-form'){ ?> <div class="addto-wishlist"><a href="#" data-post='<?php echo $this->helper('Magento\Wishlist\Helper\Data')->getAddParams($_product) ?>' class="action towishlist" data-action="add-to-wishlist"><span> Add to Wish List</span></a></div><?php } ?> <?php } ?> <?php elseif ($showMessageNotLoggedIn) : ?> <button id="product-addtoquote-button" class="action secondary toquote product-addtoquote-button" disabled="disabled"><span><?php echo $block->escapeHtml(__('Login to Request Quote')); ?></span></button> <?php endif; ?> <?php if ($showButton && $block->directQuote() && $block->isLoggedIn()) : ?> <button type="submit" title="<?php echo $block->escapeHtml('Print Quote') ?>" class="action secondary toquote product-addtoquote-button" id="product-printquote-button"><span><?php echo $block->escapeHtml('Print Quote') ?></span></button> <?php endif; ?> <script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "wishlist": {
+                    "component": "Magento_Wishlist/js/view/wishlist"
+                }
+            }
+        }
+    }
+}</script>

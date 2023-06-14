@@ -1,0 +1,203 @@
+<?php $formattedExpeditedPrice = $formattedStandardPrice = $expeditedPrice = $standardPrice = ''; $_product = $block->getProduct(); $customprice = $_product->getFinalPrice(); $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); $resource = $objectManager->get('Magento\Framework\App\ResourceConnection'); $connection = $resource->getConnection(); $customerSession = $objectManager->create('Magento\Customer\Model\Session'); $loggedCustomerGroupId = $customerSession->getCustomer()->getGroupId(); printLog("loggedin customergroupid"); printLog($loggedCustomerGroupId); $requestInterface = $objectManager->get('Magento\Framework\App\RequestInterface'); $priceHelper = $objectManager->create('Magento\Framework\Pricing\Helper\Data'); $moduleName = $requestInterface->getModuleName(); $controllerName = $requestInterface->getControllerName(); $actionName = $requestInterface->getActionName(); $totalPath = $moduleName."_".$controllerName."_".$actionName; $finalResult1 = array(); $cart = $objectManager->get('\Magento\Checkout\Model\Cart'); $items = $cart->getQuote()->getAllVisibleItems(); $shippingOption = 0; foreach($items as $item) { if($item->getShippingOption()) { $shippingOption = $item->getShippingOption(); break; } } $categories = $_product->getCategoryIds(); $rulesCatIds = array(); $catIds = implode(',',$categories); printLog("product catIds"); printLog($catIds); $productRepository = $objectManager->get('\Magento\Catalog\Model\ProductRepository'); $productObj = $productRepository->get($_product->getSku()); $brandId = $productObj->getData('brand'); printLog("brandId"); printLog($brandId); $helper = $this->helper('Dcw\Products\Helper\Data'); $result = $finalResult = 0; if($helper->isLoggedIn() && count($categories)!=0){ if($brandId) { $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '".$brandId."' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $result = $connection->fetchAll($sql); if(!$result){ $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $result = $connection->fetchAll($sql); } }else{ $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $result = $connection->fetchAll($sql); } $finalResult = $result; if(count($result)==0) $finalResult = 0; if($finalResult!=0){ if(isset($result[0]) && is_array($result[0])) { printLog("in if loop"); foreach($result as $res) { $rulesCatId = $res['category']; $rulesCatIdsOriginal = explode(',',$rulesCatId); printLog($rulesCatIdsOriginal); printLog($categories); $c = array_intersect($rulesCatIdsOriginal, $categories); if (count($c) > 0) { $finalResult1 = $res; break; } printLog("final Result"); printLog($finalResult1); } if(count($finalResult1)==0) $finalResult = 0; else $finalResult = $finalResult1; } else{ printLog("in ifelse loop"); $rulesCatId = $finalResult['category']; $rulesCatIdsOriginal = explode(',',$rulesCatId); $c = array_intersect($rulesCatIdsOriginal, $categories); if(count($c) == 0) { $finalResult = 0; } } } if($finalResult==0){ $sql="SELECT * FROM dcw_custom_price_rules WHERE status = 1 and brand = '' and FIND_IN_SET($loggedCustomerGroupId,customer_group) > 0 ORDER BY id DESC"; $result = $connection->fetchAll($sql); foreach($result as $res) { $rulesCatId = $res['category']; $rulesCatIdsOriginal = explode(',',$rulesCatId); $c = array_intersect($rulesCatIdsOriginal, $categories); if (count($c) > 0) { $finalResult1 = $res; break; } } if(count($finalResult1)==0) $finalResult = 0; else $finalResult = $finalResult1; } } printLog("finalResult"); printLog($finalResult); $customerGroupId = $finalResult['customer_group']; $expeditedDiscountPercentage = $finalResult['discount_percentage']; $standardDiscountPercentage = $finalResult['standard_discount_percentage']; $stockItem = $_product->getExtensionAttributes()->getStockItem(); $currencySymbol = $helper->getCurrentCurrencySymbol(); $deliveryOption = $_product->getAttributeText('enable_delivery_options'); $layout = $_product->getAttributeText('enable_advanced_layout'); ?> <?php $brandName = (isset($finalResult['brand'])) ? $finalResult['brand'] : ""; $expediteddeli = $_product->getAttributeText('expedited_delivery_time'); $standarddeli = $_product->getAttributeText('standard_delivery_time'); $expediteddeliattr = $_product->getResource()->getAttribute('expedited_delivery_time'); $expeditedLabel = $_product->getResource()->getAttribute('expedited_delivery_time')->getFrontend()->getLabel($_product); ?> <div class="field delivery conf-delivery"><?php if ($finalResult != '') { if (((strpos($brandName, $brandId) !== false)!=0) || ($stockItem->getIsInStock() && $expediteddeli != '' && $standarddeli != '' && $deliveryOption == 'Yes')) {?> <?php if ($layout =='Yes') { ?> <div><h1 class="delivery-option">Preferred Delivery option</h1></div><?php } else { ?> <div><h1>Preferred Delivery option</h1></div><?php } ?> <?php if (!is_null($_product->getData($expediteddeliattr->getAttributeCode())) && ((string)$expediteddeliattr->getFrontend()->getValue($_product) != '')) { ?> <?php if($_product->getTypeId()=="configurable"){ $productTypeInstance = $_product->getTypeInstance(); $usedProducts = $productTypeInstance->getUsedProducts($_product); $aslowPrice = array(); foreach ($usedProducts as $child) { $price = $child->getFinalPrice(); $aslowPrice[] = $price; } $customprice = min($aslowPrice); $expeditedPrice = $customprice - (($customprice/100)*$expeditedDiscountPercentage); $standardPrice = $customprice - (($customprice/100)*$standardDiscountPercentage); /* echo $expeditedDiscountPercentage."</br>"; echo $standardDiscountPercentage."</br>"; echo $expeditedPrice."</br>"; echo $standardPrice."</br>";*/ $formattedExpeditedPrice = $priceHelper->currency($expeditedPrice, true, false); } else { $expeditedPrice = $customprice - (($customprice/100)*$expeditedDiscountPercentage); $formattedExpeditedPrice = $priceHelper->currency($expeditedPrice, true, false); } ?> <div class="input-box radiobtndelivery c-delivery"><div class="for-mobile"><input type="radio" class="input-text shipping-option" title="expedited delivery" value="2" id="expedited_shipping_price" name="shipping_preference" <?php if($shippingOption==2 && $totalPath=='checkout_cart_configure'){ echo "checked";}?>/><span class="text"><?php echo $expeditedLabel; ?></span> <div class="discount-price"><span class="price"><?php echo $formattedExpeditedPrice; ?></span> <div class="original-discount"><?php $formattedOriginalPrice = $priceHelper->currency($customprice, true, false); $productName = $_product->getName(); echo $formattedOriginalPrice; ?></div><span class="disc-price-percentage"><?php echo "get ".$expeditedDiscountPercentage."% off";?></span></div></div></div><div class="standard-delivery c-delivery"><div class="for-mobile"><?php } if($_product->getTypeId()=="configurable"){ $formattedStandardPrice = $priceHelper->currency($standardPrice, true, false); } else { $standardPrice = $customprice - (($customprice/100)*$standardDiscountPercentage); $formattedStandardPrice = $priceHelper->currency($standardPrice, true, false); } $standarddeliattr = $_product->getResource()->getAttribute('standard_delivery_time'); $standardLabel = $_product->getResource()->getAttribute('standard_delivery_time')->getFrontend()->getLabel($_product); if (!is_null($_product->getData($standarddeliattr->getAttributeCode())) && ((string)$standarddeliattr->getFrontend()->getValue($_product) != '')) { ?> <input type="radio" class="input-text shipping-option" title="standard delivery" value="1" class="shipping-option" id="standard_shipping_price" name="shipping_preference" <?php if($shippingOption==1 && $totalPath=='checkout_cart_configure'){ echo "checked";}?>/><span class="text"><?php echo $standardLabel ?></span> <div class="discount-price"><span class="price"><?php echo $formattedStandardPrice; ?></span> <div class="original-standard-discount"><?php echo $formattedOriginalPrice; ?></div><span class="org-price-std-dis"><?php echo "get ".$standardDiscountPercentage."% off"; ?></span></div><input type="hidden" name="pdppage_delivery_options" class="pdppage_delivery_options" value="1"></div><div class="error_msg" style="display:none"><span class="mage-error"><?php echo "This is a required field" ?></span></div></div><?php } } $product = $objectManager->get('Magento\Framework\Registry')->registry('current_product'); $currencysymbol = $objectManager->get('Magento\Store\Model\StoreManagerInterface'); $currencyCode = $currencysymbol->getStore()->getCurrentCurrencyCode(); $currency = $objectManager->create('Magento\Directory\Model\CurrencyFactory')->create()->load($currencyCode); $currencySymbol = $currency->getCurrencySymbol(); $product_id = $product->getId(); $productType = $_product->getTypeId(); $price = $product->getFinalPrice(); $productprice = $currencySymbol.$price; ?> <script type="text/javascript">
+    require(['jquery'],function($){
+
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    jQuery("#product-addtoquote-button").click(function (evt) {
+
+        
+
+        jQuery('.pdppage_delivery_options').val(2);
+        return true;
+
+    });
+
+       var productid = "<?php echo $product_id;?>";
+
+       $(".super-attribute-select").click(function(){
+
+         $('input[name=shipping_preference]').removeAttr('checked');
+
+         var finalPrice = jQuery('.prices-ships .price-final_price .normal-price .price-final_price .price-wrapper .price').html();
+         
+
+         var customurl = "<?php echo $this->getUrl().'custompricing/price/discountprice'?>";
+         
+         var productid = "<?php echo $product_id;?>";
+         var currency = "<?php echo $currencySymbol;?>";
+         var standardPercentage = "<?php echo $standardDiscountPercentage;?>";
+         var expeditedPercentage = "<?php echo $expeditedDiscountPercentage;?>";
+
+         $.ajax({
+           url: customurl,
+           type: 'POST',
+           dataType: 'json',
+           data: {"price": finalPrice,"standardPercentage":standardPercentage,"expeditedPercentage":expeditedPercentage},
+           success: function (resPrice){
+             console.log(resPrice);
+             $(".radiobtndelivery .for-mobile .price").text(currency+""+resPrice.expedited);
+             $(".standard-delivery .for-mobile .price").text(currency+""+resPrice.standard);
+             
+           },
+         });
+
+       });
+
+       $("#expedited_shipping_price").click(function(){
+
+         
+
+          ?>";
+         var formattedExpeditedPrice = jQuery('.radiobtndelivery .for-mobile .price').html();
+         
+          ?>";
+         var expeditedDeliveryData = $(".radiobtndelivery .for-mobile .delivery-date").html();
+         $("#product-price-"+productid+" .price").text(formattedExpeditedPrice);
+         
+         $(".final_delivery_time").html(expeditedDeliveryData);
+      });
+
+       $("#standard_shipping_price").click(function(){
+
+
+         
+
+          ?>";
+         var formattedStandardPrice = jQuery('.standard-delivery .for-mobile .price').html();
+          ?>";
+         var standardDeliveryData = $(".standard-delivery .for-mobile .delivery-date").html();
+         $("#product-price-"+productid+" .price").text(formattedStandardPrice);
+         
+         $(".final_delivery_time").html(standardDeliveryData);
+      });
+
+       
+       
+       
+       
+       
+        ?>";
+       
+        ?>";
+        ?>";
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    });</script><?php if($shippingOption && $totalPath == 'checkout_cart_configure'){ if($shippingOption==2) $ptype = "expected"; else $ptype = "stand"; ?> <!-- <script type="text/javascript">
+     require(['jquery'],function($){
+     $(window).bind("load", function() {
+        $("#product_addtocart_form").submit(function(){
+       if ($('#expedited_shipping_price').attr("checked") != "checked" && $('#standard_shipping_price').attr("checked") != "checked") {
+
+                $('#product-updatecart-button').removeAttr('disabled');
+                alert("Please select one of the Delivery options");
+                return false;
+          }
+
+    });
+    });
+   });</script> --><script type="text/javascript">
+      require(['jquery'],function($){
+
+            var finalPrice = jQuery('.prices-ships .price-final_price .normal-price .price-final_price .price-wrapper .price').html();
+            console.log(finalPrice);
+
+            var customurl = "<?php echo $this->getUrl().'custompricing/price/productprice'?>";
+            
+            var productid = "<?php echo $product_id;?>";
+            var currency = "<?php echo $currencySymbol;?>";
+            var ptype = "<?php echo $ptype;?>";
+            var standardPercentage = "<?php echo $standardDiscountPercentage;?>";
+         var expeditedPercentage = "<?php echo $expeditedDiscountPercentage;?>";
+
+            $.ajax({
+              url: customurl,
+              type: 'POST',
+              dataType: 'json',
+              data: {"price": finalPrice,"ptype":ptype,"pid":productid,"standard":standardPercentage,"expedicted":expeditedPercentage},
+              success: function (resPrice){
+                $("#product-price-"+productid+" .price").text(currency+""+resPrice);
+                $("#product-price-"+productid).attr("data-price-amount",resPrice);
+              },
+            });
+            if(ptype=='expected')
+            {
+              var expeditedDeliveryData = $(".radiobtndelivery .for-mobile .delivery-date").html();
+              $(".final_delivery_time").html(expeditedDeliveryData);
+            }
+            else
+            {
+              var standardDeliveryData = $(".standard-delivery .for-mobile .delivery-date").html();
+              $(".final_delivery_time").html(standardDeliveryData);
+            }
+         });</script><?php if($productType =="configurable"){ ?> <script type="text/javascript">
+   require(['jquery'],function($){
+    $(window).bind("load", function() {
+   var finalPrice = jQuery('.prices-ships .price-final_price .normal-price .price-final_price .price-wrapper .price').html();
+         
+
+         var customurl = "<?php echo $this->getUrl().'custompricing/price/discountprice'?>";
+         
+         var productid = "<?php echo $product_id;?>";
+         var currency = "<?php echo $currencySymbol;?>";
+         var standardPercentage = "<?php echo $standardDiscountPercentage;?>";
+         var expeditedPercentage = "<?php echo $expeditedDiscountPercentage;?>";
+
+         $.ajax({
+           url: customurl,
+           type: 'POST',
+           dataType: 'json',
+           data: {"price": finalPrice,"standardPercentage":standardPercentage,"expeditedPercentage":expeditedPercentage},
+           success: function (resPrice){
+             console.log(resPrice);
+             $(".radiobtndelivery .for-mobile .price").text(currency+""+resPrice.expedited);
+             $(".standard-delivery .for-mobile .price").text(currency+""+resPrice.standard);
+             
+           },
+         });
+         });
+         });</script><?php } ?> <?php } ?> <?php } ?></div><script>
+    require([
+        'jquery',
+        'priceBox'
+    ], function($){
+        $('.delivery-option').parents('.product-options-bottom').addClass('delivery');
+    });</script>

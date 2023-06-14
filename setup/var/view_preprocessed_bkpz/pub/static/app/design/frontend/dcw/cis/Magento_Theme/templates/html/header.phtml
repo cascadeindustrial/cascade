@@ -1,0 +1,130 @@
+<?php $objectManagerlogin = \Magento\Framework\App\ObjectManager::getInstance(); $customerSession = $objectManagerlogin->create('Magento\Customer\Model\Session'); $storeManager = $objectManagerlogin->create('\Magento\Store\Model\StoreManagerInterface'); $storeId=$storeManager->getStore()->getId(); $baseurl = $this->getBaseUrl(); $logininfo = $baseurl.'dcwcustomer/minilogin/index'; $myAccountLinkColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getMyAccountLinkColor(); $headerTopBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getHeaderTopBackgroundColor(); $headerBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getHeaderBackgroundColor(); $searchInputColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchInputColor(); $searchButtonColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchButtonColor(); $searchButtonLabelColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchButtonLabelColor(); $myAccountIconColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getMyAccountIconColor(); $myAccountDropdownColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getAccountDropdownColor(); $currencyDropdownColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getCurrencyDropdownColor(); $quoteNotificationFontColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getQuoteCartNotificationFontColor(); $quoteNotificationBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getQuoteCartNotificationBackgroundColor(); $minicartFontColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getMiniCartNotificationFontColor(); $minicartBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getMiniCartNotificationBackgroundColor(); $searchInputDropShadowColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchInputDropshadowColor(); list($r, $g, $b) = sscanf($searchInputDropShadowColor, "#%02x%02x%02x"); $searchFinalInputDropShadowColor = "0px 0px 8px rgba($r,$g,$b,0.8)"; $navigationDropdownIconColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getNavigationAnchorDropdownIconColor(); /** Mobile section [starts here] **/ $navigationAnchorTagMobile = $this->helper('Dcw\HeaderDesign\Helper\Data')->getNavigationMobileAnchorTagColor(); $quoteIconColorMobile = $this->helper('Dcw\HeaderDesign\Helper\Data')->getQuoteMobileIconColor(); $quoteCartMobileNotificationFontColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getQuoteCartMobileNotificationFontColor(); $quoteCartMobileNotificationBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getQuoteCartMobileNotificationBackgroundColor(); $searchInputMobileDropshadowColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchInputMobileDropshadowColor(); list($r, $g, $b) = sscanf($searchInputMobileDropshadowColor, "#%02x%02x%02x"); $searchFinalInputDropShadowMobileColor = "0px 0px 8px rgba($r,$g,$b,0.8)"; $currencyMobileDropdownColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getCurrencyMobileDropdownColor(); $headerMobileTopBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getHeaderMobileTopBackgroundColor(); $headerMobileBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getHeaderMobileBackgroundColor(); $minicartDropdownIconMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getMinicartDropdownIconMobileColor(); $minicartNotificationBackgroundColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getMinicartNotificationBackgroundMobileColor(); $minicartNotificationFontMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getMinicartNotificationFontMobileColor(); $searchButtonMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchButtonMobileColor(); $phoneNumberMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getPhoneNumberMobileColor(); $currencyLinkMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getCurrencyLinkMobileColor(); $contactUsIconMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getContactUsIconMobileColor(); $contactUsIconLinkMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getContactUsLinkMobileColor(); $searchInputMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchInputMobileColor(); $searchButtonLabelMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getSearchButtonLabelMobileColor(); $navigationDropdownIconMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getNavigationAnchorDropdownIconMobileColor(); $accountLinksMobileColor = $this->helper('Dcw\HeaderDesign\Helper\Data')->getAccountLinksMobileColor(); /** Mobile section [ends here] **/ ?> <input type="hidden" class="header-topbackground-color" value="<?php echo $headerTopBackgroundColor ?>"><input type="hidden" class="header-background-color" value="<?php echo $headerBackgroundColor ?>"><input type="hidden" class="search-input-color" value="<?php echo $searchInputColor ?>"><input type="hidden" class="search-button-color" value="<?php echo $searchButtonColor ?>"><input type="hidden" class="search-button-label-color" value="<?php echo $searchButtonLabelColor ?>"><input type="hidden" class="account-dropdown-color" value="<?php echo $myAccountLinkColor ?>"><input type="hidden" class="currency-dropdown-color" value="<?php echo $currencyDropdownColor ?>"><input type="hidden" class="quote-notification-font-color" value="<?php echo $quoteNotificationFontColor ?>"><input type="hidden" class="quote-notification-background-color" value="<?php echo $quoteNotificationBackgroundColor ?>"><input type="hidden" class="minicart-notification-font-color" value="<?php echo $minicartFontColor ?>"><input type="hidden" class="minicart-notification-background-color" value="<?php echo $minicartBackgroundColor ?>"><input type="hidden" class="search-input-dropshadow-color" value="<?php echo $searchFinalInputDropShadowColor ?>"><input type="hidden" class="navigation-dropdown-icon-color" value="<?php echo $navigationDropdownIconColor ?>"><!-- Mobile section [starts here] --><input type="hidden" class="navigation-anchortag-mobile" value="<?php echo $navigationAnchorTagMobile ?>"><input type="hidden" class="quoteicon-color-mobile" value="<?php echo $quoteIconColorMobile ?>"><input type="hidden" class="quotecart-notification-fontcolor-mobile" value="<?php echo $quoteCartMobileNotificationFontColor ?>"><input type="hidden" class="search-input-dropshadow-color-mobile" value="<?php echo $searchFinalInputDropShadowMobileColor ?>"><input type="hidden" class="header-mobile-topbackground-color" value="<?php echo $headerMobileTopBackgroundColor ?>"><input type="hidden" class="header-mobile-background-color" value="<?php echo $headerMobileBackgroundColor ?>"><input type="hidden" class="search-input-mobile-color" value="<?php echo $searchInputMobileColor ?>"><input type="hidden" class="quotecartnotification-background-mobile-color" value="<?php echo $quoteCartMobileNotificationBackgroundColor ?>"><input type="hidden" class="search-button-label-mobile-color" value="<?php echo $searchButtonLabelMobileColor ?>"><input type="hidden" class="currency-mobile-dropdown-color" value="<?php echo $currencyMobileDropdownColor ?>"><input type="hidden" class="minicart-dropdown-icon-mobile-color" value="<?php echo $minicartDropdownIconMobileColor ?>"><input type="hidden" class="minicart-notification-background-color-mobile" value="<?php echo $minicartNotificationBackgroundColor ?>"><input type="hidden" class="minicart-notification-font-color-mobile" value="<?php echo $minicartNotificationFontMobileColor ?>"><input type="hidden" class="searchbutton-mobile-color" value="<?php echo $searchButtonMobileColor ?>"><input type="hidden" class="phonenumber-mobile-color" value="<?php echo $phoneNumberMobileColor ?>"><input type="hidden" class="currency-link-mobile-color" value="<?php echo $currencyLinkMobileColor ?>"><input type="hidden" class="contactusicon-mobile-color" value="<?php echo $contactUsIconMobileColor ?>"><input type="hidden" class="contactuslink-mobile-color" value="<?php echo $contactUsIconLinkMobileColor ?>"><input type="hidden" class="navigation-dropdown-icon-color-mobile" value="<?php echo $navigationDropdownIconMobileColor ?>"><input type="hidden" class="account-links-mobile-color" value="<?php echo $accountLinksMobileColor ?>"><!-- Mobile section [ends here] --><div class="content-cart"><?php echo $this->getChildHtml('minicart'); ?></div><?php if($customerSession->isLoggedIn()) { ?> <div class="myaccount-dropdown ajax_login_main"><a class="my-acc" style="color:<?php echo $myAccountDropdownColor; ?>" href="javascript:void(0)"><!-- <img src="<?php ?>" alt="aaegalss"> --><i style="color:<?php echo $myAccountIconColor; ?>" class="fa fa-user" aria-hidden="true"></i> <span class="mbl_user"><?php echo 'Hi '. $customerSession->getCustomer()->getFirstname();?></span></a> <div class="dropdown-content"><ul><li><a href="<?php echo $baseurl .'customer/account'; ?>">My Account</a></li> <li><a href="<?php echo $baseurl .'sales/order/history'; ?>">My Orders</a></li> <li><a href="<?php echo $baseurl .'wishlist/'; ?>">My Wishlist</a></li> <li><a href="<?php echo $baseurl .'customer/account/logout'; ?>">Sign Out</a></li></ul></div></div><?php }else { ?> <div class="myaccount-dropdown ajax_login_main"><a class="my-acc" style="color:<?php echo $myAccountDropdownColor; ?>" href="<?php echo $baseurl .'customer/account/login'; ?>"><i style="color:<?php echo $myAccountIconColor; ?>" class="fa fa-user" aria-hidden="true"></i> <span class="mbl_user">My Account</span></a> <div class="dropdown-content"><ul><li><a href="<?php echo $baseurl .'customer/account/login'; ?>">Sign in</a></li> <li><a href="<?php echo $baseurl .'customer/account/create'; ?>">Register</a></li></ul></div></div><?php } ?> <script type="text/x-magento-init">
+  {
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "wishlist": {
+                    "component": "Magento_Wishlist/js/view/wishlist"
+                }
+            }
+        }
+    }
+}</script><script type="text/javascript">
+require(['jquery'], function ($) {
+$(document).ready(function () {
+  if($(window).width() < 768){
+    $('body').addClass('mob_header_clr');
+  }
+  if (screen.width > 1200) {
+      $(".dropdown").hover(function () {
+        $(this).toggleClass('active');
+      });
+  }
+  if (screen.width < 1200) {
+      $(".dropdown").click(function () {
+       $(this).find('.dropdown-content').slideToggle();
+      });
+  }
+    /** header disign ca */
+    var headerTopBackgroundColor = jQuery('.header-topbackground-color').val();
+    var headerBackgroundColor = jQuery('.header-background-color').val();
+    var searchInputColor = jQuery('.search-input-color').val();
+    var searchButtonColor = jQuery('.search-button-color').val();
+    var searchButtonLabelColor = jQuery('.search-button-label-color').val();
+    var accDropdownColor = jQuery('.account-dropdown-color').val();
+    var currencyDropdownColor = jQuery('.currency-dropdown-color').val();
+    var quoteNotificationFontColor = jQuery('.quote-notification-font-color').val();
+    var quoteNotificationBackgroundColor = jQuery('.quote-notification-background-color').val();
+    var minicartFontColor = jQuery('.minicart-notification-font-color').val();
+    var minicartBackgroundColor = jQuery('.minicart-notification-background-color').val();
+    var searchInputDropShadowColor = jQuery('.search-input-dropshadow-color').val();
+    var navigationDropdownIconColor = jQuery('.navigation-dropdown-icon-color').val();
+    
+    jQuery(".page-header").css("background-color", headerTopBackgroundColor);
+    jQuery(".header-top").css("background-color", headerBackgroundColor);
+    jQuery(".page-header #search").css("background-color", searchInputColor);
+    jQuery(".page-header .actions .search").css("background-color",searchButtonColor);
+    jQuery(".page-header .actions .search span").css("color",searchButtonLabelColor);
+    
+    jQuery(".my-acc .mbl_user").css("color",accDropdownColor);
+    jQuery("header.page-header .header.content .header-currency-contact .switcher-currency .switcher-trigger:after").css("color",currencyDropdownColor);
+    jQuery(".switcher-options .switcher-trigger").css("color",currencyDropdownColor);
+    jQuery(".minicart-wrapper .counter.qty").css("background-color",minicartBackgroundColor);
+    jQuery(".minicart-wrapper .counter.qty").css("color",minicartFontColor);
+    jQuery(".miniquote-wrapper .counter.qty").css("background-color",quoteNotificationBackgroundColor);
+    jQuery(".miniquote-wrapper .counter.qty").css("color",quoteNotificationFontColor);
+    jQuery("ul .level0 i.fa").css("color",navigationDropdownIconColor);
+    jQuery(".block-search").css("box-shadow",searchInputDropShadowColor);
+
+    /* Mobile code [starts here] */
+
+
+    var navigationAnchorTagMobile = jQuery('.navigation-anchortag-mobile').val();
+    var phoneNumberColorMobile = jQuery('.phonenumber-mobile-color').val();
+    var minicartDropdownIconMobileColor = jQuery('.minicart-dropdown-icon-mobile-color').val();
+    var minicartNotificationBackgroundMobileColor = jQuery('.minicart-notification-background-color-mobile').val();
+    var minicartNotificationFontColorMobile = jQuery('.minicart-notification-font-color-mobile').val();
+    var quoteIconColorMobile = jQuery('.quoteicon-color-mobile').val();
+    var currencyLinkMobileColor = jQuery('.currency-link-mobile-color').val();
+    var contactUsIconMobileColor = jQuery('.contactusicon-mobile-color').val();
+    var contactUsLinkMobileColor = jQuery('.contactuslink-mobile-color').val();
+    var quoteCartNotificationFontColorMobile = jQuery('.quotecart-notification-fontcolor-mobile').val();
+    var searchInputDropShadowColorMobile = jQuery('.search-input-dropshadow-color-mobile').val();
+    var headerTopBackgroundColorMobile = jQuery('.header-mobile-topbackground-color').val(); 
+    var headerBackgroundColorMobile = jQuery('.header-mobile-background-color').val(); 
+    var searchInputColorMobile = jQuery('.search-input-mobile-color').val();
+    var searchButtonColorMobile = jQuery('.searchbutton-mobile-color').val();
+    var searchButtonLabelColorMobile = jQuery('.search-button-label-mobile-color').val();
+    var currencyDropdownColorMobile = jQuery('.currency-mobile-dropdown-color').val();
+    var quoteNotificationBackgroundColorMobile = jQuery('.quotecartnotification-background-mobile-color').val();
+    var navigationDropdownIconColorMobile = jQuery('.navigation-dropdown-icon-color-mobile').val();
+    var accountLinksColorMobile = jQuery('.account-links-mobile-color').val();
+
+    
+    jQuery(".mob_header_clr .page-header").css("background-color", headerBackgroundColorMobile);
+    
+    jQuery(".mob_header_clr .page-header #search").css("background-color", searchInputColorMobile); 
+    jQuery(".mob_header_clr .page-header .actions .search").css("background-color",searchButtonColorMobile); 
+    jQuery(".mob_header_clr .page-header .actions .search span").css("color",searchButtonLabelColorMobile); 
+    jQuery(".mob_header_clr .block-search").css("box-shadow",searchInputDropShadowColorMobile); 
+    jQuery(".mob_header_clr .miniquote-wrapper .counter.qty").css("background-color",quoteNotificationBackgroundColorMobile); 
+    jQuery(".mob_header_clr .miniquote-wrapper .counter.qty").css("color",quoteCartNotificationFontColorMobile); 
+    jQuery(".mob_header_clr .miniquote-wrapper .showquote .fa-clipboard").css("color",quoteIconColorMobile); 
+    
+    jQuery(".mob_header_clr .header-currency-contact .contact a").css("color",contactUsIconMobileColor); 
+    jQuery(".mob_header_clr .header-currency-contact .contact .fa-paper-plane-o").css("color",contactUsLinkMobileColor); 
+    
+    
+    jQuery(".mob_header_clr .switcher-currency .switcher-options .currencyswitcher span").css("color",currencyLinkMobileColor);
+    jQuery(".mob_header_clr .switcher-currency .switcher-options .currencyswitcher").css("color",currencyDropdownColorMobile);
+    
+    jQuery(".mob_header_clr ul .level0 i.fa").css("color",navigationDropdownIconColorMobile);
+
+    jQuery(".mob_header_clr .minicart-wrapper .fa-shopping-cart").css("color",minicartDropdownIconMobileColor); 
+    jQuery(".mob_header_clr .minicart-wrapper .showcart .counter").css("color",minicartNotificationFontColorMobile); 
+    jQuery(".mob_header_clr .minicart-wrapper .showcart .counter").css("background-color",minicartNotificationBackgroundMobileColor); 
+    jQuery(".mob_header_clr .dropdown-content li a").css("color",accountLinksColorMobile); 
+
+    jQuery(".mob_header_clr .navigation li a").css("color",navigationAnchorTagMobile);
+    jQuery(".mob_header_clr .navigation li i").css("color",navigationDropdownIconColorMobile);
+
+
+
+    /* Mobile code [ends here] */
+});
+});
+require([
+             "jquery",
+             "mage/mage"
+         ], function ($) {
+             $(document).ready(function () {
+                  $.ajax({
+                     showLoader: true,cache: false,
+                     url: '<?php echo $logininfo; ?>',
+                     type: "GET",
+                     dataType: 'json'
+                 }).done(function (data) {
+                     $('.ajax_login_main').html(data.res);
+                 });
+             });
+         });</script>

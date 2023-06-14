@@ -1,0 +1,50 @@
+<?php $categories = $block->getTopCategoryCollection(); $placeholderImageUrl = $block->getDefaultPlaceholderImageUrl(); ?> <div class="topCategory-slider"><div class="container"><div class="title"><?php echo "Top Categories";?></div class="title"><div class="topcat-slider"><?php $outputhelper = $this->helper('Magento\Catalog\Helper\Output'); foreach ($categories as $category) { $imgHtml = ''; $categoryName = $category->getName(); $categoryId = $category->getData('entity_id'); if ($imgUrl = $this->getCategoryImageUrl($categoryId)) { $imgHtml = '<img src="' . $imgUrl . '" />'; $imgHtml = $outputhelper->categoryAttribute($category, $imgHtml, 'image'); } ?> <div class="topcat-block"><?php if($imgHtml == ''){ $imgHtml = '<img src="' . $placeholderImageUrl . '" />'; } ?> <a class="category-image" href="<?php echo $category->getUrl()?>"><?php echo $imgHtml; ?></a> <a class="category-name" href="<?php echo $category->getUrl()?>"><?php echo $categoryName; ?></a></div><?php } ?></div></div></div><script>
+require(['jquery','slick'],function($){
+	$(document).ready(function(){
+		$('.topcat-slider').slick({
+		  dots: false,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
+		  responsive: [
+		    {
+		      breakpoint: 1025,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 769,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '60px',
+        		slidesToShow: 1,
+        		prevArrow: false,
+    			nextArrow: false
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '60px',
+        		slidesToShow: 1,
+        		prevArrow: false,
+    			nextArrow: false
+		      }
+		    }
+		    
+		    
+		    
+		  ]
+		});
+	});
+})</script>

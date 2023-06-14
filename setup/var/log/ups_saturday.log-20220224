@@ -1,0 +1,1856 @@
+2022-02-22T07:14:53+00:00 INFO (6): rowRequest
+2022-02-22T07:14:53+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => NULL,
+  'dest_postal' => '-',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 60.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T07:14:53+00:00 INFO (6): XML Request
+2022-02-22T07:14:53+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>-</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T07:14:53+00:00 INFO (6): in if else loop condition
+2022-02-22T07:14:55+00:00 INFO (6): code
+2022-02-22T07:14:55+00:00 INFO (6): 54
+2022-02-22T07:14:55+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:14:55+00:00 INFO (6):
+2022-02-22T07:14:55+00:00 INFO (6): code
+2022-02-22T07:14:55+00:00 INFO (6): 65
+2022-02-22T07:14:55+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:14:55+00:00 INFO (6):
+2022-02-22T07:14:55+00:00 INFO (6): code
+2022-02-22T07:14:55+00:00 INFO (6): 07
+2022-02-22T07:14:55+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:14:55+00:00 INFO (6):
+2022-02-22T07:14:55+00:00 INFO (6): code
+2022-02-22T07:14:55+00:00 INFO (6): 08
+2022-02-22T07:14:55+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:14:55+00:00 INFO (6):
+2022-02-22T07:14:55+00:00 INFO (6): Final xml output for ups
+2022-02-22T07:14:55+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 183.01,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 136.51,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T07:14:55+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T07:14:55+00:00 INFO (6): array (
+)
+2022-02-22T07:15:05+00:00 INFO (6): rowRequest
+2022-02-22T07:15:05+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => NULL,
+  'dest_postal' => '-',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 18.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T07:15:05+00:00 INFO (6): XML Request
+2022-02-22T07:15:05+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>-</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T07:15:05+00:00 INFO (6): in if else loop condition
+2022-02-22T07:15:06+00:00 INFO (6): code
+2022-02-22T07:15:06+00:00 INFO (6): 54
+2022-02-22T07:15:06+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:06+00:00 INFO (6):
+2022-02-22T07:15:06+00:00 INFO (6): code
+2022-02-22T07:15:06+00:00 INFO (6): 65
+2022-02-22T07:15:06+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:06+00:00 INFO (6):
+2022-02-22T07:15:06+00:00 INFO (6): code
+2022-02-22T07:15:06+00:00 INFO (6): 07
+2022-02-22T07:15:06+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:06+00:00 INFO (6):
+2022-02-22T07:15:06+00:00 INFO (6): code
+2022-02-22T07:15:06+00:00 INFO (6): 08
+2022-02-22T07:15:06+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:06+00:00 INFO (6):
+2022-02-22T07:15:06+00:00 INFO (6): Final xml output for ups
+2022-02-22T07:15:06+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 183.01,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 136.51,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T07:15:06+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T07:15:06+00:00 INFO (6): array (
+)
+2022-02-22T07:15:07+00:00 INFO (6): rowRequest
+2022-02-22T07:15:07+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => NULL,
+  'dest_postal' => '-',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 18.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T07:15:07+00:00 INFO (6): XML Request
+2022-02-22T07:15:07+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>-</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T07:15:07+00:00 INFO (6): in if else loop condition
+2022-02-22T07:15:08+00:00 INFO (6): code
+2022-02-22T07:15:08+00:00 INFO (6): 54
+2022-02-22T07:15:08+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:08+00:00 INFO (6):
+2022-02-22T07:15:08+00:00 INFO (6): code
+2022-02-22T07:15:08+00:00 INFO (6): 65
+2022-02-22T07:15:08+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:08+00:00 INFO (6):
+2022-02-22T07:15:08+00:00 INFO (6): code
+2022-02-22T07:15:08+00:00 INFO (6): 07
+2022-02-22T07:15:08+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:08+00:00 INFO (6):
+2022-02-22T07:15:08+00:00 INFO (6): code
+2022-02-22T07:15:08+00:00 INFO (6): 08
+2022-02-22T07:15:08+00:00 INFO (6): guaranteeDelivery
+2022-02-22T07:15:08+00:00 INFO (6):
+2022-02-22T07:15:08+00:00 INFO (6): Final xml output for ups
+2022-02-22T07:15:08+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 183.01,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 136.51,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T07:15:08+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T07:15:08+00:00 INFO (6): array (
+)
+2022-02-22T08:21:45+00:00 INFO (6): rowRequest
+2022-02-22T08:21:45+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => NULL,
+  'dest_postal' => '-',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 60.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:21:45+00:00 INFO (6): XML Request
+2022-02-22T08:21:45+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>-</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:21:45+00:00 INFO (6): in if else loop condition
+2022-02-22T08:21:46+00:00 INFO (6): code
+2022-02-22T08:21:46+00:00 INFO (6): 54
+2022-02-22T08:21:46+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:21:46+00:00 INFO (6):
+2022-02-22T08:21:46+00:00 INFO (6): code
+2022-02-22T08:21:46+00:00 INFO (6): 65
+2022-02-22T08:21:46+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:21:46+00:00 INFO (6):
+2022-02-22T08:21:46+00:00 INFO (6): code
+2022-02-22T08:21:46+00:00 INFO (6): 07
+2022-02-22T08:21:46+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:21:46+00:00 INFO (6):
+2022-02-22T08:21:46+00:00 INFO (6): code
+2022-02-22T08:21:46+00:00 INFO (6): 08
+2022-02-22T08:21:46+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:21:46+00:00 INFO (6):
+2022-02-22T08:21:46+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:21:46+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 183.01,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 136.51,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:21:46+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:21:46+00:00 INFO (6): array (
+)
+2022-02-22T08:24:38+00:00 INFO (6): rowRequest
+2022-02-22T08:24:38+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => NULL,
+  'dest_postal' => '-',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:24:38+00:00 INFO (6): XML Request
+2022-02-22T08:24:38+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>-</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:24:38+00:00 INFO (6): in if else loop condition
+2022-02-22T08:24:39+00:00 INFO (6): code
+2022-02-22T08:24:39+00:00 INFO (6): 54
+2022-02-22T08:24:39+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:39+00:00 INFO (6):
+2022-02-22T08:24:39+00:00 INFO (6): code
+2022-02-22T08:24:39+00:00 INFO (6): 65
+2022-02-22T08:24:39+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:39+00:00 INFO (6):
+2022-02-22T08:24:39+00:00 INFO (6): code
+2022-02-22T08:24:39+00:00 INFO (6): 07
+2022-02-22T08:24:39+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:39+00:00 INFO (6):
+2022-02-22T08:24:39+00:00 INFO (6): code
+2022-02-22T08:24:39+00:00 INFO (6): 08
+2022-02-22T08:24:39+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:39+00:00 INFO (6):
+2022-02-22T08:24:39+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:24:39+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 183.01,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 136.51,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:24:39+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:24:39+00:00 INFO (6): array (
+)
+2022-02-22T08:24:41+00:00 INFO (6): rowRequest
+2022-02-22T08:24:41+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => NULL,
+  'dest_postal' => '-',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:24:41+00:00 INFO (6): XML Request
+2022-02-22T08:24:41+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>-</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:24:41+00:00 INFO (6): in if else loop condition
+2022-02-22T08:24:42+00:00 INFO (6): code
+2022-02-22T08:24:42+00:00 INFO (6): 54
+2022-02-22T08:24:42+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:42+00:00 INFO (6):
+2022-02-22T08:24:42+00:00 INFO (6): code
+2022-02-22T08:24:42+00:00 INFO (6): 65
+2022-02-22T08:24:42+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:42+00:00 INFO (6):
+2022-02-22T08:24:42+00:00 INFO (6): code
+2022-02-22T08:24:42+00:00 INFO (6): 07
+2022-02-22T08:24:42+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:42+00:00 INFO (6):
+2022-02-22T08:24:42+00:00 INFO (6): code
+2022-02-22T08:24:42+00:00 INFO (6): 08
+2022-02-22T08:24:42+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:24:42+00:00 INFO (6):
+2022-02-22T08:24:42+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:24:42+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 183.01,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 136.51,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:24:42+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:24:42+00:00 INFO (6): array (
+)
+2022-02-22T08:26:00+00:00 INFO (6): rowRequest
+2022-02-22T08:26:00+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => NULL,
+  'dest_postal' => '-',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:26:00+00:00 INFO (6): XML Request
+2022-02-22T08:26:00+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>-</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:26:00+00:00 INFO (6): in if else loop condition
+2022-02-22T08:26:01+00:00 INFO (6): code
+2022-02-22T08:26:01+00:00 INFO (6): 54
+2022-02-22T08:26:01+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:26:01+00:00 INFO (6):
+2022-02-22T08:26:01+00:00 INFO (6): code
+2022-02-22T08:26:01+00:00 INFO (6): 65
+2022-02-22T08:26:01+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:26:01+00:00 INFO (6):
+2022-02-22T08:26:01+00:00 INFO (6): code
+2022-02-22T08:26:01+00:00 INFO (6): 07
+2022-02-22T08:26:01+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:26:01+00:00 INFO (6):
+2022-02-22T08:26:01+00:00 INFO (6): code
+2022-02-22T08:26:01+00:00 INFO (6): 08
+2022-02-22T08:26:01+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:26:01+00:00 INFO (6):
+2022-02-22T08:26:01+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:26:01+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 183.01,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 136.51,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:26:01+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:26:01+00:00 INFO (6): array (
+)
+2022-02-22T08:27:00+00:00 INFO (6): rowRequest
+2022-02-22T08:27:00+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => '',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:27:00+00:00 INFO (6): XML Request
+2022-02-22T08:27:00+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:27:00+00:00 INFO (6): in if else loop condition
+2022-02-22T08:27:01+00:00 INFO (6): code
+2022-02-22T08:27:01+00:00 INFO (6): 65
+2022-02-22T08:27:01+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:27:01+00:00 INFO (6):
+2022-02-22T08:27:01+00:00 INFO (6): code
+2022-02-22T08:27:01+00:00 INFO (6): 08
+2022-02-22T08:27:01+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:27:01+00:00 INFO (6):
+2022-02-22T08:27:01+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:27:01+00:00 INFO (6): array (
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:27:01+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:27:01+00:00 INFO (6): array (
+)
+2022-02-22T08:29:33+00:00 INFO (6): rowRequest
+2022-02-22T08:29:33+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => '',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:29:33+00:00 INFO (6): XML Request
+2022-02-22T08:29:33+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:29:33+00:00 INFO (6): in if else loop condition
+2022-02-22T08:29:34+00:00 INFO (6): code
+2022-02-22T08:29:34+00:00 INFO (6): 65
+2022-02-22T08:29:34+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:34+00:00 INFO (6):
+2022-02-22T08:29:34+00:00 INFO (6): code
+2022-02-22T08:29:34+00:00 INFO (6): 08
+2022-02-22T08:29:34+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:34+00:00 INFO (6):
+2022-02-22T08:29:34+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:29:34+00:00 INFO (6): array (
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:29:34+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:29:34+00:00 INFO (6): array (
+)
+2022-02-22T08:29:36+00:00 INFO (6): rowRequest
+2022-02-22T08:29:36+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => '',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:29:36+00:00 INFO (6): XML Request
+2022-02-22T08:29:36+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:29:36+00:00 INFO (6): in if else loop condition
+2022-02-22T08:29:36+00:00 INFO (6): code
+2022-02-22T08:29:36+00:00 INFO (6): 65
+2022-02-22T08:29:36+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:36+00:00 INFO (6):
+2022-02-22T08:29:36+00:00 INFO (6): code
+2022-02-22T08:29:36+00:00 INFO (6): 08
+2022-02-22T08:29:36+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:36+00:00 INFO (6):
+2022-02-22T08:29:36+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:29:36+00:00 INFO (6): array (
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:29:36+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:29:36+00:00 INFO (6): array (
+)
+2022-02-22T08:29:46+00:00 INFO (6): rowRequest
+2022-02-22T08:29:46+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => '',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:29:46+00:00 INFO (6): XML Request
+2022-02-22T08:29:46+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:29:46+00:00 INFO (6): in if else loop condition
+2022-02-22T08:29:47+00:00 INFO (6): code
+2022-02-22T08:29:47+00:00 INFO (6): 65
+2022-02-22T08:29:47+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:47+00:00 INFO (6):
+2022-02-22T08:29:47+00:00 INFO (6): code
+2022-02-22T08:29:47+00:00 INFO (6): 08
+2022-02-22T08:29:47+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:47+00:00 INFO (6):
+2022-02-22T08:29:47+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:29:47+00:00 INFO (6): array (
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:29:47+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:29:47+00:00 INFO (6): array (
+)
+2022-02-22T08:29:53+00:00 INFO (6): rowRequest
+2022-02-22T08:29:53+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'IN',
+  'dest_region_code' => 'WB',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:29:53+00:00 INFO (6): XML Request
+2022-02-22T08:29:53+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>IN</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>WB</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:29:53+00:00 INFO (6): in if else loop condition
+2022-02-22T08:29:54+00:00 INFO (6): code
+2022-02-22T08:29:54+00:00 INFO (6): 65
+2022-02-22T08:29:54+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:54+00:00 INFO (6):
+2022-02-22T08:29:54+00:00 INFO (6): code
+2022-02-22T08:29:54+00:00 INFO (6): 08
+2022-02-22T08:29:54+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:29:54+00:00 INFO (6):
+2022-02-22T08:29:54+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:29:54+00:00 INFO (6): array (
+  65 => 
+  array (
+    'price' => 135.15,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 123.25,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:29:54+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:29:54+00:00 INFO (6): array (
+)
+2022-02-22T08:30:07+00:00 INFO (6): rowRequest
+2022-02-22T08:30:07+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'GB',
+  'dest_region_code' => '',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:30:07+00:00 INFO (6): XML Request
+2022-02-22T08:30:07+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>GB</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode></StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:30:07+00:00 INFO (6): in if else loop condition
+2022-02-22T08:30:07+00:00 INFO (6): code
+2022-02-22T08:30:07+00:00 INFO (6): 54
+2022-02-22T08:30:07+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:07+00:00 INFO (6):
+2022-02-22T08:30:08+00:00 INFO (6): code
+2022-02-22T08:30:08+00:00 INFO (6): 65
+2022-02-22T08:30:08+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:08+00:00 INFO (6):
+2022-02-22T08:30:08+00:00 INFO (6): code
+2022-02-22T08:30:08+00:00 INFO (6): 07
+2022-02-22T08:30:08+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:08+00:00 INFO (6):
+2022-02-22T08:30:08+00:00 INFO (6): code
+2022-02-22T08:30:08+00:00 INFO (6): 08
+2022-02-22T08:30:08+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:08+00:00 INFO (6):
+2022-02-22T08:30:08+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:30:08+00:00 INFO (6): array (
+  54 => 
+  array (
+    'price' => 233.68,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  65 => 
+  array (
+    'price' => 185.21,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '07' => 
+  array (
+    'price' => 187.18,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '08' => 
+  array (
+    'price' => 173.64,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:30:08+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:30:08+00:00 INFO (6): array (
+)
+2022-02-22T08:30:09+00:00 INFO (6): rowRequest
+2022-02-22T08:30:09+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'NV',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 65.03,
+)
+2022-02-22T08:30:09+00:00 INFO (6): XML Request
+2022-02-22T08:30:09+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>NV</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:30:09+00:00 INFO (6): in if else loop condition
+2022-02-22T08:30:10+00:00 INFO (6): code
+2022-02-22T08:30:10+00:00 INFO (6): 12
+2022-02-22T08:30:10+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:10+00:00 INFO (6): 3
+2022-02-22T08:30:10+00:00 INFO (6): code
+2022-02-22T08:30:10+00:00 INFO (6): 14
+2022-02-22T08:30:10+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:10+00:00 INFO (6): 1
+2022-02-22T08:30:10+00:00 INFO (6): code
+2022-02-22T08:30:10+00:00 INFO (6): 03
+2022-02-22T08:30:10+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:10+00:00 INFO (6):
+2022-02-22T08:30:10+00:00 INFO (6): code
+2022-02-22T08:30:10+00:00 INFO (6): 13
+2022-02-22T08:30:10+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:10+00:00 INFO (6): 1
+2022-02-22T08:30:10+00:00 INFO (6): code
+2022-02-22T08:30:10+00:00 INFO (6): 01
+2022-02-22T08:30:10+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:10+00:00 INFO (6): 1
+2022-02-22T08:30:10+00:00 INFO (6): code
+2022-02-22T08:30:10+00:00 INFO (6): 02
+2022-02-22T08:30:10+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:10+00:00 INFO (6): 2
+2022-02-22T08:30:10+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:30:10+00:00 INFO (6): array (
+  12 => 
+  array (
+    'price' => 38.14,
+    'days' => '3',
+    'scheduledtime' => '',
+  ),
+  14 => 
+  array (
+    'price' => 103.21,
+    'days' => '1',
+    'scheduledtime' => '8:00 A.M.',
+  ),
+  '03' => 
+  array (
+    'price' => 37.38,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '01' => 
+  array (
+    'price' => 52.74,
+    'days' => '1',
+    'scheduledtime' => '10:30 A.M.',
+  ),
+  '02' => 
+  array (
+    'price' => 43.75,
+    'days' => '2',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:30:10+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:30:10+00:00 INFO (6): array (
+)
+2022-02-22T08:30:17+00:00 INFO (6): rowRequest
+2022-02-22T08:30:17+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'NJ',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:30:17+00:00 INFO (6): XML Request
+2022-02-22T08:30:17+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>NJ</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:30:17+00:00 INFO (6): in if else loop condition
+2022-02-22T08:30:18+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:30:18+00:00 INFO (6): array (
+)
+2022-02-22T08:30:18+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:30:18+00:00 INFO (6): array (
+)
+2022-02-22T08:30:26+00:00 INFO (6): rowRequest
+2022-02-22T08:30:26+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'NJ',
+  'dest_postal' => '07960',
+  'weight' => 2.0,
+  'value' => 60.0,
+  'value_with_discount' => 1.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 60.0,
+)
+2022-02-22T08:30:26+00:00 INFO (6): XML Request
+2022-02-22T08:30:26+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>36ER44</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>07960</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>NJ</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>89081</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>2</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2022-02-22T08:30:26+00:00 INFO (6): in if else loop condition
+2022-02-22T08:30:27+00:00 INFO (6): code
+2022-02-22T08:30:27+00:00 INFO (6): 12
+2022-02-22T08:30:27+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:27+00:00 INFO (6): 3
+2022-02-22T08:30:27+00:00 INFO (6): code
+2022-02-22T08:30:27+00:00 INFO (6): 14
+2022-02-22T08:30:27+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:27+00:00 INFO (6): 1
+2022-02-22T08:30:27+00:00 INFO (6): code
+2022-02-22T08:30:27+00:00 INFO (6): 03
+2022-02-22T08:30:27+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:27+00:00 INFO (6):
+2022-02-22T08:30:27+00:00 INFO (6): code
+2022-02-22T08:30:27+00:00 INFO (6): 13
+2022-02-22T08:30:27+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:27+00:00 INFO (6): 1
+2022-02-22T08:30:27+00:00 INFO (6): code
+2022-02-22T08:30:27+00:00 INFO (6): 01
+2022-02-22T08:30:27+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:27+00:00 INFO (6): 1
+2022-02-22T08:30:27+00:00 INFO (6): code
+2022-02-22T08:30:27+00:00 INFO (6): 02
+2022-02-22T08:30:27+00:00 INFO (6): guaranteeDelivery
+2022-02-22T08:30:27+00:00 INFO (6): 2
+2022-02-22T08:30:27+00:00 INFO (6): Final xml output for ups
+2022-02-22T08:30:27+00:00 INFO (6): array (
+  12 => 
+  array (
+    'price' => 52.79,
+    'days' => '3',
+    'scheduledtime' => '',
+  ),
+  14 => 
+  array (
+    'price' => 180.52,
+    'days' => '1',
+    'scheduledtime' => '8:00 A.M.',
+  ),
+  '03' => 
+  array (
+    'price' => 40.62,
+    'days' => '',
+    'scheduledtime' => '',
+  ),
+  '01' => 
+  array (
+    'price' => 99.13,
+    'days' => '1',
+    'scheduledtime' => '10:30 A.M.',
+  ),
+  '02' => 
+  array (
+    'price' => 58.02,
+    'days' => '2',
+    'scheduledtime' => '',
+  ),
+)
+2022-02-22T08:30:27+00:00 INFO (6): Final xml output for ups1111111
+2022-02-22T08:30:27+00:00 INFO (6): array (
+)

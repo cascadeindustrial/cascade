@@ -1,0 +1,11 @@
+
+In ErrorHandler.php line 61:
+                                                                               
+  Warning: include(/chroot/home/adb4fa6c/cascadeindustrial.com/generated/meta  
+  data/crontab.php): failed to open stream: No such file or directory in /chr  
+  oot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/Object  
+  Manager/ConfigLoader/Compiled.php on line 31                                 
+                                                                               
+
+cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
+

@@ -1,0 +1,23 @@
+2021-06-30T11:08:50+00:00 INFO (6): In Product Import File
+2021-06-30T11:08:50+00:00 INFO (6): array (
+  'name' => 
+  array (
+    0 => '',
+  ),
+  'type' => 
+  array (
+    0 => '',
+  ),
+  'tmp_name' => 
+  array (
+    0 => '',
+  ),
+  'error' => 
+  array (
+    0 => 4,
+  ),
+  'size' => 
+  array (
+    0 => 0,
+  ),
+)

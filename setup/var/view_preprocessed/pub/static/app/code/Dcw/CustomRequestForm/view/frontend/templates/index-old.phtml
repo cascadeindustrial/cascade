@@ -1,0 +1,81 @@
+<?php use Magento\Framework\App\Action\Action; $productSku = "custom-request-form"; $productData = $block->getProductBySku($productSku); $id = $productData->getId(); $product = $this->getLoadProduct($id); $customOptions = $this->getCustomOptions($product); $countryList = $block->getCountries(); $regionList = $block->getRegion(); $blockObj= $block->getLayout()->createBlock('Dcw\CustomRequestForm\Block\Form'); $emailVal = $block->getConfig( 'generalconfiguration/validations/email', \Magento\Store\Model\ScopeInterface::SCOPE_STORE ); $phoneVal = $block->getConfig( 'generalconfiguration/validations/number', \Magento\Store\Model\ScopeInterface::SCOPE_STORE ); ?> <div class="product-info-main"><form class="form-validate" action="<?php echo $this->getUrl('customrequestform/quote/add'); ?>" id="custom-request-form" method="post" data-hasrequired="<?php echo __('* Required Fields') ?>" data-mage-init='{"validation":{}}'><div class="product-options-wrapper" id="product-options-wrapper"><div class="title"><h1> Custom Request Form</h1></div><?php foreach ($customOptions as $customOption) { $optionId = $customOption->getOptionId(); ?> <div class="fieldset" tabindex="0"><?php $optionType = $customOption->getType(); if ($customOption->getData('is_require') == 1) { if ($optionType == 'radio') { $values = $customOption->getValues(); ?> <label class="label"><?php print_r($customOption->getData('default_title')); ?></label> <?php $i=1; ?> <?php foreach ($values as $radio) { $title = $radio->getTitle(); $ids = $optionId . "&" .$title; ?> <div class="required fields"><div class="maindiv"><div class="radio"><input type="<?php print_r($customOption->getData('type')); ?>" id="<?php echo $ids; ?>" name="<?php print_r($customOption->getData('option_id')); ?>" value="<?php print_r($radio->getOptionTypeId()); ?>" class="required-entry" <?php if($i==1) {echo "checked='checked'"; $i++; } ?>/><?php print_r($radio->getTitle()); ?><br/></div></div></div><?php } } elseif ($optionType == 'drop_down') { $values = $customOption->getValues(); if ($customOption->getData('default_title') !== 'State/Province:' && $customOption->getData('default_title') !== 'Country') { ?> <div class="required fields"><div class="business drop_down"><div class="<?php print_r($customOption->getData('default_title')); ?>"><div class="control"><label class="label"><?php print_r($customOption->getData('default_title')); ?></label> <select id="drop" name="<?php print_r($customOption->getData('option_id')); ?>" class="validate-select required-entry" ><option value=""><?php echo __('Please Select') ?></option><?php foreach ($values as $v) { ?> <option value="<?php print_r($v->getOptionTypeId()); ?>"><?php print_r($v->getTitle()); ?></option><?php } ?></select></div></div></div></div><?php } } elseif ($customOption->getData('type') == 'date') { ?> <div class="required fields"><div class="field date"><div class="form fields"><label class="label"><?php print_r($customOption->getData('default_title')); ?></label> <input type="text" id="my-date" name="<?php print_r($customOption->getData('option_id')); ?>" class="required-entry"/><br/></div></div></div><?php } else{ if ($customOption->getData('type') == 'file') { ?> <div class="control" id="input-box-options_28_file"><input type="file" name="options_28_file" id="options_28_file" class="product-custom-option"><input type="hidden" name="options_28_file_action" value="save_new"><p class="note"> Compatible file extensions to upload: <strong>pdf, jpg, png, zip, csv, txt</strong></p></div><!-- <div class="field file"><div class="field"><div class="uploadwrapper"><div class="upload"><input type="button" class="uploadButton" value="Drop files here or Click to browse"><input id="uploadowngraphic" class="attachment" name="upload_file[]" multiple type="file" multiple autocomplete="false" title="Drop files here:" /><!-- <small class="file_type">(i.e. resaie certificate, reference etc.)</small> --><!-- <div id="selectedFiles" class="file_type">Allowed file types jpg, jpeg, png, zip, rar, docx, doc, pdf</div><div for="upload" id="upload-error" style="display: none;">Not allowed file type selected</div></div></div></div></div> --><?php } else { if ($customOption->getData('default_title') == $emailVal) { ?> <div class="required fields"><div class="field email"><div class="form fields required"><label class="label"><?php print_r($customOption->getData('default_title')); ?></label> <input type="<?php print_r($customOption->getData('type')); ?>" id="emailaddress" name="<?php print_r($customOption->getData('option_id')); ?>" class="required-entry" data-validate="{required:true, 'validate-email':true,equalTo:'#emailaddress'}"/><br/></div></div></div><?php } elseif ($customOption->getData('default_title') == $phoneVal) { ?> <div class="required fields"><div class="field phone"><div class="form fields required"><label class="label"><?php print_r($customOption->getData('default_title')); ?></label> <input type="<?php print_r($customOption->getData('type')); ?>" id="<?php print_r($customOption->getData('default_title')); ?>" name="<?php print_r($customOption->getData('option_id')); ?>" class="required-entry input-credit validate-phoneStrict"/><br/></div></div></div><?php } else { ?> <div class="required fields"><div class="other fields"><div class="form fields required"><label class="label" ><?php print_r($customOption->getData('default_title')); ?></label> <input type="<?php print_r($customOption->getData('type')); ?>" id="<?php print_r($customOption->getData('default_title')); ?>" name="<?php print_r($customOption->getData('option_id')); ?>" class="required-entry" required/><br/></div></div></div><?php } } } ?> <?php } else { ?> <div class="nonrequired fields"><div class="form fields nonrequired"><?php if ($customOption->getData('type') == 'file') { ?> <div class="control" id="input-box-options_33_file"><input type="file" name="options_33_file" id="options_33_file" class="product-custom-option"><input type="hidden" name="options_33_file_action" value="save_new"><p class="note"> Compatible file extensions to upload: <strong>pdf, jpg, png, zip, csv, txt</strong></p></div><?php }else{?> <div class="<?php print_r($customOption->getData('default_title')); ?>"><div class="form fields"><label class="label"><?php print_r($customOption->getData('default_title')); ?></label> <input type="<?php print_r($customOption->getData('type')); ?>" id="<?php print_r($customOption->getData('default_title')); ?>" name="<?php print_r($customOption->getData('option_id')); ?>" /><br/></div></div><?php } ?></div></div><?php } } ?> <div class="required fields"><div class="country drop_down"><div class="<?php print_r($customOption->getData('default_title')); ?>"><div class="field country required"><div class="control"><label for="country" class="label"><span><?php echo $block->escapeHtml(__('Country:')) ?></span></label> <?php echo $blockObj->getCountryHtmlSelect() ?></div></div></div></div></div><div class="state drop_down"><div class="<?php print_r($customOption->getData('default_title')); ?>"><div class="field state custom"><div class="control"><label for="region_id_new" class="label"><span><?php echo __('State/Province:') ?></span></label> <select id="region_id_new" name="state" title="<?php echo __('State/Province') ?>" class="validate-select" style="display:none;"><option value=""><?php echo __('Please select a region, state or province.') ?></option></select> <input type="text" id="region" name="region" value="<?php echo $blockObj->getRegion() ?>" class="input-text <?php echo $blockObj->escapeHtmlAttr($this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('region')) ?>" style="display:none;"></div></div></div></div><div class="button requestform"><button type="submit" name="submit" class="btn-submit"><span>Submit Quote Request</span></button></div></div></div></form></div><script type="text/javascript">
+  var myForm= new VarienForm('custom-request-form', true);</script><script>
+require([
+         "jquery",
+         "mage/calendar"
+         ], function ($) {
+    $('#my-date').datepicker({
+                        dateFormat: "yy-mm-dd",
+                        timeFormat: "H:m:s",
+                        changeMonth: true,
+                        changeYear: true,
+                        numberOfMonths: 1,
+                        showsTime: true,
+                        minDate: new Date()
+                    });
+});</script><script type="text/x-magento-init">
+    {
+        "#country": {
+            "regionUpdater": {
+                "optionalRegionAllowed": <?= /* @noEscape */ $blockObj->getConfig('general/region/display_all') ? 'true' : 'false' ?>,
+                "regionListId": "#region_id_new",
+                "regionInputId": "#region",
+                "postcodeId": "#zip",
+                "form": "#custom-request-form",
+                "regionJson": <?= /* @noEscape */ $this->helper(\Magento\Directory\Helper\Data::class)->getRegionJson() ?>,
+                "defaultRegion": "<?= (int) $block->getRegionId() ?>",
+                "countriesWithOptionalZip": <?= /* @noEscape */ $this->helper(\Magento\Directory\Helper\Data::class)->getCountriesWithOptionalZip(true) ?>
+            }
+        }
+    }</script><script type="text/javascript">
+    var selDiv = "";
+    document.addEventListener("DOMContentLoaded", init, false);
+    function init() {
+        document.querySelector('#uploadowngraphic').addEventListener('change', handleFileSelect, false);
+        selDiv = document.querySelector("#selectedFiles");
+    }
+    function handleFileSelect(e) {
+        if(!e.target.files) return;
+        
+        var output = "";
+        var files = e.target.files;
+        for(var i=0; i<files.length; i++) {
+            var f = files[i];
+            output += f.name + "<br/>";
+            
+        }
+        console.log(output);
+        selDiv.innerHTML = output;
+    }</script><script type="text/javascript">
+    function checkform()
+    {
+        var files = document.getElementById( "uploadowngraphic" ).files;
+        for (var i = 0; i < files.length; i++)
+        {
+            var names = files[i].name;
+                        var substrings = ['.pdf','.jpg', '.jpeg', '.png', '.zip', '.rar', '.docx', '.doc', '.pdf'];
+                        if (new RegExp(substrings.join("|")).test(names)) {
+                var res = true;
+            } else {
+               var res = false;
+             }
+          
+            if(res==false)
+            {
+                document.getElementById("upload-error").style.display = "block";
+                return false;
+            }
+            else{
+                document.getElementById("upload-error").style.display = "none";
+            }
+        }
+        return true;
+    }</script><!-- <script type="text/x-magento-init">
+ {
+        "[data-role=tocart-form], .form.map.checkout": {
+            "catalogAddToCart": {
+                "addToQuoteButtonSelector": "[data-role=addToQuoteButton]",
+                "addToCartButtonSelector": "[data-role=addToCartButton]"
+            }
+        }
+    }</script> -->

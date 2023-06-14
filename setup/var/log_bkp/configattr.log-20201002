@@ -1,0 +1,1274 @@
+2020-09-30T06:16:47+00:00 INFO (6): starting
+2020-09-30T06:18:19+00:00 INFO (6): starting
+2020-09-30T06:19:46+00:00 INFO (6): starting
+2020-09-30T06:22:07+00:00 INFO (6): starting
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6): -
+2020-09-30T06:22:07+00:00 INFO (6): second
+2020-09-30T06:22:07+00:00 INFO (6): dash
+2020-09-30T06:22:07+00:00 INFO (6):
+2020-09-30T06:23:30+00:00 INFO (6): starting
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[240]"
+		                                    data-selector="super_attribute[240]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute240"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute241"><span class="number">9</span><span class="tooltiptext"> <span class="restriction">Cover end delivery port</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6): -
+2020-09-30T06:23:30+00:00 INFO (6): second
+2020-09-30T06:23:30+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[240]"
+		                                    data-selector="super_attribute[240]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute240"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute241"><span class="number">9</span><span class="tooltiptext"> <span class="restriction">Cover end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[241]"
+		                                    data-selector="super_attribute[241]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute241"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute242"><span class="number">10</span><span class="tooltiptext"> <span class="restriction">Pump mounting</span></span></label>
+2020-09-30T06:23:30+00:00 INFO (6): dash
+2020-09-30T06:23:30+00:00 INFO (6):
+2020-09-30T06:26:57+00:00 INFO (6): starting
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): else
+2020-09-30T06:26:57+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div>
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): else
+2020-09-30T06:26:57+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div>
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6): -
+2020-09-30T06:26:57+00:00 INFO (6): second
+2020-09-30T06:26:57+00:00 INFO (6): dash
+2020-09-30T06:26:57+00:00 INFO (6):
+2020-09-30T06:26:57+00:00 INFO (6): else
+2020-09-30T06:26:57+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[240]"
+		                                    data-selector="super_attribute[240]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute240"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute241"><span class="number">9</span><span class="tooltiptext"> <span class="restriction">Cover end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[241]"
+		                                    data-selector="super_attribute[241]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute241"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute242"><span class="number">10</span><span class="tooltiptext"> <span class="restriction">Pump mounting</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[242]"
+		                                    data-selector="super_attribute[242]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute242"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">11</span><span class="tooltiptext">Design Number</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">18</div><span class="dash"></span></div></div>
+2020-09-30T06:31:28+00:00 INFO (6): starting
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): else
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): else
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[240]"
+		                                    data-selector="super_attribute[240]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute240"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute241"><span class="number">9</span><span class="tooltiptext"> <span class="restriction">Cover end delivery port</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6): -
+2020-09-30T06:31:28+00:00 INFO (6): second
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[240]"
+		                                    data-selector="super_attribute[240]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute240"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute241"><span class="number">9</span><span class="tooltiptext"> <span class="restriction">Cover end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[241]"
+		                                    data-selector="super_attribute[241]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute241"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute242"><span class="number">10</span><span class="tooltiptext"> <span class="restriction">Pump mounting</span></span></label>
+2020-09-30T06:31:28+00:00 INFO (6): dash
+2020-09-30T06:31:28+00:00 INFO (6):
+2020-09-30T06:31:28+00:00 INFO (6): else
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[240]"
+		                                    data-selector="super_attribute[240]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute240"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute241"><span class="number">9</span><span class="tooltiptext"> <span class="restriction">Cover end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[241]"
+		                                    data-selector="super_attribute[241]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute241"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute242"><span class="number">10</span><span class="tooltiptext"> <span class="restriction">Pump mounting</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[242]"
+		                                    data-selector="super_attribute[242]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute242"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">11</span><span class="tooltiptext">Design Number</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">18</div><span class="dash"></span></div></div>
+2020-09-30T06:31:28+00:00 INFO (6): last cas
+2020-09-30T06:31:28+00:00 INFO (6): <div class="field configurable required"><label class="label" for="attribute235"><span class="number">1</span><span class="tooltiptext"> <span class="restriction">Hydraulic fluid</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[235]"
+		                                    data-selector="super_attribute[235]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute235"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">2</span><span class="tooltiptext">Base Model</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">SQP311</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute236"><span class="number">3</span><span class="tooltiptext"> <span class="restriction">Shaft end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[236]"
+		                                    data-selector="super_attribute[236]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute236"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute237"><span class="number">4</span><span class="tooltiptext"> <span class="restriction">Middle pump displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[237]"
+		                                    data-selector="super_attribute[237]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute237"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute238"><span class="number">5</span><span class="tooltiptext"> <span class="restriction">Cover end displacement</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[238]"
+		                                    data-selector="super_attribute[238]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute238"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">6</span><span class="tooltiptext">Shaft Configuration</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">86</div><span class="dash">-</span></div></div><div class="field configurable required"><label class="label" for="attribute239"><span class="number">7</span><span class="tooltiptext"> <span class="restriction">Shaft end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[239]"
+		                                    data-selector="super_attribute[239]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute239"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute240"><span class="number">8</span><span class="tooltiptext"> <span class="restriction">Middle pump delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[240]"
+		                                    data-selector="super_attribute[240]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute240"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute241"><span class="number">9</span><span class="tooltiptext"> <span class="restriction">Cover end delivery port</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[241]"
+		                                    data-selector="super_attribute[241]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute241"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute242"><span class="number">10</span><span class="tooltiptext"> <span class="restriction">Pump mounting</span></span></label><div class="control" style="display:flex;">
+		                        <div class="options">
+		                            <select name="super_attribute[242]"
+		                                    data-selector="super_attribute[242]"
+		                                    data-validate="{required:true}"
+		                                    id="attribute242"
+		                                    class="super-attribute-select">
+		                                        <option value="">Select</option>
+?>
+		                            </select>
+		                        </div>
+		                        <span class="dash">-</span>
+		                    </div></div><div class="field configurable required"><label class="label" for="attribute">
+	                    <span class="number">11</span><span class="tooltiptext">Design Number</span></label><div class="control config-hydr" style="padding-top:10%; padding-left: 4%;"><div class="options">18</div><span class="dash"></span></div></div>

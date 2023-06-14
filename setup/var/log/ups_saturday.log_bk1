@@ -1,0 +1,574 @@
+2021-07-08T17:12:04+00:00 INFO (6): _rawRequest
+2021-07-08T17:13:00+00:00 INFO (6): XML Request
+2021-07-08T17:13:00+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>W49W03</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>CA</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>10</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2021-07-08T17:13:00+00:00 INFO (6): in if loop condition
+2021-07-08T17:13:01+00:00 INFO (6): XML Response
+2021-07-08T17:13:01+00:00 INFO (6): <?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111285</ErrorCode><ErrorDescription>The postal code 91761 is invalid for NV United States.</ErrorDescription></Error><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111215</ErrorCode><ErrorDescription>The requested service is unavailable to residential destinations.</ErrorDescription></Error></Response></RatingServiceSelectionResponse>
+2021-07-08T17:13:01+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:13:01+00:00 INFO (6): array (
+)
+2021-07-08T17:13:01+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:13:01+00:00 INFO (6): array (
+)
+2021-07-08T17:13:01+00:00 INFO (6): Final xml output for ups1111111
+2021-07-08T17:13:01+00:00 INFO (6): array (
+)
+2021-07-08T17:13:14+00:00 INFO (6): XML Request
+2021-07-08T17:13:14+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>W49W03</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>CA</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>10</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2021-07-08T17:13:14+00:00 INFO (6): in if loop condition
+2021-07-08T17:13:14+00:00 INFO (6): XML Response
+2021-07-08T17:13:14+00:00 INFO (6): <?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111285</ErrorCode><ErrorDescription>The postal code 91761 is invalid for NV United States.</ErrorDescription></Error><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111215</ErrorCode><ErrorDescription>The requested service is unavailable to residential destinations.</ErrorDescription></Error></Response></RatingServiceSelectionResponse>
+2021-07-08T17:13:14+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:13:14+00:00 INFO (6): array (
+)
+2021-07-08T17:13:14+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:13:14+00:00 INFO (6): array (
+)
+2021-07-08T17:13:14+00:00 INFO (6): Final xml output for ups1111111
+2021-07-08T17:13:14+00:00 INFO (6): array (
+)
+2021-07-08T17:14:05+00:00 INFO (6): rowRequest
+2021-07-08T17:14:05+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'CA',
+  'dest_postal' => '91761',
+  'weight' => 10.0,
+  'value' => 15.0,
+  'value_with_discount' => 15.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 15.0,
+)
+2021-07-08T17:14:05+00:00 INFO (6): XML Request
+2021-07-08T17:14:05+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>W49W03</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>CA</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>10</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2021-07-08T17:14:05+00:00 INFO (6): in if loop condition
+2021-07-08T17:14:06+00:00 INFO (6): XML Response
+2021-07-08T17:14:06+00:00 INFO (6): <?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111285</ErrorCode><ErrorDescription>The postal code 91761 is invalid for NV United States.</ErrorDescription></Error><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111215</ErrorCode><ErrorDescription>The requested service is unavailable to residential destinations.</ErrorDescription></Error></Response></RatingServiceSelectionResponse>
+2021-07-08T17:14:06+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:14:06+00:00 INFO (6): array (
+)
+2021-07-08T17:14:06+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:14:06+00:00 INFO (6): array (
+)
+2021-07-08T17:14:06+00:00 INFO (6): Final xml output for ups1111111
+2021-07-08T17:14:06+00:00 INFO (6): array (
+)
+2021-07-08T17:14:11+00:00 INFO (6): rowRequest
+2021-07-08T17:14:11+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'CA',
+  'dest_postal' => '91761',
+  'weight' => 10.0,
+  'value' => 15.0,
+  'value_with_discount' => 15.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 15.0,
+)
+2021-07-08T17:14:11+00:00 INFO (6): XML Request
+2021-07-08T17:14:11+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>W49W03</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>CA</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>10</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2021-07-08T17:14:11+00:00 INFO (6): in if loop condition
+2021-07-08T17:14:11+00:00 INFO (6): XML Response
+2021-07-08T17:14:11+00:00 INFO (6): <?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111285</ErrorCode><ErrorDescription>The postal code 91761 is invalid for NV United States.</ErrorDescription></Error><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111215</ErrorCode><ErrorDescription>The requested service is unavailable to residential destinations.</ErrorDescription></Error></Response></RatingServiceSelectionResponse>
+2021-07-08T17:14:11+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:14:11+00:00 INFO (6): array (
+)
+2021-07-08T17:14:11+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:14:11+00:00 INFO (6): array (
+)
+2021-07-08T17:14:11+00:00 INFO (6): Final xml output for ups1111111
+2021-07-08T17:14:11+00:00 INFO (6): array (
+)
+2021-07-08T17:23:14+00:00 INFO (6): rowRequest
+2021-07-08T17:23:14+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'CA',
+  'dest_postal' => '91761',
+  'weight' => 10.0,
+  'value' => 15.0,
+  'value_with_discount' => 15.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 15.0,
+)
+2021-07-08T17:23:14+00:00 INFO (6): XML Request
+2021-07-08T17:23:14+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>W49W03</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>CA</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>10</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2021-07-08T17:23:14+00:00 INFO (6): in if loop condition
+2021-07-08T17:23:15+00:00 INFO (6): XML Response
+2021-07-08T17:23:15+00:00 INFO (6): <?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111285</ErrorCode><ErrorDescription>The postal code 91761 is invalid for NV United States.</ErrorDescription></Error><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111215</ErrorCode><ErrorDescription>The requested service is unavailable to residential destinations.</ErrorDescription></Error></Response></RatingServiceSelectionResponse>
+2021-07-08T17:23:15+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:23:15+00:00 INFO (6): array (
+)
+2021-07-08T17:23:15+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:23:15+00:00 INFO (6): array (
+)
+2021-07-08T17:23:15+00:00 INFO (6): Final xml output for ups1111111
+2021-07-08T17:23:15+00:00 INFO (6): array (
+)
+2021-07-08T17:23:25+00:00 INFO (6): rowRequest
+2021-07-08T17:23:25+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'CA',
+  'dest_postal' => '91761',
+  'weight' => 10.0,
+  'value' => 15.0,
+  'value_with_discount' => 15.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 15.0,
+)
+2021-07-08T17:23:25+00:00 INFO (6): XML Request
+2021-07-08T17:23:25+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>W49W03</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>CA</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>10</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2021-07-08T17:23:25+00:00 INFO (6): in if loop condition
+2021-07-08T17:23:25+00:00 INFO (6): XML Response
+2021-07-08T17:23:25+00:00 INFO (6): <?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111285</ErrorCode><ErrorDescription>The postal code 91761 is invalid for NV United States.</ErrorDescription></Error><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111215</ErrorCode><ErrorDescription>The requested service is unavailable to residential destinations.</ErrorDescription></Error></Response></RatingServiceSelectionResponse>
+2021-07-08T17:23:25+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:23:25+00:00 INFO (6): array (
+)
+2021-07-08T17:23:25+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:23:25+00:00 INFO (6): array (
+)
+2021-07-08T17:23:25+00:00 INFO (6): Final xml output for ups1111111
+2021-07-08T17:23:25+00:00 INFO (6): array (
+)
+2021-07-08T17:23:42+00:00 INFO (6): rowRequest
+2021-07-08T17:23:42+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'NJ',
+  'dest_postal' => '07652',
+  'weight' => 10.0,
+  'value' => 15.0,
+  'value_with_discount' => 15.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 15.0,
+)
+2021-07-08T17:23:42+00:00 INFO (6): XML Request
+2021-07-08T17:23:42+00:00 INFO (6):  <?xml version="1.0"?>
+ <RatingServiceSelectionRequest xml:lang="en-US">
+   <Request>
+     <TransactionReference>
+       <CustomerContext>Rating and Service</CustomerContext>
+       <XpciVersion>1.0</XpciVersion>
+     </TransactionReference>
+     <RequestAction>Rate</RequestAction>
+     <RequestOption>Shop</RequestOption>
+   </Request>
+   <PickupType>
+           <Code>03</Code>
+           <Description>Customer Counter</Description>
+   </PickupType>
+
+   <Shipment>       <Shipper><ShipperNumber>W49W03</ShipperNumber>       <Address>
+           <City>North Las Vegas</City>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </Shipper>
+
+     <ShipTo>
+       <Address>
+           <PostalCode>07652</PostalCode>
+           <CountryCode>US</CountryCode>
+           <ResidentialAddress>01</ResidentialAddress>
+           <StateProvinceCode>NJ</StateProvinceCode><ResidentialAddressIndicator>01</ResidentialAddressIndicator>       </Address>
+     </ShipTo>
+
+     <ShipFrom>
+       <Address>
+           <PostalCode>91761</PostalCode>
+           <CountryCode>US</CountryCode>
+           <StateProvinceCode>NV</StateProvinceCode>
+       </Address>
+     </ShipFrom>
+
+     <Package>
+       <PackagingType>
+         <Code>00</Code>
+       </PackagingType>
+       <PackageWeight>
+         <UnitOfMeasurement>
+           <Code>LBS</Code>
+         </UnitOfMeasurement>
+         <Weight>10</Weight>
+       </PackageWeight>
+     </Package><RateInformation><NegotiatedRatesIndicator/></RateInformation>
+2021-07-08T17:23:42+00:00 INFO (6): in if loop condition
+2021-07-08T17:23:42+00:00 INFO (6): XML Response
+2021-07-08T17:23:42+00:00 INFO (6): <?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111285</ErrorCode><ErrorDescription>The postal code 91761 is invalid for NV United States.</ErrorDescription></Error><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>111215</ErrorCode><ErrorDescription>The requested service is unavailable to residential destinations.</ErrorDescription></Error></Response></RatingServiceSelectionResponse>
+2021-07-08T17:23:42+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:23:42+00:00 INFO (6): array (
+)
+2021-07-08T17:23:42+00:00 INFO (6): Final xml output for ups
+2021-07-08T17:23:42+00:00 INFO (6): array (
+)
+2021-07-08T17:23:42+00:00 INFO (6): Final xml output for ups1111111
+2021-07-08T17:23:42+00:00 INFO (6): array (
+)

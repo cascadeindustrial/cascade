@@ -1,0 +1,463 @@
+2021-01-07T05:56:02+00:00 INFO (6): 5
+2021-01-07T05:56:02+00:00 INFO (6): 2021-01-14T00:00:00+00:00
+2021-01-07T05:56:02+00:00 INFO (6): ratesRequest
+2021-01-07T05:56:02+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-01-14T00:00:00+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 20.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => true,
+        'City' => 'Ontario',
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 20.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+        'InsuredValue' => 
+        array (
+          'Amount' => 20.0,
+          'Currency' => 'USD',
+        ),
+      ),
+    ),
+  ),
+)
+2021-01-07T05:56:20+00:00 INFO (6): 5
+2021-01-07T05:56:20+00:00 INFO (6): 2021-01-14T00:00:00+00:00
+2021-01-07T05:56:20+00:00 INFO (6): ratesRequest
+2021-01-07T05:56:20+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-01-14T00:00:00+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 20.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => true,
+        'City' => 'Ontario',
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 20.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+        'InsuredValue' => 
+        array (
+          'Amount' => 20.0,
+          'Currency' => 'USD',
+        ),
+      ),
+    ),
+  ),
+)
+2021-01-07T06:02:21+00:00 INFO (6): 5
+2021-01-07T06:02:21+00:00 INFO (6): saturday delivery
+2021-01-07T06:02:21+00:00 INFO (6): 2021-01-14T00:00:00+00:00
+2021-01-07T06:02:21+00:00 INFO (6): ratesRequest
+2021-01-07T06:02:21+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-01-14T00:00:00+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 20.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => true,
+        'City' => 'Ontario',
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 20.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+        'InsuredValue' => 
+        array (
+          'Amount' => 20.0,
+          'Currency' => 'USD',
+        ),
+      ),
+    ),
+  ),
+)
+2021-01-07T06:02:28+00:00 INFO (6): 5
+2021-01-07T06:02:28+00:00 INFO (6): saturday delivery
+2021-01-07T06:02:28+00:00 INFO (6): 2021-01-14T00:00:00+00:00
+2021-01-07T06:02:28+00:00 INFO (6): ratesRequest
+2021-01-07T06:02:28+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-01-14T00:00:00+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 20.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => true,
+        'City' => 'Ontario',
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 20.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+        'InsuredValue' => 
+        array (
+          'Amount' => 20.0,
+          'Currency' => 'USD',
+        ),
+      ),
+    ),
+  ),
+)
+2021-01-07T06:07:15+00:00 INFO (6): _formRateRequest method
+2021-01-07T06:07:15+00:00 INFO (6): saturday delivery123123213
+2021-01-07T06:07:15+00:00 INFO (6): 2021-01-14T00:00:00+00:00
+2021-01-07T06:07:15+00:00 INFO (6): ratesRequest
+2021-01-07T06:07:15+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-01-14T00:00:00+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 20.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => true,
+        'City' => 'Ontario',
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 20.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+        'InsuredValue' => 
+        array (
+          'Amount' => 20.0,
+          'Currency' => 'USD',
+        ),
+      ),
+    ),
+  ),
+)

@@ -1,0 +1,15 @@
+PHP Fatal error:  Uncaught Error: Class 'Magento\Store\Model\ResourceModel\Store\Interceptor' not found in /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Store\\M...', Array)
+#1 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Store\\M...')
+#2 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Store\\M...')
+#3 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Store\\M...')
+#4 /chroot/home in /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+
+Fatal error: Uncaught Error: Class 'Magento\Store\Model\ResourceModel\Store\Interceptor' not found in /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Store\\M...', Array)
+#1 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Store\\M...')
+#2 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Store\\M...')
+#3 /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Store\\M...')
+#4 /chroot/home in /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121

@@ -1,0 +1,4453 @@
+2021-07-02T05:11:31+00:00 INFO (6): loggedin customergroupid
+2021-07-02T05:11:31+00:00 INFO (6): 8
+2021-07-02T05:11:31+00:00 INFO (6): product catIds
+2021-07-02T05:11:31+00:00 INFO (6): 75,56
+2021-07-02T05:11:31+00:00 INFO (6): brandId
+2021-07-02T05:11:31+00:00 INFO (6): 5459
+2021-07-02T05:11:31+00:00 INFO (6): finalResult
+2021-07-02T05:11:31+00:00 INFO (6): 0
+2021-07-02T05:17:04+00:00 INFO (6): loggedin customergroupid
+2021-07-02T05:17:04+00:00 INFO (6): 8
+2021-07-02T05:17:04+00:00 INFO (6): product catIds
+2021-07-02T05:17:04+00:00 INFO (6): 75,56
+2021-07-02T05:17:04+00:00 INFO (6): brandId
+2021-07-02T05:17:04+00:00 INFO (6): 5459
+2021-07-02T05:17:04+00:00 INFO (6): finalResult
+2021-07-02T05:17:04+00:00 INFO (6): 0
+2021-07-02T05:17:29+00:00 INFO (6): loggedin customergroupid
+2021-07-02T05:17:29+00:00 INFO (6): 8
+2021-07-02T05:17:29+00:00 INFO (6): product catIds
+2021-07-02T05:17:29+00:00 INFO (6): 75,56
+2021-07-02T05:17:29+00:00 INFO (6): brandId
+2021-07-02T05:17:29+00:00 INFO (6): 5459
+2021-07-02T05:17:29+00:00 INFO (6): finalResult
+2021-07-02T05:17:29+00:00 INFO (6): 0
+2021-07-02T05:17:45+00:00 INFO (6): loggedin customergroupid
+2021-07-02T05:17:45+00:00 INFO (6): 8
+2021-07-02T05:17:45+00:00 INFO (6): product catIds
+2021-07-02T05:17:45+00:00 INFO (6): 75,56
+2021-07-02T05:17:45+00:00 INFO (6): brandId
+2021-07-02T05:17:45+00:00 INFO (6): 5459
+2021-07-02T05:17:45+00:00 INFO (6): finalResult
+2021-07-02T05:17:45+00:00 INFO (6): 0
+2021-07-02T05:18:23+00:00 INFO (6): loggedin customergroupid
+2021-07-02T05:18:23+00:00 INFO (6): 8
+2021-07-02T05:18:23+00:00 INFO (6): product catIds
+2021-07-02T05:18:23+00:00 INFO (6): 75,56
+2021-07-02T05:18:23+00:00 INFO (6): brandId
+2021-07-02T05:18:23+00:00 INFO (6): 5459
+2021-07-02T05:18:23+00:00 INFO (6): finalResult
+2021-07-02T05:18:23+00:00 INFO (6): 0
+2021-07-02T05:26:38+00:00 INFO (6): loggedin customergroupid
+2021-07-02T05:26:38+00:00 INFO (6): 8
+2021-07-02T05:26:38+00:00 INFO (6): product catIds
+2021-07-02T05:26:38+00:00 INFO (6): 75,56
+2021-07-02T05:26:38+00:00 INFO (6): brandId
+2021-07-02T05:26:38+00:00 INFO (6): 5459
+2021-07-02T05:26:38+00:00 INFO (6): finalResult
+2021-07-02T05:26:38+00:00 INFO (6): 0
+2021-07-02T05:46:32+00:00 INFO (6): loggedin customergroupid
+2021-07-02T05:46:32+00:00 INFO (6): 7
+2021-07-02T05:46:32+00:00 INFO (6): product catIds
+2021-07-02T05:46:32+00:00 INFO (6): 35,55,75
+2021-07-02T05:46:32+00:00 INFO (6): brandId
+2021-07-02T05:46:32+00:00 INFO (6): 5459
+2021-07-02T05:46:32+00:00 INFO (6): in if loop
+2021-07-02T05:46:32+00:00 INFO (6): Array
+(
+    [0] => 86
+)
+
+2021-07-02T05:46:32+00:00 INFO (6): Array
+(
+    [0] => 35
+    [1] => 55
+    [2] => 75
+)
+
+2021-07-02T05:46:32+00:00 INFO (6): final Result
+2021-07-02T05:46:32+00:00 INFO (6): Array
+(
+)
+
+2021-07-02T05:46:32+00:00 INFO (6): finalResult
+2021-07-02T05:46:32+00:00 INFO (6): 0
+2021-07-02T06:17:34+00:00 INFO (6): loggedin customergroupid
+2021-07-02T06:17:34+00:00 INFO (6): 7
+2021-07-02T06:17:34+00:00 INFO (6): product catIds
+2021-07-02T06:17:34+00:00 INFO (6): 4,337,338
+2021-07-02T06:17:34+00:00 INFO (6): brandId
+2021-07-02T06:17:34+00:00 INFO (6): 5482
+2021-07-02T06:17:34+00:00 INFO (6): in if loop
+2021-07-02T06:17:34+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 281
+    [2] => 282
+    [3] => 283
+    [4] => 284
+    [5] => 285
+    [6] => 286
+    [7] => 287
+    [8] => 288
+    [9] => 289
+    [10] => 290
+    [11] => 291
+    [12] => 292
+    [13] => 293
+    [14] => 294
+    [15] => 295
+    [16] => 296
+    [17] => 297
+    [18] => 298
+    [19] => 337
+    [20] => 338
+    [21] => 339
+    [22] => 340
+    [23] => 341
+    [24] => 342
+    [25] => 343
+)
+
+2021-07-02T06:17:34+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 337
+    [2] => 338
+)
+
+2021-07-02T06:17:34+00:00 INFO (6): finalResult
+2021-07-02T06:17:34+00:00 INFO (6): Array
+(
+    [id] => 28
+    [customer_group] => 7
+    [discount_percentage] => 25.00
+    [category] => 4,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,337,338,339,340,341,342,343
+    [created_at] => 2021-01-29 03:26:00
+    [standard_discount_percentage] => 50.00
+    [status] => 1
+    [title] => H_OEM2_Tokyo_Keiki
+    [category_name] => Hydraulics,Vane Pumps,Variable Displacement,Fixed Displacement,Low Noise,Single Pumps,Double Pumps,Triple Pumps,High Performance,Single Pumps,Double Pumps,Vane Pump Parts,Catridge Kits,Shaft Assembly,Shafts,Bearings,Keys,Retaining Rings,Seals & Accessorie
+    [brand] => 5482
+)
+
+2021-07-02T06:17:45+00:00 INFO (6): loggedin customergroupid
+2021-07-02T06:17:45+00:00 INFO (6): 7
+2021-07-02T06:17:45+00:00 INFO (6): product catIds
+2021-07-02T06:17:45+00:00 INFO (6): 4,337,338
+2021-07-02T06:17:45+00:00 INFO (6): brandId
+2021-07-02T06:17:45+00:00 INFO (6): 5482
+2021-07-02T06:17:45+00:00 INFO (6): in if loop
+2021-07-02T06:17:45+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 281
+    [2] => 282
+    [3] => 283
+    [4] => 284
+    [5] => 285
+    [6] => 286
+    [7] => 287
+    [8] => 288
+    [9] => 289
+    [10] => 290
+    [11] => 291
+    [12] => 292
+    [13] => 293
+    [14] => 294
+    [15] => 295
+    [16] => 296
+    [17] => 297
+    [18] => 298
+    [19] => 337
+    [20] => 338
+    [21] => 339
+    [22] => 340
+    [23] => 341
+    [24] => 342
+    [25] => 343
+)
+
+2021-07-02T06:17:45+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 337
+    [2] => 338
+)
+
+2021-07-02T06:17:45+00:00 INFO (6): finalResult
+2021-07-02T06:17:45+00:00 INFO (6): Array
+(
+    [id] => 28
+    [customer_group] => 7
+    [discount_percentage] => 25.00
+    [category] => 4,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,337,338,339,340,341,342,343
+    [created_at] => 2021-01-29 03:26:00
+    [standard_discount_percentage] => 50.00
+    [status] => 1
+    [title] => H_OEM2_Tokyo_Keiki
+    [category_name] => Hydraulics,Vane Pumps,Variable Displacement,Fixed Displacement,Low Noise,Single Pumps,Double Pumps,Triple Pumps,High Performance,Single Pumps,Double Pumps,Vane Pump Parts,Catridge Kits,Shaft Assembly,Shafts,Bearings,Keys,Retaining Rings,Seals & Accessorie
+    [brand] => 5482
+)
+
+2021-07-02T06:18:40+00:00 INFO (6): loggedin customergroupid
+2021-07-02T06:18:40+00:00 INFO (6): 7
+2021-07-02T06:18:40+00:00 INFO (6): product catIds
+2021-07-02T06:18:40+00:00 INFO (6): 4,337,338
+2021-07-02T06:18:40+00:00 INFO (6): brandId
+2021-07-02T06:18:40+00:00 INFO (6): 5482
+2021-07-02T06:18:40+00:00 INFO (6): in if loop
+2021-07-02T06:18:40+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 281
+    [2] => 282
+    [3] => 283
+    [4] => 284
+    [5] => 285
+    [6] => 286
+    [7] => 287
+    [8] => 288
+    [9] => 289
+    [10] => 290
+    [11] => 291
+    [12] => 292
+    [13] => 293
+    [14] => 294
+    [15] => 295
+    [16] => 296
+    [17] => 297
+    [18] => 298
+    [19] => 337
+    [20] => 338
+    [21] => 339
+    [22] => 340
+    [23] => 341
+    [24] => 342
+    [25] => 343
+)
+
+2021-07-02T06:18:40+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 337
+    [2] => 338
+)
+
+2021-07-02T06:18:40+00:00 INFO (6): finalResult
+2021-07-02T06:18:40+00:00 INFO (6): Array
+(
+    [id] => 28
+    [customer_group] => 7
+    [discount_percentage] => 25.00
+    [category] => 4,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,337,338,339,340,341,342,343
+    [created_at] => 2021-01-29 03:26:00
+    [standard_discount_percentage] => 50.00
+    [status] => 1
+    [title] => H_OEM2_Tokyo_Keiki
+    [category_name] => Hydraulics,Vane Pumps,Variable Displacement,Fixed Displacement,Low Noise,Single Pumps,Double Pumps,Triple Pumps,High Performance,Single Pumps,Double Pumps,Vane Pump Parts,Catridge Kits,Shaft Assembly,Shafts,Bearings,Keys,Retaining Rings,Seals & Accessorie
+    [brand] => 5482
+)
+
+2021-07-02T06:20:16+00:00 INFO (6): loggedin customergroupid
+2021-07-02T06:20:16+00:00 INFO (6): 7
+2021-07-02T06:20:16+00:00 INFO (6): product catIds
+2021-07-02T06:20:16+00:00 INFO (6): 4,337,338
+2021-07-02T06:20:16+00:00 INFO (6): brandId
+2021-07-02T06:20:16+00:00 INFO (6): 5482
+2021-07-02T06:20:16+00:00 INFO (6): in if loop
+2021-07-02T06:20:16+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 281
+    [2] => 282
+    [3] => 283
+    [4] => 284
+    [5] => 285
+    [6] => 286
+    [7] => 287
+    [8] => 288
+    [9] => 289
+    [10] => 290
+    [11] => 291
+    [12] => 292
+    [13] => 293
+    [14] => 294
+    [15] => 295
+    [16] => 296
+    [17] => 297
+    [18] => 298
+    [19] => 337
+    [20] => 338
+    [21] => 339
+    [22] => 340
+    [23] => 341
+    [24] => 342
+    [25] => 343
+)
+
+2021-07-02T06:20:16+00:00 INFO (6): Array
+(
+    [0] => 4
+    [1] => 337
+    [2] => 338
+)
+
+2021-07-02T06:20:16+00:00 INFO (6): finalResult
+2021-07-02T06:20:16+00:00 INFO (6): Array
+(
+    [id] => 28
+    [customer_group] => 7
+    [discount_percentage] => 25.00
+    [category] => 4,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,337,338,339,340,341,342,343
+    [created_at] => 2021-01-29 03:26:00
+    [standard_discount_percentage] => 50.00
+    [status] => 1
+    [title] => H_OEM2_Tokyo_Keiki
+    [category_name] => Hydraulics,Vane Pumps,Variable Displacement,Fixed Displacement,Low Noise,Single Pumps,Double Pumps,Triple Pumps,High Performance,Single Pumps,Double Pumps,Vane Pump Parts,Catridge Kits,Shaft Assembly,Shafts,Bearings,Keys,Retaining Rings,Seals & Accessorie
+    [brand] => 5482
+)
+
+2021-07-02T06:32:50+00:00 INFO (6): loggedin customergroupid
+2021-07-02T06:32:50+00:00 INFO (6): 4
+2021-07-02T06:32:50+00:00 INFO (6): product catIds
+2021-07-02T06:32:50+00:00 INFO (6): 75,56
+2021-07-02T06:32:50+00:00 INFO (6): brandId
+2021-07-02T06:32:50+00:00 INFO (6): 5459
+2021-07-02T06:32:50+00:00 INFO (6): finalResult
+2021-07-02T06:32:50+00:00 INFO (6): 0
+2021-07-02T07:26:21+00:00 INFO (6): loggedin customergroupid
+2021-07-02T07:26:21+00:00 INFO (6): 4
+2021-07-02T07:26:21+00:00 INFO (6): product catIds
+2021-07-02T07:26:21+00:00 INFO (6): 75,56
+2021-07-02T07:26:21+00:00 INFO (6): brandId
+2021-07-02T07:26:21+00:00 INFO (6): 5459
+2021-07-02T07:26:21+00:00 INFO (6): finalResult
+2021-07-02T07:26:21+00:00 INFO (6): 0
+2021-07-02T07:27:48+00:00 INFO (6): loggedin customergroupid
+2021-07-02T07:27:48+00:00 INFO (6): 4
+2021-07-02T07:27:48+00:00 INFO (6): product catIds
+2021-07-02T07:27:48+00:00 INFO (6): 75,56
+2021-07-02T07:27:48+00:00 INFO (6): brandId
+2021-07-02T07:27:48+00:00 INFO (6): 5459
+2021-07-02T07:27:48+00:00 INFO (6): finalResult
+2021-07-02T07:27:48+00:00 INFO (6): 0
+2021-07-02T07:55:44+00:00 INFO (6): loggedin customergroupid
+2021-07-02T07:55:44+00:00 INFO (6): 4
+2021-07-02T07:55:44+00:00 INFO (6): product catIds
+2021-07-02T07:55:44+00:00 INFO (6): 75,56
+2021-07-02T07:55:44+00:00 INFO (6): brandId
+2021-07-02T07:55:44+00:00 INFO (6): 5459
+2021-07-02T07:55:44+00:00 INFO (6): finalResult
+2021-07-02T07:55:44+00:00 INFO (6): 0
+2021-07-02T08:31:59+00:00 INFO (6): loggedin customergroupid
+2021-07-02T08:31:59+00:00 INFO (6): 4
+2021-07-02T08:31:59+00:00 INFO (6): product catIds
+2021-07-02T08:31:59+00:00 INFO (6): 75,56
+2021-07-02T08:31:59+00:00 INFO (6): brandId
+2021-07-02T08:31:59+00:00 INFO (6): 5459
+2021-07-02T08:31:59+00:00 INFO (6): finalResult
+2021-07-02T08:31:59+00:00 INFO (6): 0
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:37:18+00:00 INFO (6): after setOptions
+2021-07-02T12:37:18+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:43:54+00:00 INFO (6): after setOptions
+2021-07-02T12:43:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:44:28+00:00 INFO (6): after setOptions
+2021-07-02T12:44:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:44:37+00:00 INFO (6): after setOptions
+2021-07-02T12:44:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:52:19+00:00 INFO (6): after setOptions
+2021-07-02T12:52:19+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:53:02+00:00 INFO (6): after setOptions
+2021-07-02T12:53:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5615
+            [label] => New Account
+        )
+
+    [1] => Array
+        (
+            [value] => 5616
+            [label] => Existing Account
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5606
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5607
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5624
+            [label] => Save for future use
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5788
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5815
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5789
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5614
+            [label] => Save for future use
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5790
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5818
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5791
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5617
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5618
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 11111
+            [label] => 11111
+        )
+
+    [2] => Array
+        (
+            [value] => 33333
+            [label] => 33333
+        )
+
+    [3] => Array
+        (
+            [value] => 9592
+            [label] => 9592
+        )
+
+    [4] => Array
+        (
+            [value] => 7575
+            [label] => 7575
+        )
+
+    [5] => Array
+        (
+            [value] => 379
+            [label] => 379
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 22222
+            [label] => 22222
+        )
+
+    [2] => Array
+        (
+            [value] => 55555
+            [label] => 55555
+        )
+
+    [3] => Array
+        (
+            [value] => 88888
+            [label] => 88888
+        )
+
+    [4] => Array
+        (
+            [value] => 09890977665687
+            [label] => 09890977665687
+        )
+
+    [5] => Array
+        (
+            [value] => 242424
+            [label] => 242424
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5772
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5807
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5773
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5775
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5808
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5776
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5695
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5620
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5694
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5693
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5621
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5702
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5701
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5698
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5711
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5703
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5825
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5826
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5827
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5828
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5829
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5852
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5853
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5854
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5855
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5774
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5819
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5820
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5821
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5822
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5823
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5824
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5728
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5727
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5724
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5737
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5729
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5721
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5612
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5720
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5719
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5613
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5840
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5841
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5842
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5843
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5844
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5848
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5849
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5850
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5851
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5777
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5809
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5810
+            [label] => International First
+        )
+
+)
+
+2021-07-02T12:53:45+00:00 INFO (6): after setOptions
+2021-07-02T12:53:45+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5792
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5845
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5846
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5847
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5615
+            [label] => New Account
+        )
+
+    [1] => Array
+        (
+            [value] => 5616
+            [label] => Existing Account
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5606
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5607
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5624
+            [label] => Save for future use
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5788
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5815
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5789
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5614
+            [label] => Save for future use
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5790
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5818
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5791
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5617
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5618
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 11111
+            [label] => 11111
+        )
+
+    [2] => Array
+        (
+            [value] => 33333
+            [label] => 33333
+        )
+
+    [3] => Array
+        (
+            [value] => 9592
+            [label] => 9592
+        )
+
+    [4] => Array
+        (
+            [value] => 7575
+            [label] => 7575
+        )
+
+    [5] => Array
+        (
+            [value] => 379
+            [label] => 379
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 22222
+            [label] => 22222
+        )
+
+    [2] => Array
+        (
+            [value] => 55555
+            [label] => 55555
+        )
+
+    [3] => Array
+        (
+            [value] => 88888
+            [label] => 88888
+        )
+
+    [4] => Array
+        (
+            [value] => 09890977665687
+            [label] => 09890977665687
+        )
+
+    [5] => Array
+        (
+            [value] => 242424
+            [label] => 242424
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5772
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5807
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5773
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5775
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5808
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5776
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5695
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5620
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5694
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5693
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5621
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5702
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5701
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5698
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5711
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5703
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5825
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5826
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5827
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5828
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5829
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5852
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5853
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5854
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5855
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5774
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5819
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5820
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5821
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5822
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5823
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5824
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5728
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5727
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5724
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5737
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5729
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5721
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5612
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5720
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5719
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5613
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5840
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5841
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5842
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5843
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5844
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5848
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5849
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5850
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5851
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5777
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5809
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5810
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:16:11+00:00 INFO (6): after setOptions
+2021-07-02T13:16:11+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5792
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5845
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5846
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5847
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:32:43+00:00 INFO (6): after setOptions
+2021-07-02T13:32:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [value] => 5628
+            [label] => FedEx
+        )
+
+    [1] => Array
+        (
+            [value] => 5629
+            [label] => UPS
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5781
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5816
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5782
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5783
+            [label] => United States
+        )
+
+    [2] => Array
+        (
+            [value] => 5817
+            [label] => Canada/Mexico
+        )
+
+    [3] => Array
+        (
+            [value] => 5784
+            [label] => Other International
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [4] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [5] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5669
+            [label] => UPS Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5637
+            [label] => UPS Three-Day Select
+        )
+
+    [3] => Array
+        (
+            [value] => 5668
+            [label] => UPS Second Day Air
+        )
+
+    [4] => Array
+        (
+            [value] => 5667
+            [label] => UPS Next Day Air
+        )
+
+    [5] => Array
+        (
+            [value] => 5638
+            [label] => UPS Next Day Air Early A.M.
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5811
+            [label] => International Ground
+        )
+
+    [2] => Array
+        (
+            [value] => 5812
+            [label] => International Economy
+        )
+
+    [3] => Array
+        (
+            [value] => 5813
+            [label] => International Priority
+        )
+
+    [4] => Array
+        (
+            [value] => 5814
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5831
+            [label] => UPS Standard
+        )
+
+    [2] => Array
+        (
+            [value] => 5832
+            [label] => UPS Worldwide Expedited
+        )
+
+    [3] => Array
+        (
+            [value] => 5833
+            [label] => UPS Worldwide Saver
+        )
+
+    [4] => Array
+        (
+            [value] => 5834
+            [label] => UPS Worldwide Express
+        )
+
+    [5] => Array
+        (
+            [value] => 5835
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5778
+            [label] => International Economy
+        )
+
+    [2] => Array
+        (
+            [value] => 5779
+            [label] => International Priority
+        )
+
+    [3] => Array
+        (
+            [value] => 5780
+            [label] => International First
+        )
+
+)
+
+2021-07-02T13:36:28+00:00 INFO (6): after setOptions
+2021-07-02T13:36:28+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5786
+            [label] => UPS Worldwide Expedited
+        )
+
+    [2] => Array
+        (
+            [value] => 5787
+            [label] => UPS Worldwide Saver
+        )
+
+    [3] => Array
+        (
+            [value] => 5785
+            [label] => UPS Worldwide Express
+        )
+
+    [4] => Array
+        (
+            [value] => 5830
+            [label] => UPS Worldwide Express Plus
+        )
+
+)
+

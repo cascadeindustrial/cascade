@@ -1,0 +1,182 @@
+[2022-01-27 06:49:46] tokenbaseLogger.DEBUG: authnetcim [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 06:49:47] tokenbaseLogger.DEBUG: authnetcim_ach [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 10:21:35] tokenbaseLogger.DEBUG: authnetcim [49.36.39.160]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 10:21:36] tokenbaseLogger.DEBUG: authnetcim_ach [49.36.39.160]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 10:26:32] tokenbaseLogger.DEBUG: authnetcim [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 10:26:32] tokenbaseLogger.DEBUG: authnetcim_ach [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:38:06] tokenbaseLogger.DEBUG: authnetcim [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:38:07] tokenbaseLogger.DEBUG: authnetcim_ach [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXNdDS</name>
+    <transactionKey>XXXXE4j4</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00040</code><text>The record cannot be found.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:41:16] tokenbaseLogger.DEBUG: authnetcim [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:41:16] tokenbaseLogger.DEBUG: authnetcim_ach [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:43:22] tokenbaseLogger.DEBUG: authnetcim [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:43:22] tokenbaseLogger.DEBUG: authnetcim_ach [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:43:25] tokenbaseLogger.DEBUG: authnetcim [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></getCustomerProfileResponse>
+  
+[2022-01-27 14:43:25] tokenbaseLogger.DEBUG: authnetcim_ach [157.47.31.255]: REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<getCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>1</customerProfileId>
+  <unmaskExpirationDate>false</unmaskExpirationDate>
+  <includeIssuerInfo>false</includeIssuerInfo>
+</getCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><getCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></getCustomerProfileResponse>
+  

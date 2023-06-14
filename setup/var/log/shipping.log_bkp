@@ -1,0 +1,650 @@
+[2021-07-08 06:40:22] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '91761',
+    '22_destCountry' => 'US',
+    '23_weight' => 10.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%1DM%91761%US%91761%US%102%10%87.01%0.00%87.01% 8:00 A.M.%
+4%1DA%91761%US%91761%US%102%10%54.31%0.00%54.31%10:30 A.M.%
+4%1DP%91761%US%91761%US%132%10%51.51%0.00%51.51%End of Day%
+4%2DA%91761%US%91761%US%202%10%32.88%0.00%32.88%End of Day%
+4%3DS%91761%US%91761%US%302%10%27.41%0.00%27.41%End of Day%
+4%GND%91761%US%91761%US%002%10%13.06%0.00%13.06%End of Day%
+
+
+',
+) [] []
+[2021-07-08 06:42:21] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '91761',
+    '22_destCountry' => 'US',
+    '23_weight' => 10.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%1DM%91761%US%91761%US%102%10%87.01%0.00%87.01% 8:00 A.M.%
+4%1DA%91761%US%91761%US%102%10%54.31%0.00%54.31%10:30 A.M.%
+4%1DP%91761%US%91761%US%132%10%51.51%0.00%51.51%End of Day%
+4%2DA%91761%US%91761%US%202%10%32.88%0.00%32.88%End of Day%
+4%3DS%91761%US%91761%US%302%10%27.41%0.00%27.41%End of Day%
+4%GND%91761%US%91761%US%002%10%13.06%0.00%13.06%End of Day%
+
+
+',
+) [] []
+[2021-07-08 06:42:45] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '91761',
+    '22_destCountry' => 'US',
+    '23_weight' => 10.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%1DM%91761%US%91761%US%102%10%87.01%0.00%87.01% 8:00 A.M.%
+4%1DA%91761%US%91761%US%102%10%54.31%0.00%54.31%10:30 A.M.%
+4%1DP%91761%US%91761%US%132%10%51.51%0.00%51.51%End of Day%
+4%2DA%91761%US%91761%US%202%10%32.88%0.00%32.88%End of Day%
+4%3DS%91761%US%91761%US%302%10%27.41%0.00%27.41%End of Day%
+4%GND%91761%US%91761%US%002%10%13.06%0.00%13.06%End of Day%
+
+
+',
+) [] []
+[2021-07-08 08:18:27] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '91761',
+    '22_destCountry' => 'US',
+    '23_weight' => 10.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%1DM%91761%US%91761%US%102%10%87.01%0.00%87.01% 8:00 A.M.%
+4%1DA%91761%US%91761%US%102%10%54.31%0.00%54.31%10:30 A.M.%
+4%1DP%91761%US%91761%US%132%10%51.51%0.00%51.51%End of Day%
+4%2DA%91761%US%91761%US%202%10%32.88%0.00%32.88%End of Day%
+4%3DS%91761%US%91761%US%302%10%27.41%0.00%27.41%End of Day%
+4%GND%91761%US%91761%US%002%10%13.06%0.00%13.06%End of Day%
+
+
+',
+) [] []
+[2021-07-08 08:18:55] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '91761',
+    '22_destCountry' => 'US',
+    '23_weight' => 10.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%1DM%91761%US%91761%US%102%10%87.01%0.00%87.01% 8:00 A.M.%
+4%1DA%91761%US%91761%US%102%10%54.31%0.00%54.31%10:30 A.M.%
+4%1DP%91761%US%91761%US%132%10%51.51%0.00%51.51%End of Day%
+4%2DA%91761%US%91761%US%202%10%32.88%0.00%32.88%End of Day%
+4%3DS%91761%US%91761%US%302%10%27.41%0.00%27.41%End of Day%
+4%GND%91761%US%91761%US%002%10%13.06%0.00%13.06%End of Day%
+
+
+',
+) [] []
+[2021-07-08 08:19:16] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '91761',
+    '22_destCountry' => 'US',
+    '23_weight' => 10.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%1DM%91761%US%91761%US%102%10%87.01%0.00%87.01% 8:00 A.M.%
+4%1DA%91761%US%91761%US%102%10%54.31%0.00%54.31%10:30 A.M.%
+4%1DP%91761%US%91761%US%132%10%51.51%0.00%51.51%End of Day%
+4%2DA%91761%US%91761%US%202%10%32.88%0.00%32.88%End of Day%
+4%3DS%91761%US%91761%US%302%10%27.41%0.00%27.41%End of Day%
+4%GND%91761%US%91761%US%002%10%13.06%0.00%13.06%End of Day%
+
+
+',
+) [] []
+[2021-07-08 13:36:14] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:36:33] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:39] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:41] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:43] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:48] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:49] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:51] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:54] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:43:57] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:44:00] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:44:05] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:44:23] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:45:04] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:45:13] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []
+[2021-07-08 13:45:15] main.DEBUG: array (
+  'request' => 
+  array (
+    'accept_UPS_license_agreement' => 'yes',
+    '10_action' => '4',
+    '13_product' => 'GNDRES',
+    '14_origCountry' => 'US',
+    '15_origPostal' => '91761',
+    'origCity' => 'North Las Vegas',
+    '19_destPostal' => '3000',
+    '22_destCountry' => 'AU',
+    '23_weight' => 1.0,
+    '47_rate_chart' => 'Customer Counter',
+    '48_container' => '00',
+    '49_residential' => '01',
+    'weight_std' => 'lbs',
+  ),
+  'result' => '
+
+ 
+
+UPSOnLine4%XDM%91761%US%3000%AU%904%1%179.61%0.00%179.61%-1%
+4%XPR%91761%US%3000%AU%904%1%135.81%0.00%135.81%-1%
+4%WXS%91761%US%3000%AU%404%1%133.88%0.00%133.88%-1%
+4%XPD%91761%US%3000%AU%634%1%122.95%0.00%122.95%-1%
+
+
+',
+) [] []

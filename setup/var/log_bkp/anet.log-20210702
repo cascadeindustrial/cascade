@@ -1,0 +1,102 @@
+[2021-07-02 00:36:47] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transactionRequest' => 
+    array (
+      'transactionType' => 'authCaptureTransaction',
+      'amount' => '67.95',
+      'currencyCode' => 'USD',
+      'profile' => 
+      array (
+        'customerProfileId' => '1515434598',
+        'paymentProfile' => 
+        array (
+          'paymentProfileId' => '1516286847',
+        ),
+      ),
+      'solution' => 
+      array (
+        'id' => 'AAA100302',
+      ),
+      'order' => 
+      array (
+        'invoiceNumber' => '000000738',
+      ),
+      'lineItems' => 
+      array (
+        'lineItem' => 
+        array (
+          0 => 
+          array (
+            'itemId' => '1LS-J50H',
+            'name' => '1LS-J50H – General Purpose Co',
+            'description' => '',
+            'quantity' => '',
+            'unitPrice' => '62.70',
+            'taxable' => '',
+          ),
+        ),
+      ),
+      'tax' => 
+      array (
+        'amount' => '5.25',
+      ),
+      'shipping' => 
+      array (
+        'amount' => '0.00',
+        'name' => 'Local Pickup / Will Call',
+        'description' => 'Local Pickup / Will Call',
+      ),
+      'customer' => 
+      array (
+        'type' => 'individual',
+        'id' => '',
+        'email' => 'vivi@cascadeindustrial.com',
+      ),
+      'shipTo' => 
+      array (
+        'firstName' => 'Vivi',
+        'lastName' => 'Suen',
+        'company' => 'Luxor',
+        'address' => '3900 S Las Vegas Blvd
+',
+        'city' => 'Las Vegas',
+        'state' => 'NV',
+        'zip' => '89119',
+        'country' => 'US',
+      ),
+      'transactionSettings' => 
+      array (
+        'setting' => 
+        array (
+          0 => 
+          array (
+            'settingName' => 'duplicateWindow',
+            'settingValue' => '',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []

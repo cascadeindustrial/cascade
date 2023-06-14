@@ -1,0 +1,36 @@
+<?php /** * Copyright © Magento, Inc. All rights reserved. * See COPYING.txt for license details. */ /** @var $block Magento\Catalog\Block\Product\View */ ?> <?php $_product = $block->getProduct(); $legendText = $_product->getConfigurableAttrOptions(); $layout = $_product->getAttributeText('enable_advanced_layout'); $required = ''; if ($block->hasRequiredOptions()) { $required = ' data-hasrequired="' . $block->escapeHtmlAttr(__('* Required Fields')) . '"'; } ?> <div class="product-options-wrapper" id="product-options-wrapper"<?= /* @noEscape */ $required ?>><div><?php if ( $layout == 'Yes') { ?> <h1 class="select-option">Select options</h1><?php } else { ?> <h3>Select options</h3><?php } ?></div><div><?php if ($legendText != "" && $layout == 'Yes') { ?> <a href="#" id="click-me">Legend</a> <?php } ?></div><div class="fieldset" tabindex="0"><?= $block->getChildHtml('', true) ?></div></div><div id="popup-modal" style="display:none;"><?php $legendText = str_replace("*", "", $legendText); $myArray = explode('|', $legendText); $rearg_arr = []; foreach ($myArray as $key => $arr) { $arr2 = explode(',', $arr); if(count($arr2)>1) { $dev[$arr2[1]] = $arr2[0]; $rearg_arr = $dev; } } ksort($rearg_arr); $thml = "<div class='tooltiptexts'><div class='t-wrapper'>"; foreach ($rearg_arr as $pos => $attr) { $optlbl = ''; $optlblObject = $_product->getResource()->getAttribute(trim($attr)); if($optlblObject) $optlbl = $optlblObject->getFrontendLabel(); $thml .= "<div class='legend-wrapper'><div class='number'>".$pos."</div>"; $thml .= "<div class='name'>".$optlbl."</div></div>"; } $thml .= "</div></div>"; echo $thml; ?></div><script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function(
+            $,
+            modal
+        ) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                buttons: [{
+                    text: $.mage.__('Continue'),
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }]
+            };
+
+            var popup = modal(options, $('#popup-modal'));
+            $("#click-me").on('click',function(){
+                $("#popup-modal").modal("openModal");
+            });
+
+        }
+    );</script><script>
+    require([
+        'jquery',
+        'priceBox'
+    ], function($){
+        $('.select-option').parents('.product-options-wrapper').addClass('active');
+    });</script>

@@ -1,0 +1,63 @@
+<?php /** * @author Amasty Team * @copyright Copyright (c) 2020 Amasty (https://www.amasty.com) * @package Amasty_Quickview */ ?> <?php /** @var $block \Amasty\Quickview\Block\Page */ $formSelector = $block->getFormSelector(); ?> <script>
+    require([
+        'jquery'
+    ], function ($) {
+        <?php if ($block->closePopup()): ?>
+            $(document).on('ajax:addToCart', function () {
+                localStorage.setItem('productAdded', 1);
+            });
+
+            $(document).on('customer-data-reload', function (event, sectionNames) {
+                if (sectionNames.indexOf('cart') != -1 && localStorage.getItem('productAdded') == 1) {
+                    localStorage.setItem('productAdded', 0);
+                    if (parent.jQuery.fancybox) {
+                        parent.jQuery.fancybox.close();
+                    }
+                }
+            });
+        <?php endif; ?> $('body').addClass('catalog-product-view');
+        $(document).ready(function () {
+            var targetElements = 'a, a.action.mailto.friend, #product_addtocart_form, #review-form',
+                form = $('<?= $block->escapeHtml($formSelector) ?>'),
+                wishlist = $('a[data-action="add-to-wishlist"]');
+                
+            $(targetElements).each(function (i, item) {
+                $(item).attr('target', '_parent');
+                $(item).removeAttr("onclick");
+            });
+
+            $(window).on('submit', function (event) {
+                $(event.target).attr('target', '_parent');
+            });
+
+            $(document).on('click', 'a', function (event) {
+                $(event.target).attr('target', '_parent');
+            });
+
+            $('a[href*="#"]').click(function (event) {
+                var href = $(event.currentTarget).attr('href');
+                if (href) {
+                    var selector = href.substring(href.indexOf('#')),
+                        element = $(selector);
+
+                    if (element.length) {
+                        if (element.is('[data-role="content"]')) {
+                            element.prev('[data-role="collapsible"]').click();
+                        } else {
+                            element.get(0).scrollIntoView();
+                        }
+                    }
+                }
+            });
+
+            form.append("<input type='hidden' name='in_cart' value='1'>");
+            /* Flag quickview window for redirect to quickview controller */
+            form.append("<input type='hidden' name='quickview_url' value='1'>");
+
+            <?php if ($block->redirectToCartAfterAdd()): ?>
+                $(document).on('ajax:addToCart', function() {
+                    parent.window.location.href = '<?= $block->escapeUrl($block->getCartUrl()) ?>';
+                });
+            <?php endif; ?> wishlist.hide();
+        });
+    });</script>

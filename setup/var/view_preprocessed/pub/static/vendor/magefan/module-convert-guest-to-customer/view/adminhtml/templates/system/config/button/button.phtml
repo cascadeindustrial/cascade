@@ -1,0 +1,19 @@
+<?php /** * Copyright © Magefan (support@magefan.com). All rights reserved. * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement). */ ?> <?php /** * Convert all guests button * * @var $block \Magefan\GuestToCustomer\Block\Adminhtml\System\Config\Form\Button */ ?> <div class="pp-buttons-container"><button type="button" id="convert_all_cust"><span><span><span><?= $block->escapeHtml(__('Convert All Old Guests To Customer')); ?></span></span></span></button></div><script>
+    require([
+            'jquery',
+            'Magento_Ui/js/modal/confirm'
+        ],
+        function($, confirmation) {
+            $('#convert_all_cust').on('click', function(event){
+                event.preventDefault;
+                confirmation({
+                    title: '<?= $block->escapeHtml(__('Do you really want to convert all guests to customers?')) ?>',
+                    content: '',
+                    actions: {
+                        confirm: function () {
+                            window.location='<?= $block->escapeUrl($block->getUrl('mfguesttocustomer/all/convert')) ?>';
+                        },
+                    }
+                });
+            });
+        });</script>

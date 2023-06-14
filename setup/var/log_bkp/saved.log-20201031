@@ -1,0 +1,58 @@
+2020-10-30T06:36:26+00:00 INFO (6): data
+2020-10-30T06:36:26+00:00 INFO (6): array (
+  'id' => '9',
+  'customer_group' => '6',
+  'discount_percentage' => '26.00',
+  'category' => '4,56',
+  'created_at' => '2020-10-14 23:05:04',
+  'standard_discount_percentage' => '46.50',
+  'status' => '1',
+  'title' => 'F_Reseller 3',
+  'form_key' => 'ru9K9KlCjt9TcfdC',
+)
+2020-10-30T06:55:02+00:00 INFO (6): data
+2020-10-30T06:55:02+00:00 INFO (6): array (
+  'id' => '8',
+  'customer_group' => '5',
+  'discount_percentage' => '25.00',
+  'category' => '4,56',
+  'created_at' => '2020-10-14 23:03:23',
+  'standard_discount_percentage' => '45.00',
+  'status' => '1',
+  'title' => 'E_Reseller 2',
+  'form_key' => 'ru9K9KlCjt9TcfdC',
+)
+2020-10-30T07:17:52+00:00 INFO (6): data
+2020-10-30T07:17:52+00:00 INFO (6): array (
+  'title' => 'test',
+  'standard_discount_percentage' => '11',
+  'discount_percentage' => '22',
+  'category' => '123',
+  'customer_group' => '0',
+  'status' => '0',
+  'form_key' => 'TsQrPYtsMVpDsYN4',
+)
+2020-10-30T08:05:59+00:00 INFO (6): data
+2020-10-30T08:05:59+00:00 INFO (6): array (
+  'id' => '9',
+  'customer_group' => '6',
+  'discount_percentage' => '26.00',
+  'category' => '4',
+  'created_at' => '2020-10-14 23:05:04',
+  'standard_discount_percentage' => '46.50',
+  'status' => '1',
+  'title' => 'F_Reseller 3',
+  'form_key' => 'ru9K9KlCjt9TcfdC',
+)
+2020-10-30T08:07:48+00:00 INFO (6): data
+2020-10-30T08:07:48+00:00 INFO (6): array (
+  'id' => '8',
+  'customer_group' => '5',
+  'discount_percentage' => '25.00',
+  'category' => '4',
+  'created_at' => '2020-10-14 23:03:23',
+  'standard_discount_percentage' => '45.00',
+  'status' => '1',
+  'title' => 'E_Reseller 2',
+  'form_key' => 'ru9K9KlCjt9TcfdC',
+)

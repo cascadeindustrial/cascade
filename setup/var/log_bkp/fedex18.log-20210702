@@ -1,0 +1,3579 @@
+2021-07-01T04:55:55+00:00 INFO (6): 1
+2021-07-01T04:55:55+00:00 INFO (6): in if loop
+2021-07-01T04:55:55+00:00 INFO (6): RatesRequest
+2021-07-01T04:55:55+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T04:55:55+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 285.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 285.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 19.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T04:55:56+00:00 INFO (6): serviceName
+2021-07-01T04:55:56+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T04:55:56+00:00 INFO (6): 107.01
+2021-07-01T04:55:56+00:00 INFO (6): serviceName
+2021-07-01T04:55:56+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T04:55:56+00:00 INFO (6): 30.02
+2021-07-01T04:55:56+00:00 INFO (6): serviceName
+2021-07-01T04:55:56+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T04:55:56+00:00 INFO (6): 14.17
+2021-07-01T04:55:56+00:00 INFO (6): serviceName
+2021-07-01T04:55:56+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T04:55:56+00:00 INFO (6): 37.64
+2021-07-01T04:55:56+00:00 INFO (6): serviceName
+2021-07-01T04:55:56+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T04:55:56+00:00 INFO (6): 20.28
+2021-07-01T04:55:56+00:00 INFO (6): serviceName
+2021-07-01T04:55:56+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T04:55:56+00:00 INFO (6): 18.8
+2021-07-01T04:55:56+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 17.7125,
+  'FEDEX_EXPRESS_SAVER' => 23.5,
+  'FEDEX_2_DAY' => 25.35,
+  'PRIORITY_OVERNIGHT' => 37.525,
+  'FEDEX_2_DAY_SAT' => 47.05,
+  'FIRST_OVERNIGHT' => 133.7625,
+)
+2021-07-01T04:55:56+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T04:55:56+00:00 INFO (6): currentdatetime:
+2021-07-01T04:55:56+00:00 INFO (6): 2021-06-30 21:55:56
+2021-07-01T04:55:56+00:00 INFO (6): Wed
+2021-07-01T04:55:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T04:55:56+00:00 INFO (6): deliveryDate
+2021-07-01T04:55:56+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T04:55:56+00:00 INFO (6): deliveryMessage
+2021-07-01T04:55:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T04:55:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T04:55:56+00:00 INFO (6): deliveryDate
+2021-07-01T04:55:56+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T04:55:56+00:00 INFO (6): deliveryMessage
+2021-07-01T04:55:56+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T04:55:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T04:55:56+00:00 INFO (6): deliveryDate
+2021-07-01T04:55:56+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T04:55:56+00:00 INFO (6): deliveryMessage
+2021-07-01T04:55:56+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T04:55:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T04:55:56+00:00 INFO (6): deliveryDate
+2021-07-01T04:55:56+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T04:55:56+00:00 INFO (6): deliveryMessage
+2021-07-01T04:55:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T04:55:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T04:55:56+00:00 INFO (6): deliveryDate
+2021-07-01T04:55:56+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T04:55:56+00:00 INFO (6): deliveryMessage
+2021-07-01T04:55:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T04:55:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T04:55:56+00:00 INFO (6): deliveryDate
+2021-07-01T04:55:56+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T04:55:56+00:00 INFO (6): deliveryMessage
+2021-07-01T04:55:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T07:14:52+00:00 INFO (6): 1
+2021-07-01T07:14:52+00:00 INFO (6): in if loop
+2021-07-01T07:14:52+00:00 INFO (6): RatesRequest
+2021-07-01T07:14:52+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:14:52+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 56.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 56.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 4.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:14:54+00:00 INFO (6): serviceName
+2021-07-01T07:14:54+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T07:14:54+00:00 INFO (6): 75.2
+2021-07-01T07:14:54+00:00 INFO (6): serviceName
+2021-07-01T07:14:54+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T07:14:54+00:00 INFO (6): 19.54
+2021-07-01T07:14:54+00:00 INFO (6): serviceName
+2021-07-01T07:14:54+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:14:54+00:00 INFO (6): 9.57
+2021-07-01T07:14:54+00:00 INFO (6): serviceName
+2021-07-01T07:14:54+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T07:14:54+00:00 INFO (6): 33.19
+2021-07-01T07:14:54+00:00 INFO (6): serviceName
+2021-07-01T07:14:54+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T07:14:54+00:00 INFO (6): 15.83
+2021-07-01T07:14:54+00:00 INFO (6): serviceName
+2021-07-01T07:14:54+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T07:14:54+00:00 INFO (6): 14.13
+2021-07-01T07:14:54+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 24.425,
+  'FEDEX_2_DAY_SAT' => 41.4875,
+  'FIRST_OVERNIGHT' => 94.0,
+)
+2021-07-01T07:14:54+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T07:14:54+00:00 INFO (6): currentdatetime:
+2021-07-01T07:14:54+00:00 INFO (6): 2021-07-01 00:14:54
+2021-07-01T07:14:54+00:00 INFO (6): Thu
+2021-07-01T07:14:54+00:00 INFO (6): in thursday condition
+2021-07-01T07:14:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:14:54+00:00 INFO (6): deliveryDate
+2021-07-01T07:14:54+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T07:14:54+00:00 INFO (6): deliveryMessage
+2021-07-01T07:14:54+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T07:14:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:14:54+00:00 INFO (6): deliveryDate
+2021-07-01T07:14:54+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T07:14:54+00:00 INFO (6): deliveryMessage
+2021-07-01T07:14:54+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T07:14:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:14:54+00:00 INFO (6): deliveryDate
+2021-07-01T07:14:54+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T07:14:54+00:00 INFO (6): deliveryMessage
+2021-07-01T07:14:54+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T07:14:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:14:54+00:00 INFO (6): deliveryDate
+2021-07-01T07:14:54+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:14:54+00:00 INFO (6): deliveryMessage
+2021-07-01T07:14:54+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:14:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:14:54+00:00 INFO (6): deliveryDate
+2021-07-01T07:14:54+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:14:54+00:00 INFO (6): deliveryMessage
+2021-07-01T07:14:54+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:14:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:14:54+00:00 INFO (6): deliveryDate
+2021-07-01T07:14:54+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T07:14:54+00:00 INFO (6): deliveryMessage
+2021-07-01T07:14:54+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T07:17:12+00:00 INFO (6): 1
+2021-07-01T07:17:12+00:00 INFO (6): in if loop
+2021-07-01T07:17:12+00:00 INFO (6): RatesRequest
+2021-07-01T07:17:12+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:17:12+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 30.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 30.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:17:13+00:00 INFO (6): serviceName
+2021-07-01T07:17:13+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T07:17:13+00:00 INFO (6): 68.55
+2021-07-01T07:17:13+00:00 INFO (6): serviceName
+2021-07-01T07:17:13+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T07:17:13+00:00 INFO (6): 19.54
+2021-07-01T07:17:13+00:00 INFO (6): serviceName
+2021-07-01T07:17:13+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:17:13+00:00 INFO (6): 9.57
+2021-07-01T07:17:13+00:00 INFO (6): serviceName
+2021-07-01T07:17:13+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T07:17:13+00:00 INFO (6): 33.19
+2021-07-01T07:17:13+00:00 INFO (6): serviceName
+2021-07-01T07:17:13+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T07:17:13+00:00 INFO (6): 15.83
+2021-07-01T07:17:13+00:00 INFO (6): serviceName
+2021-07-01T07:17:13+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T07:17:13+00:00 INFO (6): 14.13
+2021-07-01T07:17:13+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 24.425,
+  'FEDEX_2_DAY_SAT' => 41.4875,
+  'FIRST_OVERNIGHT' => 85.6875,
+)
+2021-07-01T07:17:13+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T07:17:13+00:00 INFO (6): currentdatetime:
+2021-07-01T07:17:13+00:00 INFO (6): 2021-07-01 00:17:13
+2021-07-01T07:17:13+00:00 INFO (6): Thu
+2021-07-01T07:17:13+00:00 INFO (6): in thursday condition
+2021-07-01T07:17:13+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:17:13+00:00 INFO (6): deliveryDate
+2021-07-01T07:17:13+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T07:17:13+00:00 INFO (6): deliveryMessage
+2021-07-01T07:17:13+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T07:17:13+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:17:13+00:00 INFO (6): deliveryDate
+2021-07-01T07:17:13+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T07:17:13+00:00 INFO (6): deliveryMessage
+2021-07-01T07:17:13+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T07:17:13+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:17:13+00:00 INFO (6): deliveryDate
+2021-07-01T07:17:13+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T07:17:13+00:00 INFO (6): deliveryMessage
+2021-07-01T07:17:13+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T07:17:13+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:17:13+00:00 INFO (6): deliveryDate
+2021-07-01T07:17:13+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:17:13+00:00 INFO (6): deliveryMessage
+2021-07-01T07:17:13+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:17:13+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:17:13+00:00 INFO (6): deliveryDate
+2021-07-01T07:17:13+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:17:13+00:00 INFO (6): deliveryMessage
+2021-07-01T07:17:13+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:17:13+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:17:13+00:00 INFO (6): deliveryDate
+2021-07-01T07:17:13+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T07:17:13+00:00 INFO (6): deliveryMessage
+2021-07-01T07:17:13+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T07:34:22+00:00 INFO (6): 1
+2021-07-01T07:34:22+00:00 INFO (6): in if loop
+2021-07-01T07:34:22+00:00 INFO (6): RatesRequest
+2021-07-01T07:34:22+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:34:22+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 30.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => 'J5Z 1R6',
+        'CountryCode' => 'CA',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 30.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:34:22+00:00 INFO (6): serviceName
+2021-07-01T07:34:22+00:00 INFO (6): INTERNATIONAL_PRIORITY
+2021-07-01T07:34:22+00:00 INFO (6): 61.19
+2021-07-01T07:34:22+00:00 INFO (6): serviceName
+2021-07-01T07:34:22+00:00 INFO (6): INTERNATIONAL_ECONOMY
+2021-07-01T07:34:22+00:00 INFO (6): 56.52
+2021-07-01T07:34:22+00:00 INFO (6): serviceName
+2021-07-01T07:34:22+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:34:22+00:00 INFO (6): 24.7
+2021-07-01T07:34:22+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 30.875,
+  'INTERNATIONAL_ECONOMY' => 70.65,
+  'INTERNATIONAL_PRIORITY' => 76.4875,
+)
+2021-07-01T07:34:22+00:00 INFO (6): array (
+  'INTERNATIONAL_PRIORITY' => '2021-07-02T17:00:00',
+  'INTERNATIONAL_ECONOMY' => '2021-07-05T17:00:00',
+  'FEDEX_GROUND' => '2021-07-09T23:59:00',
+)
+2021-07-01T07:34:22+00:00 INFO (6): currentdatetime:
+2021-07-01T07:34:22+00:00 INFO (6): 2021-07-01 00:34:22
+2021-07-01T07:34:22+00:00 INFO (6): Thu
+2021-07-01T07:34:22+00:00 INFO (6): in thursday condition
+2021-07-01T07:34:22+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:34:22+00:00 INFO (6): deliveryDate
+2021-07-01T07:34:22+00:00 INFO (6): 2021-07-09T23:59:00
+2021-07-01T07:34:22+00:00 INFO (6): deliveryMessage
+2021-07-01T07:34:22+00:00 INFO (6): Estimated delivery by 9th July 2021 11:59 P.M.
+2021-07-01T07:34:22+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:34:22+00:00 INFO (6): deliveryDate
+2021-07-01T07:34:22+00:00 INFO (6): 2021-07-05T17:00:00
+2021-07-01T07:34:22+00:00 INFO (6): deliveryMessage
+2021-07-01T07:34:22+00:00 INFO (6): Estimated delivery by 5th July 2021 5:00 P.M.
+2021-07-01T07:34:22+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:34:22+00:00 INFO (6): deliveryDate
+2021-07-01T07:34:22+00:00 INFO (6): 2021-07-02T17:00:00
+2021-07-01T07:34:22+00:00 INFO (6): deliveryMessage
+2021-07-01T07:34:22+00:00 INFO (6): Estimated delivery by 2nd July 2021 5:00 P.M.
+2021-07-01T07:34:37+00:00 INFO (6): 1
+2021-07-01T07:34:37+00:00 INFO (6): in if loop
+2021-07-01T07:34:37+00:00 INFO (6): RatesRequest
+2021-07-01T07:34:37+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:34:37+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 30.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => 'J5Z 1R6',
+        'CountryCode' => 'CA',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 30.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:34:37+00:00 INFO (6): serviceName
+2021-07-01T07:34:37+00:00 INFO (6): INTERNATIONAL_PRIORITY
+2021-07-01T07:34:37+00:00 INFO (6): 61.19
+2021-07-01T07:34:37+00:00 INFO (6): serviceName
+2021-07-01T07:34:37+00:00 INFO (6): INTERNATIONAL_ECONOMY
+2021-07-01T07:34:37+00:00 INFO (6): 56.52
+2021-07-01T07:34:37+00:00 INFO (6): serviceName
+2021-07-01T07:34:37+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:34:37+00:00 INFO (6): 24.7
+2021-07-01T07:34:37+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 30.875,
+  'INTERNATIONAL_ECONOMY' => 70.65,
+  'INTERNATIONAL_PRIORITY' => 76.4875,
+)
+2021-07-01T07:34:37+00:00 INFO (6): array (
+  'INTERNATIONAL_PRIORITY' => '2021-07-02T17:00:00',
+  'INTERNATIONAL_ECONOMY' => '2021-07-05T17:00:00',
+  'FEDEX_GROUND' => '2021-07-09T23:59:00',
+)
+2021-07-01T07:34:37+00:00 INFO (6): currentdatetime:
+2021-07-01T07:34:37+00:00 INFO (6): 2021-07-01 00:34:37
+2021-07-01T07:34:37+00:00 INFO (6): Thu
+2021-07-01T07:34:37+00:00 INFO (6): in thursday condition
+2021-07-01T07:34:37+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:34:37+00:00 INFO (6): deliveryDate
+2021-07-01T07:34:37+00:00 INFO (6): 2021-07-09T23:59:00
+2021-07-01T07:34:37+00:00 INFO (6): deliveryMessage
+2021-07-01T07:34:37+00:00 INFO (6): Estimated delivery by 9th July 2021 11:59 P.M.
+2021-07-01T07:34:37+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:34:37+00:00 INFO (6): deliveryDate
+2021-07-01T07:34:37+00:00 INFO (6): 2021-07-05T17:00:00
+2021-07-01T07:34:37+00:00 INFO (6): deliveryMessage
+2021-07-01T07:34:37+00:00 INFO (6): Estimated delivery by 5th July 2021 5:00 P.M.
+2021-07-01T07:34:37+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:34:37+00:00 INFO (6): deliveryDate
+2021-07-01T07:34:37+00:00 INFO (6): 2021-07-02T17:00:00
+2021-07-01T07:34:37+00:00 INFO (6): deliveryMessage
+2021-07-01T07:34:37+00:00 INFO (6): Estimated delivery by 2nd July 2021 5:00 P.M.
+2021-07-01T07:35:09+00:00 INFO (6): 1
+2021-07-01T07:35:09+00:00 INFO (6): in if loop
+2021-07-01T07:35:09+00:00 INFO (6): RatesRequest
+2021-07-01T07:35:09+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:35:09+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13350.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => 'J5Z 1R6',
+        'CountryCode' => 'CA',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13350.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 27.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:35:10+00:00 INFO (6): serviceName
+2021-07-01T07:35:10+00:00 INFO (6): INTERNATIONAL_PRIORITY
+2021-07-01T07:35:10+00:00 INFO (6): 312.27
+2021-07-01T07:35:10+00:00 INFO (6): serviceName
+2021-07-01T07:35:10+00:00 INFO (6): INTERNATIONAL_ECONOMY
+2021-07-01T07:35:10+00:00 INFO (6): 287.7
+2021-07-01T07:35:10+00:00 INFO (6): serviceName
+2021-07-01T07:35:10+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:35:10+00:00 INFO (6): 208.91
+2021-07-01T07:35:10+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 261.1375,
+  'INTERNATIONAL_ECONOMY' => 359.625,
+  'INTERNATIONAL_PRIORITY' => 390.3375,
+)
+2021-07-01T07:35:10+00:00 INFO (6): array (
+  'INTERNATIONAL_PRIORITY' => '2021-07-02T17:00:00',
+  'INTERNATIONAL_ECONOMY' => '2021-07-05T17:00:00',
+  'FEDEX_GROUND' => '2021-07-09T23:59:00',
+)
+2021-07-01T07:35:10+00:00 INFO (6): currentdatetime:
+2021-07-01T07:35:10+00:00 INFO (6): 2021-07-01 00:35:10
+2021-07-01T07:35:10+00:00 INFO (6): Thu
+2021-07-01T07:35:10+00:00 INFO (6): in thursday condition
+2021-07-01T07:35:10+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:10+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:10+00:00 INFO (6): 2021-07-09T23:59:00
+2021-07-01T07:35:10+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:10+00:00 INFO (6): Estimated delivery by 9th July 2021 11:59 P.M.
+2021-07-01T07:35:10+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:10+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:10+00:00 INFO (6): 2021-07-05T17:00:00
+2021-07-01T07:35:10+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:10+00:00 INFO (6): Estimated delivery by 5th July 2021 5:00 P.M.
+2021-07-01T07:35:10+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:10+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:10+00:00 INFO (6): 2021-07-02T17:00:00
+2021-07-01T07:35:10+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:10+00:00 INFO (6): Estimated delivery by 2nd July 2021 5:00 P.M.
+2021-07-01T07:35:30+00:00 INFO (6): 1
+2021-07-01T07:35:30+00:00 INFO (6): in if loop
+2021-07-01T07:35:30+00:00 INFO (6): RatesRequest
+2021-07-01T07:35:30+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:35:30+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13350.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13350.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 27.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:35:31+00:00 INFO (6): serviceName
+2021-07-01T07:35:31+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T07:35:31+00:00 INFO (6): 272.71
+2021-07-01T07:35:31+00:00 INFO (6): serviceName
+2021-07-01T07:35:31+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T07:35:31+00:00 INFO (6): 186.39
+2021-07-01T07:35:31+00:00 INFO (6): serviceName
+2021-07-01T07:35:31+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:35:31+00:00 INFO (6): 166.66
+2021-07-01T07:35:31+00:00 INFO (6): serviceName
+2021-07-01T07:35:31+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T07:35:31+00:00 INFO (6): 193.06
+2021-07-01T07:35:31+00:00 INFO (6): serviceName
+2021-07-01T07:35:31+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T07:35:31+00:00 INFO (6): 175.7
+2021-07-01T07:35:31+00:00 INFO (6): serviceName
+2021-07-01T07:35:31+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T07:35:31+00:00 INFO (6): 174.23
+2021-07-01T07:35:31+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 208.325,
+  'FEDEX_EXPRESS_SAVER' => 217.7875,
+  'FEDEX_2_DAY' => 219.625,
+  'PRIORITY_OVERNIGHT' => 232.9875,
+  'FEDEX_2_DAY_SAT' => 241.325,
+  'FIRST_OVERNIGHT' => 340.8875,
+)
+2021-07-01T07:35:31+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T07:35:31+00:00 INFO (6): currentdatetime:
+2021-07-01T07:35:31+00:00 INFO (6): 2021-07-01 00:35:31
+2021-07-01T07:35:31+00:00 INFO (6): Thu
+2021-07-01T07:35:31+00:00 INFO (6): in thursday condition
+2021-07-01T07:35:31+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:31+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:31+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T07:35:31+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:31+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T07:35:31+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:31+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:31+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T07:35:31+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:31+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T07:35:31+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:31+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:31+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T07:35:31+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:31+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T07:35:31+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:31+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:31+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:35:31+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:31+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:35:31+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:31+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:31+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:35:31+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:31+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:35:31+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:31+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:31+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T07:35:31+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:31+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T07:35:58+00:00 INFO (6): 1
+2021-07-01T07:35:58+00:00 INFO (6): in if loop
+2021-07-01T07:35:58+00:00 INFO (6): RatesRequest
+2021-07-01T07:35:58+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:35:58+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13350.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => 'J5Z 1R6',
+        'CountryCode' => 'CA',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13350.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 27.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:35:59+00:00 INFO (6): serviceName
+2021-07-01T07:35:59+00:00 INFO (6): INTERNATIONAL_PRIORITY
+2021-07-01T07:35:59+00:00 INFO (6): 312.27
+2021-07-01T07:35:59+00:00 INFO (6): serviceName
+2021-07-01T07:35:59+00:00 INFO (6): INTERNATIONAL_ECONOMY
+2021-07-01T07:35:59+00:00 INFO (6): 287.7
+2021-07-01T07:35:59+00:00 INFO (6): serviceName
+2021-07-01T07:35:59+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:35:59+00:00 INFO (6): 208.91
+2021-07-01T07:35:59+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 261.1375,
+  'INTERNATIONAL_ECONOMY' => 359.625,
+  'INTERNATIONAL_PRIORITY' => 390.3375,
+)
+2021-07-01T07:35:59+00:00 INFO (6): array (
+  'INTERNATIONAL_PRIORITY' => '2021-07-02T17:00:00',
+  'INTERNATIONAL_ECONOMY' => '2021-07-05T17:00:00',
+  'FEDEX_GROUND' => '2021-07-09T23:59:00',
+)
+2021-07-01T07:35:59+00:00 INFO (6): currentdatetime:
+2021-07-01T07:35:59+00:00 INFO (6): 2021-07-01 00:35:59
+2021-07-01T07:35:59+00:00 INFO (6): Thu
+2021-07-01T07:35:59+00:00 INFO (6): in thursday condition
+2021-07-01T07:35:59+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:59+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:59+00:00 INFO (6): 2021-07-09T23:59:00
+2021-07-01T07:35:59+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:59+00:00 INFO (6): Estimated delivery by 9th July 2021 11:59 P.M.
+2021-07-01T07:35:59+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:59+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:59+00:00 INFO (6): 2021-07-05T17:00:00
+2021-07-01T07:35:59+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:59+00:00 INFO (6): Estimated delivery by 5th July 2021 5:00 P.M.
+2021-07-01T07:35:59+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:35:59+00:00 INFO (6): deliveryDate
+2021-07-01T07:35:59+00:00 INFO (6): 2021-07-02T17:00:00
+2021-07-01T07:35:59+00:00 INFO (6): deliveryMessage
+2021-07-01T07:35:59+00:00 INFO (6): Estimated delivery by 2nd July 2021 5:00 P.M.
+2021-07-01T07:36:36+00:00 INFO (6): 1
+2021-07-01T07:36:36+00:00 INFO (6): in if loop
+2021-07-01T07:36:36+00:00 INFO (6): RatesRequest
+2021-07-01T07:36:36+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:36:36+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13320.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13320.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 25.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:36:38+00:00 INFO (6): serviceName
+2021-07-01T07:36:38+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T07:36:38+00:00 INFO (6): 267.33
+2021-07-01T07:36:38+00:00 INFO (6): serviceName
+2021-07-01T07:36:38+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T07:36:38+00:00 INFO (6): 184.35
+2021-07-01T07:36:38+00:00 INFO (6): serviceName
+2021-07-01T07:36:38+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:36:38+00:00 INFO (6): 165.8
+2021-07-01T07:36:38+00:00 INFO (6): serviceName
+2021-07-01T07:36:38+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T07:36:38+00:00 INFO (6): 191.79
+2021-07-01T07:36:38+00:00 INFO (6): serviceName
+2021-07-01T07:36:38+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T07:36:38+00:00 INFO (6): 174.43
+2021-07-01T07:36:38+00:00 INFO (6): serviceName
+2021-07-01T07:36:38+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T07:36:38+00:00 INFO (6): 171.94
+2021-07-01T07:36:38+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 207.25,
+  'FEDEX_EXPRESS_SAVER' => 214.925,
+  'FEDEX_2_DAY' => 218.0375,
+  'PRIORITY_OVERNIGHT' => 230.4375,
+  'FEDEX_2_DAY_SAT' => 239.7375,
+  'FIRST_OVERNIGHT' => 334.1625,
+)
+2021-07-01T07:36:38+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T07:36:38+00:00 INFO (6): currentdatetime:
+2021-07-01T07:36:38+00:00 INFO (6): 2021-07-01 00:36:38
+2021-07-01T07:36:38+00:00 INFO (6): Thu
+2021-07-01T07:36:38+00:00 INFO (6): in thursday condition
+2021-07-01T07:36:38+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:38+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:38+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T07:36:38+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:38+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T07:36:38+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:38+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:38+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T07:36:38+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:38+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T07:36:38+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:38+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:38+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T07:36:38+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:38+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T07:36:38+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:38+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:38+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:36:38+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:38+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:36:38+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:38+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:38+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:36:38+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:38+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:36:38+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:38+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:38+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T07:36:38+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:38+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T07:36:52+00:00 INFO (6): 1
+2021-07-01T07:36:52+00:00 INFO (6): in if loop
+2021-07-01T07:36:52+00:00 INFO (6): RatesRequest
+2021-07-01T07:36:52+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:36:52+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13320.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13320.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 25.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:36:53+00:00 INFO (6): serviceName
+2021-07-01T07:36:53+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T07:36:53+00:00 INFO (6): 267.33
+2021-07-01T07:36:53+00:00 INFO (6): serviceName
+2021-07-01T07:36:53+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T07:36:53+00:00 INFO (6): 184.35
+2021-07-01T07:36:53+00:00 INFO (6): serviceName
+2021-07-01T07:36:53+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:36:53+00:00 INFO (6): 165.8
+2021-07-01T07:36:53+00:00 INFO (6): serviceName
+2021-07-01T07:36:53+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T07:36:53+00:00 INFO (6): 191.79
+2021-07-01T07:36:53+00:00 INFO (6): serviceName
+2021-07-01T07:36:53+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T07:36:53+00:00 INFO (6): 174.43
+2021-07-01T07:36:53+00:00 INFO (6): serviceName
+2021-07-01T07:36:53+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T07:36:53+00:00 INFO (6): 171.94
+2021-07-01T07:36:53+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 207.25,
+  'FEDEX_EXPRESS_SAVER' => 214.925,
+  'FEDEX_2_DAY' => 218.0375,
+  'PRIORITY_OVERNIGHT' => 230.4375,
+  'FEDEX_2_DAY_SAT' => 239.7375,
+  'FIRST_OVERNIGHT' => 334.1625,
+)
+2021-07-01T07:36:53+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T07:36:53+00:00 INFO (6): currentdatetime:
+2021-07-01T07:36:53+00:00 INFO (6): 2021-07-01 00:36:53
+2021-07-01T07:36:53+00:00 INFO (6): Thu
+2021-07-01T07:36:53+00:00 INFO (6): in thursday condition
+2021-07-01T07:36:53+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:53+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:53+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T07:36:53+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:53+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T07:36:53+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:53+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:53+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T07:36:53+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:53+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T07:36:53+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:53+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:53+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T07:36:53+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:53+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T07:36:53+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:53+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:53+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:36:53+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:53+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:36:53+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:53+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:53+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:36:53+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:53+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:36:53+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:53+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:53+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T07:36:53+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:53+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T07:36:55+00:00 INFO (6): 1
+2021-07-01T07:36:55+00:00 INFO (6): in if loop
+2021-07-01T07:36:55+00:00 INFO (6): RatesRequest
+2021-07-01T07:36:55+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:36:55+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13320.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13320.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 25.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:36:56+00:00 INFO (6): serviceName
+2021-07-01T07:36:56+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T07:36:56+00:00 INFO (6): 267.33
+2021-07-01T07:36:56+00:00 INFO (6): serviceName
+2021-07-01T07:36:56+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T07:36:56+00:00 INFO (6): 184.35
+2021-07-01T07:36:56+00:00 INFO (6): serviceName
+2021-07-01T07:36:56+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:36:56+00:00 INFO (6): 165.8
+2021-07-01T07:36:56+00:00 INFO (6): serviceName
+2021-07-01T07:36:56+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T07:36:56+00:00 INFO (6): 191.79
+2021-07-01T07:36:56+00:00 INFO (6): serviceName
+2021-07-01T07:36:56+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T07:36:56+00:00 INFO (6): 174.43
+2021-07-01T07:36:56+00:00 INFO (6): serviceName
+2021-07-01T07:36:56+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T07:36:56+00:00 INFO (6): 171.94
+2021-07-01T07:36:56+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 207.25,
+  'FEDEX_EXPRESS_SAVER' => 214.925,
+  'FEDEX_2_DAY' => 218.0375,
+  'PRIORITY_OVERNIGHT' => 230.4375,
+  'FEDEX_2_DAY_SAT' => 239.7375,
+  'FIRST_OVERNIGHT' => 334.1625,
+)
+2021-07-01T07:36:56+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T07:36:56+00:00 INFO (6): currentdatetime:
+2021-07-01T07:36:56+00:00 INFO (6): 2021-07-01 00:36:56
+2021-07-01T07:36:56+00:00 INFO (6): Thu
+2021-07-01T07:36:56+00:00 INFO (6): in thursday condition
+2021-07-01T07:36:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:56+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:56+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T07:36:56+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T07:36:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:56+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:56+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T07:36:56+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:56+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T07:36:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:56+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:56+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T07:36:56+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:56+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T07:36:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:56+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:56+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:36:56+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:36:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:56+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:56+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T07:36:56+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T07:36:56+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:36:56+00:00 INFO (6): deliveryDate
+2021-07-01T07:36:56+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T07:36:56+00:00 INFO (6): deliveryMessage
+2021-07-01T07:36:56+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T07:37:13+00:00 INFO (6): 1
+2021-07-01T07:37:13+00:00 INFO (6): in if loop
+2021-07-01T07:37:13+00:00 INFO (6): RatesRequest
+2021-07-01T07:37:13+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T07:37:13+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13320.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => 'J5Z 1R6',
+        'CountryCode' => 'CA',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13320.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 25.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T07:37:14+00:00 INFO (6): serviceName
+2021-07-01T07:37:14+00:00 INFO (6): INTERNATIONAL_PRIORITY
+2021-07-01T07:37:14+00:00 INFO (6): 269.54
+2021-07-01T07:37:14+00:00 INFO (6): serviceName
+2021-07-01T07:37:14+00:00 INFO (6): INTERNATIONAL_ECONOMY
+2021-07-01T07:37:14+00:00 INFO (6): 266.19
+2021-07-01T07:37:14+00:00 INFO (6): serviceName
+2021-07-01T07:37:14+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T07:37:14+00:00 INFO (6): 206.17
+2021-07-01T07:37:14+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 257.7125,
+  'INTERNATIONAL_ECONOMY' => 332.7375,
+  'INTERNATIONAL_PRIORITY' => 336.925,
+)
+2021-07-01T07:37:14+00:00 INFO (6): array (
+  'INTERNATIONAL_PRIORITY' => '2021-07-02T17:00:00',
+  'INTERNATIONAL_ECONOMY' => '2021-07-05T17:00:00',
+  'FEDEX_GROUND' => '2021-07-09T23:59:00',
+)
+2021-07-01T07:37:14+00:00 INFO (6): currentdatetime:
+2021-07-01T07:37:14+00:00 INFO (6): 2021-07-01 00:37:14
+2021-07-01T07:37:14+00:00 INFO (6): Thu
+2021-07-01T07:37:14+00:00 INFO (6): in thursday condition
+2021-07-01T07:37:14+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:37:14+00:00 INFO (6): deliveryDate
+2021-07-01T07:37:14+00:00 INFO (6): 2021-07-09T23:59:00
+2021-07-01T07:37:14+00:00 INFO (6): deliveryMessage
+2021-07-01T07:37:14+00:00 INFO (6): Estimated delivery by 9th July 2021 11:59 P.M.
+2021-07-01T07:37:14+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:37:14+00:00 INFO (6): deliveryDate
+2021-07-01T07:37:14+00:00 INFO (6): 2021-07-05T17:00:00
+2021-07-01T07:37:14+00:00 INFO (6): deliveryMessage
+2021-07-01T07:37:14+00:00 INFO (6): Estimated delivery by 5th July 2021 5:00 P.M.
+2021-07-01T07:37:14+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T07:37:14+00:00 INFO (6): deliveryDate
+2021-07-01T07:37:14+00:00 INFO (6): 2021-07-02T17:00:00
+2021-07-01T07:37:14+00:00 INFO (6): deliveryMessage
+2021-07-01T07:37:14+00:00 INFO (6): Estimated delivery by 2nd July 2021 5:00 P.M.
+2021-07-01T16:23:07+00:00 INFO (6): 1
+2021-07-01T16:23:07+00:00 INFO (6): in if loop
+2021-07-01T16:23:07+00:00 INFO (6): RatesRequest
+2021-07-01T16:23:07+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T16:23:07+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13065.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91740',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13065.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 25.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T16:23:09+00:00 INFO (6): serviceName
+2021-07-01T16:23:09+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T16:23:09+00:00 INFO (6): 263.88
+2021-07-01T16:23:09+00:00 INFO (6): serviceName
+2021-07-01T16:23:09+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T16:23:09+00:00 INFO (6): 180.9
+2021-07-01T16:23:09+00:00 INFO (6): serviceName
+2021-07-01T16:23:09+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T16:23:09+00:00 INFO (6): 162.35
+2021-07-01T16:23:09+00:00 INFO (6): serviceName
+2021-07-01T16:23:09+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T16:23:09+00:00 INFO (6): 188.34
+2021-07-01T16:23:09+00:00 INFO (6): serviceName
+2021-07-01T16:23:09+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T16:23:09+00:00 INFO (6): 170.98
+2021-07-01T16:23:09+00:00 INFO (6): serviceName
+2021-07-01T16:23:09+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T16:23:09+00:00 INFO (6): 168.49
+2021-07-01T16:23:09+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 202.9375,
+  'FEDEX_EXPRESS_SAVER' => 210.6125,
+  'FEDEX_2_DAY' => 213.725,
+  'PRIORITY_OVERNIGHT' => 226.125,
+  'FEDEX_2_DAY_SAT' => 235.425,
+  'FIRST_OVERNIGHT' => 329.85,
+)
+2021-07-01T16:23:09+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T16:23:09+00:00 INFO (6): currentdatetime:
+2021-07-01T16:23:09+00:00 INFO (6): 2021-07-01 09:23:09
+2021-07-01T16:23:09+00:00 INFO (6): Thu
+2021-07-01T16:23:09+00:00 INFO (6): in thursday condition
+2021-07-01T16:23:09+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:09+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:09+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T16:23:09+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:09+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T16:23:09+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:09+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:09+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T16:23:09+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:09+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T16:23:09+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:09+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:09+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T16:23:09+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:09+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T16:23:09+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:09+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:09+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T16:23:09+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:09+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T16:23:09+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:09+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:09+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T16:23:09+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:09+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T16:23:09+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:09+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:09+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T16:23:09+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:09+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T16:23:28+00:00 INFO (6): 1
+2021-07-01T16:23:28+00:00 INFO (6): in if loop
+2021-07-01T16:23:28+00:00 INFO (6): RatesRequest
+2021-07-01T16:23:28+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T16:23:28+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 13065.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91740',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 13065.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 25.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T16:23:29+00:00 INFO (6): serviceName
+2021-07-01T16:23:29+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T16:23:29+00:00 INFO (6): 263.88
+2021-07-01T16:23:29+00:00 INFO (6): serviceName
+2021-07-01T16:23:29+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T16:23:29+00:00 INFO (6): 180.9
+2021-07-01T16:23:29+00:00 INFO (6): serviceName
+2021-07-01T16:23:29+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T16:23:29+00:00 INFO (6): 162.35
+2021-07-01T16:23:29+00:00 INFO (6): serviceName
+2021-07-01T16:23:29+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T16:23:29+00:00 INFO (6): 188.34
+2021-07-01T16:23:29+00:00 INFO (6): serviceName
+2021-07-01T16:23:29+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T16:23:29+00:00 INFO (6): 170.98
+2021-07-01T16:23:29+00:00 INFO (6): serviceName
+2021-07-01T16:23:29+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T16:23:29+00:00 INFO (6): 168.49
+2021-07-01T16:23:29+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 202.9375,
+  'FEDEX_EXPRESS_SAVER' => 210.6125,
+  'FEDEX_2_DAY' => 213.725,
+  'PRIORITY_OVERNIGHT' => 226.125,
+  'FEDEX_2_DAY_SAT' => 235.425,
+  'FIRST_OVERNIGHT' => 329.85,
+)
+2021-07-01T16:23:29+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T16:23:29+00:00 INFO (6): currentdatetime:
+2021-07-01T16:23:29+00:00 INFO (6): 2021-07-01 09:23:29
+2021-07-01T16:23:29+00:00 INFO (6): Thu
+2021-07-01T16:23:29+00:00 INFO (6): in thursday condition
+2021-07-01T16:23:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:29+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:29+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T16:23:29+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:29+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T16:23:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:29+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:29+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T16:23:29+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:29+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T16:23:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:29+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:29+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T16:23:29+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:29+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T16:23:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:29+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:29+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T16:23:29+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:29+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T16:23:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:29+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:29+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T16:23:29+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:29+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T16:23:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T16:23:29+00:00 INFO (6): deliveryDate
+2021-07-01T16:23:29+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T16:23:29+00:00 INFO (6): deliveryMessage
+2021-07-01T16:23:29+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-01T20:10:01+00:00 INFO (6): 1
+2021-07-01T20:10:01+00:00 INFO (6): in if loop
+2021-07-01T20:10:01+00:00 INFO (6): RatesRequest
+2021-07-01T20:10:01+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-01T20:10:01+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 88.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91740',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 88.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 5.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-01T20:10:03+00:00 INFO (6): serviceName
+2021-07-01T20:10:03+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-01T20:10:03+00:00 INFO (6): 75.55
+2021-07-01T20:10:03+00:00 INFO (6): serviceName
+2021-07-01T20:10:03+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-01T20:10:03+00:00 INFO (6): 19.54
+2021-07-01T20:10:03+00:00 INFO (6): serviceName
+2021-07-01T20:10:03+00:00 INFO (6): FEDEX_GROUND
+2021-07-01T20:10:03+00:00 INFO (6): 9.57
+2021-07-01T20:10:03+00:00 INFO (6): serviceName
+2021-07-01T20:10:03+00:00 INFO (6): FEDEX_2_DAY_SAT
+2021-07-01T20:10:03+00:00 INFO (6): 33.19
+2021-07-01T20:10:03+00:00 INFO (6): serviceName
+2021-07-01T20:10:03+00:00 INFO (6): FEDEX_2_DAY
+2021-07-01T20:10:03+00:00 INFO (6): 15.83
+2021-07-01T20:10:03+00:00 INFO (6): serviceName
+2021-07-01T20:10:03+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-01T20:10:03+00:00 INFO (6): 14.13
+2021-07-01T20:10:03+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 24.425,
+  'FEDEX_2_DAY_SAT' => 41.4875,
+  'FIRST_OVERNIGHT' => 94.4375,
+)
+2021-07-01T20:10:03+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-02T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-02T10:30:00',
+  'STANDARD_OVERNIGHT' => '2021-07-02T16:30:00',
+  'FEDEX_GROUND' => '2021-07-02T23:59:00',
+  'FEDEX_2_DAY' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-06T10:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-07T16:30:00',
+)
+2021-07-01T20:10:03+00:00 INFO (6): currentdatetime:
+2021-07-01T20:10:03+00:00 INFO (6): 2021-07-01 13:10:03
+2021-07-01T20:10:03+00:00 INFO (6): Thu
+2021-07-01T20:10:03+00:00 INFO (6): in thursday condition
+2021-07-01T20:10:03+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T20:10:03+00:00 INFO (6): deliveryDate
+2021-07-01T20:10:03+00:00 INFO (6): 2021-07-02T23:59:00
+2021-07-01T20:10:03+00:00 INFO (6): deliveryMessage
+2021-07-01T20:10:03+00:00 INFO (6): Estimated delivery by 2nd July 2021 11:59 P.M.
+2021-07-01T20:10:03+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T20:10:03+00:00 INFO (6): deliveryDate
+2021-07-01T20:10:03+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-01T20:10:03+00:00 INFO (6): deliveryMessage
+2021-07-01T20:10:03+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-01T20:10:03+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T20:10:03+00:00 INFO (6): deliveryDate
+2021-07-01T20:10:03+00:00 INFO (6): 2021-07-06T16:30:00
+2021-07-01T20:10:03+00:00 INFO (6): deliveryMessage
+2021-07-01T20:10:03+00:00 INFO (6): Estimated delivery by 6th July 2021 4:30 P.M.
+2021-07-01T20:10:03+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T20:10:03+00:00 INFO (6): deliveryDate
+2021-07-01T20:10:03+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T20:10:03+00:00 INFO (6): deliveryMessage
+2021-07-01T20:10:03+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T20:10:03+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T20:10:03+00:00 INFO (6): deliveryDate
+2021-07-01T20:10:03+00:00 INFO (6): 2021-07-02T10:30:00
+2021-07-01T20:10:03+00:00 INFO (6): deliveryMessage
+2021-07-01T20:10:03+00:00 INFO (6): Estimated delivery by 2nd July 2021 10:30 A.M.
+2021-07-01T20:10:03+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-01T20:10:03+00:00 INFO (6): deliveryDate
+2021-07-01T20:10:03+00:00 INFO (6): 2021-07-02T08:00:00
+2021-07-01T20:10:03+00:00 INFO (6): deliveryMessage
+2021-07-01T20:10:03+00:00 INFO (6): Estimated delivery by 2nd July 2021 8:00 A.M.
+2021-07-02T00:31:27+00:00 INFO (6): 1
+2021-07-02T00:31:27+00:00 INFO (6): in if loop
+2021-07-02T00:31:27+00:00 INFO (6): RatesRequest
+2021-07-02T00:31:27+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:31:27+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91740',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:31:29+00:00 INFO (6): serviceName
+2021-07-02T00:31:29+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:31:29+00:00 INFO (6): 89.09
+2021-07-02T00:31:29+00:00 INFO (6): serviceName
+2021-07-02T00:31:29+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:31:29+00:00 INFO (6): 36.9
+2021-07-02T00:31:29+00:00 INFO (6): serviceName
+2021-07-02T00:31:29+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:31:29+00:00 INFO (6): 9.57
+2021-07-02T00:31:29+00:00 INFO (6): serviceName
+2021-07-02T00:31:29+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:31:29+00:00 INFO (6): 71.73
+2021-07-02T00:31:29+00:00 INFO (6): serviceName
+2021-07-02T00:31:29+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:31:29+00:00 INFO (6): 19.54
+2021-07-02T00:31:29+00:00 INFO (6): serviceName
+2021-07-02T00:31:29+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:31:29+00:00 INFO (6): 15.83
+2021-07-02T00:31:29+00:00 INFO (6): serviceName
+2021-07-02T00:31:29+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:31:29+00:00 INFO (6): 14.13
+2021-07-02T00:31:29+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 24.425,
+  'PRIORITY_OVERNIGHT_SAT' => 46.125,
+  'FIRST_OVERNIGHT' => 89.6625,
+  'FIRST_OVERNIGHT_SAT' => 111.3625,
+)
+2021-07-02T00:31:29+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:31:29+00:00 INFO (6): currentdatetime:
+2021-07-02T00:31:29+00:00 INFO (6): 2021-07-01 17:31:29
+2021-07-02T00:31:29+00:00 INFO (6): Thu
+2021-07-02T00:31:29+00:00 INFO (6): in thursday condition
+2021-07-02T00:31:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:29+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:29+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:31:29+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:29+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:31:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:29+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:29+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:31:29+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:29+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:31:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:29+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:29+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:31:29+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:29+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:31:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:29+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:29+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:31:29+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:29+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:31:29+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:29+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:29+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:31:29+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:29+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:31:32+00:00 INFO (6): 1
+2021-07-02T00:31:32+00:00 INFO (6): in if loop
+2021-07-02T00:31:32+00:00 INFO (6): RatesRequest
+2021-07-02T00:31:32+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:31:32+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91740',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:31:34+00:00 INFO (6): serviceName
+2021-07-02T00:31:34+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:31:34+00:00 INFO (6): 89.09
+2021-07-02T00:31:34+00:00 INFO (6): serviceName
+2021-07-02T00:31:34+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:31:34+00:00 INFO (6): 36.9
+2021-07-02T00:31:34+00:00 INFO (6): serviceName
+2021-07-02T00:31:34+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:31:34+00:00 INFO (6): 9.57
+2021-07-02T00:31:34+00:00 INFO (6): serviceName
+2021-07-02T00:31:34+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:31:34+00:00 INFO (6): 71.73
+2021-07-02T00:31:34+00:00 INFO (6): serviceName
+2021-07-02T00:31:34+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:31:34+00:00 INFO (6): 19.54
+2021-07-02T00:31:34+00:00 INFO (6): serviceName
+2021-07-02T00:31:34+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:31:34+00:00 INFO (6): 15.83
+2021-07-02T00:31:34+00:00 INFO (6): serviceName
+2021-07-02T00:31:34+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:31:34+00:00 INFO (6): 14.13
+2021-07-02T00:31:34+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 24.425,
+  'PRIORITY_OVERNIGHT_SAT' => 46.125,
+  'FIRST_OVERNIGHT' => 89.6625,
+  'FIRST_OVERNIGHT_SAT' => 111.3625,
+)
+2021-07-02T00:31:34+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:31:34+00:00 INFO (6): currentdatetime:
+2021-07-02T00:31:34+00:00 INFO (6): 2021-07-01 17:31:34
+2021-07-02T00:31:34+00:00 INFO (6): Thu
+2021-07-02T00:31:34+00:00 INFO (6): in thursday condition
+2021-07-02T00:31:34+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:34+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:34+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:31:34+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:34+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:31:34+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:34+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:34+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:31:34+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:34+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:31:34+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:34+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:34+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:31:34+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:34+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:31:34+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:34+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:34+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:31:34+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:34+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:31:34+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:31:34+00:00 INFO (6): deliveryDate
+2021-07-02T00:31:34+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:31:34+00:00 INFO (6): deliveryMessage
+2021-07-02T00:31:34+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:35:25+00:00 INFO (6): 1
+2021-07-02T00:35:25+00:00 INFO (6): in if loop
+2021-07-02T00:35:25+00:00 INFO (6): RatesRequest
+2021-07-02T00:35:25+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:35:25+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89119',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:35:27+00:00 INFO (6): serviceName
+2021-07-02T00:35:27+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:35:27+00:00 INFO (6): 107.91
+2021-07-02T00:35:27+00:00 INFO (6): serviceName
+2021-07-02T00:35:27+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:35:27+00:00 INFO (6): 38.98
+2021-07-02T00:35:27+00:00 INFO (6): serviceName
+2021-07-02T00:35:27+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:35:27+00:00 INFO (6): 9.57
+2021-07-02T00:35:27+00:00 INFO (6): serviceName
+2021-07-02T00:35:27+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:35:27+00:00 INFO (6): 90.55
+2021-07-02T00:35:27+00:00 INFO (6): serviceName
+2021-07-02T00:35:27+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:35:27+00:00 INFO (6): 21.62
+2021-07-02T00:35:27+00:00 INFO (6): serviceName
+2021-07-02T00:35:27+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:35:27+00:00 INFO (6): 15.83
+2021-07-02T00:35:27+00:00 INFO (6): serviceName
+2021-07-02T00:35:27+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:35:27+00:00 INFO (6): 14.13
+2021-07-02T00:35:27+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 27.025,
+  'PRIORITY_OVERNIGHT_SAT' => 48.725,
+  'FIRST_OVERNIGHT' => 113.1875,
+  'FIRST_OVERNIGHT_SAT' => 134.8875,
+)
+2021-07-02T00:35:27+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:35:27+00:00 INFO (6): currentdatetime:
+2021-07-02T00:35:27+00:00 INFO (6): 2021-07-01 17:35:27
+2021-07-02T00:35:27+00:00 INFO (6): Thu
+2021-07-02T00:35:27+00:00 INFO (6): in thursday condition
+2021-07-02T00:35:27+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:27+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:27+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:35:27+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:27+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:35:27+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:27+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:27+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:35:27+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:27+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:35:27+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:27+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:27+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:35:27+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:27+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:35:27+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:27+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:27+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:35:27+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:27+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:35:27+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:27+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:27+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:35:27+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:27+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:35:43+00:00 INFO (6): 1
+2021-07-02T00:35:43+00:00 INFO (6): in if loop
+2021-07-02T00:35:43+00:00 INFO (6): RatesRequest
+2021-07-02T00:35:43+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:35:43+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91740',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:35:45+00:00 INFO (6): serviceName
+2021-07-02T00:35:45+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:35:45+00:00 INFO (6): 89.09
+2021-07-02T00:35:45+00:00 INFO (6): serviceName
+2021-07-02T00:35:45+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:35:45+00:00 INFO (6): 36.9
+2021-07-02T00:35:45+00:00 INFO (6): serviceName
+2021-07-02T00:35:45+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:35:45+00:00 INFO (6): 9.57
+2021-07-02T00:35:45+00:00 INFO (6): serviceName
+2021-07-02T00:35:45+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:35:45+00:00 INFO (6): 71.73
+2021-07-02T00:35:45+00:00 INFO (6): serviceName
+2021-07-02T00:35:45+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:35:45+00:00 INFO (6): 19.54
+2021-07-02T00:35:45+00:00 INFO (6): serviceName
+2021-07-02T00:35:45+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:35:45+00:00 INFO (6): 15.83
+2021-07-02T00:35:45+00:00 INFO (6): serviceName
+2021-07-02T00:35:45+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:35:45+00:00 INFO (6): 14.13
+2021-07-02T00:35:45+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 24.425,
+  'PRIORITY_OVERNIGHT_SAT' => 46.125,
+  'FIRST_OVERNIGHT' => 89.6625,
+  'FIRST_OVERNIGHT_SAT' => 111.3625,
+)
+2021-07-02T00:35:45+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:35:45+00:00 INFO (6): currentdatetime:
+2021-07-02T00:35:45+00:00 INFO (6): 2021-07-01 17:35:45
+2021-07-02T00:35:45+00:00 INFO (6): Thu
+2021-07-02T00:35:45+00:00 INFO (6): in thursday condition
+2021-07-02T00:35:45+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:45+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:45+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:35:45+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:45+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:35:45+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:45+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:45+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:35:45+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:45+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:35:45+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:45+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:45+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:35:45+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:45+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:35:45+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:45+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:45+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:35:45+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:45+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:35:45+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:45+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:45+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:35:45+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:45+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:35:51+00:00 INFO (6): 1
+2021-07-02T00:35:51+00:00 INFO (6): in if loop
+2021-07-02T00:35:51+00:00 INFO (6): RatesRequest
+2021-07-02T00:35:51+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:35:51+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89119',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:35:52+00:00 INFO (6): serviceName
+2021-07-02T00:35:52+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:35:52+00:00 INFO (6): 107.91
+2021-07-02T00:35:52+00:00 INFO (6): serviceName
+2021-07-02T00:35:52+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:35:52+00:00 INFO (6): 38.98
+2021-07-02T00:35:52+00:00 INFO (6): serviceName
+2021-07-02T00:35:52+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:35:52+00:00 INFO (6): 9.57
+2021-07-02T00:35:52+00:00 INFO (6): serviceName
+2021-07-02T00:35:52+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:35:52+00:00 INFO (6): 90.55
+2021-07-02T00:35:52+00:00 INFO (6): serviceName
+2021-07-02T00:35:52+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:35:52+00:00 INFO (6): 21.62
+2021-07-02T00:35:52+00:00 INFO (6): serviceName
+2021-07-02T00:35:52+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:35:52+00:00 INFO (6): 15.83
+2021-07-02T00:35:52+00:00 INFO (6): serviceName
+2021-07-02T00:35:52+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:35:52+00:00 INFO (6): 14.13
+2021-07-02T00:35:52+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 27.025,
+  'PRIORITY_OVERNIGHT_SAT' => 48.725,
+  'FIRST_OVERNIGHT' => 113.1875,
+  'FIRST_OVERNIGHT_SAT' => 134.8875,
+)
+2021-07-02T00:35:52+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:35:52+00:00 INFO (6): currentdatetime:
+2021-07-02T00:35:52+00:00 INFO (6): 2021-07-01 17:35:52
+2021-07-02T00:35:52+00:00 INFO (6): Thu
+2021-07-02T00:35:52+00:00 INFO (6): in thursday condition
+2021-07-02T00:35:52+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:52+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:52+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:35:52+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:52+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:35:52+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:52+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:52+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:35:52+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:52+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:35:52+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:52+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:52+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:35:52+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:52+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:35:52+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:52+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:52+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:35:52+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:52+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:35:52+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:52+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:52+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:35:52+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:52+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:35:53+00:00 INFO (6): 1
+2021-07-02T00:35:53+00:00 INFO (6): in if loop
+2021-07-02T00:35:53+00:00 INFO (6): RatesRequest
+2021-07-02T00:35:53+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:35:53+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89119',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:35:54+00:00 INFO (6): serviceName
+2021-07-02T00:35:54+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:35:54+00:00 INFO (6): 107.91
+2021-07-02T00:35:54+00:00 INFO (6): serviceName
+2021-07-02T00:35:54+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:35:54+00:00 INFO (6): 38.98
+2021-07-02T00:35:54+00:00 INFO (6): serviceName
+2021-07-02T00:35:54+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:35:54+00:00 INFO (6): 9.57
+2021-07-02T00:35:54+00:00 INFO (6): serviceName
+2021-07-02T00:35:54+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:35:54+00:00 INFO (6): 90.55
+2021-07-02T00:35:54+00:00 INFO (6): serviceName
+2021-07-02T00:35:54+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:35:54+00:00 INFO (6): 21.62
+2021-07-02T00:35:54+00:00 INFO (6): serviceName
+2021-07-02T00:35:54+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:35:54+00:00 INFO (6): 15.83
+2021-07-02T00:35:54+00:00 INFO (6): serviceName
+2021-07-02T00:35:54+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:35:54+00:00 INFO (6): 14.13
+2021-07-02T00:35:54+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 27.025,
+  'PRIORITY_OVERNIGHT_SAT' => 48.725,
+  'FIRST_OVERNIGHT' => 113.1875,
+  'FIRST_OVERNIGHT_SAT' => 134.8875,
+)
+2021-07-02T00:35:54+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:35:54+00:00 INFO (6): currentdatetime:
+2021-07-02T00:35:54+00:00 INFO (6): 2021-07-01 17:35:54
+2021-07-02T00:35:54+00:00 INFO (6): Thu
+2021-07-02T00:35:54+00:00 INFO (6): in thursday condition
+2021-07-02T00:35:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:54+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:54+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:35:54+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:54+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:35:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:54+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:54+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:35:54+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:54+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:35:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:54+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:54+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:35:54+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:54+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:35:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:54+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:54+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:35:54+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:54+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:35:54+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:54+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:54+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:35:54+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:54+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:35:57+00:00 INFO (6): 1
+2021-07-02T00:35:57+00:00 INFO (6): in if loop
+2021-07-02T00:35:57+00:00 INFO (6): RatesRequest
+2021-07-02T00:35:57+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:35:57+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89119',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:35:58+00:00 INFO (6): serviceName
+2021-07-02T00:35:58+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:35:58+00:00 INFO (6): 107.91
+2021-07-02T00:35:58+00:00 INFO (6): serviceName
+2021-07-02T00:35:58+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:35:58+00:00 INFO (6): 38.98
+2021-07-02T00:35:58+00:00 INFO (6): serviceName
+2021-07-02T00:35:58+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:35:58+00:00 INFO (6): 9.57
+2021-07-02T00:35:58+00:00 INFO (6): serviceName
+2021-07-02T00:35:58+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:35:58+00:00 INFO (6): 90.55
+2021-07-02T00:35:58+00:00 INFO (6): serviceName
+2021-07-02T00:35:58+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:35:58+00:00 INFO (6): 21.62
+2021-07-02T00:35:58+00:00 INFO (6): serviceName
+2021-07-02T00:35:58+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:35:58+00:00 INFO (6): 15.83
+2021-07-02T00:35:58+00:00 INFO (6): serviceName
+2021-07-02T00:35:58+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:35:58+00:00 INFO (6): 14.13
+2021-07-02T00:35:58+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 27.025,
+  'PRIORITY_OVERNIGHT_SAT' => 48.725,
+  'FIRST_OVERNIGHT' => 113.1875,
+  'FIRST_OVERNIGHT_SAT' => 134.8875,
+)
+2021-07-02T00:35:58+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:35:58+00:00 INFO (6): currentdatetime:
+2021-07-02T00:35:58+00:00 INFO (6): 2021-07-01 17:35:58
+2021-07-02T00:35:58+00:00 INFO (6): Thu
+2021-07-02T00:35:58+00:00 INFO (6): in thursday condition
+2021-07-02T00:35:58+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:58+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:58+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:35:58+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:58+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:35:58+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:58+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:58+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:35:58+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:58+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:35:58+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:58+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:58+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:35:58+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:58+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:35:58+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:58+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:58+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:35:58+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:58+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:35:58+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:35:58+00:00 INFO (6): deliveryDate
+2021-07-02T00:35:58+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:35:58+00:00 INFO (6): deliveryMessage
+2021-07-02T00:35:58+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:36:23+00:00 INFO (6): 1
+2021-07-02T00:36:23+00:00 INFO (6): in if loop
+2021-07-02T00:36:23+00:00 INFO (6): RatesRequest
+2021-07-02T00:36:23+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:36:23+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89119',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:36:25+00:00 INFO (6): serviceName
+2021-07-02T00:36:25+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:36:25+00:00 INFO (6): 107.91
+2021-07-02T00:36:25+00:00 INFO (6): serviceName
+2021-07-02T00:36:25+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:36:25+00:00 INFO (6): 38.98
+2021-07-02T00:36:25+00:00 INFO (6): serviceName
+2021-07-02T00:36:25+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:36:25+00:00 INFO (6): 9.57
+2021-07-02T00:36:25+00:00 INFO (6): serviceName
+2021-07-02T00:36:25+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:36:25+00:00 INFO (6): 90.55
+2021-07-02T00:36:25+00:00 INFO (6): serviceName
+2021-07-02T00:36:25+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:36:25+00:00 INFO (6): 21.62
+2021-07-02T00:36:25+00:00 INFO (6): serviceName
+2021-07-02T00:36:25+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:36:25+00:00 INFO (6): 15.83
+2021-07-02T00:36:25+00:00 INFO (6): serviceName
+2021-07-02T00:36:25+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:36:25+00:00 INFO (6): 14.13
+2021-07-02T00:36:25+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 27.025,
+  'PRIORITY_OVERNIGHT_SAT' => 48.725,
+  'FIRST_OVERNIGHT' => 113.1875,
+  'FIRST_OVERNIGHT_SAT' => 134.8875,
+)
+2021-07-02T00:36:25+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:36:25+00:00 INFO (6): currentdatetime:
+2021-07-02T00:36:25+00:00 INFO (6): 2021-07-01 17:36:25
+2021-07-02T00:36:25+00:00 INFO (6): Thu
+2021-07-02T00:36:25+00:00 INFO (6): in thursday condition
+2021-07-02T00:36:25+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:25+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:25+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:36:25+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:25+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:36:25+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:25+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:25+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:36:25+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:25+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:36:25+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:25+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:25+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:36:25+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:25+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:36:25+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:25+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:25+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:36:25+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:25+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:36:25+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:25+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:25+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:36:25+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:25+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.
+2021-07-02T00:36:34+00:00 INFO (6): 1
+2021-07-02T00:36:34+00:00 INFO (6): in if loop
+2021-07-02T00:36:34+00:00 INFO (6): RatesRequest
+2021-07-02T00:36:34+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LJyWIxqpaUhl5LPm',
+      'Password' => 'P4MtA8n1L1M314YJ7J6ZB6phc',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '252121287',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2021-07-02T00:36:34+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 62.7,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89119',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 62.7,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 3.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2021-07-02T00:36:35+00:00 INFO (6): serviceName
+2021-07-02T00:36:35+00:00 INFO (6): FIRST_OVERNIGHT_SAT
+2021-07-02T00:36:35+00:00 INFO (6): 107.91
+2021-07-02T00:36:35+00:00 INFO (6): serviceName
+2021-07-02T00:36:35+00:00 INFO (6): PRIORITY_OVERNIGHT_SAT
+2021-07-02T00:36:35+00:00 INFO (6): 38.98
+2021-07-02T00:36:35+00:00 INFO (6): serviceName
+2021-07-02T00:36:35+00:00 INFO (6): FEDEX_GROUND
+2021-07-02T00:36:35+00:00 INFO (6): 9.57
+2021-07-02T00:36:35+00:00 INFO (6): serviceName
+2021-07-02T00:36:35+00:00 INFO (6): FIRST_OVERNIGHT
+2021-07-02T00:36:35+00:00 INFO (6): 90.55
+2021-07-02T00:36:35+00:00 INFO (6): serviceName
+2021-07-02T00:36:35+00:00 INFO (6): PRIORITY_OVERNIGHT
+2021-07-02T00:36:35+00:00 INFO (6): 21.62
+2021-07-02T00:36:35+00:00 INFO (6): serviceName
+2021-07-02T00:36:35+00:00 INFO (6): FEDEX_2_DAY
+2021-07-02T00:36:35+00:00 INFO (6): 15.83
+2021-07-02T00:36:35+00:00 INFO (6): serviceName
+2021-07-02T00:36:35+00:00 INFO (6): FEDEX_EXPRESS_SAVER
+2021-07-02T00:36:35+00:00 INFO (6): 14.13
+2021-07-02T00:36:35+00:00 INFO (6): array (
+  'FEDEX_GROUND' => 11.9625,
+  'FEDEX_EXPRESS_SAVER' => 17.6625,
+  'FEDEX_2_DAY' => 19.7875,
+  'PRIORITY_OVERNIGHT' => 27.025,
+  'PRIORITY_OVERNIGHT_SAT' => 48.725,
+  'FIRST_OVERNIGHT' => 113.1875,
+  'FIRST_OVERNIGHT_SAT' => 134.8875,
+)
+2021-07-02T00:36:35+00:00 INFO (6): array (
+  'FIRST_OVERNIGHT' => '2021-07-06T08:00:00',
+  'PRIORITY_OVERNIGHT' => '2021-07-06T10:30:00',
+  'FEDEX_GROUND' => '2021-07-05T23:59:00',
+  'STANDARD_OVERNIGHT' => '2021-07-06T16:30:00',
+  'FEDEX_2_DAY_AM' => '2021-07-07T10:30:00',
+  'FEDEX_2_DAY' => '2021-07-07T16:30:00',
+  'FEDEX_EXPRESS_SAVER' => '2021-07-08T16:30:00',
+)
+2021-07-02T00:36:35+00:00 INFO (6): currentdatetime:
+2021-07-02T00:36:35+00:00 INFO (6): 2021-07-01 17:36:35
+2021-07-02T00:36:35+00:00 INFO (6): Thu
+2021-07-02T00:36:35+00:00 INFO (6): in thursday condition
+2021-07-02T00:36:35+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:35+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:35+00:00 INFO (6): 2021-07-05T23:59:00
+2021-07-02T00:36:35+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:35+00:00 INFO (6): Estimated delivery by 5th July 2021 11:59 P.M.
+2021-07-02T00:36:35+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:35+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:35+00:00 INFO (6): 2021-07-08T16:30:00
+2021-07-02T00:36:35+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:35+00:00 INFO (6): Estimated delivery by 8th July 2021 4:30 P.M.
+2021-07-02T00:36:35+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:35+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:35+00:00 INFO (6): 2021-07-07T16:30:00
+2021-07-02T00:36:35+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:35+00:00 INFO (6): Estimated delivery by 7th July 2021 4:30 P.M.
+2021-07-02T00:36:35+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:35+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:35+00:00 INFO (6): 2021-07-06T10:30:00
+2021-07-02T00:36:35+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:35+00:00 INFO (6): Estimated delivery by 6th July 2021 10:30 A.M.
+2021-07-02T00:36:35+00:00 INFO (6): Magento\Quote\Model\Quote\Address\RateResult\Method\Interceptor
+2021-07-02T00:36:35+00:00 INFO (6): deliveryDate
+2021-07-02T00:36:35+00:00 INFO (6): 2021-07-06T08:00:00
+2021-07-02T00:36:35+00:00 INFO (6): deliveryMessage
+2021-07-02T00:36:35+00:00 INFO (6): Estimated delivery by 6th July 2021 8:00 A.M.

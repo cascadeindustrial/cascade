@@ -1,0 +1,347 @@
+[2021-11-01 09:15:31] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transactionRequest' => 
+    array (
+      'transactionType' => 'authCaptureTransaction',
+      'amount' => '576.54',
+      'currencyCode' => 'USD',
+      'payment' => 
+      array (
+        'opaqueData' => 
+        array (
+          'dataDescriptor' => 'COMMON.ACCEPT.INAPP.PAYMENT',
+          'dataValue' => '**MASKED**',
+        ),
+      ),
+      'solution' => 
+      array (
+        'id' => 'AAA100302',
+      ),
+      'order' => 
+      array (
+        'invoiceNumber' => '000000841',
+      ),
+      'lineItems' => 
+      array (
+        'lineItem' => 
+        array (
+          0 => 
+          array (
+            'itemId' => 'simple product5',
+            'name' => 'MHT1000/750/500 R1 JA – 35 S1',
+            'description' => '',
+            'quantity' => '',
+            'unitPrice' => '500.00',
+            'taxable' => '',
+          ),
+        ),
+      ),
+      'tax' => 
+      array (
+        'amount' => '41.88',
+      ),
+      'shipping' => 
+      array (
+        'amount' => '34.66',
+        'name' => 'UPS - UPS Ground',
+        'description' => 'UPS - UPS Ground',
+      ),
+      'customer' => 
+      array (
+        'type' => 'individual',
+        'email' => 'mayur@etrellis.com',
+      ),
+      'billTo' => 
+      array (
+        'firstName' => 'Mayur',
+        'lastName' => 'Jadeja',
+        'company' => '',
+        'address' => 'Test
+',
+        'city' => 'North Las Vegas',
+        'state' => 'NV',
+        'zip' => '89081',
+        'country' => 'US',
+        'phoneNumber' => '',
+      ),
+      'shipTo' => 
+      array (
+        'firstName' => 'Mayur',
+        'lastName' => 'Jadeja',
+        'address' => 'Test
+',
+        'city' => 'North Las Vegas',
+        'state' => 'NV',
+        'zip' => '89081',
+        'country' => 'US',
+      ),
+      'transactionSettings' => 
+      array (
+        'setting' => 
+        array (
+          0 => 
+          array (
+            'settingName' => 'duplicateWindow',
+            'settingValue' => '',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2021-11-01 09:15:32] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transId' => '40077444156',
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2021-11-01 09:27:25] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transactionRequest' => 
+    array (
+      'transactionType' => 'authOnlyTransaction',
+      'amount' => '28.62',
+      'currencyCode' => 'USD',
+      'payment' => 
+      array (
+        'opaqueData' => 
+        array (
+          'dataDescriptor' => 'COMMON.ACCEPT.INAPP.PAYMENT',
+          'dataValue' => '**MASKED**',
+        ),
+      ),
+      'solution' => 
+      array (
+        'id' => 'AAA100302',
+      ),
+      'order' => 
+      array (
+        'invoiceNumber' => '000000842',
+      ),
+      'lineItems' => 
+      array (
+        'lineItem' => 
+        array (
+          0 => 
+          array (
+            'itemId' => 'DG4M4-YTRE',
+            'name' => 'Ipsum Placeholder Text  Goes re',
+            'description' => '',
+            'quantity' => '',
+            'unitPrice' => '15.00',
+            'taxable' => '',
+          ),
+        ),
+      ),
+      'tax' => 
+      array (
+        'amount' => '1.26',
+      ),
+      'shipping' => 
+      array (
+        'amount' => '12.36',
+        'name' => 'FedEx - Ground',
+        'description' => 'FedEx - Ground',
+      ),
+      'customer' => 
+      array (
+        'type' => 'individual',
+        'id' => '185',
+        'email' => 'mayur@etrellis.com',
+      ),
+      'billTo' => 
+      array (
+        'firstName' => 'Mayur',
+        'lastName' => 'Jadeja',
+        'address' => 'Test
+',
+        'city' => 'North Las Vegas',
+        'state' => 'NV',
+        'zip' => '89081',
+        'country' => 'US',
+        'phoneNumber' => '',
+      ),
+      'shipTo' => 
+      array (
+        'firstName' => 'Mayur',
+        'lastName' => 'Jadeja',
+        'address' => 'Test
+',
+        'city' => 'North Las Vegas',
+        'state' => 'NV',
+        'zip' => '89081',
+        'country' => 'US',
+      ),
+      'transactionSettings' => 
+      array (
+        'setting' => 
+        array (
+          0 => 
+          array (
+            'settingName' => 'duplicateWindow',
+            'settingValue' => '',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2021-11-01 09:27:26] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transId' => '40077444367',
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2021-11-01 09:27:26] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transId' => '40077444367',
+    'customer' => 
+    array (
+      'merchantCustomerId' => '185',
+    ),
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2021-11-01 09:28:51] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transactionRequest' => 
+    array (
+      'transactionType' => 'voidTransaction',
+      'currencyCode' => 'USD',
+      'solution' => 
+      array (
+        'id' => 'AAA100302',
+      ),
+      'refTransId' => '40077444367',
+    ),
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []

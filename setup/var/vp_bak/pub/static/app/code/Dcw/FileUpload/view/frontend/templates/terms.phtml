@@ -1,0 +1,27 @@
+<div><div class="checkbox-group required"><label for="pass" class="label"><span></span></label> <div class="control"><input name="termscheckbox" type="checkbox" autocomplete="off" class="input-text" id="pass" title="checkbox" data-validate="{required:true}"><a href="#" id="click-me">I agree to the Terms & Conditions</a></div></div><div id="popup-modal" ><?php echo $this->getLayout() ->createBlock('Magento\Cms\Block\Block') ->setBlockId('terms_conditions') ->toHtml(); ?></div><script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function(
+            $,
+            modal
+        ) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                buttons: [{
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }]
+            };
+            var popup = modal(options, $('#popup-modal'));
+            $("#click-me").on('click',function(){
+                $("#popup-modal").modal("openModal");
+            });
+        }
+    );</script>

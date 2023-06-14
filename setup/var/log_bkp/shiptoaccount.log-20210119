@@ -1,0 +1,2814 @@
+2021-01-18T05:48:23+00:00 INFO (6): alloptions
+2021-01-18T05:48:23+00:00 INFO (6): guest_fedexselectmethod
+2021-01-18T05:48:23+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5630
+            [label] => Europe First Priority
+        )
+
+    [2] => Array
+        (
+            [value] => 5631
+            [label] => 1 Day Freight
+        )
+
+    [3] => Array
+        (
+            [value] => 5632
+            [label] => 2 Day Freight
+        )
+
+    [4] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [5] => Array
+        (
+            [value] => 5673
+            [label] => 2 Day AM
+        )
+
+    [6] => Array
+        (
+            [value] => 5674
+            [label] => 3 Day Freight
+        )
+
+    [7] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [8] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [9] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+    [10] => Array
+        (
+            [value] => 5678
+            [label] => Home Delivery
+        )
+
+    [11] => Array
+        (
+            [value] => 5679
+            [label] => International Economy
+        )
+
+    [12] => Array
+        (
+            [value] => 5680
+            [label] => Intl Economy Freight
+        )
+
+    [13] => Array
+        (
+            [value] => 5681
+            [label] => International First
+        )
+
+    [14] => Array
+        (
+            [value] => 5682
+            [label] => International Ground
+        )
+
+    [15] => Array
+        (
+            [value] => 5683
+            [label] => International Priority
+        )
+
+    [16] => Array
+        (
+            [value] => 5684
+            [label] => Intl Priority Freight
+        )
+
+    [17] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [18] => Array
+        (
+            [value] => 5686
+            [label] => Smart Post
+        )
+
+    [19] => Array
+        (
+            [value] => 5687
+            [label] => Standard Overnight
+        )
+
+    [20] => Array
+        (
+            [value] => 5688
+            [label] => Freight
+        )
+
+    [21] => Array
+        (
+            [value] => 5689
+            [label] => National Freight
+        )
+
+)
+
+2021-01-18T05:48:23+00:00 INFO (6): country code
+2021-01-18T05:48:23+00:00 INFO (6): US
+2021-01-18T15:04:32+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:04:32+00:00 INFO (6): 1
+2021-01-18T15:04:32+00:00 INFO (6): product catIds
+2021-01-18T15:04:32+00:00 INFO (6): 55,56
+2021-01-18T15:04:32+00:00 INFO (6): finalResult
+2021-01-18T15:04:32+00:00 INFO (6): 0
+2021-01-18T15:04:34+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:04:34+00:00 INFO (6): 1
+2021-01-18T15:04:34+00:00 INFO (6): product catIds
+2021-01-18T15:04:34+00:00 INFO (6): 75,56
+2021-01-18T15:04:34+00:00 INFO (6): finalResult
+2021-01-18T15:04:34+00:00 INFO (6): 0
+2021-01-18T15:04:43+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:04:43+00:00 INFO (6): 1
+2021-01-18T15:04:43+00:00 INFO (6): product catIds
+2021-01-18T15:04:43+00:00 INFO (6): 56,282,4
+2021-01-18T15:04:43+00:00 INFO (6): finalResult
+2021-01-18T15:04:43+00:00 INFO (6): 0
+2021-01-18T15:05:32+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:05:32+00:00 INFO (6): 4
+2021-01-18T15:05:32+00:00 INFO (6): product catIds
+2021-01-18T15:05:32+00:00 INFO (6): 56,282,4
+2021-01-18T15:05:32+00:00 INFO (6): sql
+2021-01-18T15:05:32+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T15:05:32+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T15:05:32+00:00 INFO (6): in if loop
+2021-01-18T15:05:32+00:00 INFO (6): finalResult
+2021-01-18T15:05:32+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T15:05:38+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:05:38+00:00 INFO (6): 4
+2021-01-18T15:05:38+00:00 INFO (6): product catIds
+2021-01-18T15:05:38+00:00 INFO (6): 55,56
+2021-01-18T15:05:38+00:00 INFO (6): sql
+2021-01-18T15:05:38+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and brand = '5464' ORDER BY id DESC
+2021-01-18T15:05:38+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 11
+            [customer_group] => 4
+            [discount_percentage] => 35.28
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2020-10-16 13:41:37
+            [standard_discount_percentage] => 54.84
+            [status] => 1
+            [title] => TEST_Standard 2
+            [brand] => 5464
+        )
+
+)
+
+2021-01-18T15:05:38+00:00 INFO (6): in if loop
+2021-01-18T15:05:38+00:00 INFO (6): finalResult
+2021-01-18T15:05:38+00:00 INFO (6): Array
+(
+    [id] => 11
+    [customer_group] => 4
+    [discount_percentage] => 35.28
+    [category] => Plain Air Circuit1.2(56)
+    [created_at] => 2020-10-16 13:41:37
+    [standard_discount_percentage] => 54.84
+    [status] => 1
+    [title] => TEST_Standard 2
+    [brand] => 5464
+)
+
+2021-01-18T15:05:48+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:05:48+00:00 INFO (6): 4
+2021-01-18T15:05:48+00:00 INFO (6): product catIds
+2021-01-18T15:05:48+00:00 INFO (6): 75,56
+2021-01-18T15:05:48+00:00 INFO (6): sql
+2021-01-18T15:05:48+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T15:05:48+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T15:05:48+00:00 INFO (6): in if loop
+2021-01-18T15:05:48+00:00 INFO (6): finalResult
+2021-01-18T15:05:48+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T15:07:42+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:07:42+00:00 INFO (6): 4
+2021-01-18T15:07:42+00:00 INFO (6): product catIds
+2021-01-18T15:07:42+00:00 INFO (6): 55,56
+2021-01-18T15:07:42+00:00 INFO (6): sql
+2021-01-18T15:07:42+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and brand = '5464' ORDER BY id DESC
+2021-01-18T15:07:42+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 11
+            [customer_group] => 4
+            [discount_percentage] => 35.28
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2020-10-16 13:41:37
+            [standard_discount_percentage] => 54.84
+            [status] => 1
+            [title] => TEST_Standard 2
+            [brand] => 5464
+        )
+
+)
+
+2021-01-18T15:07:42+00:00 INFO (6): in if loop
+2021-01-18T15:07:42+00:00 INFO (6): finalResult
+2021-01-18T15:07:42+00:00 INFO (6): Array
+(
+    [id] => 11
+    [customer_group] => 4
+    [discount_percentage] => 35.28
+    [category] => Plain Air Circuit1.2(56)
+    [created_at] => 2020-10-16 13:41:37
+    [standard_discount_percentage] => 54.84
+    [status] => 1
+    [title] => TEST_Standard 2
+    [brand] => 5464
+)
+
+2021-01-18T15:09:35+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:09:35+00:00 INFO (6): 1
+2021-01-18T15:09:35+00:00 INFO (6): product catIds
+2021-01-18T15:09:35+00:00 INFO (6): 55,56
+2021-01-18T15:09:35+00:00 INFO (6): finalResult
+2021-01-18T15:09:35+00:00 INFO (6): 0
+2021-01-18T15:10:05+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:10:05+00:00 INFO (6): 1
+2021-01-18T15:10:05+00:00 INFO (6): product catIds
+2021-01-18T15:10:05+00:00 INFO (6): 75,56
+2021-01-18T15:10:05+00:00 INFO (6): finalResult
+2021-01-18T15:10:05+00:00 INFO (6): 0
+2021-01-18T15:11:09+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:11:09+00:00 INFO (6): 4
+2021-01-18T15:11:09+00:00 INFO (6): product catIds
+2021-01-18T15:11:09+00:00 INFO (6): 56,282,4
+2021-01-18T15:11:09+00:00 INFO (6): sql
+2021-01-18T15:11:09+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T15:11:09+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T15:11:09+00:00 INFO (6): in if loop
+2021-01-18T15:11:09+00:00 INFO (6): finalResult
+2021-01-18T15:11:09+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T15:13:21+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:13:21+00:00 INFO (6): 4
+2021-01-18T15:13:21+00:00 INFO (6): product catIds
+2021-01-18T15:13:21+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:13:21+00:00 INFO (6): sql
+2021-01-18T15:13:21+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and brand = '5482' ORDER BY id DESC
+2021-01-18T15:13:21+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 6
+            [customer_group] => 4
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 22:56:13
+            [standard_discount_percentage] => 35.00
+            [status] => 1
+            [title] => C_Standard2
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T15:13:21+00:00 INFO (6): in if loop
+2021-01-18T15:13:21+00:00 INFO (6): finalResult
+2021-01-18T15:13:21+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 6
+            [customer_group] => 4
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 22:56:13
+            [standard_discount_percentage] => 35.00
+            [status] => 1
+            [title] => C_Standard2
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T15:14:29+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:14:29+00:00 INFO (6): 4
+2021-01-18T15:14:29+00:00 INFO (6): product catIds
+2021-01-18T15:14:29+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:14:29+00:00 INFO (6): sql
+2021-01-18T15:14:29+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and brand = '5482' ORDER BY id DESC
+2021-01-18T15:14:29+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 6
+            [customer_group] => 4
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 22:56:13
+            [standard_discount_percentage] => 35.00
+            [status] => 1
+            [title] => C_Standard2
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T15:14:29+00:00 INFO (6): in if loop
+2021-01-18T15:14:29+00:00 INFO (6): finalResult
+2021-01-18T15:14:29+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 6
+            [customer_group] => 4
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 22:56:13
+            [standard_discount_percentage] => 35.00
+            [status] => 1
+            [title] => C_Standard2
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T15:33:34+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:34+00:00 INFO (6): 1
+2021-01-18T15:33:34+00:00 INFO (6): product catIds
+2021-01-18T15:33:34+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:34+00:00 INFO (6): finalResult
+2021-01-18T15:33:34+00:00 INFO (6): 0
+2021-01-18T15:33:36+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:36+00:00 INFO (6): 1
+2021-01-18T15:33:36+00:00 INFO (6): product catIds
+2021-01-18T15:33:36+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:36+00:00 INFO (6): finalResult
+2021-01-18T15:33:36+00:00 INFO (6): 0
+2021-01-18T15:33:37+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:37+00:00 INFO (6): 1
+2021-01-18T15:33:37+00:00 INFO (6): product catIds
+2021-01-18T15:33:37+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:37+00:00 INFO (6): finalResult
+2021-01-18T15:33:37+00:00 INFO (6): 0
+2021-01-18T15:33:39+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:39+00:00 INFO (6): 1
+2021-01-18T15:33:39+00:00 INFO (6): product catIds
+2021-01-18T15:33:39+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:39+00:00 INFO (6): finalResult
+2021-01-18T15:33:39+00:00 INFO (6): 0
+2021-01-18T15:33:40+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:40+00:00 INFO (6): 1
+2021-01-18T15:33:40+00:00 INFO (6): product catIds
+2021-01-18T15:33:40+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:40+00:00 INFO (6): finalResult
+2021-01-18T15:33:40+00:00 INFO (6): 0
+2021-01-18T15:33:41+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:41+00:00 INFO (6): 1
+2021-01-18T15:33:41+00:00 INFO (6): product catIds
+2021-01-18T15:33:41+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:41+00:00 INFO (6): finalResult
+2021-01-18T15:33:41+00:00 INFO (6): 0
+2021-01-18T15:33:43+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:43+00:00 INFO (6): 1
+2021-01-18T15:33:43+00:00 INFO (6): product catIds
+2021-01-18T15:33:43+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:43+00:00 INFO (6): finalResult
+2021-01-18T15:33:43+00:00 INFO (6): 0
+2021-01-18T15:33:44+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:33:44+00:00 INFO (6): 1
+2021-01-18T15:33:44+00:00 INFO (6): product catIds
+2021-01-18T15:33:44+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:33:44+00:00 INFO (6): finalResult
+2021-01-18T15:33:44+00:00 INFO (6): 0
+2021-01-18T15:45:31+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:45:31+00:00 INFO (6): 4
+2021-01-18T15:45:31+00:00 INFO (6): product catIds
+2021-01-18T15:45:31+00:00 INFO (6): 55,56
+2021-01-18T15:45:31+00:00 INFO (6): sql
+2021-01-18T15:45:31+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T15:45:31+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T15:45:31+00:00 INFO (6): in if loop
+2021-01-18T15:45:31+00:00 INFO (6): finalResult
+2021-01-18T15:45:31+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T15:46:25+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:46:25+00:00 INFO (6): 4
+2021-01-18T15:46:25+00:00 INFO (6): product catIds
+2021-01-18T15:46:25+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T15:46:25+00:00 INFO (6): sql
+2021-01-18T15:46:25+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T15:46:25+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T15:46:25+00:00 INFO (6): in if loop
+2021-01-18T15:46:25+00:00 INFO (6): finalResult
+2021-01-18T15:46:25+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T15:51:17+00:00 INFO (6): loggedin customergroupid
+2021-01-18T15:51:17+00:00 INFO (6): 1
+2021-01-18T15:51:17+00:00 INFO (6): product catIds
+2021-01-18T15:51:17+00:00 INFO (6): 75,56
+2021-01-18T15:51:17+00:00 INFO (6): sql
+2021-01-18T15:51:17+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T15:51:17+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 15
+            [customer_group] => 1
+            [discount_percentage] => 22.00
+            [category] => 4
+            [created_at] => 2020-11-06 12:37:19
+            [standard_discount_percentage] => 42.00
+            [status] => 1
+            [title] => B_Standard1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T15:51:17+00:00 INFO (6): in if loop
+2021-01-18T15:51:17+00:00 INFO (6): finalResult
+2021-01-18T15:51:17+00:00 INFO (6): Array
+(
+    [id] => 17
+    [customer_group] => 1
+    [discount_percentage] => 20.00
+    [category] => Plain Air Circuit1.2(56)
+    [created_at] => 2021-01-18 14:54:35
+    [standard_discount_percentage] => 25.00
+    [status] => 1
+    [title] => TEST_Standard 1
+    [brand] => 
+)
+
+2021-01-18T16:24:48+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:24:48+00:00 INFO (6): 1
+2021-01-18T16:24:48+00:00 INFO (6): product catIds
+2021-01-18T16:24:48+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T16:24:48+00:00 INFO (6): finalResult
+2021-01-18T16:24:48+00:00 INFO (6): 0
+2021-01-18T16:28:03+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:28:03+00:00 INFO (6): 1
+2021-01-18T16:28:03+00:00 INFO (6): product catIds
+2021-01-18T16:28:03+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T16:28:03+00:00 INFO (6): finalResult
+2021-01-18T16:28:03+00:00 INFO (6): 0
+2021-01-18T16:28:03+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:28:03+00:00 INFO (6): 1
+2021-01-18T16:28:03+00:00 INFO (6): product catIds
+2021-01-18T16:28:03+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T16:28:03+00:00 INFO (6): finalResult
+2021-01-18T16:28:03+00:00 INFO (6): 0
+2021-01-18T16:28:39+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:28:39+00:00 INFO (6): 7
+2021-01-18T16:28:39+00:00 INFO (6): product catIds
+2021-01-18T16:28:39+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T16:28:39+00:00 INFO (6): sql
+2021-01-18T16:28:39+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '7' and status = 1 and brand = '5482' ORDER BY id DESC
+2021-01-18T16:28:39+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 10
+            [customer_group] => 7
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 23:08:38
+            [standard_discount_percentage] => 50.00
+            [status] => 1
+            [title] => H_OEM 2_Tokyo_Keiki
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T16:28:39+00:00 INFO (6): in if loop
+2021-01-18T16:28:39+00:00 INFO (6): finalResult
+2021-01-18T16:28:39+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 10
+            [customer_group] => 7
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 23:08:38
+            [standard_discount_percentage] => 50.00
+            [status] => 1
+            [title] => H_OEM 2_Tokyo_Keiki
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T16:30:06+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:30:06+00:00 INFO (6): 7
+2021-01-18T16:30:06+00:00 INFO (6): product catIds
+2021-01-18T16:30:06+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T16:30:06+00:00 INFO (6): sql
+2021-01-18T16:30:06+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '7' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T16:30:06+00:00 INFO (6): Array
+(
+)
+
+2021-01-18T16:30:06+00:00 INFO (6): in ifelse loop
+2021-01-18T16:30:43+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:30:43+00:00 INFO (6): 2
+2021-01-18T16:30:43+00:00 INFO (6): product catIds
+2021-01-18T16:30:43+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T16:30:43+00:00 INFO (6): sql
+2021-01-18T16:30:43+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '2' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T16:30:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [customer_group] => 2
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-08-29 05:07:59
+            [standard_discount_percentage] => 46.50
+            [status] => 1
+            [title] => G_OEM 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T16:30:43+00:00 INFO (6): in if loop
+2021-01-18T16:30:43+00:00 INFO (6): finalResult
+2021-01-18T16:30:43+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 4
+            [customer_group] => 2
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-08-29 05:07:59
+            [standard_discount_percentage] => 46.50
+            [status] => 1
+            [title] => G_OEM 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T16:33:26+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:33:26+00:00 INFO (6): 1
+2021-01-18T16:33:26+00:00 INFO (6): product catIds
+2021-01-18T16:33:26+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T16:33:26+00:00 INFO (6): finalResult
+2021-01-18T16:33:26+00:00 INFO (6): 0
+2021-01-18T16:36:00+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:36:00+00:00 INFO (6): 7
+2021-01-18T16:36:00+00:00 INFO (6): product catIds
+2021-01-18T16:36:00+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T16:36:00+00:00 INFO (6): sql
+2021-01-18T16:36:00+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '7' and status = 1 and brand = '5482' ORDER BY id DESC
+2021-01-18T16:36:00+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 10
+            [customer_group] => 7
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 23:08:38
+            [standard_discount_percentage] => 50.00
+            [status] => 1
+            [title] => H_OEM 2_Tokyo_Keiki
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T16:36:00+00:00 INFO (6): in if loop
+2021-01-18T16:36:00+00:00 INFO (6): finalResult
+2021-01-18T16:36:00+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 10
+            [customer_group] => 7
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 23:08:38
+            [standard_discount_percentage] => 50.00
+            [status] => 1
+            [title] => H_OEM 2_Tokyo_Keiki
+            [brand] => 5482
+        )
+
+)
+
+2021-01-18T16:36:06+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:36:06+00:00 INFO (6): 1
+2021-01-18T16:36:06+00:00 INFO (6): product catIds
+2021-01-18T16:36:06+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T16:36:07+00:00 INFO (6): finalResult
+2021-01-18T16:36:07+00:00 INFO (6): 0
+2021-01-18T16:59:25+00:00 INFO (6): loggedin customergroupid
+2021-01-18T16:59:25+00:00 INFO (6): 1
+2021-01-18T16:59:25+00:00 INFO (6): product catIds
+2021-01-18T16:59:25+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T16:59:25+00:00 INFO (6): finalResult
+2021-01-18T16:59:25+00:00 INFO (6): 0
+2021-01-18T18:06:54+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:06:54+00:00 INFO (6): 1
+2021-01-18T18:06:54+00:00 INFO (6): product catIds
+2021-01-18T18:06:54+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:06:54+00:00 INFO (6): finalResult
+2021-01-18T18:06:54+00:00 INFO (6): 0
+2021-01-18T18:10:46+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:10:46+00:00 INFO (6): 4
+2021-01-18T18:10:46+00:00 INFO (6): product catIds
+2021-01-18T18:10:46+00:00 INFO (6): 75,56
+2021-01-18T18:10:46+00:00 INFO (6): sql
+2021-01-18T18:10:46+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:10:46+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:10:46+00:00 INFO (6): in if loop
+2021-01-18T18:10:46+00:00 INFO (6): finalResult
+2021-01-18T18:10:46+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T18:11:27+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:11:27+00:00 INFO (6): 4
+2021-01-18T18:11:27+00:00 INFO (6): product catIds
+2021-01-18T18:11:27+00:00 INFO (6): 75,56
+2021-01-18T18:11:27+00:00 INFO (6): sql
+2021-01-18T18:11:27+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:11:27+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:11:27+00:00 INFO (6): in if loop
+2021-01-18T18:11:27+00:00 INFO (6): finalResult
+2021-01-18T18:11:27+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T18:12:51+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:12:51+00:00 INFO (6): 4
+2021-01-18T18:12:51+00:00 INFO (6): product catIds
+2021-01-18T18:12:51+00:00 INFO (6): 4,337,338
+2021-01-18T18:12:51+00:00 INFO (6): sql
+2021-01-18T18:12:51+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:12:51+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:12:51+00:00 INFO (6): in if loop
+2021-01-18T18:12:51+00:00 INFO (6): finalResult
+2021-01-18T18:12:51+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T18:12:54+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:12:54+00:00 INFO (6): 4
+2021-01-18T18:12:54+00:00 INFO (6): product catIds
+2021-01-18T18:12:54+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:12:54+00:00 INFO (6): sql
+2021-01-18T18:12:54+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:12:54+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:12:54+00:00 INFO (6): in if loop
+2021-01-18T18:12:54+00:00 INFO (6): finalResult
+2021-01-18T18:12:54+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T18:12:57+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:12:57+00:00 INFO (6): 4
+2021-01-18T18:12:57+00:00 INFO (6): product catIds
+2021-01-18T18:12:57+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:12:57+00:00 INFO (6): sql
+2021-01-18T18:12:57+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:12:57+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:12:57+00:00 INFO (6): in if loop
+2021-01-18T18:12:57+00:00 INFO (6): finalResult
+2021-01-18T18:12:57+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T18:14:48+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:14:48+00:00 INFO (6): 1
+2021-01-18T18:14:48+00:00 INFO (6): product catIds
+2021-01-18T18:14:48+00:00 INFO (6): 75,56
+2021-01-18T18:14:48+00:00 INFO (6): sql
+2021-01-18T18:14:48+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:14:48+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:14:48+00:00 INFO (6): in if loop
+2021-01-18T18:14:48+00:00 INFO (6): finalResult
+2021-01-18T18:14:48+00:00 INFO (6): Array
+(
+    [id] => 17
+    [customer_group] => 1
+    [discount_percentage] => 20.00
+    [category] => Plain Air Circuit1.2(56)
+    [created_at] => 2021-01-18 14:54:35
+    [standard_discount_percentage] => 25.00
+    [status] => 1
+    [title] => TEST_Standard 1
+    [brand] => 
+)
+
+2021-01-18T18:15:44+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:15:44+00:00 INFO (6): 1
+2021-01-18T18:15:44+00:00 INFO (6): product catIds
+2021-01-18T18:15:44+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:15:44+00:00 INFO (6): sql
+2021-01-18T18:15:44+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:15:44+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:15:44+00:00 INFO (6): in if loop
+2021-01-18T18:15:44+00:00 INFO (6): finalResult
+2021-01-18T18:15:44+00:00 INFO (6): Array
+(
+)
+
+2021-01-18T18:17:53+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:17:53+00:00 INFO (6): 1
+2021-01-18T18:17:53+00:00 INFO (6): product catIds
+2021-01-18T18:17:53+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:17:53+00:00 INFO (6): sql
+2021-01-18T18:17:53+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:17:53+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:17:53+00:00 INFO (6): in if loop
+2021-01-18T18:17:53+00:00 INFO (6): finalResult
+2021-01-18T18:17:53+00:00 INFO (6): Array
+(
+)
+
+2021-01-18T18:18:22+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:18:22+00:00 INFO (6): 1
+2021-01-18T18:18:22+00:00 INFO (6): product catIds
+2021-01-18T18:18:22+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:18:22+00:00 INFO (6): sql
+2021-01-18T18:18:22+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:18:22+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:18:22+00:00 INFO (6): in if loop
+2021-01-18T18:18:22+00:00 INFO (6): finalResult
+2021-01-18T18:18:22+00:00 INFO (6): Array
+(
+)
+
+2021-01-18T18:18:40+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:18:40+00:00 INFO (6): 1
+2021-01-18T18:18:40+00:00 INFO (6): product catIds
+2021-01-18T18:18:40+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:18:40+00:00 INFO (6): sql
+2021-01-18T18:18:40+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:18:40+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:18:40+00:00 INFO (6): in if loop
+2021-01-18T18:18:40+00:00 INFO (6): finalResult
+2021-01-18T18:18:40+00:00 INFO (6): Array
+(
+)
+
+2021-01-18T18:19:40+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:40+00:00 INFO (6): 1
+2021-01-18T18:19:40+00:00 INFO (6): product catIds
+2021-01-18T18:19:40+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:40+00:00 INFO (6): finalResult
+2021-01-18T18:19:40+00:00 INFO (6): 0
+2021-01-18T18:19:42+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:42+00:00 INFO (6): 1
+2021-01-18T18:19:42+00:00 INFO (6): product catIds
+2021-01-18T18:19:42+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:42+00:00 INFO (6): finalResult
+2021-01-18T18:19:42+00:00 INFO (6): 0
+2021-01-18T18:19:43+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:43+00:00 INFO (6): 1
+2021-01-18T18:19:43+00:00 INFO (6): product catIds
+2021-01-18T18:19:43+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:43+00:00 INFO (6): finalResult
+2021-01-18T18:19:43+00:00 INFO (6): 0
+2021-01-18T18:19:45+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:45+00:00 INFO (6): 1
+2021-01-18T18:19:45+00:00 INFO (6): product catIds
+2021-01-18T18:19:45+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:45+00:00 INFO (6): finalResult
+2021-01-18T18:19:45+00:00 INFO (6): 0
+2021-01-18T18:19:46+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:46+00:00 INFO (6): 1
+2021-01-18T18:19:46+00:00 INFO (6): product catIds
+2021-01-18T18:19:46+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:46+00:00 INFO (6): finalResult
+2021-01-18T18:19:46+00:00 INFO (6): 0
+2021-01-18T18:19:48+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:48+00:00 INFO (6): 1
+2021-01-18T18:19:48+00:00 INFO (6): product catIds
+2021-01-18T18:19:48+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:48+00:00 INFO (6): finalResult
+2021-01-18T18:19:48+00:00 INFO (6): 0
+2021-01-18T18:19:49+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:49+00:00 INFO (6): 1
+2021-01-18T18:19:49+00:00 INFO (6): product catIds
+2021-01-18T18:19:49+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:49+00:00 INFO (6): finalResult
+2021-01-18T18:19:49+00:00 INFO (6): 0
+2021-01-18T18:19:50+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:19:50+00:00 INFO (6): 1
+2021-01-18T18:19:50+00:00 INFO (6): product catIds
+2021-01-18T18:19:50+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:19:50+00:00 INFO (6): finalResult
+2021-01-18T18:19:50+00:00 INFO (6): 0
+2021-01-18T18:20:41+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:20:41+00:00 INFO (6): 1
+2021-01-18T18:20:41+00:00 INFO (6): product catIds
+2021-01-18T18:20:41+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:20:41+00:00 INFO (6): finalResult
+2021-01-18T18:20:41+00:00 INFO (6): 0
+2021-01-18T18:20:58+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:20:58+00:00 INFO (6): 1
+2021-01-18T18:20:58+00:00 INFO (6): product catIds
+2021-01-18T18:20:58+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:20:58+00:00 INFO (6): finalResult
+2021-01-18T18:20:58+00:00 INFO (6): 0
+2021-01-18T18:22:37+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:22:37+00:00 INFO (6): 4
+2021-01-18T18:22:37+00:00 INFO (6): product catIds
+2021-01-18T18:22:37+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:22:37+00:00 INFO (6): sql
+2021-01-18T18:22:37+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:22:37+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:22:37+00:00 INFO (6): in if loop
+2021-01-18T18:22:37+00:00 INFO (6): finalResult
+2021-01-18T18:22:37+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T18:22:51+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:22:51+00:00 INFO (6): 4
+2021-01-18T18:22:51+00:00 INFO (6): product catIds
+2021-01-18T18:22:51+00:00 INFO (6): 2,3,4,337,338
+2021-01-18T18:22:51+00:00 INFO (6): sql
+2021-01-18T18:22:51+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:22:51+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:22:51+00:00 INFO (6): in if loop
+2021-01-18T18:22:51+00:00 INFO (6): finalResult
+2021-01-18T18:22:51+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-18T18:53:49+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:53:49+00:00 INFO (6): 5
+2021-01-18T18:53:49+00:00 INFO (6): product catIds
+2021-01-18T18:53:49+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T18:53:49+00:00 INFO (6): sql
+2021-01-18T18:53:49+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '5' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T18:53:49+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 8
+            [customer_group] => 5
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 23:03:23
+            [standard_discount_percentage] => 45.00
+            [status] => 1
+            [title] => E_Reseller2
+            [brand] => 
+        )
+
+)
+
+2021-01-18T18:53:49+00:00 INFO (6): in if loop
+2021-01-18T18:53:49+00:00 INFO (6): finalResult
+2021-01-18T18:53:49+00:00 INFO (6): Array
+(
+)
+
+2021-01-18T18:57:08+00:00 INFO (6): loggedin customergroupid
+2021-01-18T18:57:08+00:00 INFO (6): 1
+2021-01-18T18:57:08+00:00 INFO (6): product catIds
+2021-01-18T18:57:08+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T18:57:08+00:00 INFO (6): finalResult
+2021-01-18T18:57:08+00:00 INFO (6): 0
+2021-01-18T18:58:07+00:00 INFO (6): alloptions
+2021-01-18T18:58:07+00:00 INFO (6): guest_fedexselectmethod
+2021-01-18T18:58:07+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5630
+            [label] => Europe First Priority
+        )
+
+    [2] => Array
+        (
+            [value] => 5631
+            [label] => 1 Day Freight
+        )
+
+    [3] => Array
+        (
+            [value] => 5632
+            [label] => 2 Day Freight
+        )
+
+    [4] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [5] => Array
+        (
+            [value] => 5673
+            [label] => 2 Day AM
+        )
+
+    [6] => Array
+        (
+            [value] => 5674
+            [label] => 3 Day Freight
+        )
+
+    [7] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [8] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [9] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+    [10] => Array
+        (
+            [value] => 5678
+            [label] => Home Delivery
+        )
+
+    [11] => Array
+        (
+            [value] => 5679
+            [label] => International Economy
+        )
+
+    [12] => Array
+        (
+            [value] => 5680
+            [label] => Intl Economy Freight
+        )
+
+    [13] => Array
+        (
+            [value] => 5681
+            [label] => International First
+        )
+
+    [14] => Array
+        (
+            [value] => 5682
+            [label] => International Ground
+        )
+
+    [15] => Array
+        (
+            [value] => 5683
+            [label] => International Priority
+        )
+
+    [16] => Array
+        (
+            [value] => 5684
+            [label] => Intl Priority Freight
+        )
+
+    [17] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [18] => Array
+        (
+            [value] => 5686
+            [label] => Smart Post
+        )
+
+    [19] => Array
+        (
+            [value] => 5687
+            [label] => Standard Overnight
+        )
+
+    [20] => Array
+        (
+            [value] => 5688
+            [label] => Freight
+        )
+
+    [21] => Array
+        (
+            [value] => 5689
+            [label] => National Freight
+        )
+
+)
+
+2021-01-18T18:58:07+00:00 INFO (6): country code
+2021-01-18T18:58:07+00:00 INFO (6): US
+2021-01-18T19:07:34+00:00 INFO (6): Array
+(
+    [0] => net\authorize\api\contract\v1\CreateTransactionResponse Object
+        (
+            [transactionResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => net\authorize\api\contract\v1\TransactionResponseType Object
+                (
+                    [responseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 3
+                    [rawResponseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [authCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [avsResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => P
+                    [cvvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [cavvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transId:net\authorize\api\contract\v1\TransactionResponseType:private] => 0
+                    [refTransID:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHash:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [testRequest:net\authorize\api\contract\v1\TransactionResponseType:private] => 0
+                    [accountNumber:net\authorize\api\contract\v1\TransactionResponseType:private] => XXXX6789
+                    [entryMode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [accountType:net\authorize\api\contract\v1\TransactionResponseType:private] => eCheck
+                    [splitTenderId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [prePaidCard:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [messages:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [errors:net\authorize\api\contract\v1\TransactionResponseType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\TransactionResponseType\ErrorsAType\ErrorAType Object
+                                (
+                                    [errorCode:net\authorize\api\contract\v1\TransactionResponseType\ErrorsAType\ErrorAType:private] => 128
+                                    [errorText:net\authorize\api\contract\v1\TransactionResponseType\ErrorsAType\ErrorAType:private] => This transaction cannot be processed.
+                                )
+
+                        )
+
+                    [splitTenderPayments:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [userFields:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [shipTo:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [secureAcceptance:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [emvResponse:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHashSha2:net\authorize\api\contract\v1\TransactionResponseType:private] => CC4B8517F9412D87B23AD11F8B7397A3FFF5D9DEFFA1E8CF9470DEC14D83A7DA7BF77C4C497566B73BCB194C4F0A44B7E17BB4918FCAB1229166ADA19B1B74ED
+                    [profile:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [networkTransId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                )
+
+            [profileResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => 
+            [refId:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+            [messages:net\authorize\api\contract\v1\ANetApiResponseType:private] => net\authorize\api\contract\v1\MessagesType Object
+                (
+                    [resultCode:net\authorize\api\contract\v1\MessagesType:private] => Error
+                    [message:net\authorize\api\contract\v1\MessagesType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\MessagesType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => E00027
+                                    [text:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => The transaction was unsuccessful.
+                                )
+
+                        )
+
+                )
+
+            [sessionToken:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+        )
+
+)
+
+2021-01-18T19:10:10+00:00 INFO (6): Array
+(
+    [0] => net\authorize\api\contract\v1\CreateTransactionResponse Object
+        (
+            [transactionResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => net\authorize\api\contract\v1\TransactionResponseType Object
+                (
+                    [responseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 1
+                    [rawResponseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [authCode:net\authorize\api\contract\v1\TransactionResponseType:private] => V7DY0U
+                    [avsResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => Y
+                    [cvvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => P
+                    [cavvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 2
+                    [transId:net\authorize\api\contract\v1\TransactionResponseType:private] => 40058170455
+                    [refTransID:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHash:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [testRequest:net\authorize\api\contract\v1\TransactionResponseType:private] => 0
+                    [accountNumber:net\authorize\api\contract\v1\TransactionResponseType:private] => XXXX0015
+                    [entryMode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [accountType:net\authorize\api\contract\v1\TransactionResponseType:private] => MasterCard
+                    [splitTenderId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [prePaidCard:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [messages:net\authorize\api\contract\v1\TransactionResponseType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => 1
+                                    [description:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => This transaction has been approved.
+                                )
+
+                        )
+
+                    [errors:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [splitTenderPayments:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [userFields:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [shipTo:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [secureAcceptance:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [emvResponse:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHashSha2:net\authorize\api\contract\v1\TransactionResponseType:private] => 7EC3294755527AA38CCB664A1A1301692A8ABF855BF37FF2854B43C6AA45B3FE003E74C7F7730FC659DE1FA1C3D1C4890ACFDE5C9F5BFA153FE2B67491DB214C
+                    [profile:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [networkTransId:net\authorize\api\contract\v1\TransactionResponseType:private] => 37V6PBPB49QW40L73VF0UJX
+                )
+
+            [profileResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => 
+            [refId:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+            [messages:net\authorize\api\contract\v1\ANetApiResponseType:private] => net\authorize\api\contract\v1\MessagesType Object
+                (
+                    [resultCode:net\authorize\api\contract\v1\MessagesType:private] => Ok
+                    [message:net\authorize\api\contract\v1\MessagesType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\MessagesType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => I00001
+                                    [text:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => Successful.
+                                )
+
+                        )
+
+                )
+
+            [sessionToken:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+        )
+
+)
+
+2021-01-18T19:23:54+00:00 INFO (6): Array
+(
+    [0] => net\authorize\api\contract\v1\CreateTransactionResponse Object
+        (
+            [transactionResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => net\authorize\api\contract\v1\TransactionResponseType Object
+                (
+                    [responseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 1
+                    [rawResponseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [authCode:net\authorize\api\contract\v1\TransactionResponseType:private] => V7DY0U
+                    [avsResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => P
+                    [cvvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [cavvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transId:net\authorize\api\contract\v1\TransactionResponseType:private] => 40058170455
+                    [refTransID:net\authorize\api\contract\v1\TransactionResponseType:private] => 40058170455
+                    [transHash:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [testRequest:net\authorize\api\contract\v1\TransactionResponseType:private] => 0
+                    [accountNumber:net\authorize\api\contract\v1\TransactionResponseType:private] => XXXX0015
+                    [entryMode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [accountType:net\authorize\api\contract\v1\TransactionResponseType:private] => MasterCard
+                    [splitTenderId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [prePaidCard:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [messages:net\authorize\api\contract\v1\TransactionResponseType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => 1
+                                    [description:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => This transaction has been approved.
+                                )
+
+                        )
+
+                    [errors:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [splitTenderPayments:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [userFields:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [shipTo:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [secureAcceptance:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [emvResponse:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHashSha2:net\authorize\api\contract\v1\TransactionResponseType:private] => 7EC3294755527AA38CCB664A1A1301692A8ABF855BF37FF2854B43C6AA45B3FE003E74C7F7730FC659DE1FA1C3D1C4890ACFDE5C9F5BFA153FE2B67491DB214C
+                    [profile:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [networkTransId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                )
+
+            [profileResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => 
+            [refId:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+            [messages:net\authorize\api\contract\v1\ANetApiResponseType:private] => net\authorize\api\contract\v1\MessagesType Object
+                (
+                    [resultCode:net\authorize\api\contract\v1\MessagesType:private] => Ok
+                    [message:net\authorize\api\contract\v1\MessagesType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\MessagesType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => I00001
+                                    [text:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => Successful.
+                                )
+
+                        )
+
+                )
+
+            [sessionToken:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+        )
+
+)
+
+2021-01-18T19:38:41+00:00 INFO (6): loggedin customergroupid
+2021-01-18T19:38:41+00:00 INFO (6): 1
+2021-01-18T19:38:41+00:00 INFO (6): product catIds
+2021-01-18T19:38:41+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T19:38:41+00:00 INFO (6): sql
+2021-01-18T19:38:41+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-18T19:38:41+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+)
+
+2021-01-18T19:38:41+00:00 INFO (6): in if loop
+2021-01-18T19:38:41+00:00 INFO (6): finalResult
+2021-01-18T19:38:41+00:00 INFO (6): Array
+(
+)
+
+2021-01-18T20:22:02+00:00 INFO (6): loggedin customergroupid
+2021-01-18T20:22:02+00:00 INFO (6): 8
+2021-01-18T20:22:02+00:00 INFO (6): product catIds
+2021-01-18T20:22:02+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T20:22:02+00:00 INFO (6): finalResult
+2021-01-18T20:22:02+00:00 INFO (6): 0
+2021-01-18T20:22:15+00:00 INFO (6): loggedin customergroupid
+2021-01-18T20:22:15+00:00 INFO (6): 8
+2021-01-18T20:22:15+00:00 INFO (6): product catIds
+2021-01-18T20:22:15+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T20:22:15+00:00 INFO (6): finalResult
+2021-01-18T20:22:15+00:00 INFO (6): 0
+2021-01-18T20:25:02+00:00 INFO (6): alloptions
+2021-01-18T20:25:02+00:00 INFO (6): guest_fedexselectmethod
+2021-01-18T20:25:02+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5630
+            [label] => Europe First Priority
+        )
+
+    [2] => Array
+        (
+            [value] => 5631
+            [label] => 1 Day Freight
+        )
+
+    [3] => Array
+        (
+            [value] => 5632
+            [label] => 2 Day Freight
+        )
+
+    [4] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [5] => Array
+        (
+            [value] => 5673
+            [label] => 2 Day AM
+        )
+
+    [6] => Array
+        (
+            [value] => 5674
+            [label] => 3 Day Freight
+        )
+
+    [7] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [8] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [9] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+    [10] => Array
+        (
+            [value] => 5678
+            [label] => Home Delivery
+        )
+
+    [11] => Array
+        (
+            [value] => 5679
+            [label] => International Economy
+        )
+
+    [12] => Array
+        (
+            [value] => 5680
+            [label] => Intl Economy Freight
+        )
+
+    [13] => Array
+        (
+            [value] => 5681
+            [label] => International First
+        )
+
+    [14] => Array
+        (
+            [value] => 5682
+            [label] => International Ground
+        )
+
+    [15] => Array
+        (
+            [value] => 5683
+            [label] => International Priority
+        )
+
+    [16] => Array
+        (
+            [value] => 5684
+            [label] => Intl Priority Freight
+        )
+
+    [17] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [18] => Array
+        (
+            [value] => 5686
+            [label] => Smart Post
+        )
+
+    [19] => Array
+        (
+            [value] => 5687
+            [label] => Standard Overnight
+        )
+
+    [20] => Array
+        (
+            [value] => 5688
+            [label] => Freight
+        )
+
+    [21] => Array
+        (
+            [value] => 5689
+            [label] => National Freight
+        )
+
+)
+
+2021-01-18T20:25:02+00:00 INFO (6): country code
+2021-01-18T20:25:02+00:00 INFO (6): US
+2021-01-18T20:28:32+00:00 INFO (6): alloptions
+2021-01-18T20:28:32+00:00 INFO (6): guest_fedexselectmethod
+2021-01-18T20:28:32+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5630
+            [label] => Europe First Priority
+        )
+
+    [2] => Array
+        (
+            [value] => 5631
+            [label] => 1 Day Freight
+        )
+
+    [3] => Array
+        (
+            [value] => 5632
+            [label] => 2 Day Freight
+        )
+
+    [4] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [5] => Array
+        (
+            [value] => 5673
+            [label] => 2 Day AM
+        )
+
+    [6] => Array
+        (
+            [value] => 5674
+            [label] => 3 Day Freight
+        )
+
+    [7] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [8] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [9] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+    [10] => Array
+        (
+            [value] => 5678
+            [label] => Home Delivery
+        )
+
+    [11] => Array
+        (
+            [value] => 5679
+            [label] => International Economy
+        )
+
+    [12] => Array
+        (
+            [value] => 5680
+            [label] => Intl Economy Freight
+        )
+
+    [13] => Array
+        (
+            [value] => 5681
+            [label] => International First
+        )
+
+    [14] => Array
+        (
+            [value] => 5682
+            [label] => International Ground
+        )
+
+    [15] => Array
+        (
+            [value] => 5683
+            [label] => International Priority
+        )
+
+    [16] => Array
+        (
+            [value] => 5684
+            [label] => Intl Priority Freight
+        )
+
+    [17] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [18] => Array
+        (
+            [value] => 5686
+            [label] => Smart Post
+        )
+
+    [19] => Array
+        (
+            [value] => 5687
+            [label] => Standard Overnight
+        )
+
+    [20] => Array
+        (
+            [value] => 5688
+            [label] => Freight
+        )
+
+    [21] => Array
+        (
+            [value] => 5689
+            [label] => National Freight
+        )
+
+)
+
+2021-01-18T20:28:32+00:00 INFO (6): country code
+2021-01-18T20:28:32+00:00 INFO (6): US
+2021-01-18T20:32:07+00:00 INFO (6): Array
+(
+    [0] => net\authorize\api\contract\v1\CreateTransactionResponse Object
+        (
+            [transactionResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => net\authorize\api\contract\v1\TransactionResponseType Object
+                (
+                    [responseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 1
+                    [rawResponseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [authCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 9PS39G
+                    [avsResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => Y
+                    [cvvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => P
+                    [cavvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 2
+                    [transId:net\authorize\api\contract\v1\TransactionResponseType:private] => 40058172673
+                    [refTransID:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHash:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [testRequest:net\authorize\api\contract\v1\TransactionResponseType:private] => 0
+                    [accountNumber:net\authorize\api\contract\v1\TransactionResponseType:private] => XXXX0012
+                    [entryMode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [accountType:net\authorize\api\contract\v1\TransactionResponseType:private] => Discover
+                    [splitTenderId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [prePaidCard:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [messages:net\authorize\api\contract\v1\TransactionResponseType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => 1
+                                    [description:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => This transaction has been approved.
+                                )
+
+                        )
+
+                    [errors:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [splitTenderPayments:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [userFields:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [shipTo:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [secureAcceptance:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [emvResponse:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHashSha2:net\authorize\api\contract\v1\TransactionResponseType:private] => 6B1F34749631A8BAECF7BDDAE34F2CB706B82EE42169C7911EF19CA4A5776D40DFE8AD09DF6974B7545156E77856261BFD7102286CFD4025AE58B84DF4CE0EC8
+                    [profile:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [networkTransId:net\authorize\api\contract\v1\TransactionResponseType:private] => XIV8X8U7QWM23XNE20DQMSU
+                )
+
+            [profileResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => 
+            [refId:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+            [messages:net\authorize\api\contract\v1\ANetApiResponseType:private] => net\authorize\api\contract\v1\MessagesType Object
+                (
+                    [resultCode:net\authorize\api\contract\v1\MessagesType:private] => Ok
+                    [message:net\authorize\api\contract\v1\MessagesType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\MessagesType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => I00001
+                                    [text:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => Successful.
+                                )
+
+                        )
+
+                )
+
+            [sessionToken:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+        )
+
+)
+
+2021-01-18T20:42:51+00:00 INFO (6): loggedin customergroupid
+2021-01-18T20:42:51+00:00 INFO (6): 8
+2021-01-18T20:42:51+00:00 INFO (6): product catIds
+2021-01-18T20:42:51+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T20:42:51+00:00 INFO (6): finalResult
+2021-01-18T20:42:51+00:00 INFO (6): 0
+2021-01-18T20:47:22+00:00 INFO (6): loggedin customergroupid
+2021-01-18T20:47:22+00:00 INFO (6): 8
+2021-01-18T20:47:22+00:00 INFO (6): product catIds
+2021-01-18T20:47:22+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T20:47:22+00:00 INFO (6): finalResult
+2021-01-18T20:47:22+00:00 INFO (6): 0
+2021-01-18T20:48:24+00:00 INFO (6): alloptions
+2021-01-18T20:48:24+00:00 INFO (6): guest_fedexselectmethod
+2021-01-18T20:48:24+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5630
+            [label] => Europe First Priority
+        )
+
+    [2] => Array
+        (
+            [value] => 5631
+            [label] => 1 Day Freight
+        )
+
+    [3] => Array
+        (
+            [value] => 5632
+            [label] => 2 Day Freight
+        )
+
+    [4] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [5] => Array
+        (
+            [value] => 5673
+            [label] => 2 Day AM
+        )
+
+    [6] => Array
+        (
+            [value] => 5674
+            [label] => 3 Day Freight
+        )
+
+    [7] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [8] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [9] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+    [10] => Array
+        (
+            [value] => 5678
+            [label] => Home Delivery
+        )
+
+    [11] => Array
+        (
+            [value] => 5679
+            [label] => International Economy
+        )
+
+    [12] => Array
+        (
+            [value] => 5680
+            [label] => Intl Economy Freight
+        )
+
+    [13] => Array
+        (
+            [value] => 5681
+            [label] => International First
+        )
+
+    [14] => Array
+        (
+            [value] => 5682
+            [label] => International Ground
+        )
+
+    [15] => Array
+        (
+            [value] => 5683
+            [label] => International Priority
+        )
+
+    [16] => Array
+        (
+            [value] => 5684
+            [label] => Intl Priority Freight
+        )
+
+    [17] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [18] => Array
+        (
+            [value] => 5686
+            [label] => Smart Post
+        )
+
+    [19] => Array
+        (
+            [value] => 5687
+            [label] => Standard Overnight
+        )
+
+    [20] => Array
+        (
+            [value] => 5688
+            [label] => Freight
+        )
+
+    [21] => Array
+        (
+            [value] => 5689
+            [label] => National Freight
+        )
+
+)
+
+2021-01-18T20:48:24+00:00 INFO (6): country code
+2021-01-18T20:48:24+00:00 INFO (6): US
+2021-01-18T20:56:12+00:00 INFO (6): loggedin customergroupid
+2021-01-18T20:56:12+00:00 INFO (6): 8
+2021-01-18T20:56:12+00:00 INFO (6): product catIds
+2021-01-18T20:56:12+00:00 INFO (6): 4,75
+2021-01-18T20:56:12+00:00 INFO (6): finalResult
+2021-01-18T20:56:12+00:00 INFO (6): 0
+2021-01-18T21:29:32+00:00 INFO (6): loggedin customergroupid
+2021-01-18T21:29:32+00:00 INFO (6): 8
+2021-01-18T21:29:32+00:00 INFO (6): product catIds
+2021-01-18T21:29:32+00:00 INFO (6): 4,75
+2021-01-18T21:29:32+00:00 INFO (6): finalResult
+2021-01-18T21:29:32+00:00 INFO (6): 0
+2021-01-18T22:32:57+00:00 INFO (6): loggedin customergroupid
+2021-01-18T22:32:57+00:00 INFO (6): 8
+2021-01-18T22:32:57+00:00 INFO (6): product catIds
+2021-01-18T22:32:57+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T22:32:57+00:00 INFO (6): finalResult
+2021-01-18T22:32:57+00:00 INFO (6): 0
+2021-01-18T22:41:43+00:00 INFO (6): loggedin customergroupid
+2021-01-18T22:41:43+00:00 INFO (6): 8
+2021-01-18T22:41:43+00:00 INFO (6): product catIds
+2021-01-18T22:41:43+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T22:41:43+00:00 INFO (6): finalResult
+2021-01-18T22:41:43+00:00 INFO (6): 0
+2021-01-18T23:02:36+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:02:36+00:00 INFO (6): 8
+2021-01-18T23:02:36+00:00 INFO (6): product catIds
+2021-01-18T23:02:36+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:02:36+00:00 INFO (6): finalResult
+2021-01-18T23:02:36+00:00 INFO (6): 0
+2021-01-18T23:07:30+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:07:30+00:00 INFO (6): 8
+2021-01-18T23:07:30+00:00 INFO (6): product catIds
+2021-01-18T23:07:30+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:07:30+00:00 INFO (6): finalResult
+2021-01-18T23:07:30+00:00 INFO (6): 0
+2021-01-18T23:12:45+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:12:45+00:00 INFO (6): 8
+2021-01-18T23:12:45+00:00 INFO (6): product catIds
+2021-01-18T23:12:45+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:12:45+00:00 INFO (6): finalResult
+2021-01-18T23:12:45+00:00 INFO (6): 0
+2021-01-18T23:21:30+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:21:30+00:00 INFO (6): 8
+2021-01-18T23:21:30+00:00 INFO (6): product catIds
+2021-01-18T23:21:30+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:21:30+00:00 INFO (6): finalResult
+2021-01-18T23:21:30+00:00 INFO (6): 0
+2021-01-18T23:28:20+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:28:20+00:00 INFO (6): 8
+2021-01-18T23:28:20+00:00 INFO (6): product catIds
+2021-01-18T23:28:20+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:28:20+00:00 INFO (6): finalResult
+2021-01-18T23:28:20+00:00 INFO (6): 0
+2021-01-18T23:32:33+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:32:33+00:00 INFO (6): 8
+2021-01-18T23:32:33+00:00 INFO (6): product catIds
+2021-01-18T23:32:33+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:32:33+00:00 INFO (6): finalResult
+2021-01-18T23:32:33+00:00 INFO (6): 0
+2021-01-18T23:36:10+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:36:10+00:00 INFO (6): 8
+2021-01-18T23:36:10+00:00 INFO (6): product catIds
+2021-01-18T23:36:10+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:36:10+00:00 INFO (6): finalResult
+2021-01-18T23:36:10+00:00 INFO (6): 0
+2021-01-18T23:43:58+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:43:58+00:00 INFO (6): 8
+2021-01-18T23:43:58+00:00 INFO (6): product catIds
+2021-01-18T23:43:58+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:43:58+00:00 INFO (6): finalResult
+2021-01-18T23:43:58+00:00 INFO (6): 0
+2021-01-18T23:46:50+00:00 INFO (6): alloptions
+2021-01-18T23:46:50+00:00 INFO (6): guest_fedexselectmethod
+2021-01-18T23:46:50+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5630
+            [label] => Europe First Priority
+        )
+
+    [2] => Array
+        (
+            [value] => 5631
+            [label] => 1 Day Freight
+        )
+
+    [3] => Array
+        (
+            [value] => 5632
+            [label] => 2 Day Freight
+        )
+
+    [4] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [5] => Array
+        (
+            [value] => 5673
+            [label] => 2 Day AM
+        )
+
+    [6] => Array
+        (
+            [value] => 5674
+            [label] => 3 Day Freight
+        )
+
+    [7] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [8] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [9] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+    [10] => Array
+        (
+            [value] => 5678
+            [label] => Home Delivery
+        )
+
+    [11] => Array
+        (
+            [value] => 5679
+            [label] => International Economy
+        )
+
+    [12] => Array
+        (
+            [value] => 5680
+            [label] => Intl Economy Freight
+        )
+
+    [13] => Array
+        (
+            [value] => 5681
+            [label] => International First
+        )
+
+    [14] => Array
+        (
+            [value] => 5682
+            [label] => International Ground
+        )
+
+    [15] => Array
+        (
+            [value] => 5683
+            [label] => International Priority
+        )
+
+    [16] => Array
+        (
+            [value] => 5684
+            [label] => Intl Priority Freight
+        )
+
+    [17] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [18] => Array
+        (
+            [value] => 5686
+            [label] => Smart Post
+        )
+
+    [19] => Array
+        (
+            [value] => 5687
+            [label] => Standard Overnight
+        )
+
+    [20] => Array
+        (
+            [value] => 5688
+            [label] => Freight
+        )
+
+    [21] => Array
+        (
+            [value] => 5689
+            [label] => National Freight
+        )
+
+)
+
+2021-01-18T23:46:50+00:00 INFO (6): country code
+2021-01-18T23:46:50+00:00 INFO (6): US
+2021-01-18T23:47:53+00:00 INFO (6): loggedin customergroupid
+2021-01-18T23:47:53+00:00 INFO (6): 8
+2021-01-18T23:47:53+00:00 INFO (6): product catIds
+2021-01-18T23:47:53+00:00 INFO (6): 2,3,64,76,78,306
+2021-01-18T23:47:53+00:00 INFO (6): finalResult
+2021-01-18T23:47:53+00:00 INFO (6): 0
+2021-01-18T23:50:52+00:00 INFO (6): Array
+(
+    [0] => net\authorize\api\contract\v1\CreateTransactionResponse Object
+        (
+            [transactionResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => net\authorize\api\contract\v1\TransactionResponseType Object
+                (
+                    [responseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 1
+                    [rawResponseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [authCode:net\authorize\api\contract\v1\TransactionResponseType:private] => U38NER
+                    [avsResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => Y
+                    [cvvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => P
+                    [cavvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 2
+                    [transId:net\authorize\api\contract\v1\TransactionResponseType:private] => 40058179969
+                    [refTransID:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHash:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [testRequest:net\authorize\api\contract\v1\TransactionResponseType:private] => 0
+                    [accountNumber:net\authorize\api\contract\v1\TransactionResponseType:private] => XXXX0015
+                    [entryMode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [accountType:net\authorize\api\contract\v1\TransactionResponseType:private] => MasterCard
+                    [splitTenderId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [prePaidCard:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [messages:net\authorize\api\contract\v1\TransactionResponseType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => 1
+                                    [description:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => This transaction has been approved.
+                                )
+
+                        )
+
+                    [errors:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [splitTenderPayments:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [userFields:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [shipTo:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [secureAcceptance:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [emvResponse:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHashSha2:net\authorize\api\contract\v1\TransactionResponseType:private] => 2C6CDDAEB93B58B91BE041462C77D0A6D09C90C5A013B956107835D535A40DC0C9BB862AAEEE4B8DF17E7C3C31870F7E86FE8499F613FE9FE27198996F4F38A6
+                    [profile:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [networkTransId:net\authorize\api\contract\v1\TransactionResponseType:private] => ZRC5D3NJE548FC5W9FMXEOH
+                )
+
+            [profileResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => 
+            [refId:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+            [messages:net\authorize\api\contract\v1\ANetApiResponseType:private] => net\authorize\api\contract\v1\MessagesType Object
+                (
+                    [resultCode:net\authorize\api\contract\v1\MessagesType:private] => Ok
+                    [message:net\authorize\api\contract\v1\MessagesType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\MessagesType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => I00001
+                                    [text:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => Successful.
+                                )
+
+                        )
+
+                )
+
+            [sessionToken:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+        )
+
+)
+
+2021-01-19T00:16:57+00:00 INFO (6): loggedin customergroupid
+2021-01-19T00:16:57+00:00 INFO (6): 7
+2021-01-19T00:16:57+00:00 INFO (6): product catIds
+2021-01-19T00:16:57+00:00 INFO (6): 2,3,4,337,338
+2021-01-19T00:16:57+00:00 INFO (6): sql
+2021-01-19T00:16:57+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '7' and status = 1 and brand = '5482' ORDER BY id DESC
+2021-01-19T00:16:57+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 10
+            [customer_group] => 7
+            [discount_percentage] => 25.00
+            [category] => 4
+            [created_at] => 2020-10-14 23:08:38
+            [standard_discount_percentage] => 50.00
+            [status] => 1
+            [title] => H_OEM 2_Tokyo_Keiki
+            [brand] => 5482
+        )
+
+)
+
+2021-01-19T00:16:57+00:00 INFO (6): in if loop
+2021-01-19T00:16:57+00:00 INFO (6): finalResult
+2021-01-19T00:16:57+00:00 INFO (6): Array
+(
+)
+
+2021-01-19T00:18:31+00:00 INFO (6): alloptions
+2021-01-19T00:18:31+00:00 INFO (6): guest_fedexselectmethod
+2021-01-19T00:18:31+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [label] =>  
+            [value] => 
+        )
+
+    [1] => Array
+        (
+            [value] => 5630
+            [label] => Europe First Priority
+        )
+
+    [2] => Array
+        (
+            [value] => 5631
+            [label] => 1 Day Freight
+        )
+
+    [3] => Array
+        (
+            [value] => 5632
+            [label] => 2 Day Freight
+        )
+
+    [4] => Array
+        (
+            [value] => 5672
+            [label] => 2 Day
+        )
+
+    [5] => Array
+        (
+            [value] => 5673
+            [label] => 2 Day AM
+        )
+
+    [6] => Array
+        (
+            [value] => 5674
+            [label] => 3 Day Freight
+        )
+
+    [7] => Array
+        (
+            [value] => 5675
+            [label] => Express Saver
+        )
+
+    [8] => Array
+        (
+            [value] => 5676
+            [label] => Ground
+        )
+
+    [9] => Array
+        (
+            [value] => 5677
+            [label] => First Overnight
+        )
+
+    [10] => Array
+        (
+            [value] => 5678
+            [label] => Home Delivery
+        )
+
+    [11] => Array
+        (
+            [value] => 5679
+            [label] => International Economy
+        )
+
+    [12] => Array
+        (
+            [value] => 5680
+            [label] => Intl Economy Freight
+        )
+
+    [13] => Array
+        (
+            [value] => 5681
+            [label] => International First
+        )
+
+    [14] => Array
+        (
+            [value] => 5682
+            [label] => International Ground
+        )
+
+    [15] => Array
+        (
+            [value] => 5683
+            [label] => International Priority
+        )
+
+    [16] => Array
+        (
+            [value] => 5684
+            [label] => Intl Priority Freight
+        )
+
+    [17] => Array
+        (
+            [value] => 5685
+            [label] => Priority Overnight
+        )
+
+    [18] => Array
+        (
+            [value] => 5686
+            [label] => Smart Post
+        )
+
+    [19] => Array
+        (
+            [value] => 5687
+            [label] => Standard Overnight
+        )
+
+    [20] => Array
+        (
+            [value] => 5688
+            [label] => Freight
+        )
+
+    [21] => Array
+        (
+            [value] => 5689
+            [label] => National Freight
+        )
+
+)
+
+2021-01-19T00:18:31+00:00 INFO (6): country code
+2021-01-19T00:18:31+00:00 INFO (6): US
+2021-01-19T00:19:25+00:00 INFO (6): Array
+(
+    [0] => net\authorize\api\contract\v1\CreateTransactionResponse Object
+        (
+            [transactionResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => net\authorize\api\contract\v1\TransactionResponseType Object
+                (
+                    [responseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 1
+                    [rawResponseCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [authCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 2320DD
+                    [avsResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => Y
+                    [cvvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => P
+                    [cavvResultCode:net\authorize\api\contract\v1\TransactionResponseType:private] => 2
+                    [transId:net\authorize\api\contract\v1\TransactionResponseType:private] => 40058180538
+                    [refTransID:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHash:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [testRequest:net\authorize\api\contract\v1\TransactionResponseType:private] => 0
+                    [accountNumber:net\authorize\api\contract\v1\TransactionResponseType:private] => XXXX0005
+                    [entryMode:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [accountType:net\authorize\api\contract\v1\TransactionResponseType:private] => AmericanExpress
+                    [splitTenderId:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [prePaidCard:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [messages:net\authorize\api\contract\v1\TransactionResponseType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => 1
+                                    [description:net\authorize\api\contract\v1\TransactionResponseType\MessagesAType\MessageAType:private] => This transaction has been approved.
+                                )
+
+                        )
+
+                    [errors:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [splitTenderPayments:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [userFields:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [shipTo:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [secureAcceptance:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [emvResponse:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [transHashSha2:net\authorize\api\contract\v1\TransactionResponseType:private] => 
+                    [profile:net\authorize\api\contract\v1\TransactionResponseType:private] => net\authorize\api\contract\v1\CustomerProfileIdType Object
+                        (
+                            [customerProfileId:net\authorize\api\contract\v1\CustomerProfileIdType:private] => 1515434598
+                            [customerPaymentProfileId:net\authorize\api\contract\v1\CustomerProfileIdType:private] => 1513212265
+                            [customerAddressId:net\authorize\api\contract\v1\CustomerProfileIdType:private] => 
+                        )
+
+                    [networkTransId:net\authorize\api\contract\v1\TransactionResponseType:private] => 1IW8DJ08DXBMZFY0K0HXTEP
+                )
+
+            [profileResponse:net\authorize\api\contract\v1\CreateTransactionResponse:private] => 
+            [refId:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+            [messages:net\authorize\api\contract\v1\ANetApiResponseType:private] => net\authorize\api\contract\v1\MessagesType Object
+                (
+                    [resultCode:net\authorize\api\contract\v1\MessagesType:private] => Ok
+                    [message:net\authorize\api\contract\v1\MessagesType:private] => Array
+                        (
+                            [0] => net\authorize\api\contract\v1\MessagesType\MessageAType Object
+                                (
+                                    [code:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => I00001
+                                    [text:net\authorize\api\contract\v1\MessagesType\MessageAType:private] => Successful.
+                                )
+
+                        )
+
+                )
+
+            [sessionToken:net\authorize\api\contract\v1\ANetApiResponseType:private] => 
+        )
+
+)
+
+2021-01-19T02:24:05+00:00 INFO (6): loggedin customergroupid
+2021-01-19T02:24:05+00:00 INFO (6): 8
+2021-01-19T02:24:05+00:00 INFO (6): product catIds
+2021-01-19T02:24:05+00:00 INFO (6): 2,3,4,337,338
+2021-01-19T02:24:05+00:00 INFO (6): finalResult
+2021-01-19T02:24:05+00:00 INFO (6): 0
+2021-01-19T02:25:09+00:00 INFO (6): loggedin customergroupid
+2021-01-19T02:25:09+00:00 INFO (6): 4
+2021-01-19T02:25:09+00:00 INFO (6): product catIds
+2021-01-19T02:25:09+00:00 INFO (6): 2,3,4,337,338
+2021-01-19T02:25:09+00:00 INFO (6): sql
+2021-01-19T02:25:09+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-19T02:25:09+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-19T02:25:09+00:00 INFO (6): in if loop
+2021-01-19T02:25:09+00:00 INFO (6): finalResult
+2021-01-19T02:25:09+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-19T02:26:46+00:00 INFO (6): loggedin customergroupid
+2021-01-19T02:26:46+00:00 INFO (6): 4
+2021-01-19T02:26:46+00:00 INFO (6): product catIds
+2021-01-19T02:26:46+00:00 INFO (6): 2,3,4,337,338
+2021-01-19T02:26:46+00:00 INFO (6): sql
+2021-01-19T02:26:46+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '4' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-19T02:26:46+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [customer_group] => 4
+            [discount_percentage] => 10.00
+            [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+            [created_at] => 2020-10-29 12:26:08
+            [standard_discount_percentage] => 5.15
+            [status] => 1
+            [title] => Test _Standardd 2
+            [brand] => 
+        )
+
+)
+
+2021-01-19T02:26:46+00:00 INFO (6): in if loop
+2021-01-19T02:26:46+00:00 INFO (6): finalResult
+2021-01-19T02:26:46+00:00 INFO (6): Array
+(
+    [id] => 13
+    [customer_group] => 4
+    [discount_percentage] => 10.00
+    [category] => Plain Air Circuit1.2(56),Vane Motors (338)
+    [created_at] => 2020-10-29 12:26:08
+    [standard_discount_percentage] => 5.15
+    [status] => 1
+    [title] => Test _Standardd 2
+    [brand] => 
+)
+
+2021-01-19T02:27:56+00:00 INFO (6): loggedin customergroupid
+2021-01-19T02:27:56+00:00 INFO (6): 1
+2021-01-19T02:27:56+00:00 INFO (6): product catIds
+2021-01-19T02:27:56+00:00 INFO (6): 2,3,4,337,338
+2021-01-19T02:27:56+00:00 INFO (6): sql
+2021-01-19T02:27:56+00:00 INFO (6): SELECT * FROM dcw_custom_price_rules WHERE customer_group = '1' and status = 1 and  brand = '' ORDER BY id DESC
+2021-01-19T02:27:56+00:00 INFO (6): Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [customer_group] => 1
+            [discount_percentage] => 20.00
+            [category] => Plain Air Circuit1.2(56)
+            [created_at] => 2021-01-18 14:54:35
+            [standard_discount_percentage] => 25.00
+            [status] => 1
+            [title] => TEST_Standard 1
+            [brand] => 
+        )
+
+)
+
+2021-01-19T02:27:56+00:00 INFO (6): in if loop
+2021-01-19T02:27:56+00:00 INFO (6): finalResult
+2021-01-19T02:27:56+00:00 INFO (6): Array
+(
+)
+

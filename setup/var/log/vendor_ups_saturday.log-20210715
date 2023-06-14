@@ -1,0 +1,100 @@
+2021-07-13T07:04:43+00:00 INFO (6): rowRequest
+2021-07-13T07:04:43+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'CA',
+  'orig_postal' => '91761',
+  'orig_city' => NULL,
+  'dest_country' => 'US',
+  'dest_region_code' => 'NV',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 180.0,
+  'value_with_discount' => 180.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 195.08,
+)
+2021-07-13T07:04:51+00:00 INFO (6): rowRequest
+2021-07-13T07:04:51+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'CA',
+  'orig_postal' => '91761',
+  'orig_city' => NULL,
+  'dest_country' => 'US',
+  'dest_region_code' => 'NV',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 180.0,
+  'value_with_discount' => 180.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 195.08,
+)
+2021-07-13T07:07:20+00:00 INFO (6): rowRequest
+2021-07-13T07:07:20+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'NV',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 180.0,
+  'value_with_discount' => 180.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 195.08,
+)
+2021-07-13T07:07:29+00:00 INFO (6): rowRequest
+2021-07-13T07:07:29+00:00 INFO (6): array (
+  'action' => '4',
+  'product' => 'GNDRES',
+  'pickup' => 
+  array (
+    'label' => 'Customer Counter',
+    'code' => '03',
+  ),
+  'container' => '00',
+  'dest_type' => '01',
+  'orig_country' => 'US',
+  'orig_region_code' => 'NV',
+  'orig_postal' => '91761',
+  'orig_city' => 'North Las Vegas',
+  'dest_country' => 'US',
+  'dest_region_code' => 'NV',
+  'dest_postal' => '89081',
+  'weight' => 2.0,
+  'value' => 180.0,
+  'value_with_discount' => 180.0,
+  'unit_measure' => 'LBS',
+  'is_return' => NULL,
+  'base_subtotal_incl_tax' => 195.08,
+)

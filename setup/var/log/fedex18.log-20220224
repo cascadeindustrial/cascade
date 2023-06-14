@@ -1,0 +1,1456 @@
+2022-02-22T07:14:52+00:00 INFO (6): 1
+2022-02-22T07:14:52+00:00 INFO (6): in if loop
+2022-02-22T07:14:52+00:00 INFO (6): RatesRequest
+2022-02-22T07:14:52+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T07:14:52+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '-',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T07:14:53+00:00 INFO (6): array (
+)
+2022-02-22T07:14:53+00:00 INFO (6): array (
+)
+2022-02-22T07:15:05+00:00 INFO (6): 1
+2022-02-22T07:15:05+00:00 INFO (6): in if loop
+2022-02-22T07:15:05+00:00 INFO (6): RatesRequest
+2022-02-22T07:15:05+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T07:15:05+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '-',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T07:15:05+00:00 INFO (6): array (
+)
+2022-02-22T07:15:05+00:00 INFO (6): array (
+)
+2022-02-22T07:15:07+00:00 INFO (6): 1
+2022-02-22T07:15:07+00:00 INFO (6): in if loop
+2022-02-22T07:15:07+00:00 INFO (6): RatesRequest
+2022-02-22T07:15:07+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T07:15:07+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '-',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T07:15:07+00:00 INFO (6): array (
+)
+2022-02-22T07:15:07+00:00 INFO (6): array (
+)
+2022-02-22T08:21:44+00:00 INFO (6): 1
+2022-02-22T08:21:44+00:00 INFO (6): in if loop
+2022-02-22T08:21:44+00:00 INFO (6): RatesRequest
+2022-02-22T08:21:44+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:21:44+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '-',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:21:45+00:00 INFO (6): array (
+)
+2022-02-22T08:21:45+00:00 INFO (6): array (
+)
+2022-02-22T08:24:37+00:00 INFO (6): 1
+2022-02-22T08:24:37+00:00 INFO (6): in if loop
+2022-02-22T08:24:37+00:00 INFO (6): RatesRequest
+2022-02-22T08:24:37+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:24:37+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '-',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:24:38+00:00 INFO (6): array (
+)
+2022-02-22T08:24:38+00:00 INFO (6): array (
+)
+2022-02-22T08:24:40+00:00 INFO (6): 1
+2022-02-22T08:24:40+00:00 INFO (6): in if loop
+2022-02-22T08:24:40+00:00 INFO (6): RatesRequest
+2022-02-22T08:24:40+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:24:40+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '-',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:24:41+00:00 INFO (6): array (
+)
+2022-02-22T08:24:41+00:00 INFO (6): array (
+)
+2022-02-22T08:25:59+00:00 INFO (6): 1
+2022-02-22T08:25:59+00:00 INFO (6): in if loop
+2022-02-22T08:25:59+00:00 INFO (6): RatesRequest
+2022-02-22T08:25:59+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:25:59+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '-',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:26:00+00:00 INFO (6): array (
+)
+2022-02-22T08:26:00+00:00 INFO (6): array (
+)
+2022-02-22T08:26:59+00:00 INFO (6): 1
+2022-02-22T08:26:59+00:00 INFO (6): in if loop
+2022-02-22T08:26:59+00:00 INFO (6): RatesRequest
+2022-02-22T08:26:59+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:26:59+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:27:00+00:00 INFO (6): array (
+)
+2022-02-22T08:27:00+00:00 INFO (6): array (
+)
+2022-02-22T08:29:33+00:00 INFO (6): 1
+2022-02-22T08:29:33+00:00 INFO (6): in if loop
+2022-02-22T08:29:33+00:00 INFO (6): RatesRequest
+2022-02-22T08:29:33+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:29:33+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:29:33+00:00 INFO (6): array (
+)
+2022-02-22T08:29:33+00:00 INFO (6): array (
+)
+2022-02-22T08:29:35+00:00 INFO (6): 1
+2022-02-22T08:29:35+00:00 INFO (6): in if loop
+2022-02-22T08:29:35+00:00 INFO (6): RatesRequest
+2022-02-22T08:29:35+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:29:35+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:29:36+00:00 INFO (6): array (
+)
+2022-02-22T08:29:36+00:00 INFO (6): array (
+)
+2022-02-22T08:29:45+00:00 INFO (6): 1
+2022-02-22T08:29:45+00:00 INFO (6): in if loop
+2022-02-22T08:29:45+00:00 INFO (6): RatesRequest
+2022-02-22T08:29:45+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:29:45+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:29:46+00:00 INFO (6): array (
+)
+2022-02-22T08:29:46+00:00 INFO (6): array (
+)
+2022-02-22T08:29:53+00:00 INFO (6): 1
+2022-02-22T08:29:53+00:00 INFO (6): in if loop
+2022-02-22T08:29:53+00:00 INFO (6): RatesRequest
+2022-02-22T08:29:53+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:29:53+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'IN',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:29:53+00:00 INFO (6): array (
+)
+2022-02-22T08:29:53+00:00 INFO (6): array (
+)
+2022-02-22T08:30:06+00:00 INFO (6): 1
+2022-02-22T08:30:06+00:00 INFO (6): in if loop
+2022-02-22T08:30:06+00:00 INFO (6): RatesRequest
+2022-02-22T08:30:06+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:30:06+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'GB',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:30:07+00:00 INFO (6): array (
+)
+2022-02-22T08:30:07+00:00 INFO (6): array (
+)
+2022-02-22T08:30:08+00:00 INFO (6): 1
+2022-02-22T08:30:08+00:00 INFO (6): in if loop
+2022-02-22T08:30:08+00:00 INFO (6): RatesRequest
+2022-02-22T08:30:08+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:30:08+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:30:09+00:00 INFO (6): array (
+)
+2022-02-22T08:30:09+00:00 INFO (6): array (
+)
+2022-02-22T08:30:17+00:00 INFO (6): 1
+2022-02-22T08:30:17+00:00 INFO (6): in if loop
+2022-02-22T08:30:17+00:00 INFO (6): RatesRequest
+2022-02-22T08:30:17+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:30:17+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '89081',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:30:17+00:00 INFO (6): array (
+)
+2022-02-22T08:30:17+00:00 INFO (6): array (
+)
+2022-02-22T08:30:26+00:00 INFO (6): 1
+2022-02-22T08:30:26+00:00 INFO (6): in if loop
+2022-02-22T08:30:26+00:00 INFO (6): RatesRequest
+2022-02-22T08:30:26+00:00 INFO (6): array (
+  'WebAuthenticationDetail' => 
+  array (
+    'UserCredential' => 
+    array (
+      'Key' => 'LdjJoeiOlo9EWRW2',
+      'Password' => 'g66gBkULgs3CoJdMnIfZKnTZp',
+    ),
+  ),
+  'ClientDetail' => 
+  array (
+    'AccountNumber' => '427606686',
+    'MeterNumber' => '254817385',
+  ),
+  'Version' => 
+  array (
+    'ServiceId' => 'crs',
+    'Major' => '10',
+    'Intermediate' => '0',
+    'Minor' => '0',
+  ),
+  'VariableOptions' => 'SATURDAY_DELIVERY',
+  'ReturnTransitAndCommit' => true,
+  'RequestedShipment' => 
+  array (
+    'DropoffType' => 'REGULAR_PICKUP',
+    'ShipTimestamp' => '2022-02-22T08:30:26+00:00',
+    'PackagingType' => 'YOUR_PACKAGING',
+    'TotalInsuredValue' => 
+    array (
+      'Amount' => 60.0,
+      'Currency' => 'USD',
+    ),
+    'Shipper' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '91761',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'Recipient' => 
+    array (
+      'Address' => 
+      array (
+        'PostalCode' => '07960',
+        'CountryCode' => 'US',
+        'Residential' => false,
+      ),
+    ),
+    'ShippingChargesPayment' => 
+    array (
+      'PaymentType' => 'SENDER',
+      'Payor' => 
+      array (
+        'AccountNumber' => '427606686',
+        'CountryCode' => 'US',
+      ),
+    ),
+    'CustomsClearanceDetail' => 
+    array (
+      'CustomsValue' => 
+      array (
+        'Amount' => 60.0,
+        'Currency' => 'USD',
+      ),
+    ),
+    'RateRequestTypes' => 'LIST',
+    'PackageCount' => '1',
+    'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+    'RequestedPackageLineItems' => 
+    array (
+      0 => 
+      array (
+        'Weight' => 
+        array (
+          'Value' => 2.0,
+          'Units' => 'LB',
+        ),
+        'GroupPackageCount' => 1,
+      ),
+    ),
+  ),
+)
+2022-02-22T08:30:26+00:00 INFO (6): array (
+)
+2022-02-22T08:30:26+00:00 INFO (6): array (
+)

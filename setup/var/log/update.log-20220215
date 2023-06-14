@@ -1,0 +1,2 @@
+[2022-02-14 11:06:01] setup-cron.ERROR: Class Firebear\ImportExport\Setup\Db\Adapter\Pdo\Mysql does not exist [] []
+[2022-02-14 11:07:01] setup-cron.ERROR: Class Firebear\ImportExport\Setup\Db\Adapter\Pdo\Mysql does not exist [] []

@@ -1,0 +1,24 @@
+<?php /** * Plumrocket Inc. * * NOTICE OF LICENSE * * This source file is subject to the End-user License Agreement * that is available through the world-wide-web at this URL: * http://wiki.plumrocket.net/wiki/EULA * If you are unable to obtain it through the world-wide-web, please * send an email to support@plumrocket.com so we can send you a copy immediately. * * @package Plumrocket_CCPA * @copyright Copyright (c) 2020 Plumrocket Inc. (http://www.plumrocket.com) * @license http://wiki.plumrocket.net/wiki/EULA End-user License Agreement */ ?> <?php /** @var \Plumrocket\CCPA\Block\Widget\CcpaForm $block */ ?> <div data-bind="scope: 'ccpa_form'"><div style="display: none" class="page messages" data-bind="visible: $data.getMessages().length"><div role="alert" data-bind="foreach: { data: $data.getMessages(), as: 'message' }"><div class="message-error error message"><div data-bind="html: message"></div></div></div></div><form id="prgdpr-ccpa-form" method="post" action="<?= $block->escapeUrl($block->getCcpaRequestUrl()) ?>"><?php if ($block->isCustomerLoggedIn()): ?> <script>
+                require([
+                    'jquery',
+                    'Magento_Ui/js/lib/knockout/template/loader',
+                    'mage/template',
+                    'loader'
+                ], function ($, templateLoader, template) {
+
+                    var loaderImageHref = '<?= $block->escapeJsQuote($block->escapeUrl($block->getViewFileUrl('images/loader-1.gif'))) ?>';
+                    templateLoader.loadTemplate('ui/block-loader').done(function (blockLoaderTemplate) {
+                        var formWrapper = $('#prgdpr-ccpa-form');
+                        formWrapper.loader({
+                            template: template($.trim(blockLoaderTemplate), {
+                                loaderImageHref: loaderImageHref
+                            })
+                        });
+                        formWrapper.loader('show');
+                    });
+                });</script><fieldset class="fieldset" data-bind="enable: $data.isAvailable() !== false;"><div class="field"><label class="label"><?= $block->escapeHtml(__('Last Updated:')) ?>&nbsp;</label> <span data-bind="text: $data.getLastUpdated();"></span></div><div class="field"><label class="label"><?= $block->escapeHtml(__('Sale of Personal Data is:')) ?></label> <select name="action" data-bind="value: $data.getCcpaAccepded();"><option value="1"><?= $block->escapeHtml(__('Allowed')) ?></option><option value="0"><?= $block->escapeHtml(__('Not Allowed')) ?></option></select></div><input class="action primary" type="button" data-bind="click: $data.submit" value="<?= $block->escapeHtml(__('Update Settings')) ?>"/></fieldset><?php else:?> <fieldset class="fieldset" data-bind="enable: $data.isAvailable() !== false;"><div class="field required"><label for="ccpa-form-name" class="label"><?= $block->escapeHtml(__('Your Name')) ?></label> <input class="required" id="ccpa-form-name" type="text" required name="full_name"/></div><div class="field required"><label for="ccpa-form-email" class="label"><?= $block->escapeHtml(__('Your Email')) ?></label> <input class="required" id="ccpa-form-email" type="email" required name="email"/></div><div data-bind="scope: 'gdpr-msp-recaptcha'"><!-- ko template: getTemplate() --><!-- /ko --></div><input class="action primary" type="button" data-bind="click: $data.submit" value="<?= $block->escapeHtml(__('Submit')) ?>"/></fieldset><?php endif;?></form></div><script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>
+    }
+}</script>

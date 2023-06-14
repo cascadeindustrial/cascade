@@ -1,0 +1,46 @@
+2021-12-06T07:04:09+00:00 INFO (6): In Product Import File
+2021-12-06T07:04:09+00:00 INFO (6): array (
+  'name' => 
+  array (
+    0 => '',
+  ),
+  'type' => 
+  array (
+    0 => '',
+  ),
+  'tmp_name' => 
+  array (
+    0 => '',
+  ),
+  'error' => 
+  array (
+    0 => 4,
+  ),
+  'size' => 
+  array (
+    0 => 0,
+  ),
+)
+2021-12-06T07:06:18+00:00 INFO (6): In Product Import File
+2021-12-06T07:06:18+00:00 INFO (6): array (
+  'name' => 
+  array (
+    0 => '10th.pdf',
+  ),
+  'type' => 
+  array (
+    0 => 'application/pdf',
+  ),
+  'tmp_name' => 
+  array (
+    0 => '/tmp/phpjao0xP',
+  ),
+  'error' => 
+  array (
+    0 => 0,
+  ),
+  'size' => 
+  array (
+    0 => 59754,
+  ),
+)

@@ -1,0 +1,200 @@
+<?php /* @var \WeltPixel\OwlCarouselSlider\Block\Slider\Products $this */ /*avoid conflict */ /* test commit */ ?> <?php $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/recetlybrand.log'); $logger = new \Zend\Log\Logger(); $logger->addWriter($writer); use Magento\Framework\App\Action\Action; $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); $storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface'); $urlVariable = $objectManager->create('Cart2Quote\Quotation\Block\Product\Listing\Form'); $urlVariable1 = $block->getAddToQuoteUrl(); ?> <?php $sliderData = $this->getSliderConfiguration(); ?> <?php $enabled = array_key_exists('status', $sliderData) ? $sliderData['status'] : ''; ?> <?php $showPrice = array_key_exists('show_price', $sliderData) ? $sliderData['show_price'] : false; ?> <?php $showAddToCart = array_key_exists('show_addto', $sliderData) ? $sliderData['show_addto'] : false; ?> <?php $showWishlist = (array_key_exists('show_wishlist', $sliderData) && $sliderData['show_wishlist'] !=0) ? true : false; ?> <?php $showCompare = (array_key_exists('show_compare', $sliderData) && $sliderData['show_compare'] !=0) ? true : false; ?> <?php $showReviewsRatins = (array_key_exists('show_reviews_ratings', $sliderData) && $sliderData['show_reviews_ratings'] !=0) ? true : false; ?> <?php $randomSort = (array_key_exists('random_sort', $sliderData) && $sliderData['random_sort'] !=0) ? true : false; ?> <?php if(!$enabled){ return; } ?> <?php $products = $this->getProductCollection(); $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW; if(!count($products)) { return; } $productsType = $this->getData('products_type'); $sliderConfig = json_encode($sliderData); $sliderTitle = array_key_exists('title', $sliderData) ? $sliderData['title'] : ''; $breakpoint = $this->getBreakpointConfiguration(); $isHoverImageEnabled = $this->isHoverImageEnabled(); $sliderUniq = time(); ?> <div class="custom-slider"><?php if (trim($sliderTitle)) : ?> <div class="content-heading"><h2 class="title"><?php echo $sliderTitle; ?></h2></div><?php endif; ?> <div class="owl-carousel-products-<?php echo $productsType;?> <?php echo count($products)== 1? 'owl-carousel-products-single-item': '';?>"><?php foreach($products as $product) : ?> <?php $_imagehelper = $this->helper('Magento\Catalog\Helper\Image'); $productImage = $_imagehelper->init($product, 'category_page_list')->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(TRUE)->resize(480, 600)->getUrl(); $productUrl = $product->getUrlModel()->getUrl($product); if ($isHoverImageEnabled) { $productImageHover = $_imagehelper->init($product, 'owlcarousel_product_hover')->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(TRUE)->resize(480, 600); $productImageHoverUrl = $productImageHover->getUrl(); $productImageHoverPlaceholderUrl = $productImageHover->getDefaultPlaceholderUrl(); } ?> <?php $product = $objectManager->create('Magento\Catalog\Model\Product')->load($product->getEntityId()); $modelNo = $product->getData('model_no'); ?> <div class="item product product-item"><div data-container="product-grid" class="product-item-info"><div><a href="#" data-post='<?php echo $this->helper('Magento\Wishlist\Helper\Data')->getAddParams($product) ?>' class="action towishlist" data-action="add-to-wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></div><a tabindex="-1" class="product photo product-item-photo" href="<?php echo $productUrl; ?>"><span style="width:240px;" class="product-image-container"><span style="padding-bottom: 125%;" class="product-image-wrapper"><img width="240" height="300" alt="<?php echo $product->getName(); ?>" <?php if (!$sliderData['lazyLoad'] || !$sliderData['loop']) : ?> src="<?php echo $productImage; ?>" <?php endif; ?> <?php if ($isHoverImageEnabled && ($productImageHoverUrl != $productImageHoverPlaceholderUrl)) : ?> data-hoversrc="<?php /* @escapeNotVerified */ echo $productImageHoverUrl; ?>" <?php endif; ?> class="product-image-photo <?php echo $sliderData['lazyLoad'] ? 'owl-lazy' : '' ?> <?=($isHoverImageEnabled && ($productImageHoverUrl != $productImageHoverPlaceholderUrl))? 'owl-recent-hover-img' : ''; ?>" <?php echo $sliderData['lazyLoad'] ? 'data-src="' . $productImage . '" data-src-retina="' . $productImage . '"' : '' ?> /></span></span></a> <div class="product details product-item-details"><strong class="product name product-item-name"><a href="<?php echo $productUrl; ?>" class="product-item-link"><?php echo $product->getName(); ?></a></strong> <div class="sku-model-brand"><span class="smd"><?php echo "<label>Sku:</label>" . "<i class='smd-val'>".$product->getData('sku')."</i>"; ?></span> <span class="smd"><?php echo "<label>Brand:</label>" ."<i class='smd-val'>" .$product->getResource()->getAttribute('brand')->getFrontend()->getValue($product)."</i>"; ?></span> <?php if($modelNo) { ?> <span class="smd-mod-wdt-lst"><?php echo "<label>Model:</label>"."<i class='smd-val-mod-val-lst'>". $product->getData('model_no')."</i>"; ?></span> <?php } ?></div><?php if ($showReviewsRatins && $templateType) : ?> <?= $block->getReviewsSummaryHtml($product, $templateType) ?> <?php endif; ?> <?php if ($product->getData('type_id') == 'configurable') : ?> <?php if ($showPrice) : ?> <?php /* @escapeNotVerified */ echo $this->getProductPrice($product); ?> <?php endif; ?> <?php endif; ?> <?php if ($product->getData('type_id') == 'simple') : ?> <?php if ($showPrice) : ?> <div class="price-boxes"><div class="home-product-price"><?php /* @escapeNotVerified */ echo $this->getProductPrice($product); ?></div><?php $helper = $this->helper('Dcw\CustomPricing\Helper\Data'); $discounValues = $helper->getPercentageCalculation($product); if ($discounValues != '') { $expeditedDiscountPercentage = $discounValues['discount_percentage']; ?> <div class="expedicted-price-discount before"><?php $priceHelper = $objectManager->create('Magento\Framework\Pricing\PriceCurrencyInterface'); if ($product->getSpecialPrice()) { $customPrice = $product->getSpecialPrice(); } else { $customPrice = $product->getFinalPrice(); } $price = $customPrice - (($customPrice/100)*$expeditedDiscountPercentage); $formattedPrice = $priceHelper->convertAndFormat($price); $formattedPrice = $priceHelper->round($price); $formattedPrice = $priceHelper->getCurrencySymbol(); $currencyCode = $storeManager->getStore()->getCurrentCurrencyCode(); $rate = $priceHelper->convert($price, 1, $currencyCode); $customprice = round($rate,2); $customprice = number_format((float)$customprice, 2, '.', ''); $customprice = number_format($customprice,2); echo $formattedPrice.$customprice; $logger->info("second"); $logger->info($formattedPrice.$customprice); ?> <input type="hidden" name="delivery_options" class="delivery_options" value="<?php echo $rate;?>"></div><?php } ?></div><?php endif; ?> <?php endif; ?> <?php if ($product->getData('type_id') == 'simple') : ?> <!-- <?php ?> --><?php $addToCart = $objectManager->create('Dcw\FeaturedProducts\Block\FeaturedProducts'); $cartParams = $addToCart->getAddToCartPostParams($product); ?> <!-- <?php ?> --><?php endif; ?> <div class="product-item-inner"><div class="product actions product-item-actions"><?php if($showAddToCart) : ?> <div class="actions-primary"><?php if ($product->isSaleable()): ?> <?php ?> <?php if ($product->getData('type_id') == 'configurable') : ?> <?php if ($showPrice) : ?> <?php /* @escapeNotVerified */ echo $this->getProductPrice($product); ?> <?php endif; ?> <div class="action-buttons config-action-btn"><div class="action-buttons"><button class="action tocart primary" data-mage-init='{"redirectUrl": {"url": "<?php /* @escapeNotVerified */ echo $block->getProductUrl($product) ?>"}}' type="button" title="<?php /* @escapeNotVerified */ echo __('View Details') ?>"><span><?php /* @escapeNotVerified */ echo __('View Details') ?></span></button> <button class="action primary toquote tocart quote-btn-list" data-mage-init='{"redirectUrl": {"url": "<?php /* @escapeNotVerified */ echo $block->getProductUrl($product) ?>"}}' type="button" title="<?php /* @escapeNotVerified */ echo __('Request Quote') ?>"><span><?php /* @escapeNotVerified */ echo __('Request Quote') ?></span></button></div></div><?php ?> <?php else: ?> <?php $addToCart = $objectManager->create('Dcw\FeaturedProducts\Block\FeaturedProducts'); $postParams = $addToCart->getAddToCartPostParams($product);?> <?php if ($product->getData('type_id') == 'simple') : ?> <form class="qty-block" data-role="tocart-form" data-quote-submit-action="<?php echo $quoteUrl= $urlVariable->getAddToQuoteUrl($product) ?>" action="<?= $block->escapeUrl($postParams['action']) ?>" method="post"><div class="control"><span class="input-group__addon"><span onclick="decreaseQtyRecently(<?= $block->escapeHtml($product->getEntityId()) ?>)" class="input-groupbutton input-group_button--decrease"><span class="input-group_icon input-group_icon--decrease">-</span></span></span> <input type="number" name="qty" onchange="changeQtyRecently(<?= $block->escapeHtml($product->getEntityId()) ?>)"id="qty-recently-<?= $block->escapeHtml($product->getEntityId()) ?>" maxlength="5" class="input-group_input qty" value="1"/><span class="input-group__addon"><span onclick="increaseQtyRecently(<?= $block->escapeHtml($product->getEntityId()) ?>)" class="input-groupbutton input-group_button--increase"><span class="input-group_icon input-group_icon--increase">+</span></span></span></div><?php if ($showPrice) : ?> <div class="price-boxes"><div class="home-product-price"><?php /* @escapeNotVerified */ echo $this->getProductPrice($product); ?></div><?php $helper = $this->helper('Dcw\CustomPricing\Helper\Data'); $discounValues = $helper->getPercentageCalculation($product); if ($discounValues != '') { $expeditedDiscountPercentage = $discounValues['discount_percentage']; ?> <div class="expedicted-price-discount"><?php $priceHelper = $objectManager->create('Magento\Framework\Pricing\PriceCurrencyInterface'); if ($product->getSpecialPrice()) { $customPrice = $product->getSpecialPrice(); } else { $customPrice = $product->getFinalPrice(); } $price = $customPrice - (($customPrice/100)*$expeditedDiscountPercentage); $formattedPrice = $priceHelper->convertAndFormat($price); $formattedPrice = $priceHelper->round($price); $formattedPrice = $priceHelper->getCurrencySymbol(); $currencyCode = $storeManager->getStore()->getCurrentCurrencyCode(); $rate = $priceHelper->convert($price, 1, $currencyCode); $customprice = round($rate,2); $customprice = number_format((float)$customprice, 2, '.', ''); $customprice = number_format($customprice,2); echo $formattedPrice.$customprice; $logger->info("second"); $logger->info($formattedPrice.$customprice); ?> <input type="hidden" name="delivery_options" class="delivery_options" value="<?php echo $rate;?>"></div><?php } ?></div><?php endif; ?> <input type="hidden" name="product" value="<?php echo $product->getEntityId() ?>"><input type="hidden" name="<?php /* @escapeNotVerified */ echo Action::PARAM_NAME_URL_ENCODED; ?>" value="<?php /* @escapeNotVerified */ echo $postParams['data']['uenc']; ?>"><?php echo $block->getBlockHtml('formkey')?> <div class="action-buttons"><button type="submit" title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>" class="action tocart primary"><span><?= $block->escapeHtml(__('Add to Cart')) ?></span></button> <button class="action primary toquote tocart quote-btn-list" data-role="addToQuoteButton" type="submit" title="<?php /* @escapeNotVerified */ echo __('Request Quote') ?>" ><span><?php /* @escapeNotVerified */ echo __('Request Quote') ?></span></button></div></form><?php endif;?> <?php endif; ?> <?php else: ?> <?php if ($product->getIsSalable()): ?> <div class="stock available"><span><?php /* @escapeNotVerified */ echo __('In stock') ?></span></div><?php else: ?> <div class="stock unavailable"><span><?php /* @escapeNotVerified * ?></span></div><?php if ($showPrice) : ?> <?php /* @escapeNotVerified */ echo $this->getProductPrice($product); ?> <?php endif; ?> <div class="action-buttons config-action-btn outofstock"><button class="action tocart primary" data-mage-init='{"redirectUrl": {"url": "<?php /* @escapeNotVerified */ echo $block->getProductUrl($product) ?>"}}' type="button" title="<?php /* @escapeNotVerified */ echo __('View Details') ?>"><span><?php /* @escapeNotVerified */ echo __('View Details') ?></span></button> <button class="action primary toquote tocart quote-btn-list" data-mage-init='{"redirectUrl": {"url": "<?php /* @escapeNotVerified */ echo $block->getProductUrl($product) ?>"}}' type="button" title="<?php /* @escapeNotVerified */ echo __('Request Quote') ?>"><span><?php /* @escapeNotVerified */ echo __('Request Quote') ?></span></button></div><?php endif; ?> <?php endif; ?></div><?php endif; ?> <div class="actions-secondary" data-role="add-to-links"><?php if ($showWishlist || $showCompare): ?> <div class="secondary-addto-links actions-secondary" data-role="add-to-links"><?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && $showWishlist): ?> <a href="#" data-post='<?php /* @escapeNotVerified */ echo $block->getAddToWishlistParams($product); ?>' class="action towishlist" data-action="add-to-wishlist" title="<?php /* @escapeNotVerified */ echo __('Add to Wish List') ?>"><span><?php /* @escapeNotVerified */ echo __('Add to Wish List') ?></span></a> <?php endif; ?> <?php if ($block->getAddToCompareUrl() && $showCompare): ?> <?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare'); ?> <a href="#" class="action tocompare" data-post='<?php /* @escapeNotVerified */ echo $compareHelper->getPostDataParams($product);?>' data-role="add-to-links" title="<?php /* @escapeNotVerified */ echo __('Add to Compare'); ?>"><span><?php /* @escapeNotVerified */ echo __('Add to Compare') ?></span></a> <?php endif; ?></div><?php endif; ?></div></div></div></div></div></div><?php endforeach; ?></div></div><script>
+    require(['jquery', 'owl_carousel', 'owl_config' ],
+        function ($) {
+            $(document).ready(function(){
+                var products_type = '<?php echo $productsType;?>',
+                    slider_config = <?php echo $sliderConfig; ?>,
+                    productsCount = '<?php echo count($products) ?>',
+                    carouselElement = $('.owl-carousel-products-' + products_type),
+                    items = ((slider_config.items >= 0 && slider_config.items != null) ? productsCount > slider_config.items ? slider_config.items : productsCount : 2),
+                    itemsBrk1 = (slider_config.items_brk1  >= 0 && slider_config.items_brk1 != null) ? parseInt(slider_config.items_brk1) : items,
+                    itemsBrk2 = (slider_config.items_brk2  >= 0 && slider_config.items_brk2 != null) ? parseInt(slider_config.items_brk2) : items,
+                    itemsBrk3 = (slider_config.items_brk3  >= 0 && slider_config.items_brk3 != null) ? parseInt(slider_config.items_brk3) : items,
+                    itemsBrk4 = (slider_config.items_brk4  >= 0 && slider_config.items_brk4 != null) ? parseInt(slider_config.items_brk4) : items,
+                    stagePadding = slider_config.stagePadding != '' ? parseInt(slider_config.stagePadding) : 0,
+                    sPBrk_1 = slider_config.stagePadding_brk1 != '' ? parseInt(slider_config.stagePadding_brk1) : 0,
+                    sPBrk_2 = slider_config.stagePadding_brk2 != '' ? parseInt(slider_config.stagePadding_brk2) : 0,
+                    sPBrk_3 = slider_config.stagePadding_brk3 != '' ? parseInt(slider_config.stagePadding_brk3) : 0,
+                    sPBrk_4 = slider_config.stagePadding_brk4 != '' ? parseInt(slider_config.stagePadding_brk4) : 0;
+
+                options = {
+                        nav                 :parseInt(slider_config.nav) == 1 ? true : false,
+                        dots                :parseInt(slider_config.dots) == 1 ? true : false,
+                        center              :parseInt(slider_config.center) == 1 ? true : false,
+                        items               :items,
+                        loop                :parseInt(slider_config.loop) == 1 ? true : false,
+                        margin              :parseInt(slider_config.margin) || 0,
+                        stagePadding        :parseInt(slider_config.center) == 1 ? 0 : stagePadding,
+                        lazyLoad            :parseInt(slider_config.lazyLoad) == 1 ? true : false,
+                        autoplay            :parseInt(slider_config.autoplay) == 1 ? true : false,
+                        autoplayTimeout     :(slider_config.autoplayTimeout > 0 && slider_config.autoplayTimeout != null) ? parseInt(slider_config.autoplayTimeout) : 3000,
+                        autoplayHoverPause  :parseInt(slider_config.autoplayHoverPause) == 1 ? true : false,
+                        autoHeight          :false,
+                        responsive:{
+                            <?php echo $breakpoint['breakpoint_1']; ?>:{
+                                nav             :parseInt(slider_config.nav_brk1) == 1 ? true : false,
+                                dots            :parseInt(slider_config.dots_brk1) == 1 ? true : false,
+                                items           :(productsCount > itemsBrk1) ? itemsBrk1 : productsCount,
+                                center          :parseInt(slider_config.center_brk1) == 1 ? true : false,
+                                stagePadding    :parseInt(slider_config.center) == 1 ? 0 : sPBrk_1
+                            },
+                            <?php echo $breakpoint['breakpoint_2']; ?>:{
+                                nav             :parseInt(slider_config.nav_brk2) == 1 ? true : false,
+                                dots            :parseInt(slider_config.dots_brk2) == 1 ? true : false,
+                                items           :(productsCount > itemsBrk2) ? itemsBrk2 : productsCount,
+                                center          :parseInt(slider_config.center_brk2) == 1 ? true : false,
+                                stagePadding    :parseInt(slider_config.center) == 1 ? 0 : sPBrk_2
+                            },
+                            <?php echo $breakpoint['breakpoint_3']; ?>:{
+                                nav             :parseInt(slider_config.nav_brk3) == 1 ? true : false,
+                                dots            :parseInt(slider_config.dots_brk3) == 1 ? true : false,
+                                items           :(productsCount > itemsBrk3) ? itemsBrk3 : productsCount,
+                                center          :parseInt(slider_config.center_brk3) == 1 ? true : false,
+                                stagePadding    :parseInt(slider_config.center) == 1 ? 0 : sPBrk_3
+                            },
+                            <?php echo $breakpoint['breakpoint_4']; ?>:{
+                                nav             :parseInt(slider_config.nav_brk4) == 1 ? true : false,
+                                dots            :parseInt(slider_config.dots_brk4) == 1 ? true : false,
+                                items           :(productsCount > itemsBrk4) ? itemsBrk4 : productsCount,
+                                center          :parseInt(slider_config.center_brk4) == 1 ? true : false,
+                                stagePadding    :parseInt(slider_config.center) == 1 ? 0 : sPBrk_4,
+
+                            }
+                        }
+                };
+
+                <?php if ($randomSort) : ?>
+                carouselElement.on('initialize.owl.carousel', function(event) {
+                    var $this = $(this);
+                    var carouselItems = $this.children();
+                    while (carouselItems.length) {
+                        $this.append(carouselItems.splice(Math.floor(Math.random() * carouselItems.length), 1)[0]);
+                    }
+                });
+                <?php endif; ?> carouselElement.on('initialized.owl.carousel', function(event) {
+                    setTimeout(function(){
+                        carouselElement.trigger('next.owl.carousel');
+                        $('.owl-thumbs').each(function() {
+                            if (!$('.owl-thumbs').children().length) {$(this).remove();}
+                        });
+                        $('.cssload-loader').parent().remove();
+                    }, 370);
+                });
+
+                /** Lazyload bug when fewer items exist in the carousel then the ones displayed */
+                carouselElement.on('initialized.owl.carousel', function(event){
+                    var scopeSize = event.page.count;
+                    for (var i = 0; i < scopeSize; i++){
+                        var imgsrc = $(event.target).find('.owl-item').eq(i).find('img').attr('data-src');
+                        $(event.target).find('.owl-item').eq(i).find('img').attr('src', imgsrc);
+                        $(event.target).find('.owl-item').eq(i).find('img').attr('style', 'opacity: 1;');
+                    }
+                });
+
+                carouselElement.owlCarousel(options);
+
+                var isMobile = {
+                    Android: function() {
+                        return navigator.userAgent.match(/Android/i);
+                    },
+                    BlackBerry: function() {
+                        return navigator.userAgent.match(/BlackBerry/i);
+                    },
+                    iOS: function() {
+                        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                    },
+                    Opera: function() {
+                        return navigator.userAgent.match(/Opera Mini/i);
+                    },
+                    Windows: function() {
+                        return navigator.userAgent.match(/IEMobile/i);
+                    },
+                    any: function() {
+                        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                    }
+                };
+                if(!isMobile.any()) {
+                    $('.owl-recent-hover-img').on('mouseover', function () {
+                        this.setAttribute('data-tmp', this.src);
+                        this.src = this.getAttribute('data-hoversrc');
+                    }).on('mouseout', function () {
+                        this.src = this.getAttribute('data-tmp');
+                    }).on('mousemove', function () {
+                        if (this.getAttribute('data-hoversrc') != this.src) this.setAttribute('data-tmp', this.src)
+                    });
+                }
+
+            });
+        });</script><script type="text/x-magento-init">
+ {
+        "[data-role=tocart-form], .form.map.checkout": {
+            "catalogAddToCart": {
+                "addToQuoteButtonSelector": "[data-role=addToQuoteButton]",
+                "addToCartButtonSelector": "[data-role=addToCartButton]"
+            }
+        }
+    }</script><script>
+        function decreaseQtyRecently(dataId){
+                var qty = jQuery('#qty-recently-'+dataId).val();
+                qty = parseInt(qty) -1;
+                if(qty < 1){
+                    qty =1;
+                }
+                jQuery('#qty-recently-'+dataId).val(qty);
+                jQuery('#qtydata-'+dataId).val(qty);
+                return false;
+            }
+            function increaseQtyRecently(dataId){
+                var qty = jQuery('#qty-recently-'+dataId).val();
+                qty = parseInt(qty) +1;
+                jQuery('#qty-recently-'+dataId).val(qty);
+                jQuery('#qtydata-'+dataId).val(qty);
+                return false;
+            }
+            function changeQtyRecently(dataId){
+                var qty = jQuery('#qty-recently-'+dataId).val();
+                if(qty< 1){
+                    qty = 1;
+                }
+                jQuery('#qty-recently-'+dataId).val(qty);
+                jQuery('#qtydata-'+dataId).val(qty);
+                return false;
+            }
+            function decreaseQty(dataId){
+                    var qty = jQuery('#qty-'+dataId).val();
+                    qty = parseInt(qty) -1;
+                    if(qty < 1){
+                        qty =1;
+                    }
+                    jQuery('#qty-'+dataId).val(qty);
+                    jQuery('#qtydata-'+dataId).val(qty);
+                    return false;
+                }
+                function increaseQty(dataId){
+                    var qty = jQuery('#qty-'+dataId).val();
+                    qty = parseInt(qty) +1;
+                    jQuery('#qty-'+dataId).val(qty);
+                    jQuery('#qtydata-'+dataId).val(qty);
+                    return false;
+                }
+                function changeQty(dataId){
+                    var qty = jQuery('#qty-'+dataId).val();
+                    if(qty< 1){
+                        qty = 1;
+                    }
+                    jQuery('#qty-'+dataId).val(qty);
+                    jQuery('#qtydata-'+dataId).val(qty);
+                    return false;
+                }</script><?php if((count($products)) <= 4){ ?> <div class="product-count" id="<?php print_r((count($products))); ?>"><script>
+    require([
+        'jquery'
+    ], function($){
+        $('.owl-nav').children('.owl-next').addClass('active');
+         $('.owl-nav').children('.owl-prev').addClass('active');
+    });</script></div><?php } ?> <script>
+    require([
+        'jquery',
+        'priceBox'
+    ], function($){
+        $('.expedicted-price-discount').parents('.price-boxes').addClass('active');
+    });</script><style type="text/css"> .price-boxes.active .home-product-price{display:none}</style>

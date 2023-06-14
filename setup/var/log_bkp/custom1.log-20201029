@@ -1,0 +1,2 @@
+2020-10-28T13:28:18+00:00 INFO (6): {"id":"6","customer_group":"4","discount_percentage":"25.00","category":"4","created_at":"2020-10-14 22:56:13","standard_discount_percentage":"35.00","status":"1","title":"C_Standard 2","brand":"5464"}
+2020-10-28T13:28:39+00:00 INFO (6): {"id":"6","customer_group":"4","discount_percentage":"25.00","category":"4","created_at":"2020-10-14 22:56:13","standard_discount_percentage":"35.00","status":"1","title":"C_Standard 2","brand":"5464"}

@@ -1,0 +1,67 @@
+/* print pdf styles */
+@page {
+  size: A4;
+}
+@media print {
+	@page {
+  size: a4;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+    .safari_only { 
+     margin-top: 0;
+     margin-bottom: 0;   
+    }
+}}
+}
+
+ body {
+ 	font-size: 12px;
+ }
+ a[href]:after {
+        content: none !important;
+    }
+.page-print.account.sales-order-print .page-wrapper{
+    padding-top: 0px !important;
+}
+ .account .column.main .block:not(.widget) .block-content .box{
+    width: 30% !important;
+ }
+ .account .column.main .block:not(.widget) .block-content .box:nth-child(even){
+ 	clear: right;
+ 	float: right;
+ }
+ .box.box-order-billing-method{
+ 	clear: right;
+ 	float: right;
+ 	margin-top: -50px;
+ }
+ .page-print.account.sales-order-print.page.messages {
+    display: none;
+}
+.page-print.account.sales-order-print.table-wrapper.order-items {
+    font-size: 12px !important;
+}
+.page-print.account .page-title-wrapper{
+	display: inline !important;
+}
+.page-title-wrapper .order-date {
+    margin-top: -20px;
+    display: inline-block;
+}
+small.copyright {
+    display: none !important;
+}
+.page-print.account.sales-order-print.account main#maincontent {
+    font-size: 12px !important;
+}
+.account #maincontent .table-wrapper.order-items .col {
+    font-size: 12px !important;
+}
+a[href]:after {
+        content: none !important;
+    }
+}

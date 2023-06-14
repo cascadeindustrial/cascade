@@ -1,0 +1,221 @@
+[2020-11-17 06:35:10] AuthorizeNet Logger.DEBUG: array (
+  'request' => '',
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Error',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'E00001',
+          'text' => 'Error reading JToken from JsonReader. Path \'\', line 0, position 0.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2020-11-17 06:35:10] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []
+[2020-11-17 06:35:10] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []
+[2020-11-17 06:36:26] AuthorizeNet Logger.DEBUG: array (
+  'request' => '',
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Error',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'E00001',
+          'text' => 'Error reading JToken from JsonReader. Path \'\', line 0, position 0.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2020-11-17 06:36:26] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []
+[2020-11-17 06:36:26] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []
+[2020-11-17 07:14:37] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transactionRequest' => 
+    array (
+      'transactionType' => 'authOnlyTransaction',
+      'amount' => '276.71',
+      'currencyCode' => 'USD',
+      'payment' => 
+      array (
+        'opaqueData' => 
+        array (
+          'dataDescriptor' => 'COMMON.ACCEPT.INAPP.PAYMENT',
+          'dataValue' => '**MASKED**',
+        ),
+      ),
+      'solution' => 
+      array (
+        'id' => 'AAA100302',
+      ),
+      'order' => 
+      array (
+        'invoiceNumber' => '000000250',
+      ),
+      'lineItems' => 
+      array (
+        'lineItem' => 
+        array (
+          0 => 
+          array (
+            'itemId' => 'New Simple',
+            'name' => 'New Simple',
+            'description' => '',
+            'quantity' => '',
+            'unitPrice' => '251.00',
+            'taxable' => '',
+          ),
+        ),
+      ),
+      'tax' => 
+      array (
+        'amount' => '20.71',
+      ),
+      'shipping' => 
+      array (
+        'amount' => '5.00',
+        'name' => 'Flat Rate - Fixed',
+        'description' => 'Flat Rate - Fixed',
+      ),
+      'customer' => 
+      array (
+        'type' => 'individual',
+        'email' => 'vsuddamalla@dotcomweavers.com',
+      ),
+      'billTo' => 
+      array (
+        'firstName' => 'venkateswara',
+        'lastName' => 'Reddy',
+        'company' => 'Dotcomweavers',
+        'address' => 'Gachibowli
+',
+        'city' => 'Hyderabad',
+        'state' => 'CA',
+        'zip' => '90001',
+        'country' => 'US',
+        'phoneNumber' => '+11234567890',
+      ),
+      'shipTo' => 
+      array (
+        'firstName' => 'venkateswara',
+        'lastName' => 'Reddy',
+        'company' => 'Dotcomweavers',
+        'address' => 'Gachibowli
+',
+        'city' => 'Hyderabad',
+        'state' => 'CA',
+        'zip' => '90001',
+        'country' => 'US',
+      ),
+      'transactionSettings' => 
+      array (
+        'setting' => 
+        array (
+          0 => 
+          array (
+            'settingName' => 'duplicateWindow',
+            'settingValue' => '',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2020-11-17 07:14:37] AuthorizeNet Logger.DEBUG: array (
+  'request' => 
+  array (
+    'merchantAuthentication' => 
+    array (
+      'name' => '2528zPBNdDS',
+      'transactionKey' => '**MASKED**',
+    ),
+    'clientId' => 'sdk-php-2.0.0-ALPHA',
+    'transId' => '40056476333',
+  ),
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Ok',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'I00001',
+          'text' => 'Successful.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2020-11-17 07:24:52] AuthorizeNet Logger.DEBUG: array (
+  'request' => '',
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Error',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'E00001',
+          'text' => 'Error reading JToken from JsonReader. Path \'\', line 0, position 0.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2020-11-17 07:24:52] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []
+[2020-11-17 07:24:52] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []
+[2020-11-17 07:26:02] AuthorizeNet Logger.DEBUG: array (
+  'request' => '',
+  'response' => 
+  array (
+    'messages' => 
+    array (
+      'resultCode' => 'Error',
+      'message' => 
+      array (
+        0 => 
+        array (
+          'code' => 'E00001',
+          'text' => 'Error reading JToken from JsonReader. Path \'\', line 0, position 0.',
+        ),
+      ),
+    ),
+  ),
+) [] []
+[2020-11-17 07:26:02] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []
+[2020-11-17 07:26:02] AuthorizeNet Logger.CRITICAL: Payment Error: Gateway rejected the transaction. [] []

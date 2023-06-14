@@ -1,0 +1,23 @@
+2020-08-04T10:20:03+00:00 INFO (6): ["dummy.pdf"]
+2020-08-04T10:20:42+00:00 INFO (6): ["pdf2.pdf"]
+2020-08-04T10:53:02+00:00 INFO (6): ["pdf1.pdf"]
+2020-08-04T10:53:02+00:00 INFO (6): 1111
+2020-08-04T10:53:02+00:00 INFO (6): 2222
+2020-08-04T10:53:02+00:00 INFO (6): 3333
+2020-08-04T10:53:02+00:00 INFO (6): 44444
+2020-08-04T10:59:45+00:00 INFO (6): ["dummy -1.pdf"]
+2020-08-04T10:59:45+00:00 INFO (6): 1111
+2020-08-04T10:59:45+00:00 INFO (6): 2222
+2020-08-04T10:59:45+00:00 INFO (6): 44444
+2020-08-04T10:59:47+00:00 INFO (6): 44444
+2020-08-04T11:01:53+00:00 INFO (6): ["dummy.pdf"]
+2020-08-04T11:01:53+00:00 INFO (6): 1111
+2020-08-04T11:01:53+00:00 INFO (6): 2222
+2020-08-04T11:01:53+00:00 INFO (6): 3333
+2020-08-04T11:01:53+00:00 INFO (6): 44444
+2020-08-04T11:01:55+00:00 INFO (6): 44444
+2020-08-04T11:20:43+00:00 INFO (6): ["dummy -1.pdf"]
+2020-08-04T11:20:43+00:00 INFO (6): {"\u0000*\u0000translateInline":{},"\u0000*\u0000json":null,"\u0000Magento\\Framework\\Controller\\Result\\Json\u0000serializer":{},"\u0000*\u0000httpResponseCode":null,"\u0000*\u0000headers":[],"\u0000*\u0000statusHeaderCode":null,"\u0000*\u0000statusHeaderVersion":null,"\u0000*\u0000statusHeaderPhrase":null,"\u0000Magento\\Framework\\Controller\\Result\\Json\\Interceptor\u0000pluginList":{},"\u0000Magento\\Framework\\Controller\\Result\\Json\\Interceptor\u0000subjectType":"Magento\\Framework\\Controller\\Result\\Json"}
+2020-08-04T11:27:39+00:00 INFO (6): {"\u0000*\u0000redirect":{},"\u0000*\u0000urlBuilder":{},"\u0000*\u0000url":null,"\u0000*\u0000httpResponseCode":null,"\u0000*\u0000headers":[],"\u0000*\u0000statusHeaderCode":null,"\u0000*\u0000statusHeaderVersion":null,"\u0000*\u0000statusHeaderPhrase":null,"\u0000Magento\\Framework\\Controller\\Result\\Redirect\\Interceptor\u0000pluginList":{},"\u0000Magento\\Framework\\Controller\\Result\\Redirect\\Interceptor\u0000subjectType":"Magento\\Framework\\Controller\\Result\\Redirect"}
+2020-08-04T11:42:51+00:00 INFO (6): {"\u0000*\u0000redirect":{},"\u0000*\u0000urlBuilder":{},"\u0000*\u0000url":null,"\u0000*\u0000httpResponseCode":null,"\u0000*\u0000headers":[],"\u0000*\u0000statusHeaderCode":null,"\u0000*\u0000statusHeaderVersion":null,"\u0000*\u0000statusHeaderPhrase":null,"\u0000Magento\\Framework\\Controller\\Result\\Redirect\\Interceptor\u0000pluginList":{},"\u0000Magento\\Framework\\Controller\\Result\\Redirect\\Interceptor\u0000subjectType":"Magento\\Framework\\Controller\\Result\\Redirect"}
+2020-08-04T12:14:31+00:00 INFO (6): ["dummy -2.pdf"]

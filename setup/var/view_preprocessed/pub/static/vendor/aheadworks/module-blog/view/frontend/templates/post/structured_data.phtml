@@ -1,0 +1,2 @@
+<?php /** @var $block \Magento\Framework\View\Element\Template */ /** @var \Aheadworks\Blog\ViewModel\Post\StructuredData $viewModel */ $viewModel = $block->getViewModel(); ?> <script type="application/ld+json">
+    <?= /* @noEscape */ \Zend_Json::encode($viewModel->getStructuredDataForCurrentPost()) ?></script>

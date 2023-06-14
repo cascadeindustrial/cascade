@@ -1,0 +1,18 @@
+<?php /** @var $block Credit */ ?> <?php if (!$this->isHidden()): ?> <?php $balances = $block->getBalances(); ?> <div class="fieldset-wrapper"><div class="fieldset-wrapper-title"><span class="title"><?= __('Balance Information') ?></span></div><table class="admin__table-secondary"><tbody><tr><th><b><?= __('Customer Balance') ?></b></th><td><?= $balances->count() ? '' : '0.00'; ?></td></tr><?php foreach ($balances as $balance): ?> <tr><th><?= $block->getBalanceCurrencyName($balance) ?></th><td><?= $block->getBalanceAmount($balance) ?></td></tr><?php endforeach; ?> <tr><th></th><td><?php if ($this->getCustomer()): ?> <div class="page-actions-buttons"><button class="action-secondary" type="button" onclick="window.location='<?php echo $block->getUrl('creditline/transaction/add', [ 'customer_id' => $this->getCustomer()->getId() ]) ?>'"><span><?= __('Add New Transaction') ?></span></button></div><?php endif ?></td></tr></tbody></table></div><?= $block->getChildHtml('form') ?> <?= $block->getChildHtml('grid') ?> <script>
+        require([
+            'jquery',
+            'mage/template',
+            'jquery/ui',
+            'mage/translate'
+        ], function($, mageTemplate) {
+            $(document).ready( function(){
+                $('select[name=payment_type]').change(function(){
+                    var paymentType = $('select[name=payment_type] option:selected').val();
+                    if(paymentType === '2'){
+                        $('.field-credit_reminders').show();
+                    }else{
+                        $('.field-credit_reminders').hide();
+                    }
+                });
+            });
+        });</script><?php endif ?>

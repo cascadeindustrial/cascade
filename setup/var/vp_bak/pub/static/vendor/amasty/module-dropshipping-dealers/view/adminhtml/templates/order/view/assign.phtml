@@ -1,0 +1,13 @@
+<?php /** * @author Amasty Team * @copyright Copyright (c) 2020 Amasty (https://www.amasty.com) * @package Amasty_Dropshipping */ ?> <?php /** @var \Amasty\Dropshipping\Block\Adminhtml\Order\View\Items\Renderer\Assign $block */ ?> <div class="order-history-comments-actions"><?= $block->getChildHtml('submit_button'); ?> <script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "diagnostic": {
+                        "component": "Amasty_Dropshipping/js/assign",
+                        "submitUrl": "<?= $block->escapeUrl($block->getSubmitUrl()); ?>"
+                    }
+                }
+            }
+        }
+    }</script></div>

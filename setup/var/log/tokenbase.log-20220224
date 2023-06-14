@@ -1,0 +1,129 @@
+[2022-02-22 08:37:09] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: assignData()  
+[2022-02-22 08:37:09] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: authorize(Magento\Sales\Model\Order\Payment\Interceptor , 1)  
+[2022-02-22 08:37:09] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: loadOrCreateCard(Magento\Sales\Model\Order\Payment\Interceptor )  
+[2022-02-22 08:37:09] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: _createCustomerPaymentProfile(true) (profile_id NULL, payment_id NULL)  
+[2022-02-22 08:37:09] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: setCard()  
+[2022-02-22 08:37:10] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: setCard(13)  
+[2022-02-22 08:37:10] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: resyncStoredCard(Magento\Sales\Model\Order\Payment\Interceptor )  
+[2022-02-22 08:37:11] tokenbaseLogger.INFO: authnetcim [157.48.76.57]: Transaction error: This transaction has been approved.
+{"response_code":1,"response_subcode":"","response_reason_code":1,"response_reason_text":"This transaction has been approved.","approval_code":"000000","auth_code":"000000","avs_result_code":"P","transaction_id":"0","reference_transaction_id":"","invoice_number":"000000888","description":"Default Store View (https:\/\/www.cascadeindustrial.com\/)","amount":1,"method":"CC","transaction_type":"auth_only","customer_id":"","card_code_response_code":"","cavv_response_code":"","acc_number":"XXXX8926","card_type":"Visa","split_tender_id":"","requested_amount":"","balance_on_card":"","profile_id":"548258993","payment_id":"547124517","is_fraud":false,"is_error":true}
+REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <profile>
+    <merchantCustomerId>0</merchantCustomerId>
+    <description></description>
+    <email>athota@dotcomweavers.com</email>
+  </profile>
+</createCustomerProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><createCustomerProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages><customerProfileId>548258993</customerProfileId><customerPaymentProfileIdList /><customerShippingAddressIdList /><validationDirectResponseList /></createCustomerProfileResponse>
+REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<createCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <customerProfileId>548258993</customerProfileId>
+  <paymentProfile>
+    <billTo>
+      <firstName>Mayank</firstName>
+      <lastName>Agrawal</lastName>
+      <company>Dotcom</company>
+      <address>60 Washington Street</address>
+      <city>Morristown</city>
+      <state>NJ</state>
+      <zip>07960</zip>
+      <country>US</country>
+      <phoneNumber>111-111-1111</phoneNumber>
+      <faxNumber></faxNumber>
+    </billTo>
+    <payment>
+      <opaqueData>
+        <dataDescriptor>COMMON.ACCEPT.INAPP.PAYMENT</dataDescriptor>
+        <dataValue>eyJjb2RlIjoiNTBfMl8wNjAwMDUyNjg5QUEzMENCNjhGMzk2ODA0ODgyMjdFQzMxNUFGQkEyRkM3QjQ4ODIyNjE2QjFDM0M5NTAyM0M3QjI4NDVBMTJBNDdFQkU2NDY5MDdEMEYyMDI1MkY5MkQ3QzRFMkUyIiwidG9rZW4iOiI5NjQ1NTE5MDI3OTE1MjM2OTAzNjEzIiwidiI6IjEuMSJ9</dataValue>
+      </opaqueData>
+    </payment>
+  </paymentProfile>
+  <validationMode>testMode</validationMode>
+</createCustomerPaymentProfileRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><createCustomerPaymentProfileResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages><customerProfileId>548258993</customerProfileId><customerPaymentProfileId>547124517</customerPaymentProfileId><validationDirectResponse>1,1,1,(TESTMODE) This transaction has been approved.,000000,P,0,none,Test transaction for ValidateCustomerPaymentProfile.,1.00,CC,auth_only,none,Mayank,Agrawal,Dotcom,60 Washington Street,Morristown,NJ,07960,US,111-111-1111,,email@example.com,,,,,,,,,0.00,0.00,0.00,FALSE,none,,,,,,,,,,,,,,XXXX8926,Visa,,,,,,,,,,,,,,,,,</validationDirectResponse></createCustomerPaymentProfileResponse>
+REQUEST: <?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name>XXXXy2jx</name>
+    <transactionKey>XXXXBbtr</transactionKey>
+  </merchantAuthentication>
+  <transactionRequest>
+    <transactionType>authOnlyTransaction</transactionType>
+    <amount>1.00</amount>
+    <profile>
+      <customerProfileId>548258993</customerProfileId>
+      <paymentProfile>
+        <paymentProfileId>547124517</paymentProfileId>
+        <cardCode>XXX</cardCode>
+      </paymentProfile>
+    </profile>
+    <solution>
+      <id>A1000133</id>
+    </solution>
+    <order>
+      <invoiceNumber>000000888</invoiceNumber>
+      <description>Default Store View (https://www.cascadeindustrial.com/)</description>
+    </order>
+    <lineItems>
+      <lineItem>
+        <itemId>1LS2-J</itemId>
+        <name>1LS2-J Series ndash General Pur</name>
+        <quantity>1.00</quantity>
+        <unitPrice>1.00</unitPrice>
+      </lineItem>
+      <lineItem>
+        <itemId>1LS2-J</itemId>
+        <name>1LS2-J ndash General Purpose Co</name>
+        <quantity>1.00</quantity>
+        <unitPrice>60.00</unitPrice>
+      </lineItem>
+    </lineItems>
+    <customer>
+      <id></id>
+      <email>athota@dotcomweavers.com</email>
+    </customer>
+    <shipTo>
+      <firstName>Mayank</firstName>
+      <lastName>Agrawal</lastName>
+      <company>Dotcom</company>
+      <address>60 Washington Street</address>
+      <city>Morristown</city>
+      <state>NJ</state>
+      <zip>07960</zip>
+      <country>US</country>
+    </shipTo>
+    <customerIP>157.48.76.57</customerIP>
+    <transactionSettings>
+      <setting>
+        <settingName>allowPartialAuth</settingName>
+        <settingValue>false</settingValue>
+      </setting>
+      <setting>
+        <settingName>duplicateWindow</settingName>
+        <settingValue>30</settingValue>
+      </setting>
+      <setting>
+        <settingName>emailCustomer</settingName>
+        <settingValue>false</settingValue>
+      </setting>
+    </transactionSettings>
+    <processingOptions>
+      <isFirstSubsequentAuth>true</isFirstSubsequentAuth>
+      <isStoredCredentials>true</isStoredCredentials>
+    </processingOptions>
+  </transactionRequest>
+</createTransactionRequest>
+
+RESPONSE: ﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages><transactionResponse><responseCode>1</responseCode><authCode>000000</authCode><avsResultCode>P</avsResultCode><cvvResultCode /><cavvResultCode /><transId>0</transId><refTransID /><transHash /><testRequest>1</testRequest><accountNumber>XXXX8926</accountNumber><accountType>Visa</accountType><messages><message><code>1</code><description>This transaction has been approved.</description></message></messages><transHashSha2 /><profile><customerProfileId>548258993</customerProfileId><customerPaymentProfileId>547124517</customerPaymentProfileId></profile></transactionResponse></createTransactionResponse>
+  

@@ -1,0 +1,606 @@
+
+----------------------------------------------------------------------------
+12:28 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:28 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:28 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:28 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:28 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:28 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:29 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:29 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:29 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:29 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:29 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:29 05/04/2021
+
+"1233""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:33 05/04/2021
+
+true
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:33 05/04/2021
+
+true
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:33 05/04/2021
+
+true
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:33 05/04/2021
+
+true
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:33 05/04/2021
+
+true
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:33 05/04/2021
+
+true
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:36 05/04/2021
+
+Object net\authorize\api\contract\v1\CreateTransactionResponse{
+    Properties => array: 2 [
+        "transactionResponse" => Object TransactionResponseType{
+            Properties => array: 25 [
+                "responseCode" => 1
+                "rawResponseCode" => null
+                "authCode" => 
+                "avsResultCode" => P
+                "cvvResultCode" => 
+                "cavvResultCode" => 
+                "transId" => 40062135690
+                "refTransID" => 
+                "transHash" => 
+                "testRequest" => 0
+                "accountNumber" => XXXX1111
+                "entryMode" => null
+                "accountType" => eCheck
+                "splitTenderId" => null
+                "prePaidCard" => null
+                "messages" => array: 1 [
+                    0 => ...
+                ]
+                "errors" => null
+                "splitTenderPayments" => null
+                "userFields" => null
+                "shipTo" => null
+                "secureAcceptance" => null
+                "emvResponse" => null
+                "transHashSha2" => 1E85FC1D84A6B866C62D0858C679B03E6B0BC72144A1345CD7AC08C5CE07FA8EA4C30AA1E2A5DDDFDFF0B2E75ACD69453CC1E6F654089E63CB39EA3E7453D0C6
+                "profile" => null
+                "networkTransId" => null
+            ]
+        }
+        "profileResponse" => null
+    ]
+}
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:37 05/04/2021
+
+Object net\authorize\api\contract\v1\MessagesType{
+    Properties => array: 2 [
+        "resultCode" => Ok
+        "message" => array: 1 [
+            0 => ...
+        ]
+    ]
+}
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:38 05/04/2021
+
+array: 1 [
+    0 => Object MessageAType{
+        Properties => array: 2 [
+            "code" => I00001
+            "text" => Successful.
+        ]
+    }
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:39 05/04/2021
+
+array: 1 [
+    0 => Object MessageAType{
+        Properties => array: 2 [
+            "code" => I00001
+            "text" => Successful.
+        ]
+    }
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:40 05/04/2021
+
+Object net\authorize\api\contract\v1\TransactionResponseType{
+    Properties => array: 25 [
+        "responseCode" => 1
+        "rawResponseCode" => null
+        "authCode" => 
+        "avsResultCode" => P
+        "cvvResultCode" => 
+        "cavvResultCode" => 
+        "transId" => 40062135756
+        "refTransID" => 
+        "transHash" => 
+        "testRequest" => 0
+        "accountNumber" => XXXX1111
+        "entryMode" => null
+        "accountType" => eCheck
+        "splitTenderId" => null
+        "prePaidCard" => null
+        "messages" => array: 1 [
+            0 => ...
+        ]
+        "errors" => null
+        "splitTenderPayments" => null
+        "userFields" => null
+        "shipTo" => null
+        "secureAcceptance" => null
+        "emvResponse" => null
+        "transHashSha2" => 3F8E34D864B5C4C49C113D3981CA8813E1B54F97414EDAA0BC5C5FA53F6C141106636D91F615A69EA141683773C1005BCA7B9776566EF156728E05E85BBA412F
+        "profile" => null
+        "networkTransId" => null
+    ]
+}
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:41 05/04/2021
+
+array: 1 [
+    "approved" => 1
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:41 05/04/2021
+
+true
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:45 05/04/2021
+
+"2""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:45 05/04/2021
+
+"2""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+12:45 05/04/2021
+
+"2""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+13:01 05/04/2021
+
+"1""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+13:14 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+13:14 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+13:14 05/04/2021
+
+null
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+13:15 05/04/2021
+
+array: 33 [
+    0 => array: 2 [
+        "action" => Magento\Catalog\Model\ProductRepository->getById()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Catalog/Model/ProductRepository/Interceptor.php:37
+    ]
+    1 => array: 2 [
+        "action" => Magento\Catalog\Model\ProductRepository\Interceptor->getById()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-sales/CustomerData/LastOrderedItems.php:135
+    ]
+    2 => array: 2 [
+        "action" => Magento\Sales\CustomerData\LastOrderedItems->getItems()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-sales/CustomerData/LastOrderedItems.php:195
+    ]
+    3 => array: 2 [
+        "action" => Magento\Sales\CustomerData\LastOrderedItems->getSectionData()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-customer/CustomerData/SectionPool.php:90
+    ]
+    4 => array: 2 [
+        "action" => Magento\Customer\CustomerData\SectionPool->getSectionDataByNames()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-customer/CustomerData/SectionPool.php:60
+    ]
+    5 => array: 2 [
+        "action" => Magento\Customer\CustomerData\SectionPool->getSectionsData()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-customer/Controller/Section/Load.php:78
+    ]
+    6 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load->execute()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:58
+    ]
+    7 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->___callParent()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:138
+    ]
+    8 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->Magento\Framework\Interception\{closure}()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:153
+    ]
+    9 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->___callPlugins()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Customer/Controller/Section/Load/Interceptor.php:26
+    ]
+    10 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->execute()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/Action/Action.php:108
+    ]
+    11 => array: 2 [
+        "action" => Magento\Framework\App\Action\Action->dispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:58
+    ]
+    12 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->___callParent()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:138
+    ]
+    13 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->Magento\Framework\Interception\{closure}()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/aheadworks/module-ca/Plugin/Controller/FrontActionPlugin.php:92
+    ]
+    14 => array: 2 [
+        "action" => Aheadworks\Ca\Plugin\Controller\FrontActionPlugin->aroundDispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:135
+    ]
+    15 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->Magento\Framework\Interception\{closure}()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:153
+    ]
+    16 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->___callPlugins()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Customer/Controller/Section/Load/Interceptor.php:39
+    ]
+    17 => array: 2 [
+        "action" => Magento\Customer\Controller\Section\Load\Interceptor->dispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/FrontController.php:159
+    ]
+    18 => array: 2 [
+        "action" => Magento\Framework\App\FrontController->processRequest()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/FrontController.php:98
+    ]
+    19 => array: 2 [
+        "action" => Magento\Framework\App\FrontController->dispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:58
+    ]
+    20 => array: 2 [
+        "action" => Magento\Framework\App\FrontController\Interceptor->___callParent()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:138
+    ]
+    21 => array: 2 [
+        "action" => Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php:99
+    ]
+    22 => array: 2 [
+        "action" => Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:135
+    ]
+    23 => array: 2 [
+        "action" => Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/amasty/aminvisiblecaptcha/Plugin/Predispatch.php:113
+    ]
+    24 => array: 2 [
+        "action" => Amasty\InvisibleCaptcha\Plugin\Predispatch->aroundDispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:135
+    ]
+    25 => array: 2 [
+        "action" => Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php:69
+    ]
+    26 => array: 2 [
+        "action" => Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:135
+    ]
+    27 => array: 2 [
+        "action" => Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/Interception/Interceptor.php:153
+    ]
+    28 => array: 2 [
+        "action" => Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Framework/App/FrontController/Interceptor.php:26
+    ]
+    29 => array: 2 [
+        "action" => Magento\Framework\App\FrontController\Interceptor->dispatch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/Http.php:116
+    ]
+    30 => array: 2 [
+        "action" => Magento\Framework\App\Http->launch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/generated/code/Magento/Framework/App/Http/Interceptor.php:24
+    ]
+    31 => array: 2 [
+        "action" => Magento\Framework\App\Http\Interceptor->launch()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/vendor/magento/framework/App/Bootstrap.php:261
+    ]
+    32 => array: 2 [
+        "action" => Magento\Framework\App\Bootstrap->run()
+        "file" => /chroot/home/adb4fa6c/cascadeindustrial.com/pub/index.php:40
+    ]
+]
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+13:19 05/04/2021
+
+"123""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:05 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:05 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:05 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:05 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:05 05/04/2021
+
+"1140""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+"123""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+"1142""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+"1140""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+1142
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:07 05/04/2021
+
+1140
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:09 05/04/2021
+
+"2""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:10 05/04/2021
+
+"1""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:10 05/04/2021
+
+"2""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:10 05/04/2021
+
+"2""
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:11 05/04/2021
+
+2207
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:13 05/04/2021
+
+2207
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:14 05/04/2021
+
+2207
+----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------
+15:22 05/04/2021
+
+"123""
+----------------------------------------------------------------------------
+

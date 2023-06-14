@@ -1,0 +1,82 @@
+[2021-04-30 03:44:02] main.DEBUG: SELECT DISTINCT  `main_table`.* FROM `mageworx_shippingrules_rates` AS `main_table`
+ LEFT JOIN `mageworx_shippingrules_rates_store` AS `store` ON main_table.rate_id = store.entity_id
+ LEFT JOIN `mageworx_shippingrules_rates_zips_diapason_numeric` AS `zdtn` ON main_table.rate_id = zdtn.rate_id AND `inverted` = 0
+ LEFT JOIN `mageworx_shippingrules_rates_zips` AS `zt` ON main_table.rate_id = zt.rate_id
+ LEFT JOIN `mageworx_shippingrules_rates_country` AS `rct` ON main_table.rate_id = rct.rate_id
+ LEFT JOIN `mageworx_shippingrules_rates_region_id` AS `rridt` ON main_table.rate_id = rridt.rate_id WHERE (((`store`.`store_id` = 1) OR (`store`.`store_id` = '0') OR (`store`.`store_id` IS NULL))) AND (`main_table`.`active` = '1') AND (`method_code` = 'stdfreight') AND ((
+                    (`main_table`.`zip_validation_mode` = 0)
+                    OR
+                    (
+                        `main_table`.`zip_validation_mode` = 1
+                        AND
+                        (
+                            (`zip` = 91740 AND `zt`.`inverted` = 0) OR
+                            (
+                                `main_table`.`rate_id` NOT IN (SELECT `mageworx_shippingrules_rates_zips`.`rate_id` FROM `mageworx_shippingrules_rates_zips` WHERE (zip = 91740) AND (inverted = 1))
+                                AND
+                                `main_table`.`rate_id` IN (SELECT `mageworx_shippingrules_rates_zips`.`rate_id` FROM `mageworx_shippingrules_rates_zips` WHERE (inverted = 1))
+                            )
+                        )
+                    )
+                    OR
+                    (
+                        `main_table`.`zip_validation_mode` = 2
+                          AND
+                          `main_table`.`zip_format` = 'numeric'
+                          AND
+                          `main_table`.`rate_id` NOT IN (SELECT `mageworx_shippingrules_rates_zips_diapason_numeric`.`rate_id` FROM `mageworx_shippingrules_rates_zips_diapason_numeric` WHERE (`from` <= 91740 OR `from` IS NULL) AND (`to` >= 91740 OR `to` IS NULL) AND (inverted = 1))
+                          AND
+                          (
+                                `zdtn`.`inverted` IS NULL
+                                OR
+                                (
+                                    (`from` <= 91740 OR `from` IS NULL)
+                                    AND
+                                    (`to` >= 91740 OR `to` IS NULL)
+                                    AND
+                                    `zdtn`.`inverted` = 0
+                                )
+                          )
+                    )
+                )) AND (((`country_code` = 'US') OR (`country_code` IS NULL) OR (`country_code` IN('003', '019', '021')))) AND (((`price_from` <= 50.55) OR (`price_from` IS NULL) OR (`price_from` = 0))) AND (((`price_to` >= 50.55) OR (`price_to` IS NULL) OR (`price_to` = 0))) AND (((`weight_from` <= 2) OR (`weight_from` IS NULL) OR (`weight_from` = 0))) AND (((`weight_to` >= 2) OR (`weight_to` IS NULL) OR (`weight_to` = 0))) AND (((`qty_from` <= 1) OR (`qty_from` IS NULL) OR (`qty_from` = 0))) AND (((`qty_to` >= 1) OR (`qty_to` IS NULL) OR (`qty_to` = 0))) AND (((`rridt`.`region_id` = 12) OR (`rridt`.`region_id` IS NULL))) [] []
+[2021-04-30 03:44:02] main.DEBUG: SELECT DISTINCT  `main_table`.* FROM `mageworx_shippingrules_rates` AS `main_table`
+ LEFT JOIN `mageworx_shippingrules_rates_store` AS `store` ON main_table.rate_id = store.entity_id
+ LEFT JOIN `mageworx_shippingrules_rates_zips_diapason_numeric` AS `zdtn` ON main_table.rate_id = zdtn.rate_id AND `inverted` = 0
+ LEFT JOIN `mageworx_shippingrules_rates_zips` AS `zt` ON main_table.rate_id = zt.rate_id
+ LEFT JOIN `mageworx_shippingrules_rates_country` AS `rct` ON main_table.rate_id = rct.rate_id
+ LEFT JOIN `mageworx_shippingrules_rates_region_id` AS `rridt` ON main_table.rate_id = rridt.rate_id WHERE (((`store`.`store_id` = 1) OR (`store`.`store_id` = '0') OR (`store`.`store_id` IS NULL))) AND (`main_table`.`active` = '1') AND (`method_code` = 'expfreight') AND ((
+                    (`main_table`.`zip_validation_mode` = 0)
+                    OR
+                    (
+                        `main_table`.`zip_validation_mode` = 1
+                        AND
+                        (
+                            (`zip` = 91740 AND `zt`.`inverted` = 0) OR
+                            (
+                                `main_table`.`rate_id` NOT IN (SELECT `mageworx_shippingrules_rates_zips`.`rate_id` FROM `mageworx_shippingrules_rates_zips` WHERE (zip = 91740) AND (inverted = 1))
+                                AND
+                                `main_table`.`rate_id` IN (SELECT `mageworx_shippingrules_rates_zips`.`rate_id` FROM `mageworx_shippingrules_rates_zips` WHERE (inverted = 1))
+                            )
+                        )
+                    )
+                    OR
+                    (
+                        `main_table`.`zip_validation_mode` = 2
+                          AND
+                          `main_table`.`zip_format` = 'numeric'
+                          AND
+                          `main_table`.`rate_id` NOT IN (SELECT `mageworx_shippingrules_rates_zips_diapason_numeric`.`rate_id` FROM `mageworx_shippingrules_rates_zips_diapason_numeric` WHERE (`from` <= 91740 OR `from` IS NULL) AND (`to` >= 91740 OR `to` IS NULL) AND (inverted = 1))
+                          AND
+                          (
+                                `zdtn`.`inverted` IS NULL
+                                OR
+                                (
+                                    (`from` <= 91740 OR `from` IS NULL)
+                                    AND
+                                    (`to` >= 91740 OR `to` IS NULL)
+                                    AND
+                                    `zdtn`.`inverted` = 0
+                                )
+                          )
+                    )
+                )) AND (((`country_code` = 'US') OR (`country_code` IS NULL) OR (`country_code` IN('003', '019', '021')))) AND (((`price_from` <= 50.55) OR (`price_from` IS NULL) OR (`price_from` = 0))) AND (((`price_to` >= 50.55) OR (`price_to` IS NULL) OR (`price_to` = 0))) AND (((`weight_from` <= 2) OR (`weight_from` IS NULL) OR (`weight_from` = 0))) AND (((`weight_to` >= 2) OR (`weight_to` IS NULL) OR (`weight_to` = 0))) AND (((`qty_from` <= 1) OR (`qty_from` IS NULL) OR (`qty_from` = 0))) AND (((`qty_to` >= 1) OR (`qty_to` IS NULL) OR (`qty_to` = 0))) AND (((`rridt`.`region_id` = 12) OR (`rridt`.`region_id` IS NULL))) [] []
